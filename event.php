@@ -22,7 +22,7 @@
         <meta name="author" content="E-cell">
 
         <!-- Web Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
         <!-- Vendor Styles -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -54,44 +54,28 @@
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
-        <div class="s-promo-block-v3 g-bg-position--center g-fullheight--sm" style="background: url('img/1920x1080/swades-landing.jpg');">
-            <div class="container g-ver-center--sm g-padding-y-125--xs g-padding-y-0--sm">
-                <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md">
-                    <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-50--lg g-color--white">Swades</h1><h2 class="g-color--white-opacity-light">Grass root Innovations beyond Imagination</h2>
-                </div>
-                <div class="row">
-                    <div class="col-sm-8 col-sm-push-4 g-margin-b-50--xs g-margin-b-0--md">
-                        <div class="s-promo-block-v3__divider g-display-none--xs g-display-block--md"></div>
-                        <div class="row">
-                            <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                                <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".4s">
-                                    <p class="g-font-size-18--xs g-color--white">Get an insight into blurred segments of the village life and pave them towards a clear path that focuses on a pragmatic, yet a sustainable solution.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-5 col-sm-offset-1">
-                                <div class="clearfix">
-                                    <div class="pull-left">
-                                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
-                                            <span class="s-promo-block-v3__date g-font-size-100--xs g-font-size-135--lg g-font-weight--300 g-color--primary">1<span class="g-font-size-20--xs g-font-size-30--lg">Lac</span></span>
-                                        </div>
-                                    </div>
-                                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
-                                        <span class="s-promo-block-v3__month g-font-size-18--xs g-font-size-22--lg g-font-weight--300 g-color--white">Prize Money</span>
-                                        <span class="s-promo-block-v3__year g-font-size-18--xs g-font-size-22--lg g-font-weight--300 g-color--white">And more!</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-sm-pull-8">
+        <div class="s-promo-block-v3 g-bg-position--center g-fullheight--sm" style="background: url('img/1920x1080/landing_teentitans.jpg');">
+            <div class="container g-ver-center--sm g-padding-y-125--xs g-padding-y-0--lg">
+                <img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">
+                <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
+
+                    <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--dark" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>TEEN<br>TITANS</b></h1>
+
+                    <h3 class="g-color--dark">Grass root Innovations beyond<br>Imagination</h3>
+                    <br>
+                    <div class="row">
+
+                    <div class="col-sm-3">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                             <a href="#newform" title="Register">
-                                <i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>
-                                <span class="text-uppercase g-font-size-13--xs g-color--white g-padding-x-15--xs">Register Now!</span>
+                                <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Register Now!</span>
                             </a>
                         </div>
                     </div>
                 </div>
+                </div>
+
             </div>
         </div>
         <!--========== END PROMO BLOCK ==========-->

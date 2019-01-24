@@ -20,7 +20,7 @@ html {
 body {
   height: 100%;
   font-size: 1rem;
-  font-family: Lato, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #222324;
   line-height: 1.6;
   background-color: #fff;
@@ -1702,7 +1702,7 @@ fieldset[disabled] .s-btn {
 }
 
 .ini-desc {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 8px;
     color: #0f0f0f;
     margin-top: 13px;
@@ -2417,7 +2417,7 @@ fieldset[disabled] .s-btn {
   font-size: 0.8125rem;
   font-weight: 700;
   font-family: Montserrat, sans-serif;
-  color: rgba(255, 255, 255, 0.75);
+  color: #333;
   line-height: 5.5rem;
   text-transform: uppercase;
   margin: 0 .9rem;
@@ -2431,11 +2431,11 @@ fieldset[disabled] .s-btn {
 }
 
 .s-header-v2__nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color: #333;
 }
 
 .s-header-v2__nav-link.-is-active {
-  color: #fff;
+  color: #333;
 }
 
 @media (max-width: 61.9em) {
@@ -2481,7 +2481,7 @@ fieldset[disabled] .s-btn {
 .s-header-v2__dropdown-menu-link {
   font-size: 0.875rem;
   font-weight: 400;
-  font-family: Lato, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgba(34, 35, 36, 0.7) !important;
   padding: .4375rem 2rem .4375rem 1.375rem !important;
   transition-duration: 300ms;
