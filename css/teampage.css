@@ -1,0 +1,45 @@
+.team-header {
+    text-align: center;
+    width: 100%;
+    padding: 35px;
+    background-color: #d41807;
+}
+
+.team-page-title {
+    font-family: Roboto, serif;
+    color: white;
+    font-size: 30pt;
+}
+
+.team-decor {
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    background-color:#d41807;
+    margin-top: -60px;
+    z-index: -1;
+}
+
+body {
+    background-color: rgba(255, 0, 0, 0.17);
+}
+
+.team-member-box {
+    height: 200px;
+    width: 500px;
+}
+
+.member {
+    margin-right: -100px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.member-description {
+    margin-left: 100px;
+    height: 190px;
+    width: 300px;
+    background-color: white;
+}
