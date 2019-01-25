@@ -74,7 +74,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
         <?php include("header.php")?>
 
         <!--========== SWIPER SLIDER ==========-->
-        <div class="landing-section" style="background: url('img/landing page/landing.jpg') no-repeat; background-size: cover">
+        <div class="landing-section" style="background: url('img/landing page/landing.jpg') no-repeat; background-size: cover" id="home">
             <div class="landing-page-black-screen">
                 <img src="img/landing%20page/Institute.png" style="width: 20%">
                 <center>
@@ -140,7 +140,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
         </div>
         <!-- End About -->
 
-        <div class="js__parallax-window" style="background: url('img/1920x1080/10.jpg') 50% 0 no-repeat fixed;">
+        <div class="js__parallax-window" style="background: url('img/1920x1080/03.jpg') 50% 0 no-repeat fixed;">
             <div class="container" style="padding-top: 50px; padding-bottom: 30px">
                 <div class="row">
                     <div class="col-md-3 col-xs-6 g-full-width--xs  g-margin-b-0--lg">
@@ -187,7 +187,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
             </div>
         </div>
         <!-- End Counter -->
-    <div style= "background: #000000 linear-gradient(315deg, #000000 0%, #7f8c8d 74%);" id="events">
+    <div id="events" style="background-color: #efe9e9;">
         <div class="content-section">
             <div class="event-section-title">Lets have a look at..</div>
             <center>
@@ -764,7 +764,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
 
         </div>
         -->
-        <div class="speakers-section" style="background: url('img/stage-background.jpg') no-repeat; background-size: cover ">
+        <div class="speakers-section" style="background-color: #efe9e9" id="speakers">
             <center>
             <div class="speaker-section-title">Speakers</div>
             <div class="speakers-grid">
@@ -850,7 +850,7 @@ if ( isset( $_POST['submitexpo'] ) ) {
 
         <!-- End Subscribe -->
 
-        <!-- Feedback Form -->
+        <!-- Feedback Form --
         <div class="g-bg-color--sky-light" id="contact">
             <div class="container g-padding-y-0--xs g-padding-y-0--sm">
                 <div class="g-text-center--xs g-margin-b-40--xs">
@@ -886,6 +886,49 @@ if ( isset( $_POST['submitexpo'] ) ) {
         <!-- End Feedback Form -->
 
         <!--========== END PAGE CONTENT ==========-->
+
+        <div class="g-bg-color--footer">
+            <div class="g-container--md g-padding-y-60--xs g-padding-y-80--sm">
+                <!-- Swiper Clients -->
+                <div class="container" id="foot">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".3s">
+                                <img class="s-clients-v1" src="img/clients/TiE.png" alt="Clients Logo">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".1s">
+                                <img class="s-clients-v1" src="img/clients/Make_In_India.png" alt="Clients Logo">
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".2s">
+                                <img class="s-clients-v1" src="img/clients/digital-india.png" alt="Clients Logo">
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".4s">
+                                <img class="s-clients-v1" src="img/clients/CIVN.png" alt="Clients Logo">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".5s">
+                                <img class="s-clients-v1" src="img/clients/pmyuva.png" alt="Clients Logo">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".5s">
+                                <img class="s-clients-v1" src="img/clients/vnit_aa.png" alt="Clients Logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Swiper Clients -->
+            </div>
+        </div>
 
         <!--========== FOOTER ==========-->
         <?php include("footer.php");?>
