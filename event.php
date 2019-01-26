@@ -81,9 +81,31 @@
         <!--========== END PROMO BLOCK ==========-->
 
         <!--========== PAGE CONTENT ==========-->
+
+        <div class="g-promo-section" style="background:#000" id="about">
+            <div class="container g-padding-y-30--xs g-padding-y-30--sm g-padding-x-80--md g-padding-x-60--sm g-padding-x-40--xs">
+                <div class="row">
+                    <div class="col-md-4 g-margin-t-45--xs g-margin-b-60--xs g-margin-b-0--lg">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                            <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
+                        </div>
+                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Startup Expo provides a grand platform for startups to display their product and/ or service at our annual entrepreneurship Summit Consortium 19.<br>This is also an opportunity for the attendees to learn about the new entrepreneurial techniques that these startups have employed to become successful in their journey.</p>
+
+                    </div>
+                    <div class="col-md-7 col-md-offset-1">
+                        <img src="img/expo-about.jpg" alt="" style="max-width:100%; max-height:400px">
+                    </div>
+                </div>
+
+
+            <!--</div>-->
+            </div>
+        </div>
+
+
         <!-- Features -->
         <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm">
-            <h1>About</h1>
+
             <div class="card" id="event-card-bg">
     		    <div class="card-tabs">
     		      <ul class="tabs tabs-fixed-width">
@@ -137,50 +159,41 @@
     		    </div>
 		  </div>
         </div>
+
         <!-- End Features -->
 
-        <!-- Coordinators -->
-        <div class="container js__parallax-window">
-            <div class="" id="cordinator">
-                <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-40--md g-color--white">Event Managers</h2>
-                <ol class="row">
-                    <li class="col-md-6 g-color--white">
-                        <h6 class="g-color--white g-font-size-20--md">Shuvendu </h6>
-                        <p class=" g-color--white">s.ranabijuli123@gmail.com</p>
-                        <p class=" g-color--white">+91 91726-37632</p>
-                    </li>
-                    <li class="col-md-6 g-color--white">
-                        <h6 class="g-color--white g-font-size-20--md">Anushree</h6>
-                        <p class=" g-color--white">anushree.rungta@gmail.com</p>
-                        <p class=" g-color--white">+91 98224-44112</p>
-                    </li>
-                    <li class="col-md-6 g-color--white">
-                        <h6 class="g-color--white g-font-size-20--md">Tushar</h6>
-                        <p class=" g-color--white">tushargvtiit@gmail.com</p>
-                        <p class=" g-color--white">+91 85699-09857</p>
-                    </li>
+        <div class="g-promo-section" style="background:#000" id="about">
+            <div class="container g-padding-y-30--xs g-padding-y-30--sm g-padding-x-80--md g-padding-x-60--sm g-padding-x-40--xs">
+                <h2 class="g-font-size-30--xs g-font-size-30--sm g-font-size-30--md g-color--white g-padding-x-20--xs">Get In Touch</h2>
+        <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
+            <!--<div class="g-container--md g-padding-y-40--xs">-->
 
-                    <li class="col-md-6 g-color--white">
-                        <h6 class="g-color--white g-font-size-20--md">Vedant</h6>
-                        <p class="g-color--white">vedantks36@gmail.com</p>
-                        <p class=" g-color--white">+91 98675-40678</p>
-                    </li>
-                    <li class="col-md-6 g-color--white">
-                        <h6 class="g-color--white g-font-size-20--md">Shivam</h6>
-                        <p class="g-color--white">shivamkasana33@gmail.com</p>
-                        <p class=" g-color--white">+91 75586-22049</p>
-                    </li>
-                </ol>
-            </div>
-            <div id="newform">
-                <form class="g-bg-color--dark-light g-padding-x-50--xs g-padding-y-80--xs g-radius--4">
+            <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
+                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <a href="https://swades.ecellvnit.org/register/" target="_blank" class="text-uppercase btn-block s-btn s-btn--md s-btn--white-bg g-radius--50 g-padding-x-50--xs g-margin-b-20--xs">Register</a>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Nachiket Dhande</h4>
+                         <p class="g-color--white">+91 95453 02811<br>nachiket.dhande@gmail.com</p>
                     </div>
-                </form>
+                </div>
+                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                    <div class="g-text-center--xs">
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Sagar Bansal</h4>
+                         <p class="g-color--white">+91 77580 11192<br>sagarbansal@ecellvnit.org</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                    <div class="g-text-center--xs">
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Anushree Rungta</h4>
+                         <p class="g-color--white">+91 98224 44112<br>anushree.rungta@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
             </div>
         </div>
-        <!-- End Coordinator -->
+
+
 
         <!--========== END PAGE CONTENT ==========-->
 
