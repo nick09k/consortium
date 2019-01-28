@@ -1,8 +1,8 @@
 <?php
+session_start();
 $pagetitle = 'Register | Consortium';
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-  session_start();
   $db_host = "localhost:3306";
   $db_username = "conso";
   $db_pass = "Conso@123";
@@ -98,4 +98,4 @@ ini_set('display_errors', 1);
     <?php include("footer.php");?>
   </body>
 </html>
-<?php }else{ ?>
+<?php }?>

@@ -23,17 +23,17 @@
       $num = mysqli_num_rows($result);
 
       if($num!=0){
-        $msgr1 = "The email you entered is already registered.";
+        echo "The email you entered is already registered.";
       }else{
         $otp = '1234567890';
         $otp = str_shuffle($otp);
         $otp = substr($otp, 0, 6);
 
         $q = "INSERT INTO Registrations(Name,Email,Contact,Password) VALUES('$name','$email','$contact','$password')";
-        if(mysqli_query($con,$q){
-          $msg = "You are registered with us. Now you can register in various events of Consortium <a href='register.php'>here</a>";
+        if(mysqli_query($con,$q)){
+          echo "You are registered with us. Now you can register in various events of Consortium <a href='register.php'>here</a>";
         }else {
-          $msg = "Some error occurred. Email us at contact@ecellvnit.org";
+          echo "Some error occurred. Email us at contact@ecellvnit.org";
         }
 
         // ab yahan pe email bhejna hai for email confirmation
@@ -52,7 +52,7 @@
     <form action='regnew.php' method='post'>
       <input type='text' name='name' value='' placeholder='*Your Name'>
       <input type='email' name='email' value='' placeholder='*Your Email'>
-      <input type='number' name='contact' value='' placeholder='Your Contact'>
+      <input type='tel' name='contact' value='' placeholder='Your Contact'>
       <input type='password' name='password' value='' placeholder='Choose a Password'>
       <input type='password' name='cpassword' value='' placeholder='Confirm your password'>
       <input type='submit' name='regnew' value='Register'>

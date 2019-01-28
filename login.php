@@ -2,7 +2,6 @@
   session_start();
   error_reporting(E_ALL);
   ini_set('display_errors', '1');
-    session_start();
     $db_host = "localhost:3306";
     $db_username = "conso";
     $db_pass = "Conso@123";
@@ -14,9 +13,9 @@
 
 <!DOCTYPE html>
 <html>
-  <?php include('head.php'); ?>
-  <body>
-    <?php include('header.php'); ?>
+  <?php include('includes/head.php'); ?>
+  <body style="padding-top:70px;">
+    <?php include('includes/header.php'); ?>
 
     <?php if($con->real_escape_string($_POST['login'])){
         $email = $con->real_escape_string($_POST['email']);
@@ -62,6 +61,7 @@
       <?php } ?>
       <?php echo $msg; ?>
 
-    <?php include('footer.php'); ?>
+    <?php include('includes/footer.php'); ?>
+    <?php include('includes/script.php'); ?>
   </body>
 </html>
