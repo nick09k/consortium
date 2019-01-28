@@ -28,7 +28,11 @@ ini_set('display_errors', 1);
               BizQuiz TINYINT(1) DEFAULT '0',
               ConsoWorld TINYINT(1) DEFAULT '0')
               ";
-  mysqli_query($con,$regquery);
+  if(mysqli_query($con,$regquery)){
+    echo "Connected";
+  }else{
+    echo("Error description: " . mysqli_error($con));
+  }
 
   if($_SESSION['email']){
     $email = $_SESSION['email'];

@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if(isset($_POST['regnew'])){
+
     $db_host = "localhost:3306";
     $db_username = "conso";
     $db_pass = "Conso@123";
@@ -9,6 +9,30 @@
     $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
     mysqli_select_db($con,$db_name) or die ("no database");
 
+    $regquery = "CREATE TABLE IF NOT EXISTS Registrations(
+                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                Name VARCHAR(255) NOT NULL,
+                Email VARCHAR(255) NOT NULL,
+                Contact INT(16) NOT NULL,
+                Password VARCHAR(255) NOT NULL,
+                TeamID VARCHAR(255) NOT NULL,
+                Swadesh TINYINT(1) DEFAULT '0',
+                AdVenture TINYINT(1) DEFAULT '0',
+                Pitch_Perfect TINYINT(1) DEFAULT '0',
+                renderico TINYINT(1) DEFAULT '0',
+                CEO TINYINT(1) DEFAULT '0',
+                Teen_Titans TINYINT(1) DEFAULT '0',
+                BizMantra TINYINT(1) DEFAULT '0',
+                BizQuiz TINYINT(1) DEFAULT '0',
+                ConsoWorld TINYINT(1) DEFAULT '0')
+                ";
+                if(mysqli_query($con,$regquery)){
+                  echo "Connected";
+                }else{
+                  echo("Error description: " . mysqli_error($con));
+                }
+
+    if(isset($_POST['regnew'])){
     $name = $con->real_escape_string($_POST['name']);
     $email = $con->real_escape_string($_POST['email']);
     $contact = $con->real_escape_string($_POST['contact']);
@@ -33,7 +57,7 @@
         if(mysqli_query($con,$q)){
           echo "You are registered with us. Now you can register in various events of Consortium <a href='register.php'>here</a>";
         }else {
-          echo "Some error occurred. Email us at contact@ecellvnit.org";
+          echo("Error description: " . mysqli_error($con));
         }
 
         // ab yahan pe email bhejna hai for email confirmation
