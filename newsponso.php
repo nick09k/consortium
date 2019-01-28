@@ -1,58 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+    <?php $pagetitle = 'Sponsors | Consortium'; ?>
     <!-- Begin Head -->
-    <!-- Begin Head -->
-    <head>
-        <!-- Basic -->
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Consortium'18 | E-CELL, VNIT</title>
-        <meta name="keywords" content="E-cell VNIT entreprenuship cell consortium 18" />
-        <meta name="description" content="Consortium'18 E-CELL VNIT annual entrepreneurship summit">
-        <meta name="author" content="E-cell">
-
-        <!-- Web Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
-
-        <!-- Vendor Styles -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/animate.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/themify/themify.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/scrollbar/scrollbar.min.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Theme Styles -->
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
-        <link href="css/materialize.css" rel="stylesheet" type="text/css"/>
-        <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Theme Skins -->
-        <link href="css/theme/red.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="apple-touch-icon" href="img/apple-touch-icon.png" style="width:100%">
-
-        <!--W3-->
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-		<style>
-			img {margin-bottom: -7px;}
-			.w3-row-padding img {margin-bottom: 12px;}
-		</style>
-
-    </head>
+    <?php include("includes/head.php")?>
     <!-- End Head -->
 
     <!-- Body -->
     <body>
 
         <!--========== HEADER ==========-->
-        <?php include("header.php")?>
+        <?php include("includes/header.php")?>
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
@@ -124,7 +81,7 @@
         <!--========== END PAGE CONTENT ==========-->
 
         <!--========== FOOTER ==========-->
-        <?php include("footer.php");?>
+        <?php include("includes/footer.php");?>
         <!--========== END FOOTER ==========-->
 
         <!-- Back To Top -->

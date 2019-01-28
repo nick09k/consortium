@@ -1,57 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+    <?php $pagetitle = 'Consortium'; ?>
     <!-- Begin Head -->
-    <head>
-	    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113907534-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-113907534-1');
-</script>
-
-        <!-- Basic -->
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Consortium'19 | E-CELL, VNIT</title>
-        <meta name="keywords" content="E-cell VNIT entreprenuship cell consortium 18 swades ecell vnit consortium swades" />
-        <meta name="description" content="Consortium'19 E-CELL VNIT Annual Entrepreneurship Summit">
-        <meta name="author" content="E-cell">
-
-        <!-- Web Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-        <!-- Vendor Styles -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/animate.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/themify/themify.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/scrollbar/scrollbar.min.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Theme Styles -->
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
-        <link href="css/expo.css" rel="stylesheet" type="text/css"/>
-        <link href="css/materialize.css" rel="stylesheet" type="text/css"/>
-        <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Theme Skins -->
-        <link href="css/theme/red.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-        <link rel="apple-touch-icon" href="img/icon.png">
-    </head>
+    <?php include("includes/head.php")?>
     <!-- End Head -->
 
     <!-- Body -->
     <body style="background: #FFF">
 
         <!--========== HEADER ==========-->
-        <?php include("header.php")?>
+        <?php include("includes/header.php")?>
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
@@ -83,7 +41,7 @@
 
                     <div class="col-sm-4">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                            <a id="reg_button" href="#newform" title="Register">
+                            <a id="reg_button" href="register.php" title="Register">
                                 <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
                                 <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--primary g-padding-x-15--xs">Register Now!</span>
                             </a>
@@ -420,8 +378,8 @@
         <!--========== END PAGE CONTENT ==========-->
 
         <!--========== FOOTER ==========-->
-        <?php include("footer.php");?>
-        <?php include("script.php");?>
+        <?php include("includes/footer.php");?>
+        <?php include("includes/script.php");?>
 
         <script type="text/javascript">
           $("#reg_button").click(function(){
