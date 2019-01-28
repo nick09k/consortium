@@ -50,7 +50,7 @@
         $otp = str_shuffle($otp);
         $otp = substr($otp, 0, 6);
 
-        $q = "INSERT INTO Registrations(Name,Email,Contact,Password) VALUES('$name','$email','$contact','$password')";
+        $q = "INSERT INTO Registrations(Name,Email,Contact,Password) VALUES('$name','$email','$contact','$hashed_password')";
         if(mysqli_query($con,$q)){
           echo "You are registered with us. Now you can register in various events of Consortium <a href='register.php'>here</a>";
           $_SESSION['email'] = $email;

@@ -30,8 +30,12 @@
                                     <li class="s-header-v2__nav-item"><a href="#about" class="s-header-v2__nav-link">About Us</a></li>
 
                                     <li class="s-header-v2__nav-item"><a href="/partners" class="s-header-v2__nav-link">Partners</a></li>
-                                    <li class="s-header-v2__nav-item"><a href="login.php" class="s-header-v2__nav-link">Login</a></li>
                                     <li class="s-header-v2__nav-item"><a href="#contact" class="s-header-v2__nav-link">Contact</a></li>
+                                    <?php if($_SESSION['email']){ ?>
+                                      <li class="s-header-v2__nav-item"><a href="logout.php" class="s-header-v2__nav-link">Logout</a></li>
+                                  <?php }else{ ?>
+                                    <li class="s-header-v2__nav-item"><a href="login.php" class="s-header-v2__nav-link">Login</a></li>
+                                    <?php } ?>
                                 </ul>
                             </div>
                             <!-- End Nav Menu -->

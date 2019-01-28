@@ -1,4 +1,5 @@
 <?php
+$pagetitle = 'Login | Consortium';
   session_start();
   error_reporting(E_ALL);
   ini_set('display_errors', '1');
@@ -13,25 +14,24 @@
 
 <!DOCTYPE html>
 <html>
-  <?php include('includes/head.php'); ?>
-  <body style="padding-top:70px;">
-    <?php include('includes/header.php'); ?>
 
-    <?php if($con->real_escape_string($_POST['login'])){
+  <body style="padding-top:100px;">
+
+    <?php if(isset($_POST['login'])){
         $email = $con->real_escape_string($_POST['email']);
         $password = $con->real_escape_string($_POST['password']);
 
         if($email=="" || $password==""){
-          $msg =  "Please fill all the details";
+          echo  "Please fill all the details";
         }else{
-          $query = "SELECT * FROM Registrations WHERE Email = $email";
+          $query = "SELECT * FROM Registrations WHERE Email = '$email'";
           $result = mysqli_query($con,$query);
           $num = mysqli_num_rows($result);
-          if($num != 0){
+          if($num == 1){
             $data = mysqli_fetch_array($result);
-            if(password_verify($password,$data['Password'])){
+            if(password_verify($password,$data['Password'])) {
               $events = array('Swadesh','AdVenture','Pitch Perfect','renderico','CEO','Teen Titans','BizMantra','BizQuiz','ConsoWorld');
-              $output = "
+              echo "
                 <div class=''>
                   <form action='register.php' method='post'>
                   <p>Hi! Please select an event to continue.</p>
@@ -39,29 +39,27 @@
                 ";
               for($var = 0;$var < 9; $var++ ){
                 if($data[$events[$var]] == 1){
-                  $output2 = "<input type='checkbox' name='.$events[$var].' value='.$events[$var].'>";
+                  echo "<input type='checkbox' name='.$events[$var].' value='.$events[$var].'>";
                 }
               }
-              $output3 = "<input type='submit' name='log' value='Login'>
+              echo "<input type='submit' name='log' value='Login'>
                 </form>";
             }else{
-              $msg = "Please check your inputs.";
+              echo("Error description: " . mysqli_error($con));
             }
           }else{
-            $msg = "Your email isn't registered with us.";
+            echo "Your email isn't registered with us.";
           }
         ?>
       <?php }
           }else{ ?>
-          <form class="" action="login.php" method="post">
-            <input type='email' name='email' value='' placeholder='*Your Email'>
-            <input type='password' name='password' value='' placeholder='*Your Password'>
-            <input type="submit" name="login">Next</button>
-          </form>
+          <form action="login.php" method="post">
+            <input type='email' name='email' value='' placeholder='*Your Email' />
+            <input type='password' name='password' value='' placeholder='*Your Password' />
+            <input type="submit" name="login" value="Next" />
+          </form><br/>
+          <a href="regnew.php">Haven't registered yet?</a>
       <?php } ?>
-      <?php echo $msg; ?>
 
-    <?php include('includes/footer.php'); ?>
-    <?php include('includes/script.php'); ?>
   </body>
 </html>
