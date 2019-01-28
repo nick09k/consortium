@@ -26,11 +26,8 @@
                 BizQuiz TINYINT(1) DEFAULT '0',
                 ConsoWorld TINYINT(1) DEFAULT '0')
                 ";
-                if(mysqli_query($con,$regquery)){
-                  echo "Connected";
-                }else{
-                  echo("Error description: " . mysqli_error($con));
-                }
+
+    mysqli_query($con,$regquery);
 
     if(isset($_POST['regnew'])){
     $name = $con->real_escape_string($_POST['name']);
@@ -56,12 +53,17 @@
         $q = "INSERT INTO Registrations(Name,Email,Contact,Password) VALUES('$name','$email','$contact','$password')";
         if(mysqli_query($con,$q)){
           echo "You are registered with us. Now you can register in various events of Consortium <a href='register.php'>here</a>";
+          $_SESSION['email'] = $email;
+          $_SESSION['name'] = $name;
+          $_SESSION['contact'] = $contact;
         }else {
           echo("Error description: " . mysqli_error($con));
         }
 
         // ab yahan pe email bhejna hai for email confirmation
       }
+    }else{
+      echo "Passwords didn't match";
     }
   }
 ?>

@@ -28,11 +28,8 @@ ini_set('display_errors', 1);
               BizQuiz TINYINT(1) DEFAULT '0',
               ConsoWorld TINYINT(1) DEFAULT '0')
               ";
-  if(mysqli_query($con,$regquery)){
-    echo "Connected";
-  }else{
-    echo("Error description: " . mysqli_error($con));
-  }
+
+  mysqli_query($con,$regquery);
 
   if($_SESSION['email']){
     $email = $_SESSION['email'];
@@ -66,40 +63,20 @@ ini_set('display_errors', 1);
   }else{
     header('location:regnew.php');
   }
-
-  if($con->real_escape_string($_POST['swadesh'])){
-
-  }elseif ($con->real_escape_string($_POST['adventure'])) {
-
-  }elseif ($con->real_escape_string($_POST['pitchperfect'])) {
-
-  }elseif ($con->real_escape_string($_POST['renderico'])) {
-
-  }elseif ($con->real_escape_string($_POST['ceo'])) {
-
-  }elseif ($con->real_escape_string($_POST['teentitans'])) {
-
-  }elseif ($con->real_escape_string($_POST['bizmantra'])) {
-
-  }elseif ($con->real_escape_string($_POST['bizquiz'])) {
-
-  }elseif ($con->real_escape_string($_POST['consoworld'])) {
-
-  }
 ?>
 <?php if($_SESSION['email']){ ?>
 <!DOCTYPE html>
 <html>
   <?php include("includes/head.php"); ?>
-  <body>
+  <body style="padding-top:70px;">
     <?php include("includes/header.php"); ?>
     <form class="" action="register.php" method="post">
       <input type="email" name="email" value="" placeholder="Enter your Email ID" />
       <input type="submit" name="consosubmit" value="Next" />
-      <input type="submit" name="register" value="I haven't registered yet." />
     </form>
+    <a href="regnew.php">I haven't registered yet.</a>
 
-    <?php include("footer.php");?>
+    <?php include("includes/footer.php");?>
   </body>
 </html>
 <?php }?>
