@@ -12,18 +12,18 @@ ini_set('display_errors', 1);
   mysqli_select_db($con,$db_name) or die ("no database");
 
   $regquery = "CREATE TABLE IF NOT EXISTS Registrations(
-              ID INT(11) UNSIGNED AUTO_INCREMENT,
+              ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
               Name VARCHAR(255) NOT NULL,
               Email VARCHAR(255) NOT NULL,
-              Contact INT(16) NOT NULL,
+              Contact INT(255) NOT NULL,
               Password VARCHAR(255) NOT NULL,
               TeamID VARCHAR(255) NOT NULL,
               Swadesh TINYINT(1) DEFAULT '0',
               AdVenture TINYINT(1) DEFAULT '0',
-              'Pitch Perfect' TINYINT(1) DEFAULT '0',
-              'renderico' TINYINT(1) DEFAULT '0',
+              Pitch_Perfect TINYINT(1) DEFAULT '0',
+              renderico TINYINT(1) DEFAULT '0',
               CEO TINYINT(1) DEFAULT '0',
-              'Teen Titans' TINYINT(1) DEFAULT '0',
+              Teen_Titans TINYINT(1) DEFAULT '0',
               BizMantra TINYINT(1) DEFAULT '0',
               BizQuiz TINYINT(1) DEFAULT '0',
               ConsoWorld TINYINT(1) DEFAULT '0')
@@ -68,7 +68,7 @@ ini_set('display_errors', 1);
 <!DOCTYPE html>
 <html>
   <?php include("includes/head.php"); ?>
-  <body style="padding-top:70px;">
+  <body class="back" style="padding-top:70px;">
     <?php include("includes/header.php"); ?>
     <form class="" action="register.php" method="post">
       <input type="email" name="email" value="" placeholder="Enter your Email ID" />

@@ -2,7 +2,7 @@
 <html lang="en" class="no-js">
     <?php $pagetitle = 'Consortium'; ?>
     <!-- Begin Head -->
-    <?php include("includes/head.php")?>
+    <?php include('includes/head.php'); ?>
     <!-- End Head -->
 
     <!-- Body -->

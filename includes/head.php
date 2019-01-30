@@ -33,6 +33,8 @@ gtag('config', 'UA-113907534-1');
 
     <!-- Theme Styles -->
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/expo.css" rel="stylesheet" type="text/css"/>
+    <link href="css/teampage.css" rel="stylesheet" type="text/css"/>
     <link href="css/materialize.css" rel="stylesheet" type="text/css"/>
     <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
 
