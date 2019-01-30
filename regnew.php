@@ -11,7 +11,7 @@
     mysqli_select_db($con,$db_name) or die ("no database");
 
     $regquery = "CREATE TABLE IF NOT EXISTS Registrations(
-                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                main_ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                 Name VARCHAR(255) NOT NULL,
                 Email VARCHAR(255) NOT NULL,
                 Contact INT(255) NOT NULL,
@@ -29,6 +29,21 @@
                 ";
 
     mysqli_query($con,$regquery);
+    $eve = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','ConsoWorld');
+    for($var = 0; $var < 9; $var++){
+      $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
+                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                Name VARCHAR(255) NOT NULL,
+                Email VARCHAR(255) NOT NULL,
+                Contact VARCHAR(255) NOT NULL,
+                TeamID INT(11) NOT NULL
+                )";
+      if(mysqli_query($con,$evequery)){
+        echo "CONGO";
+      }else {
+        echo("Error description: " . mysqli_error($con));
+      }
+    }
 
     if(isset($_POST['regnew'])){
     $name = $con->real_escape_string($_POST['name']);
@@ -55,17 +70,30 @@
         $q = "INSERT INTO Registrations(Name,Email,Contact,Password) VALUES('$name','$email','$contact','$hashed_password')";
         if(mysqli_query($con,$q)){
           $msg = "You are registered with us. Now you can register in various events of Consortium <a href='register.php'>here</a>";
-          $_SESSION['email'] = $email;
-          $_SESSION['name'] = $name;
-          $_SESSION['contact'] = $contact;
 
           $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','ConsoWorld');
+          $tid = 1;
           for($var = 0;$var < 9; $var++ ){
             if($event == $events[$var]) {
               $update = "UPDATE Registrations SET $events[$var]=1 WHERE Email='$email'";
               mysqli_query($con,$update);
+
+              $teamquery = "SELECT * FROM $events[$var] WHERE TeamID=(SELECT MAX(TeamID) FROM $events[$var])";
+              $result = mysqli_query($con,$query);
+              $num = mysqli_num_rows($result);
+              if($num != 0){
+                $data = mysqli_fetch_array($result);
+                $tid = $data['TeamID'];
+                $tid = $tid + 1;
+              }
+              $reg_event = "INSERT INTO $events[$var](Name,Email,Contact,TeamID) VALUES('$name','$email','$contact','$tid')  ";
+              mysqli_query($con,$reg_event);
             }
           }
+          $_SESSION['email'] = $email;
+          $_SESSION['name'] = $name;
+          $_SESSION['contact'] = $contact;
+          $_SESSION['teamid'] = $tid;
         }else {
           echo("Error description: " . mysqli_error($con));
         }
@@ -101,7 +129,7 @@
                             <input type="email" class="form-control s-form-v3__input" placeholder="* Email" name="email" style="text-transform: none" id="email">
                         </div>
                         <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                            <input type="tel" class="form-control s-form-v3__input" placeholder="* Contact" name="name" style="text-transform: none">
+                            <input type="tel" class="form-control s-form-v3__input" placeholder="* Contact" name="contact" style="text-transform: none">
                         </div>
                     </div>
                     <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="event" placeholder="* No. of members" id="members" >

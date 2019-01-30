@@ -1,3 +1,4 @@
+<html>
 <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
             <!-- Navbar -->
             <nav class="s-header-v2__navbar">
@@ -46,3 +47,4 @@
             </nav>
             <!-- End Navbar -->
         </header>
+</html>

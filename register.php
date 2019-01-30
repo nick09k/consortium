@@ -15,7 +15,7 @@ ini_set('display_errors', 1);
               ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
               Name VARCHAR(255) NOT NULL,
               Email VARCHAR(255) NOT NULL,
-              Contact INT(255) NOT NULL,
+              Contact VARCHAR(255) NOT NULL,
               Password VARCHAR(255) NOT NULL,
               TeamID VARCHAR(255) NOT NULL,
               Swadesh TINYINT(1) DEFAULT '0',
@@ -30,6 +30,22 @@ ini_set('display_errors', 1);
               ";
 
   mysqli_query($con,$regquery);
+
+  $eve = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','ConsoWorld');
+  for($var = 0; $var < 9; $var++){
+    $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
+              ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+              Name VARCHAR(255) NOT NULL,
+              Email VARCHAR(255) NOT NULL,
+              Contact VARCHAR(255) NOT NULL,
+              TeamID INT(11) NOT NULL
+              )";
+    if(mysqli_query($con,$evequery)){
+      echo "CONGO";
+    }else {
+      echo("Error description: " . mysqli_error($con));
+    }
+  }
 
   if($_SESSION['email']){
     $email = $_SESSION['email'];
@@ -61,7 +77,7 @@ ini_set('display_errors', 1);
     }
 
   }else{
-    header('location:regnew.php');
+    header('location:login.php?ref=1');
   }
 ?>
 <?php if($_SESSION['email']){ ?>
@@ -70,6 +86,35 @@ ini_set('display_errors', 1);
   <?php include("includes/head.php"); ?>
   <body class="back" style="padding-top:70px;">
     <?php include("includes/header.php"); ?>
+    <div id="register">
+        <div class="g-container--sm g-padding-y-80--xs g-padding-y-125--xsm">
+            <div class="g-text-center--xs g-margin-b-60--xs">
+                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Sign Up</p>
+                <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">Register Now</h2>
+                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
+                <p id="message" class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"></p>
+            </div>
+            <form class="center-block g-width-500--sm g-width-550--md" method="post" action="regnew.php">
+                <div class="permanent">
+                    <div class="g-margin-b-30--xs">
+                          <input type="text" class="form-control s-form-v3__input" placeholder="* Full Name" name="name" style="text-transform: none" id="name">
+                    </div>
+                    <div class="row g-margin-b-50--xs">
+                        <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                            <input type="email" class="form-control s-form-v3__input" placeholder="* Email" name="email" style="text-transform: none" id="email">
+                        </div>
+                        <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                            <input type="tel" class="form-control s-form-v3__input" placeholder="* Contact" name="name" style="text-transform: none">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="g-text-center--xs">
+                    <button type="submit" name="regnew" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <form class="" action="register.php" method="post">
       <input type="email" name="email" value="" placeholder="Enter your Email ID" />
       <input type="submit" name="consosubmit" value="Next" />
