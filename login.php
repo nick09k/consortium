@@ -50,7 +50,6 @@ $pagetitle = 'Login | Consortium';
                                     <ul class="s-header-v2__nav">
                                         <li class="s-header-v2__nav-item"><a href="index.php" class="s-header-v2__nav-link">Home</a></li>
                                         <li class="s-header-v2__nav-item"><a href="#about" class="s-header-v2__nav-link">About Us</a></li>
-
                                         <li class="s-header-v2__nav-item"><a href="/partners" class="s-header-v2__nav-link">Partners</a></li>
                                         <li class="s-header-v2__nav-item"><a href="#contact" class="s-header-v2__nav-link">Contact</a></li>
                                     </ul>
