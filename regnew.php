@@ -38,11 +38,7 @@
                 Contact VARCHAR(255) NOT NULL,
                 TeamID INT(11) NOT NULL
                 )";
-      if(mysqli_query($con,$evequery)){
-        echo "CONGO";
-      }else {
-        echo("Error description: " . mysqli_error($con));
-      }
+      mysqli_query($con,$evequery);
     }
 
     if(isset($_POST['regnew'])){

@@ -40,88 +40,73 @@ ini_set('display_errors', 1);
               Contact VARCHAR(255) NOT NULL,
               TeamID INT(11) NOT NULL
               )";
-    if(mysqli_query($con,$evequery)){
-      echo "CONGO";
-    }else {
-      echo("Error description: " . mysqli_error($con));
-    }
-  }
-
-  if($_SESSION['email']){
-    $email = $_SESSION['email'];
-
-    $query = "SELECT * FROM Registrations WHERE Email='$email'";
-    $result = mysqli_query($con,$query);
-    $num = mysqli_num_rows($result);
-
-    if($num == 0){
-      $msg = "Please <a href='regnew.php'>REGISTER</a> before you continue.";
-    }else{
-      $data = mysqli_fetch_array($result);
-      $select_event = "
-        <form action='register.php' method='get'>
-        <select name='event'>
-          <option value='' selected disabled hidden>Choose an Event</option>
-          <option value='swadesh'>Swadesh</option>
-          <option value='adventure'>AdVenture</option>
-          <option value='pitchperfect'>Pitch Perfect</option>
-          <option value='renderico'>render.ico</option>
-          <option value='ceo'>CEO</option>
-          <option value='teentitans'>Teen Titans</option>
-          <option value='bizmantra'>BizMantra</option>
-          <option value='bizquiz'>BizQuiz</option>
-          <option value='consoworld'>ConsoWorld</option>
-        </select>
-        <input type='submit' name='event' value='Next'>
-        </form>";
-    }
-
-  }else{
-    header('location:login.php?ref=1');
+    mysqli_query($con,$evequery);
   }
 ?>
 <?php if($_SESSION['email']){ ?>
 <!DOCTYPE html>
 <html>
   <?php include("includes/head.php"); ?>
-  <body class="back" style="padding-top:70px;">
+  <body class="back">
     <?php include("includes/header.php"); ?>
     <div id="register">
         <div class="g-container--sm g-padding-y-80--xs g-padding-y-125--xsm">
             <div class="g-text-center--xs g-margin-b-60--xs">
-                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Sign Up</p>
+                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Register for an event</p>
                 <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">Register Now</h2>
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
-                <p id="message" class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"></p>
+                <!-- <p id="message" class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"></p> -->
             </div>
             <form class="center-block g-width-500--sm g-width-550--md" method="post" action="regnew.php">
                 <div class="permanent">
-                    <div class="g-margin-b-30--xs">
-                          <input type="text" class="form-control s-form-v3__input" placeholder="* Full Name" name="name" style="text-transform: none" id="name">
-                    </div>
-                    <div class="row g-margin-b-50--xs">
-                        <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                            <input type="email" class="form-control s-form-v3__input" placeholder="* Email" name="email" style="text-transform: none" id="email">
-                        </div>
-                        <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                            <input type="tel" class="form-control s-form-v3__input" placeholder="* Contact" name="name" style="text-transform: none">
-                        </div>
-                    </div>
+                  <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="event" placeholder="* No. of members" id="members" >
+                      <option value='' selected disabled hidden>Choose an Event</option>
+                      <option value='Swadesh'>Swadesh</option>
+                      <option value='AdVenture'>AdVenture</option>
+                      <option value='Pitch_Perfect'>Pitch Perfect</option>
+                      <option value='renderico'>render.ico</option>
+                      <option value='CEO'>CEO</option>
+                      <option value='Teen_Titans'>Teen Titans</option>
+                      <option value='BizMantra'>BizMantra</option>
+                      <option value='BizQuiz'>BizQuiz</option>
+                      <option value='ConsoWorld'>ConsoWorld</option>
+                  </select>
                 </div>
 
                 <div class="g-text-center--xs">
-                    <button type="submit" name="regnew" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Register</button>
+                    <button type="submit" name="events" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Next</button>
                 </div>
             </form>
         </div>
     </div>
-    <form class="" action="register.php" method="post">
-      <input type="email" name="email" value="" placeholder="Enter your Email ID" />
-      <input type="submit" name="consosubmit" value="Next" />
-    </form>
-    <a href="regnew.php">I haven't registered yet.</a>
 
     <?php include("includes/footer.php");?>
-  </body>
 </html>
-<?php }?>
+</body>
+<?php }else{ ?>
+  <!DOCTYPE html>
+  <html>
+    <?php include("includes/head.php"); ?>
+    <body class="back">
+      <?php include("includes/header.php"); ?>
+      <div id="register">
+          <div class="g-container--sm g-padding-y-80--xs g-padding-y-125--xsm">
+              <div class="g-text-center--xs g-margin-b-60--xs">
+                  <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Register for an event</p>
+                  <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">Register Now</h2>
+                  <!-- <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs">Login to register for an event</p> -->
+                  <!-- <p id="message" class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"></p> -->
+              </div>
+              <form class="center-block g-width-500--sm g-width-550--md" method="post" action="regnew.php">
+                  <div class="g-text-center--xs">
+                      <a href="regnew.php"><button name="events" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Register</button></a>
+                      <a href="login.php"><button name="events" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Login</button></a>
+                  </div>
+              </form>
+          </div>
+      </div>
+
+      <?php include("includes/footer.php");?>
+    </body>
+  </html>
+<?php } ?>
