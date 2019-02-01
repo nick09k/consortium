@@ -43,3 +43,14 @@ body {
     width: 300px;
     background-color: white;
 }
+
+.back{
+  /* background-image: url('../img/black.jpg'); */
+  background-color: #000;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  /* background-size: 75% auto; */
+  position: absolute;
+  z-index: 0;
+}

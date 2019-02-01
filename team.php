@@ -35,7 +35,7 @@
     <body>
 
         <!--========== HEADER ==========-->
-        <?php include("header.php")?>
+        <?php include("includes/header.php")?>
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
@@ -235,7 +235,7 @@
                 <!--========== END PAGE CONTENT ==========-->
 
         <!--========== FOOTER ==========-->
-        <?php include("footer.php");?>
+        <?php include("includes/footer.php");?>
         <!--========== END FOOTER ==========-->
 
         <!-- Back To Top -->
