@@ -112,3 +112,21 @@
 
 
 
+#loading {
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: fixed;
+   display: flex;
+   background-color: #262626;
+   z-index: 11199;
+   text-align: center;
+   justify-content:center;
+  align-items:center;
+}
+
+#loading-image {
+  position: absolute;
+
+}
