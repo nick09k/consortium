@@ -35,8 +35,8 @@
                                     <?php if($_SESSION['email']){ ?>
                                       <li class="s-header-v2__nav-item"><a href="logout.php" class="s-header-v2__nav-link">Logout</a></li>
                                   <?php }else{ ?>
-                                    <li class="s-header-v2__nav-item"><a href="regnew.php" class="s-header-v2__nav-link">Register</a></li>
-                                    <li class="s-header-v2__nav-item"><a href="login.php" class="s-header-v2__nav-link">Login</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="reg.php" class="s-header-v2__nav-link">Register</a></li>
+                                    <!-- <li class="s-header-v2__nav-item"><a href="login.php" class="s-header-v2__nav-link">Login</a></li> -->
                                     <?php } ?>
                                 </ul>
                             </div>
