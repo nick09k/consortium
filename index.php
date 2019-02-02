@@ -282,61 +282,62 @@
         <!--    </div>-->
         <!--</div>-->
 
-        <div class="row g-padding-x-5--xs">
-                            <a href="" class="product-card col-xs-12 col-md-4 g-padding-x-40--xs g-margin-b-5--xs g-margin-t-5--xs g-margin-l-5--xs g-margin-r-5--xs" style="background:url(img/970x647/product-card-1.png) 10%">
-                                <div class="product-card__item g-padding-y-40--xs">
+
+        <div class="row product-grid">
+                            <div class="product-card col-xs-12 col-md-4">
+                                <div class="product-card__item g-padding-y-40--xs" style="background:url(img/970x647/product-card-1.png) 10%">
                                     <h3 class="product-card__h2 g-color--white"><b>Day 1</b></h3>
                                     <div class="product-card__text g-color--white">
                                     <p class="g-padding-y-40--xs g-color--white">Change Signature refactoring, Google App Engine debugger, Go core dumps, Testify and Mozilla rr.</p>
                                     <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-20--xs g-padding-y-10--xs g-font-size-13--xs g-color--dark g-padding-x-10--xs">Learn more</span>
                                     </div>
                                     </div>
-                            </a>
-                             <a href="" class="product-card col-xs-12 col-md-4 g-padding-x-40--xs g-margin-b-5--xs g-margin-t-5--xs g-margin-l-5--xs g-margin-r-5--xs" style="background:url(img/970x647/product-card-3.png)">
-                                <div class="product-card__item g-padding-y-40--xs">
+                            </div>
+                             <div class="product-card col-xs-12 col-md-4" >
+                                <div class="product-card__item g-padding-y-40--xs" style="background:url(img/970x647/product-card-3.png)">
                                     <h3 class="product-card__h2 g-color--white"><b>Day 2</b></h3>
                                     <div class="product-card__text g-color--white">
                                     <p class="g-padding-y-40--xs g-color--white">Change Signature refactoring, Google App Engine debugger, Go core dumps, Testify and Mozilla rr.</p>
                                     <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-20--xs g-padding-y-10--xs g-font-size-13--xs g-color--dark g-padding-x-10--xs">Learn more</span>
                                     </div>
                                     </div>
-                            </a>
-                             <a href="" class="product-card col-xs-12 col-md-4 g-padding-x-40--xs g-margin-b-5--xs g-margin-t-5--xs g-margin-l-5--xs g-margin-r-5--xs" style="background:url(img/970x647/product-card-2.png) 30%">
-                                <div class="product-card__item g-padding-y-40--xs">
+                            </div>
+                             <div class="product-card col-xs-12 col-md-4" >
+                                <div class="product-card__item g-padding-y-40--xs" style="background:url(img/970x647/product-card-2.png) 30%">
                                     <h3 class="product-card__h2 g-color--white"><b>Day 3</b></h3>
                                     <div class="product-card__text g-color--white">
                                     <p class="g-padding-y-40--xs g-color--white">Change Signature refactoring, Google App Engine debugger, Go core dumps, Testify and Mozilla rr.</p>
                                     <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-20--xs g-padding-y-10--xs g-font-size-13--xs g-color--dark g-padding-x-10--xs">Learn more</span>
                                     </div>
                                     </div>
-                            </a>
-                            <a href="" class="product-card col-xs-12 col-md-4 g-padding-x-40--xs g-margin-b-5--xs g-margin-t-5--xs g-margin-l-5--xs g-margin-r-5--xs" style="background:url(img/970x647/product-card-3.png)">
-                                <div class="product-card__item g-padding-y-40--xs">
+                            </div>
+                            <div class="product-card col-xs-12 col-md-4">
+                                <div class="product-card__item g-padding-y-40--xs"  style="background:url(img/970x647/product-card-3.png)">
                                     <h3 class="product-card__h2 g-color--white"><b>Day 2</b></h3>
                                     <div class="product-card__text g-color--white">
                                     <p class="g-padding-y-40--xs g-color--white">Change Signature refactoring, Google App Engine debugger, Go core dumps, Testify and Mozilla rr.</p>
                                     <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-20--xs g-padding-y-10--xs g-font-size-13--xs g-color--dark g-padding-x-10--xs">Learn more</span>
                                     </div>
                                     </div>
-                            </a>
-                            <a href="" class="product-card col-xs-12 col-md-4 g-padding-x-40--xs g-margin-b-5--xs g-margin-t-5--xs g-margin-l-5--xs g-margin-r-5--xs" style="background:url(img/970x647/product-card-2.png) 30%">
-                                <div class="product-card__item g-padding-y-40--xs">
+                            </div>
+                            <div  class="product-card col-xs-12 col-md-4" >
+                                <div class="product-card__item g-padding-y-40--xs"style="background:url(img/970x647/product-card-2.png) 30%">
                                     <h3 class="product-card__h2 g-color--white"><b>Day 3</b></h3>
                                     <div class="product-card__text g-color--white">
                                     <p class="g-padding-y-40--xs g-color--white">Change Signature refactoring, Google App Engine debugger, Go core dumps, Testify and Mozilla rr.</p>
                                     <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-20--xs g-padding-y-10--xs g-font-size-13--xs g-color--dark g-padding-x-10--xs">Learn more</span>
                                     </div>
                                     </div>
-                            </a>
-                            <a href="" class="product-card col-xs-12 col-md-4 g-padding-x-40--xs g-margin-b-5--xs g-margin-t-5--xs g-margin-l-5--xs g-margin-r-5--xs" style="background:url(img/970x647/product-card-1.png) 10%">
-                                <div class="product-card__item g-padding-y-40--xs">
+                            </div>
+                            <div class="product-card col-xs-12 col-md-4 " >
+                                <div class="product-card__item g-padding-y-40--xs" style="background:url(img/970x647/product-card-1.png) 10%">
                                     <h3 class="product-card__h2 g-color--white"><b>Day 1</b></h3>
                                     <div class="product-card__text g-color--white">
                                     <p class="g-padding-y-40--xs g-color--white">Change Signature refactoring, Google App Engine debugger, Go core dumps, Testify and Mozilla rr.</p>
                                     <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-20--xs g-padding-y-10--xs g-font-size-13--xs g-color--dark g-padding-x-10--xs">Learn more</span>
                                     </div>
                                     </div>
-                            </a>
+                            </div>
         </div>
 
 

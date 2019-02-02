@@ -28,6 +28,16 @@
     margin-top:-20vh
 }
 
+.product-grid{
+    margin-bottom: 8px !important;
+    padding: 0px 4px !important;
+}
+
+.product-card{
+    margin-top:8px;
+    padding: 0 4px;
+}
+
 .product-card__item{
     align-content: space-between;
     -webkit-box-sizing: border-box;
