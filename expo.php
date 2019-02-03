@@ -240,7 +240,7 @@
 
                   <div class="row">
                       <div class="col-sm-12 col-md-4">
-                          <a href="https://novzo.in" target="_blank"><img src="img/expo/novzo.png" alt="Novzo" height="190" width="auto" /></a>
+                          <a href="https://novzo.in" target="_blank"><img src="img/expo/novzo.png" alt="Novzo" class="imgs" /></a>
                       </div>
 
 
