@@ -51,8 +51,12 @@
 
 
 
-                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-                                <img src="img/icon.png" alt="" width="90" style="padding-top:30px">
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                <div>
+                                    <img src="https://startupconclave.ecellvnit.org/static/img/E-Cell_white.png" alt="" height="70" style="padding-top:30px">
+                                    <img src="img/icon.png" alt="" height="70" style="padding-top:30px">
+                                </div>
+
                             </div>
                             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
                                 <h4 class="g-color--white-opacity">Contact Us</h4>

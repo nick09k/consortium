@@ -20,18 +20,19 @@
 
 
 
-            <div class="container g-padding-y-125--xs landing" style="">
+            <div class="container g-padding-y-125--xs landing" style="    display: flex;
+    justify-content: center;">
                 <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
                 <div style="text-align:center">
 
                     <h4 class="g-color--white-opacity g-font-size-18--xs g-font-size-22--md" style="position: relative;">E-CELL VNIT presents</h4>
                     <div class="g-margin-b-60--xs" style="display:flex; justify-content:center">
-                        <img class="resize" src="/img/newconsologo.png" alt="StartUp Conclave">
+                        <img class="resize" src="/img/newconsologo.png" alt="Conso">
 
                     </div>
                     <div class="col-md-6 col-md-offset-3">
-                        <p class="g-font-size-18--xs g-font-size-22--md g-color--white g-margin-b-0--xs">A summit which aims at fueling entrepreneurial attitude amongst students through healthy competition and exciting challenges</p>
-                        <p class="g-font-size-18--xs g-font-size-24--md g-color--white g-margin-b-0--xs"><b>8th Mar - 10th Mar</b></p>
+
+                        <p class="g-font-size-20--xs g-font-size-30--md g-color--white g-margin-b-0--xs"><b>8th Mar - 10th Mar</b></p>
 
                     </div>
 
@@ -196,7 +197,9 @@
             <div style="" class="expo-front-out"> </div>
 
 
-            <div class="container g-padding-y-40--xs g-padding-y-0--md g-padding-y-0--lg">
+            <div class="container g-padding-y-40--xs g-padding-y-0--md g-padding-y-0--lg" style="    height: 100%;
+    display: flex;
+    align-items: center;">
                 <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
                 <div class="g-margin-t-30--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
 
@@ -287,7 +290,7 @@
         <div class="s-promo-block-v3 zerotoone" style="background: #000" id="#zerotoone">
             <div class="g-bg-position--center" id="zerotoone-inner" style=""></div>
             <div class="container g-padding-y-40--xs g-padding-y-50--md g-padding-y-0--lg">
-                <div class="g-margin-t-150--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
+                <div class="g-margin-t-150--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm" style="padding-top: 50px;">
 
 
 
@@ -379,7 +382,7 @@
         </script>
         <script language="javascript" type="text/javascript">
             $(window).on('load', function() {
-                setTimeout(remove, 2500);
+                setTimeout(remove, 100);
             });
 
             function remove(){
