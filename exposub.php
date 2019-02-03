@@ -33,7 +33,7 @@
     $phone = $con->real_escape_string($_POST['phone']);
     $hiring = $con->real_escape_string($_POST['hiring']);
 
-    $query = "SELECT * from Registrations where Email='$email'";
+    $query = "SELECT * from Expo where Email='$email'";
     $result = mysqli_query($con,$query);
     $num = mysqli_num_rows($result);
 
