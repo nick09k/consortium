@@ -13,7 +13,7 @@
 
 
 
-                            <div class="col-xs-0 col-sm-3 col-md-3 col-lg-2"></div>
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2" style="height:180px"></div>
                             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
                                 <h4 class="g-color--white-opacity">Contact Us</h4>
                                     <p class="g-color--white-opacity-light">For Association Opportunities:<br><b>contact@ecellvnit.org</b></p>

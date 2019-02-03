@@ -24,7 +24,7 @@
                 <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
                 <div style="text-align:center">
 
-                    <h4 class="g-color--white-opacity g-font-size-18--xs g-font-size-22--md" style="position: relative;">E-CELL VNIT presents,</h4>
+                    <h4 class="g-color--white-opacity g-font-size-18--xs g-font-size-22--md" style="position: relative;">E-CELL VNIT presents</h4>
                     <div class="g-margin-b-60--xs" style="display:flex; justify-content:center">
                         <img class="resize" src="/img/newconsologo.png" alt="StartUp Conclave">
 
@@ -38,7 +38,7 @@
                   </div>
             </div>
             <video autoplay loop  muted id="vid">
-              <source src="1.mp4" type="video/mp4" style="position:absolute; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100vh; border:none; margin:0; padding:0; overflow:hidden; z-index:0;">
+              <source src="updated_landing.mp4" type="video/mp4" style="position:absolute; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100vh; border:none; margin:0; padding:0; overflow:hidden; z-index:0;">
         </video>
 
         </div>
@@ -213,7 +213,7 @@
 
                         <div class="col-sm-4">
                             <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                                <a id="reg_button" href="#newform" title="Register">
+                                <a id="reg_button" href="/expo.php" title="Register">
                                     <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
                                     <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--primary g-padding-x-15--xs">Know More</span>
                                 </a>
@@ -378,7 +378,7 @@
         </script>
         <script language="javascript" type="text/javascript">
             $(window).on('load', function() {
-                setTimeout(remove, 4000);
+                setTimeout(remove, 2500);
             });
 
             function remove(){

@@ -1,5 +1,5 @@
 
-        <footer class=" full-height-footer g-padding-x-30--xs g-padding-x-60--md" style="background:#161616">
+        <footer class=" full-height-footer g-padding-x-30--xs g-padding-x-60--md" style="background:#161616" id="contact">
 
             <div class="container g-padding-y-60--xs">
                 <h1 class="g-color--white-opacity">Quick Links</h1>
@@ -38,12 +38,13 @@
             </div>
             <br>
 
-            <div class="" style="left: 0 !important;position: absolute;padding: 0;">
 
-                        <a href="/">
-                            <img class="g-height-auto--xs" src="/img/footer-01.png" width="250" alt="Ecell Logo">
-                        </a>
-                    </div>
+
+            <!--<div class="" style="left: 0 !important;position: absolute;padding: 0;">-->
+            <!--    <a href="/">-->
+            <!--        <img class="g-height-auto--xs" src="/img/footer-01.png" width="250" alt="Ecell Logo">-->
+            <!--    </a>-->
+            <!--</div>-->
 
             <div class="container" style="padding-top:22px">
 
@@ -51,7 +52,9 @@
 
 
 
-                            <div class="col-xs-0 col-sm-3 col-md-3 col-lg-2"></div>
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                                <img src="img/icon.png" alt="" width="90" style="padding-top:30px">
+                            </div>
                             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
                                 <h4 class="g-color--white-opacity">Contact Us</h4>
                                     <p class="g-color--white-opacity-light">For Association Opportunities:<br><b>contact@ecellvnit.org</b></p>
@@ -92,6 +95,7 @@
 
                         </div>
                     </div>
+
 
 
 

@@ -32,6 +32,7 @@
 
                                     <li class="s-header-v2__nav-item"><a href="/#events" class="s-header-v2__nav-link">Events</a></li>
                                     <li class="s-header-v2__nav-item"><a href="#contact" class="s-header-v2__nav-link">Contact</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="https://ecellvnit.org/team.php" class="s-header-v2__nav-link">Team</a></li>
                                     <?php if($_SESSION['email']){ ?>
                                       <li class="s-header-v2__nav-item"><a href="logout.php" class="s-header-v2__nav-link">Logout</a></li>
                                   <?php }else{ ?>
