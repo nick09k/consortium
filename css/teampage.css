@@ -54,3 +54,8 @@ body {
   position: absolute;
   z-index: 0;
 }
+
+.imgs{
+  height: 8em;
+  width: auto;
+}
