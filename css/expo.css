@@ -1,4 +1,10 @@
 
+.expo{
+    height:90vh;
+    /*margin-bottom:8px;*/
+}
+
+
 .expo-back-out{
     width: 100%;
     height: 80vh;
@@ -55,6 +61,29 @@
     flex-direction: column;
 }
 
+.product-card__item-grid{
+    align-content: space-between;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    min-height:320px;
+    height: auto;
+    padding: 30px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    /* -webkit-box-direction: normal; */
+    -ms-flex-direction: column;
+    flex-direction: column;
+        background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+
+
 .product-card__text{
 
     margin-top:60px;
@@ -64,6 +93,149 @@
 .product-card:hover .product-card__text{
    transform:translateY(-80px);
     transition:all 200ms linear;
+}
+
+
+.townhall{
+    min-height:80vh;
+    height:auto;
+    /*margin-bottom:8px;*/
+}
+
+
+.zerotoone{
+    min-height:90vh;
+    height:auto;
+    /*margin-bottom:8px;*/
+}
+
+
+
+#zerotoone-inner{
+    background: url(../img/zerotoone.png);
+    width: 50%;
+    left: 25%;
+    margin-top: 0%;
+    height: 40vh;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center!important;
+    position: absolute;
+}
+
+
+.internship{
+    min-height:60vh;
+    height:auto;
+    /*margin-bottom:8px;*/
+    background: #212121;  /* fallback for old browsers */
+    position:relative;
+    overflow:hidden;
+
+}
+
+
+
+.intern-back{
+    width: 100%;
+    height: 100%;
+    background: url(../img/internship.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 75% auto;
+    position:absolute;
+}
+
+
+#townhall-inner{
+    background: url(../img/townhall.png);
+    width:100%;
+    height:40vh;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    position: absolute;
+}
+
+
+.manager-card{
+    max-width:230px;
+    width:100%;
+
+}
+
+.manager-card-img{
+
+    border-radius:50%;
+    max-width:120px;
+    width:100%;
+    box-shadow: 0 0.4rem 1rem rgba(39, 35, 36, 0.1);
+
+}
+
+
+#vid{
+    height:100%;
+}
+
+.landing{
+    position:absolute; height: 100%;background: linear-gradient(#0e0000b3, #17070796,#210d15a1);    background: -webkit-linear-gradient(#0e0000b3, #17070796,#210d15a1);
+    display: flex;
+    align-items: center;
+
+}
+
+.resize{
+    height:60px;
+}
+
+@media(min-width:420px){
+
+    .resize{
+        height:80px;
+    }
+     #zerotoone-inner{
+        margin-top:20%;
+        left:50%;
+        width:40%;
+
+    }
+
+
+}
+@media(min-width:768px){
+
+    #townhall-inner{
+        height:80vh;
+        width:45%;
+        left:50%;
+
+    }
+
+    .resize{
+        height:100px;
+    }
+    #zerotoone-inner{
+        margin-top:8%;
+        left:54%;
+        width:40%;
+
+    }
+
+
+}
+
+@media(min-width:1300px){
+
+    #vid{
+        height:auto;
+        width:100%;
+    }
+    .resize{
+        height:130px;
+    }
+
+
 }
 
 
@@ -92,6 +264,10 @@
         position:relative;
         /*margin-top:0;*/
     }
+
+
+
+
 }
 
 /*.expo-back{*/
@@ -129,7 +305,7 @@
    left: 0;
    position: fixed;
    display: flex;
-   background-color: #262626;
+   background-color: #070c14;
    z-index: 11199;
    text-align: center;
    justify-content:center;
@@ -138,5 +314,12 @@
 
 #loading-image {
   position: absolute;
+  width:100%;
+  height:auto;
 
+}
+
+
+.footer-para:hover{
+    text-decoration:underline;
 }

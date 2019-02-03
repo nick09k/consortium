@@ -16,8 +16,8 @@ gtag('config', 'UA-113907534-1');
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php echo $pagetitle; ?> | E-CELL, VNIT</title>
-    <meta name="keywords" content="E-cell VNIT entreprenuship cell consortium 18 swades ecell vnit consortium swades" />
-    <meta name="description" content="Consortium'18 E-CELL VNIT Annual Entrepreneurship Summit">
+    <meta name="keywords" content="E-cell VNIT entreprenuship cell consortium 19 swades ecell vnit consortium swades" />
+    <meta name="description" content="Consortium'19 E-CELL VNIT Annual Entrepreneurship Summit">
     <meta name="author" content="E-cell">
 
     <!-- Web Fonts -->

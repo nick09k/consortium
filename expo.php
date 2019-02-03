@@ -23,14 +23,17 @@
                 <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
                 <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
 
-                    <h4 class="g-color--white-opacity" style="position: relative;">Ecell, VNIT presents</h4>
+
+                    <p class="g-color--white-opacity" style="position: relative;">E-Cell, VNIT <span class="g-font-size-12--xs">in association with</span></p>
+                    <img src="img/tielogo.jpg" alt="TIE Nagpur" width="120">
+
 
                     <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>STARTUP<br>EXPO</b></h1>
 
                     <div class="row">
                         <div class="col-sm-4">
-                            <p class="g-color--white-opacity g-font-size-16--sm">A grand platform for startups to display their product and/ or service to all the people at our annual entrepreneurship summit Consortium 19</p>
-                            <p class="g-color--white-opacity g-font-size-16--sm"> 8th Mar - 10th Mar</p>
+                            <p class="g-color--white-opacity g-font-size-16--sm">Startup Expo is a chance for tech startups to get out of their shell and interact with mentors and investors from all over the country.<br><b>Ready, Set, Network!</p>
+                            <p class="g-color--white-opacity g-font-size-16--sm"> 9th Mar 2019</p>
 
                         </div>
                     </div>
@@ -120,7 +123,7 @@
             <div class="card" id="event-card-bg">
     		    <div class="card-tabs">
     		      <ul class="tabs tabs-fixed-width">
-    		        <li class="tab"><a class="active" href="#bizmantra4">Incentives</a></li>
+    		        <li class="tab"><a class="active" href="#bizmantra4">Perks</a></li>
     		        <li class="tab"><a href="#bizmantra5">Startups</a></li>
     		      </ul>
     		    </div>
