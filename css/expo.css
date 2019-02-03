@@ -82,7 +82,7 @@
     background-repeat: no-repeat !important;
 }
 .product-card__item-grid:hover{
-    filter: grayscale(1.1);
+    filter: grayscale(0.9);
 
 }
 

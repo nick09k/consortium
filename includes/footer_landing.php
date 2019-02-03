@@ -5,6 +5,12 @@
                 <h1 class="g-color--white-opacity">Quick Links</h1>
                 <br>
                 <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <h4 class="g-color--white-opacity"><b>Startup Conclave</b></h4>
+                        <a href="https://startupconclave.ecellvnit.org/" _target="blank" class="g-color--white-opacity-light footer-para g-font-size-16--xs">
+                            StartUp Conclave, a national-level business plan competition.
+                        </a>
+                    </div>
 
                      <div class="col-sm-12 col-md-3 col-lg-3">
                         <h4 class="g-color--white-opacity"><b>Campus Ambassador</b></h4>
@@ -24,13 +30,6 @@
                             A grand platform for startups to display their product and/ or service to all the people.
                         </a>
                     </div>
-                    <div class="col-sm-12 col-md-3 col-lg-3">
-                        <h4 class="g-color--white-opacity"><b>Startup Conclave</b></h4>
-                        <a href="https://startupconclave.ecellvnit.org/" _target="blank" class="g-color--white-opacity-light footer-para g-font-size-16--xs">
-                            StartUp Conclave, a national-level business plan competition.
-                        </a>
-                    </div>
-
 
 
 
