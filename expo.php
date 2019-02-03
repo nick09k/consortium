@@ -1,3 +1,32 @@
+<?php
+  session_start();
+
+  $db_host = "localhost:3306";
+  $db_username = "conso";
+  $db_pass = "Conso@123";
+  $db_name = "conso19";
+
+  $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
+  mysqli_select_db($con,$db_name) or die ("no database");
+
+  $regquery ="CREATE TABLE IF NOT EXISTS Expo(
+    ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    Startup VARCHAR(255) NOT NULL,
+    Description VARCHAR(1000) NOT NULL,
+    Email VARCHAR(255) NOT NULL,
+    Website VARCHAR(255) NOT NULL,
+    Phone VARCHAR(16) NOT NULL,
+    Hiring TINYINT(1) NOT NULL
+  )";
+
+  if(mysqli_query($con,$regquery)){
+    $msg ="yay";
+  }else{
+    echo("Error description: " . mysqli_error($con));
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
     <?php $pagetitle = 'StartUp Expo | Consortium'; ?>
@@ -9,7 +38,55 @@
     <body>
 
         <!--========== HEADER ==========-->
-        <?php include("includes/header.php")?>
+        <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
+                    <!-- Navbar -->
+                    <nav class="s-header-v2__navbar">
+                        <div class="container g-display-table--lg">
+                            <!-- Navbar Row -->
+                            <div class="s-header-v2__navbar-row">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="s-header-v2__navbar-col">
+                                    <button type="button" class="collapsed s-header-v2__toggle" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+                                        <span class="s-header-v2__toggle-icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="s-header-v2__navbar-col s-header-v2__navbar-col-width--180">
+                                    <!-- Logo -->
+                                    <div class="s-header-v2__logo">
+                                        <a href="/" class="s-header-v2__logo-link">
+                                            <!-- <img class="s-header-v2__logo-img s-header-v2__logo-img--default" src="https://startupconclave.ecellvnit.org/static/img/E-Cell_white.png" alt="Ecell Logo" height="50"> -->
+                                            <img class="s-header-v2__logo-img s-header-v2__logo-img--shrink" src="img/icon.png" alt="Conso" height="40">
+                                        </a>
+                                    </div>
+                                    <!-- End Logo -->
+                                </div>
+
+                                <div class="s-header-v2__navbar-col s-header-v2__navbar-col--right">
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse s-header-v2__navbar-collapse" id="nav-collapse">
+                                        <ul class="s-header-v2__nav">
+                                            <li class="s-header-v2__nav-item"><a href="index.php" class="s-header-v2__nav-link">Home</a></li>
+                                            <li class="s-header-v2__nav-item"><a href="/#about" class="s-header-v2__nav-link">About</a></li>
+
+                                            <li class="s-header-v2__nav-item"><a href="/#events" class="s-header-v2__nav-link">Events</a></li>
+                                            <li class="s-header-v2__nav-item"><a href="#contact" class="s-header-v2__nav-link">Contact</a></li>
+                                            <?php if($_SESSION['email']){ ?>
+                                              <li class="s-header-v2__nav-item"><a href="logout.php" class="s-header-v2__nav-link">Logout</a></li>
+                                          <?php }else{ ?>
+                                            <li class="s-header-v2__nav-item"><a href="reg.php" class="s-header-v2__nav-link">Register</a></li>
+                                            <!-- <li class="s-header-v2__nav-item"><a href="login.php" class="s-header-v2__nav-link">Login</a></li> -->
+                                            <?php } ?>
+                                        </ul>
+                                    </div>
+                                    <!-- End Nav Menu -->
+                                </div>
+                            </div>
+                            <!-- End Navbar Row -->
+                        </div>
+                    </nav>
+                    <!-- End Navbar -->
+                </header>
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
@@ -69,20 +146,20 @@
                     <p id="message" class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"></p>
 
                 </div>
-                <form class="center-block g-width-550--sm g-width-650--md g-width-700--lg" method="post" action="" onsubmit="return validateData();">
+                <form class="center-block g-width-550--sm g-width-650--md g-width-700--lg" method="post" action="exposub.php" onsubmit="return validateData();">
                     <div class="permanent">
                         <div class="g-margin-b-30--xs">
-                            <input type="text" class="form-control s-form-v3__input" placeholder="* Startup Name" name="teamname" id="team_name">
+                            <input type="text" class="form-control s-form-v3__input" placeholder="* Startup Name" name="startup">
                         </div>
                         <div class="g-margin-b-30--xs">
-                            <input type="text" class="form-control s-form-v3__input" placeholder="* Basic Description" name="organisation" id="college">
+                            <input type="text" class="form-control s-form-v3__input" placeholder="* Basic Description" name="desc">
                         </div>
                         <div class="row g-margin-b-50--xs">
                             <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                                <input type="email" class="form-control s-form-v3__input" placeholder="* EMAIL" name="teamemail" style="text-transform: none" id="team_email">
+                                <input type="email" class="form-control s-form-v3__input" placeholder="* EMAIL" name="email" style="text-transform: none">
                             </div>
                             <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                                <input type="text" class="form-control s-form-v3__input" placeholder="* WEBSITE" name="teamemail" style="text-transform: none" id="team_email">
+                                <input type="text" class="form-control s-form-v3__input" placeholder="* WEBSITE" name="website" style="text-transform: none">
                             </div>
 
 
@@ -90,13 +167,14 @@
 
                         <div class="row g-margin-b-50--xs">
                             <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                                    <input type="text" class="form-control s-form-v3__input" placeholder="* Phone" name="teamemail" style="text-transform: none" id="team_email">
+                                    <input type="text" class="form-control s-form-v3__input" placeholder="* Phone" name="phone" style="text-transform: none">
                             </div>
                             <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                                <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input" name="number" placeholder="* No. of members" id="members">
+                                <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input" name="hiring" placeholder="* No. of members">
                                     <option value="" selected="" disabled="" hidden="">Interested In hiring?</option>
-                                    <option value="2" style="color:black">2</option>
-                                    <option value="3" style="color:black">3</option>
+                                    <option value="1" style="color:black">Yes</option>
+                                    <option value="0" style="color:black">No</option>
+                                    <!-- <option value="More" style="color:black">More</option> -->
 
                                 </select>
                             </div>
@@ -109,7 +187,7 @@
                     <br>
 
                     <div class="g-text-center--xs">
-                        <button type="submit" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Register</button>
+                        <button type="submit" name="register" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Register</button>
                     </div>
                 </form>
             </div>
@@ -123,12 +201,12 @@
             <div class="card" id="event-card-bg">
     		    <div class="card-tabs">
     		      <ul class="tabs tabs-fixed-width">
-    		        <li class="tab"><a class="active" href="#bizmantra4">Perks</a></li>
-    		        <li class="tab"><a href="#bizmantra5">Startups</a></li>
+    		        <li class="tab"><a class="active" href="#perks" id="but_perks">Perks</a></li>
+    		        <li class="tab"><a id="but_startups" href="#startups">Startups</a></li>
     		      </ul>
     		    </div>
     		    <div class="card-content code">
-    		    	<div id="bizmantra4">
+    		    	<div id="perks">
 
 
     				<div class="container g-padding-y-0--xs">
@@ -160,9 +238,21 @@
 
             </div>
             </div>
-            <div id="bizmantra5">
+            <div id="startups" style="display:none;">
 
-    			     	<h6>Will be updated soon...</h6>
+              <div class="container g-padding-y-0--xs">
+
+                  <div class="row">
+                      <div class="col-sm-12 col-md-4">
+                          <a href="https://novzo.in" target="_blank"><img src="img/expo/novzo.png" alt="Novzo" height="190" width="auto" /></a>
+                      </div>
+
+
+                  </div>
+
+
+
+              </div>
 
 
 
@@ -240,6 +330,20 @@
             $("#popup").css({"display":"none"});
             var y = $("#login").offset().top;
             $("html ,body").animate({ scrollTop: y},800);
+          });
+
+          $("#but_perks").click(function(){
+            $("#perks").css({"display":"block"});
+            $("#perks").animate({opacity: 1}, 1000);
+            $("#startups").css({"display":"none"});
+            $("#startups").animate({opacity: 0}, 100);
+          });
+
+          $("#but_startups").click(function(){
+            $("#perks").css({"display":"none"});
+            $("#perks").animate({opacity: 0}, 1000);
+            $("#startups").css({"display":"block"});
+            $("#startups").animate({opacity: 1}, 100);
           });
         </script>
 

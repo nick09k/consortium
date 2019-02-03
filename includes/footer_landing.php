@@ -20,7 +20,7 @@
                     </div>
                     <div class="col-sm-12 col-md-3 col-lg-3">
                         <h4 class="g-color--white-opacity"><b>Startup Expo</b></h4>
-                        <a href="https://expo.ecellvnit.org" _target="blank" class="g-color--white-opacity-light footer-para g-font-size-16--xs">
+                        <a href="expo.php" _target="blank" class="g-color--white-opacity-light footer-para g-font-size-16--xs">
                             A grand platform for startups to display their product and/ or service to all the people.
                         </a>
                     </div>

@@ -17,7 +17,7 @@
                             <div class="s-header-v2__logo">
                                 <a href="/" class="s-header-v2__logo-link">
                                     <img class="s-header-v2__logo-img s-header-v2__logo-img--default" src="https://startupconclave.ecellvnit.org/static/img/E-Cell_white.png" alt="Ecell Logo" height="50">
-                                    <img class="s-header-v2__logo-img s-header-v2__logo-img--shrink" src="/img/icon.png" alt="Conso" height="40">
+                                    <img class="s-header-v2__logo-img s-header-v2__logo-img--shrink" src="img/icon.png" alt="Conso" height="40">
                                 </a>
                             </div>
                             <!-- End Logo -->
