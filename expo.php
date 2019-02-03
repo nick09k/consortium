@@ -19,11 +19,7 @@
     Hiring TINYINT(1) NOT NULL
   )";
 
-  if(mysqli_query($con,$regquery)){
-    $msg ="yay";
-  }else{
-    echo("Error description: " . mysqli_error($con));
-  }
+  mysqli_query($con,$regquery);
 
 ?>
 

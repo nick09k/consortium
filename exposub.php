@@ -19,11 +19,7 @@
     Hiring TINYINT(1) NOT NULL
   )";
 
-  if(mysqli_query($con,$regquery)){
-    $msg ="yay";
-  }else{
-    echo("Error description: " . mysqli_error($con));
-  }
+  mysqli_query($con,$regquery);
 
   if(isset($_POST['register'])){
     $startup = $con->real_escape_string($_POST['startup']);
@@ -34,7 +30,7 @@
     $hiring = $con->real_escape_string($_POST['hiring']);
 
     if($startup=="" || $desc=="" || $email=="" || $website=="" || $phone=="" || $hiring==""){
-        $msg = "Please fill all the details";
+        $msg = "Please fill all the details. <a href='expo.php' style='color:#eee;'>Try Again</a>";
     }else{
       $query = "SELECT * from Expo where Email='$email'";
       $result = mysqli_query($con,$query);
@@ -47,7 +43,7 @@
         if(mysqli_query($con,$q)){
           $msg = "You are registered with us. We will contact you within 24 hours.";
         }else{
-          echo("Error description: " . mysqli_error($con));
+          $msg = "Something went Wrong. <a href='expo.php' style='color:#eee;'>Try Again</a>";
         }
       }
     }
