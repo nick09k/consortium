@@ -31,7 +31,7 @@
 
                     </div>
                     <div class="col-md-6 col-md-offset-3">
-                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>8th Mar - 10th Mar</b></p>
+                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>8th - 10th March</b></p>
                     </div>
 
                   </div>

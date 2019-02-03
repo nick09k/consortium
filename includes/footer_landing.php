@@ -1,7 +1,7 @@
 
         <footer class=" full-height-footer g-padding-x-30--xs g-padding-x-60--md" style="background:#161616" id="contact">
 
-            <div class="container g-padding-y-60--xs">
+            <div class="container g-padding-y-30--xs">
                 <h1 class="g-color--white-opacity">Quick Links</h1>
                 <br>
                 <div class="row">
@@ -51,7 +51,7 @@
 
 
 
-                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-2">
                                 <div>
                                     <img src="https://startupconclave.ecellvnit.org/static/img/E-Cell_white.png" alt="" height="70" style="padding-top:30px">
                                     <img src="img/icon.png" alt="" height="70" style="padding-top:30px">
@@ -96,9 +96,8 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12" style="position:relative; text-align:center">
-                                <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity g-padding-y-20--md"><div class="col-sm-12 col-md-3 col-lg-4" style="display:flex;position:relative; align-items:center">
-                                <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity g-padding-y-20--md">Developed By  <a class="g-color--primary" href="https://www.linkedin.com/in/sagar-bansal-448097140/" target="_blank">Sagar Bansal</a></p>
-                            </div></p>
+                                <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity g-padding-y-20--md">Copyright:  <a class="g-color--primary" href="https://ecellvnit.org" target="_blank">E-Cell VNIT</a>    Developed By: <a class="g-color--primary" href="https://www.linkedin.com/in/sagar-bansal-448097140/" target="_blank">sagban</a></p>
+
                             </div>
                         </div>
 
