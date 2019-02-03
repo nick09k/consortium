@@ -20,7 +20,7 @@
 
 
 
-            <div class="container g-padding-y-125--xs landing" style="    display: flex;
+            <div class="container g-padding-y-125--xs landing" style="display: flex;
     justify-content: center;">
                 <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
                 <div style="text-align:center">
@@ -32,7 +32,7 @@
                     </div>
                     <div class="col-md-6 col-md-offset-3">
 
-                        <p class="g-font-size-20--xs g-font-size-30--md g-color--white g-margin-b-0--xs"><b>8th Mar - 10th Mar</b></p>
+                        <p class="g-font-size-20--xs g-font-size-30--md g-color--white g-margin-b-0--xs" style="background:#bd2620;"><b>8th Mar - 10th Mar</b></p>
 
                     </div>
 
@@ -391,9 +391,6 @@
             }
 
 
-
-
-
         </script>
 
         <script>
@@ -410,6 +407,18 @@
         var mobilevideo = document.getElementsByTagName("video")[0];
         mobilevideo.setAttribute("playsinline", "");
         mobilevideo.setAttribute("muted", "");
+
+
+        if(window.innerWidth <= 767){
+
+            $(".landing").css({
+                "background":"url(img/alt_landing.png)  60%"
+            });
+
+
+
+        }
+
         </script>
         <!-- END: Mobile Autoplay Video -->
 
