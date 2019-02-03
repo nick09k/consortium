@@ -33,18 +33,22 @@
     $phone = $con->real_escape_string($_POST['phone']);
     $hiring = $con->real_escape_string($_POST['hiring']);
 
-    $query = "SELECT * from Expo where Email='$email'";
-    $result = mysqli_query($con,$query);
-    $num = mysqli_num_rows($result);
-
-    if($num!=0){
-      $msg = "Your startup is already registered.";
+    if($startup=="" || $desc=="" || $email=="" || $website=="" || $phone=="" || $hiring==""){
+        $msg = "Please fill all the details";
     }else{
-      $q = "INSERT INTO Expo(Startup,Description,Email,Website,Phone,Hiring) VALUES('$startup','$desc','$email','$website','$phone','$hiring')";
-      if(mysqli_query($con,$q)){
-        $msg = "You are registered with us. We will contact you within 24 hours.";
+      $query = "SELECT * from Expo where Email='$email'";
+      $result = mysqli_query($con,$query);
+      $num = mysqli_num_rows($result);
+
+      if($num!=0){
+        $msg = "Your startup is already registered.";
       }else{
-        echo("Error description: " . mysqli_error($con));
+        $q = "INSERT INTO Expo(Startup,Description,Email,Website,Phone,Hiring) VALUES('$startup','$desc','$email','$website','$phone','$hiring')";
+        if(mysqli_query($con,$q)){
+          $msg = "You are registered with us. We will contact you within 24 hours.";
+        }else{
+          echo("Error description: " . mysqli_error($con));
+        }
       }
     }
   }
