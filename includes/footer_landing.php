@@ -7,26 +7,26 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-3 col-lg-3">
                         <h4 class="g-color--white-opacity"><b>Startup Conclave</b></h4>
-                        <a href="https://startupconclave.ecellvnit.org/" _target="blank" class="g-color--white-opacity-light footer-para g-font-size-16--xs">
+                        <a href="https://startupconclave.ecellvnit.org/" target="_blank" class="g-color--white-opacity-light footer-para g-font-size-16--xs">
                             StartUp Conclave, a national-level business plan competition.
                         </a>
                     </div>
 
                      <div class="col-sm-12 col-md-3 col-lg-3">
                         <h4 class="g-color--white-opacity"><b>Campus Ambassador</b></h4>
-                        <a href="https://ca.ecellvnit.org/" _target="blank" class="g-color--white-opacity-light footer-para g-font-size-16--xs">
+                        <a href="https://ca.ecellvnit.org/" target="_blank" class="g-color--white-opacity-light footer-para g-font-size-16--xs">
                             A program that aims to form a network of like-minded students across India.
                         </a>
                     </div>
                     <div class="col-sm-12 col-md-3 col-lg-3">
                         <h4 class="g-color--white-opacity"><b>Buy Merchandise</b></h4>
-                        <a href="https://store.ecellvnit.org/" _target="blank" class="g-color--white-opacity-light footer-para g-font-size-16--xs">
+                        <a href="https://store.ecellvnit.org/" target="_blank" class="g-color--white-opacity-light footer-para g-font-size-16--xs">
                             Buy official merchandise of Consortium'19 at Ecell VNIT online store.
                         </a>
                     </div>
                     <div class="col-sm-12 col-md-3 col-lg-3">
                         <h4 class="g-color--white-opacity"><b>Startup Expo</b></h4>
-                        <a href="expo.php" _target="blank" class="g-color--white-opacity-light footer-para g-font-size-16--xs">
+                        <a href="expo.php" target="_blank" class="g-color--white-opacity-light footer-para g-font-size-16--xs">
                             A grand platform for startups to display their product and/ or service to all the people.
                         </a>
                     </div>
@@ -51,19 +51,19 @@
 
 
 
-                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
                                 <div>
                                     <img src="https://startupconclave.ecellvnit.org/static/img/E-Cell_white.png" alt="" height="70" style="padding-top:30px">
                                     <img src="img/icon.png" alt="" height="70" style="padding-top:30px">
                                 </div>
 
                             </div>
-                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
                                 <h4 class="g-color--white-opacity">Contact Us</h4>
                                     <p class="g-color--white-opacity-light">For Association Opportunities:<br><b>contact@ecellvnit.org</b></p>
                                     <p class="g-color--white-opacity-light">For Sponsorship Opportunities:<br><b>shubhamjadhav@ecellvnit.org<b></b></b></p>
                             </div>
-                            <div class="col-sm-12 col-sm-5 col-md-3 col-lg-3">
+                            <div class="col-sm-12 col-sm-4 col-md-4 col-lg-6">
 
                                 <h4 class="g-color--white-opacity">Follow Ecell VNIT</h4>
 
@@ -92,11 +92,17 @@
                                 </a>
                             </div>
 
-                            <div class="col-sm-12 col-md-3 col-lg-4" style="display:flex;position:relative; align-items:center">
-                                <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity g-padding-y-20--md">Copyright © 2018–2019  <a class="g-color--primary" href="https://www.ecellvnit.org/" target="_blank">E-cell Vnit</a></p>
-                            </div>
 
                         </div>
+                        <div class="row">
+                            <div class="col-sm-12" style="position:relative; text-align:center">
+                                <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity g-padding-y-20--md"><div class="col-sm-12 col-md-3 col-lg-4" style="display:flex;position:relative; align-items:center">
+                                <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity g-padding-y-20--md">Developed By  <a class="g-color--primary" href="https://www.linkedin.com/in/sagar-bansal-448097140/" target="_blank">Sagar Bansal</a></p>
+                            </div></p>
+                            </div>
+                        </div>
+
+
                     </div>
 
 

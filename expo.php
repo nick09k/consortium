@@ -107,6 +107,7 @@
                         <div class="col-sm-4">
                             <p class="g-color--white-opacity g-font-size-16--sm">Startup Expo is a chance for tech startups to get out of their shell and interact with mentors and investors from all over the country.<br><b>Ready, Set, Network!</p>
                             <p class="g-color--white-opacity g-font-size-16--sm"> 9th Mar 2019</p>
+                            <p class="g-color--white-opacity g-font-size-16--sm">Registration Fee: <b>800 INR</b></p>
 
                         </div>
                     </div>

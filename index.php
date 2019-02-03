@@ -26,14 +26,12 @@
                 <div style="text-align:center">
 
                     <h4 class="g-color--white-opacity g-font-size-18--xs g-font-size-22--md" style="position: relative;">E-CELL VNIT presents</h4>
-                    <div class="g-margin-b-60--xs" style="display:flex; justify-content:center">
+                    <div class="g-margin-b-80--xs" style="display:flex; justify-content:center">
                         <img class="resize" src="/img/newconsologo.png" alt="Conso">
 
                     </div>
                     <div class="col-md-6 col-md-offset-3">
-
-                        <p class="g-font-size-20--xs g-font-size-30--md g-color--white g-margin-b-0--xs" style="background:#bd2620;"><b>8th Mar - 10th Mar</b></p>
-
+                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>8th Mar - 10th Mar</b></p>
                     </div>
 
                   </div>
@@ -412,8 +410,10 @@
         if(window.innerWidth <= 767){
 
             $(".landing").css({
-                "background":"url(img/alt_landing.png)  60%"
+                "background":"url(img/alt_landing1.jpg) 12%",
+                "background-size":"cover"
             });
+            mobilevideo.remove();
 
 
 
