@@ -150,38 +150,38 @@
 
         </div>
 
-        <div class="row product-grid">
+        <div class="row product-grid" id="events">
             <a href="https://startupconclave.ecellvnit.org" class="product-card col-xs-12 col-md-4">
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/events-01.jpg)">
 
 
                     </div>
             </a>
-             <a href="#"class="product-card col-xs-12 col-md-4" >
+             <a class="product-card col-xs-12 col-md-4" >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/events-02.jpg)">
 
 
                     </div>
             </a>
-             <a href="#"class="product-card col-xs-12 col-md-4" >
+             <a class="product-card col-xs-12 col-md-4" >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/events-03.jpg)">
 
 
                     </div>
             </a>
-            <a href="#"class="product-card col-xs-12 col-md-4">
+            <a class="product-card col-xs-12 col-md-4">
                 <div class="product-card__item-grid g-padding-y-40--xs"  style="background:url(img/events/events-04.jpg)">
 
 
                     </div>
             </a>
-            <a href="#" class="product-card col-xs-12 col-md-4" >
+            <a class="product-card col-xs-12 col-md-4" >
                 <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/events-05.jpg)">
 
 
                     </div>
             </a>
-            <a href="#"class="product-card col-xs-12 col-md-4 " >
+            <a class="product-card col-xs-12 col-md-4 " >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/events-06.jpg)">
 
 
