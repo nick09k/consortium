@@ -178,14 +178,25 @@
 
 #vid{
     height:100%;
-    /*background:url(../img/alt_langing.png)!important;*/
 }
 
+
+
+.landing-outer{
+    height:100vh;overflow: hidden;position:relative
+}
 .landing{
     position:absolute; height: 100%;background: linear-gradient(#0e0000b3, #17070796,#210d15a1);    background: -webkit-linear-gradient(#0e0000b3, #17070796,#210d15a1);
     display: flex;
     align-items: center;
 
+}
+
+
+.video-outer{
+    width:100%;height:115%;position:relative;
+    height: 130%;
+    margin-top: -27%;
 }
 
 .resize{
@@ -213,6 +224,7 @@
         width:45%;
         left:50%;
 
+
     }
 
     .resize{
@@ -223,6 +235,14 @@
         left:54%;
         width:40%;
 
+    }
+
+    .landing-outer{
+        height:100%;overflow: hidden;position:relative
+    }
+    .video-outer{
+        width:100%;height:0px;position:relative;padding-bottom:56.250%;
+        margin-top:0;
     }
 
 

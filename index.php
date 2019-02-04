@@ -16,12 +16,11 @@
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
-        <div class="s-promo-block-v3 g-bg-position--center" style="height:100vh;overflow: hidden;">
+        <div class="s-promo-block-v3 g-bg-position--center landing-outer">
 
 
 
-            <div class="container g-padding-y-125--xs landing" style="display: flex;
-    justify-content: center;">
+            <div class="container g-padding-y-125--xs landing" style="display: flex;justify-content: center;position:absolute; z-index:1">
                 <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
                 <div style="text-align:center">
 
@@ -36,10 +35,18 @@
 
                   </div>
             </div>
-            <video autoplay loop autobuffer muted playsinline id="vid">
-              <source src="updated_landing.mp4" type="video/mp4" style="position:absolute; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100vh; border:none; margin:0; padding:0; overflow:hidden; z-index:0;">
-              <img src="img/alt_landing.png" alt="">
-        </video>
+
+
+            <div class="video-outer"><iframe id="iframe" src="https://streamable.com/s/r5x47/saohjl?autoplay=1&muted=1" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+
+
+
+            <!--<div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe id="iframe" src="https://streamable.com/s/r5x47/saohjl?autoplay=1&muted=1" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>-->
+
+         <!--    <video autoplay loop autobuffer muted playsinline id="vid">-->
+        <!--      <source src="updated_landing.mp4" type="video/mp4" style="position:absolute; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100vh; border:none; margin:0; padding:0; overflow:hidden; z-index:0;">-->
+        <!--      <img src="img/alt_landing.png" alt="">-->
+        <!--</video>-->
 
         </div>
 
@@ -402,22 +409,20 @@
 
         <!-- START: Mobile Autoplay Video -->
         <script>
-        var mobilevideo = document.getElementsByTagName("video")[0];
-        mobilevideo.setAttribute("playsinline", "");
-        mobilevideo.setAttribute("muted", "");
+        var mobilevideo = $("#iframe");
 
 
-        if(window.innerWidth <= 767){
-
-            $(".landing").css({
-                "background":"url(img/alt_landing1.jpg) 12%",
-                "background-size":"cover"
-            });
-            mobilevideo.remove();
+            if(window.innerWidth <= 767){
 
 
+                mobilevideo.attr("src","https://streamable.com/s/r6qdu/dfjlop?autoplay=1&muted=1");
 
-        }
+
+            }
+
+
+
+
 
         </script>
         <!-- END: Mobile Autoplay Video -->
