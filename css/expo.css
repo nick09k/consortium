@@ -199,6 +199,15 @@
     margin-top: -27%;
 }
 
+video::-webkit-media-controls-overlay-play-button {
+  display: none;
+}
+
+#play-overlay{
+    display:none !important;
+}
+
+
 .resize{
     height:60px;
 }
@@ -217,7 +226,7 @@
 
 
 }
-@media(min-width:768px){
+@media(min-width:767px){
 
     #townhall-inner{
         height:80vh;
