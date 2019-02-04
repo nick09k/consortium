@@ -25,7 +25,7 @@
                 <div style="text-align:center">
 
                     <h4 class="g-color--white-opacity g-font-size-18--xs g-font-size-22--md" style="position: relative;">E-CELL VNIT presents</h4>
-                    <div class="g-margin-b-80--xs" style="display:flex; justify-content:center">
+                    <div class="g-margin-b-20--xs g-margin-b-80--sm" style="display:flex; justify-content:center">
                         <img class="resize" src="/img/newconsologo.png" alt="Conso">
 
                     </div>
@@ -408,32 +408,45 @@
         <!-- START: Mobile Autoplay Video -->
         <script>
 
-       var mobilevideo = $("#iframe");
+    //   var mobilevideo = $("#iframe");
 
 
-            if(window.innerWidth <= 767){
+    //         if(window.innerWidth <= 767){
 
-                mobilevideo.attr("src","https://streamable.com/s/r6qdu/dfjlop?autoplay=1&muted=1");
-                // mobilevideo.contents().find("#ad-overlay").remove();
+    //             mobilevideo.attr("src","https://streamable.com/s/r6qdu/dfjlop?autoplay=1&muted=1");
+    //             // mobilevideo.contents().find("#ad-overlay").remove();
 
-                // $("#play-button").click();
-                // $("#play-button").remove();
-
-
-            }
-
-        $( document ).ready(function() {
-
-            $("#ad-overlay").css({"display":"none"});
-
-            if(window.innerWidth <= 767){
-
-                $("#play-button").click();
-
-            }
+    //             // $("#play-button").click();
+    //             // $("#play-button").remove();
 
 
-        });
+    //         }
+
+    //     $( document ).ready(function() {
+
+    //         $("#ad-overlay").css({"display":"none"});
+
+    //         if(window.innerWidth <= 767){
+
+    //             $("#play-button").click();
+
+    //         }
+
+
+    //     });
+
+
+    var mobilevideo = document.getElementsByTagName("video")[0];
+        mobilevideo.setAttribute("playsinline", "");
+        mobilevideo.setAttribute("muted", "");
+        if(window.innerWidth <= 425){
+            $(".landing").css({
+                "background":"url(img/landing12.gif)",
+                "background-size":"cover"
+            });
+            mobilevideo.remove();
+
+        }
 
 
         </script>
