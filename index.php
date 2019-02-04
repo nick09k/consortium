@@ -37,7 +37,7 @@
             </div>
 
 
-            <div class="video-outer"><iframe id="iframe" src="https://streamable.com/s/r5x47/saohjl?autoplay=1&muted=1" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+            <div class="video-outer"><iframe id="iframe" allow="autoplay;" src="https://streamable.com/s/r5x47/saohjl?" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
 
 
 
@@ -416,6 +416,7 @@
 
 
                 mobilevideo.attr("src","https://streamable.com/s/r6qdu/dfjlop?autoplay=1&muted=1");
+                $("#play-button").click();
 
 
             }
