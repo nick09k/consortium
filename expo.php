@@ -97,8 +97,8 @@
                 <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
 
 
-                    <p class="g-color--white-opacity" style="position: relative;">E-Cell, VNIT <span class="g-font-size-12--xs">in association with</span></p>
-                    <img src="img/tielogo.jpg" alt="TIE Nagpur" width="120">
+                    <p class="g-color--white-opacity" style="position: relative;">E-Cell, VNIT presents</p>
+                    <!--<img src="img/tielogo.jpg" alt="TIE Nagpur" width="120">-->
 
 
                     <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>STARTUP<br>EXPO</b></h1>
@@ -284,18 +284,18 @@
             <!--<div class="g-container--md g-padding-y-40--xs">-->
 
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
-                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-4 col-xs-offset-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
                         <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Nachiket Dhande</h4>
                          <p class="g-color--white">+91 95453 02811<br>nachiket.dhande@gmail.com</p>
                     </div>
                 </div>
-                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
-                    <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Sagar Bansal</h4>
-                         <p class="g-color--white">+91 77580 11192<br>sagarbansal@ecellvnit.org</p>
-                    </div>
-                </div>
+                <!--<div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">-->
+                <!--    <div class="g-text-center--xs">-->
+                <!--        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Sagar Bansal</h4>-->
+                <!--         <p class="g-color--white">+91 77580 11192<br>sagarbansal@ecellvnit.org</p>-->
+                <!--    </div>-->
+                <!--</div>-->
 
                 <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
