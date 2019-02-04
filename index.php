@@ -441,7 +441,7 @@
         mobilevideo.setAttribute("muted", "");
         if(window.innerWidth <= 425){
             $(".landing").css({
-                "background":"url(img/landing12.gif)",
+                "background":"url(img/landing12.gif) -15%",
                 "background-size":"cover"
             });
             mobilevideo.remove();
