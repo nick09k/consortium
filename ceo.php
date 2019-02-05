@@ -69,14 +69,14 @@
             <div class="card" id="event-card-bg">
     		    <div class="card-tabs">
     		      <ul class="tabs tabs-fixed-width">
-    		          <li class="tab"><a class="active" href="#bizmantra4">WHY PARTICIPATE?</a></li>
-    		        <li class="tab"><a  href="#bizmantra5">STRUCTURE</a></li>
-    		        <li class="tab"><a href="#bizmantra6">TIMELINE</a></li>
+    		        <li class="tab"><a class="active" href="#why" id="but_why">WHY PARTICIPATE?</a></li>
+    		        <li class="tab"><a  href="#structure" id="but_structure">STRUCTURE</a></li>
+    		        <li class="tab"><a href="#timeline" id="but_timeline">TIMELINE</a></li>
     		      </ul>
     		    </div>
     		    <div class="card-content code">
 
-    		    	<div id="bizmantra4">
+    		    	<div id="why">
     			     	<h5><b>Prizes Worth &#8377; 50K </b></h5><br/>
     			     	<ol>
     			     	    <li>Attractive prizes for top 3 positions including best performer in each round and certificates for all participants.</li>
@@ -93,34 +93,42 @@
     			     	<br/>
 
     				</div>
-    				<div id="bizmantra5">
-              <h5><b>Eligibility Criteria</b></h5>
-    		    	<br/>
-              <br/>
+    				<div id="structure">
               <h5><b>How to participate</b></h5>
               <br/>
               <p>The key step in order to participate is to take the CEO test which will be conducted soon in schools and colleges across Nagpur. If you would like the test to be conducted in your school or college, kindly contact us by phone with the necessary details.</p>
-
-    		    	    <h6>Structure</h6>
-    		    	    <p>Competition is divided into three rounds as follows:</p>
+              <br/>
+              <h5><b>Structure</b></h5>
+              <br/>
+    		    	    <p>Competition is divided into three rounds as follows:</p><br/>
     		    	    <ol>
 
-    					    <li><h6>Round 1:(Eliminations):</h6><p><b>10th February, 2018 – 24th February, 2018 | Colleges in and around Nagpur.</b><br>Participants have to fill a questionnaire to register. Experts will analyse and shortlist teams for the second round. </p></li>
-    					    <li><h6>Round 2:(Village Visit)</h6><p><b>4th March, 2018 | Journey from VNIT, Nagpur</b><br>Participants will be allowed to peek into the village life, interact with the village inmates and identify their day to day problems. </p></li>
-    					    <li><h6>Round 3: Presentation Round (Final Round)</h6><p><b>10th March, 2018 </b><br>All the participants will be given a week’s time to find an appropriate solution to the identified problem, apt enough to be transformed into a social enterprise as well as be feasible to work upon on ground level with the constrained resources and make an impact on the villagers’ life.</p></li>
+    					    <li><h6>Round 1: Questionnaire (Pre-Elimination)</h6><p><b>15th February, 2019 – 25th February, 2019 | Colleges in and around Nagpur.</b><br>A written preliminary round with a majority of objective questions (Questions will be related to aptitude, situation based, entrepreneurial mindset, and out of the box thinking). The test will be conducted offline in the respective schools.</p></li><br/>
+    					    <li><h6>Round 2: Group Discussion</h6><p><b>8th March, 2019 | Journey from VNIT, Nagpur</b><br>Selected candidates will participate in a group discussion on relevant topics related to entrepreneurship. In the first minute the topic will be introduced by our judge panel, and then four minutes will be given to think on the topic and will be given for discussion and 2 min will be for presenting conclusion.</p></li><br/>
+    					    <li><h6>Round 3: Market Study</h6><p><b>8th March, 2019 </b><br>This is an individual round, where you have to overcome the problem given to you related to market study. Each one of will be given a sheet containing one problem related to market, publicity and crises.</p></li><br/>
+                  <li><h6>Round 4: Boardroom</h6><p><b>9th March, 2019 </b><br>The one-of-its-kind game where you are a part of the board of a corporation which is going through a major decision. Make allies wisely, know your opposition, influence the neutral people and put forward your point of view in front the other stakeholders of the corporation.</p></li><br/>
     					</ol>
 
     		    	</div>
-    		    	<div id="bizmantra6">
-
-                            <ol>
+    		    	<div id="timeline">
+                <h5><b>Timeline</b></h5><br/>
+                            <ul>
 
                                 <li><h5>Offline Questionnaire Round</h5>
                                     <p>15th - 25th February’19</p>
+                                </li><br/>
+                                <li><h5>Group Discussion Round</h5>
+                                    <p>8th March’19</p>
+                                </li><br/>
+                                <li><h5>Market Study Round</h5>
+                                    <p>8th March’19</p>
+                                </li><br/>
+                                <li><h5>Boardroom Round</h5>
+                                    <p>9th March’19</p>
                                 </li>
 
 
-                            </ol>
+                            </ul>
     		    	</div>
 
     		    </div>
@@ -163,6 +171,36 @@
 
 
         <!--========== END PAGE CONTENT ==========-->
+
+        <script type="text/javascript">
+
+          $("#but_why").click(function(){
+            $("#why").css({"display":"block"});
+            $("#why").animate({opacity: 1}, 1000);
+            $("#structure").css({"display":"none"});
+            $("#structure").animate({opacity: 0}, 100);
+            $("#timeline").css({"display":"none"});
+            $("#timeline").animate({opacity: 0}, 100);
+          });
+
+          $("#but_structure").click(function(){
+            $("#why").css({"display":"none"});
+            $("#why").animate({opacity: 0}, 100);
+            $("#structure").css({"display":"block"});
+            $("#structure").animate({opacity: 1}, 1000);
+            $("#timeline").css({"display":"none"});
+            $("#timeline").animate({opacity: 0}, 100);
+          });
+
+          $("#but_timeline").click(function(){
+            $("#why").css({"display":"block"});
+            $("#why").animate({opacity: 0}, 1000);
+            $("#structure").css({"display":"none"});
+            $("#structure").animate({opacity: 0}, 100);
+            $("#timeline").css({"display":"block"});
+            $("#timeline").animate({opacity: 1}, 1000);
+          });
+        </script>
 
         <!--========== FOOTER ==========-->
         <?php include("includes/footer_landing.php");?>
