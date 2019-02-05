@@ -88,14 +88,16 @@
         <div class="g-promo-section" style="background:#fff00;" id="about">
             <div class="container g-padding-y-30--xs g-padding-y-30--sm g-padding-x-80--md g-padding-x-60--sm g-padding-x-40--xs">
                 <div class="row" style="display: flex;align-items: center;">
-                    <div class="col-md-5 g-margin-t-45--xs g-margin-b-60--xs g-margin-b-0--lg">
+                    <div class="col-xs-12 col-sm-5 col-lg-5 g-margin-t-45--xs g-margin-b-45--sm g-margin-b-0--lg">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--dark" style="font-weight:900">About</h2>
                         </div>
-                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--dark-opacity">Welcome to the extravaganza that is Consortium! Consortium, the Annual Entrepreneurship Summit of VNIT Nagpur comprises of invigorating events like Startup Conclave and Swades. The summit aims at fueling entrepreneurial attitude amongst students through healthy competition and exciting challenges. It fosters the importance of leadership and decision making and introduces young technocrats to various management practices in the corporate world.</p>
+                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--dark-opacity">Consortium, the Annual Entrepreneurship Summit of <a href="http://vnit.ac.in">VNIT Nagpur</a> comprises of invigorating events like Startup Conclave, Swades and many more. The summit aims at fueling entrepreneurial attitude amongst students through healthy competition and exciting challenges.<br>
+                            Get ready to dive into the extravaganza of what <b>curiosity</b> brings to you with Consortium.
+                        </p>
 
                     </div>
-                    <div class="col-md-7  g-margin-t-45--xs g-margin-b-60--xs g-margin-b-0--lg">
+                    <div class="col-xs-7 col-sm-7 col-lg-7  g-margin-t-45--xs g-margin-b-60--xs g-margin-b-0--lg">
                         <div class="row">
 
                             <div class="col-md-3 col-xs-6 g-full-width--xs  g-margin-b-0--lg">
@@ -193,6 +195,15 @@
         </div>
 
 
+
+
+
+
+
+
+
+
+
         <!--Startup EXPO-->
 
         <div class="s-promo-block-v3 g-bg-position--center expo" style="background: #161616" id="#expo">
@@ -233,6 +244,7 @@
             </div>
         </div>
 
+
         <!--TownHall-->
 
         <div class="s-promo-block-v3 townhall" style="background: #000" id="#townhall">
@@ -262,36 +274,9 @@
 
 
 
-
-
-        <!--Internship Fair-->
-
-        <div class="s-promo-block-v3 g-bg-position--center internship">
-            <div style="" class="intern-back"> </div>
-
-            <div class="container g-padding-y-100--xs g-padding-y-0--lg">
-                <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
-                <div class="g-margin-t-30--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
-
-                    <h1 class="g-font-size-30--xs g-font-size-40--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>INTERNSHIP<br>FAIR</b></h1>
-
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="g-color--white g-font-size-16--sm">An entrepreneur is also a job provider. Why shouldn't Consortium be one? Not interned yet?<br><b>Apna time aayega</b></p>
-                            <p class="g-color--white g-font-size-16--sm">Stay Tuned!</p>
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-
         <!--ZeroToOne-->
 
-        <div class="s-promo-block-v3 zerotoone" style="background: #000" id="#zerotoone">
+        <div class="s-promo-block-v3 zerotoone" style="background: #111000" id="#zerotoone">
             <div class="g-bg-position--center" id="zerotoone-inner" style=""></div>
             <div class="container g-padding-y-40--xs g-padding-y-50--md g-padding-y-0--lg">
                 <div class="g-margin-t-150--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm" style="padding-top: 50px;">
@@ -356,6 +341,37 @@
             </div>
 
         </div>
+
+
+
+
+        <!--Internship Fair-->
+
+        <div class="s-promo-block-v3 g-bg-position--center internship">
+            <div style="" class="intern-back"> </div>
+
+            <div class="container g-padding-y-100--xs g-padding-y-0--lg">
+                <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
+                <div class="g-margin-t-30--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
+
+                    <h1 class="g-font-size-30--xs g-font-size-40--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>INTERNSHIP<br>FAIR</b></h1>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="g-color--white g-font-size-16--sm">An entrepreneur is also a job provider. Why shouldn't Consortium be one? Not interned yet?<br><b>Apna time aayega</b></p>
+                            <p class="g-color--white g-font-size-16--sm">Stay Tuned!</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!--Merchandise-->
         <div class="s-promo-block-v3  tee g-padding-y-20--xs g-padding-y-40--md" style="">
             <div class="container g-padding-y-125--md g-padding-y-40--xs g-padding-y-40--md tee-inner" style=" position: relative;">
                 <div class="g-margin-t-30--xs g-margin-t-0--sm  g-padding-x-20--xs g-margin-t-125--lg g-margin-b-30--xs g-margin-b-40--md">
