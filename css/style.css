@@ -2513,7 +2513,7 @@ fieldset[disabled] .s-btn {
 @media (min-width: 62em) {
   .s-header__shrink .s-header-v2__navbar {
     background: #fff00;
-    box-shadow: 0 0 0.9375rem 0.25rem rgba(34, 35, 36, 0.05);
+    /*box-shadow: 0 0 0.9375rem 0.25rem rgba(34, 35, 36, 0.05);*/
   }
   /* Toggle */
   .s-header__shrink .s-header-v2__toggle-icon-bar--white, .s-header__shrink .s-header-v2__toggle-icon-bar--white:before, .s-header__shrink .s-header-v2__toggle-icon-bar--white:after {

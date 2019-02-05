@@ -1,4 +1,9 @@
 <html>
+    <style>
+        .dark{
+            color:#222;
+        }
+    </style>
 <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
             <!-- Navbar -->
             <nav class="s-header-v2__navbar">
@@ -16,7 +21,7 @@
                             <!-- Logo -->
                             <div class="s-header-v2__logo">
                                 <a href="/" class="s-header-v2__logo-link">
-                                    <img class="s-header-v2__logo-img s-header-v2__logo-img--default" src="https://startupconclave.ecellvnit.org/static/img/E-Cell_white.png" alt="Ecell Logo" height="50">
+                                    <!--<img class="s-header-v2__logo-img s-header-v2__logo-img--default" src="https://startupconclave.ecellvnit.org/static/img/E-Cell_white.png" alt="Ecell Logo" height="50">-->
                                     <img class="s-header-v2__logo-img s-header-v2__logo-img--shrink" src="img/icon.png" alt="Conso" height="40">
                                 </a>
                             </div>
@@ -27,18 +32,18 @@
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse s-header-v2__navbar-collapse" id="nav-collapse">
                                 <ul class="s-header-v2__nav">
-                                    <li class="s-header-v2__nav-item"><a href="index.php" class="s-header-v2__nav-link">Home</a></li>
-                                    <li class="s-header-v2__nav-item"><a href="#about" class="s-header-v2__nav-link">About</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="/" class="s-header-v2__nav-link dark dark" >Home</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="#about" class="s-header-v2__nav-link dark" >About</a></li>
 
-                                    <li class="s-header-v2__nav-item"><a href="#events" class="s-header-v2__nav-link">Events</a></li>
-                                    <li class="s-header-v2__nav-item"><a href="https://www.ecellvnit.org/spons.php" class="s-header-v2__nav-link">Sponsors</a></li>
-                                    <li class="s-header-v2__nav-item"><a href="#contact" class="s-header-v2__nav-link">Contact</a></li>
-                                    <li class="s-header-v2__nav-item"><a href="https://ecellvnit.org/team.php" class="s-header-v2__nav-link">Team</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="#details" class="s-header-v2__nav-link dark" >Structure</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="https://www.ecellvnit.org/spons.php" target="_blank" class="s-header-v2__nav-link dark" >Sponsors</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="#contact" class="s-header-v2__nav-link dark" >Contact</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="https://ecellvnit.org/team.php" target="_blank" class="s-header-v2__nav-link dark" >Team</a></li>
                                     <?php if($_SESSION['email']){ ?>
-                                      <li class="s-header-v2__nav-item"><a href="logout.php" class="s-header-v2__nav-link">Logout</a></li>
+                                      <li class="s-header-v2__nav-item"><a href="logout.php" class="s-header-v2__nav-link dark" >Logout</a></li>
                                   <?php }else{ ?>
-                                    <!--<li class="s-header-v2__nav-item"><a href="reg.php" class="s-header-v2__nav-link">Register</a></li>-->
-                                    <!-- <li class="s-header-v2__nav-item"><a href="login.php" class="s-header-v2__nav-link">Login</a></li> -->
+                                    <!--<li class="s-header-v2__nav-item"><a href="reg.php" class="s-header-v2__nav-link dark">Register</a></li>-->
+                                    <!-- <li class="s-header-v2__nav-item"><a href="login.php" class="s-header-v2__nav-link dark">Login</a></li> -->
                                     <?php } ?>
                                 </ul>
                             </div>
