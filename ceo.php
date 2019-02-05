@@ -21,15 +21,16 @@
 
                     <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>CEO</b></h1>
 
-                    <h3 class="g-color--white">Change This</h3>
-
+                    <h3 class="g-color--white">Analytical Thinking Competition</h3>
+                    <p class="g-color--white">Leadership, Problem Solving Skills, Marketing Skills. <br/>Do you have what it takes to be a CEO?</p><br/>
+                    <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 50K </span></h3>
 
                     <br>
 
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                                <a href="#details" title="Register">
+                                <a href="#about" title="Register">
                                     <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                                    <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Know More</span>
+                                    <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Know More <span class="ti-angle-down"></span></span>
                                 </a>
                             </div>
 
@@ -68,7 +69,7 @@
             <div class="card" id="event-card-bg">
     		    <div class="card-tabs">
     		      <ul class="tabs tabs-fixed-width">
-    		          <li class="tab"><a class="active" href="#bizmantra4">WHY?</a></li>
+    		          <li class="tab"><a class="active" href="#bizmantra4">WHY PARTICIPATE?</a></li>
     		        <li class="tab"><a  href="#bizmantra5">STRUCTURE</a></li>
     		        <li class="tab"><a href="#bizmantra6">TIMELINE</a></li>
     		      </ul>
@@ -76,36 +77,30 @@
     		    <div class="card-content code">
 
     		    	<div id="bizmantra4">
-    			     	<h6>Vision : <b><i>“Real India resides in its villages”	~Mahatma Gandhi</i></b></h6>
-    			     	<p><b>Prizes Worth 1,00,000</b></p>
+    			     	<h5><b>Prizes Worth &#8377; 50K </b></h5><br/>
     			     	<ol>
-    			     	    <li>Incubation for the winners.</li>
-    			     	    <li>Cash prizes and goodies for participants. </li>
-    			     	    <li>First-hand exposure to the village environment. </li>
-    			     	    <li>Set your eyes on the ground realities to get an insight.</li>
-    			     	    <li>Be the fulcrum of change in the Indian society.</li>
-    			     	    <li>Witness to some of the most impactful innovations.</li>
-    			     	    <li>Have by your side the highest level of support system for execution and implementation.</li>
-    			     	    <li>Develop contacts with high profile NGOs, Social Clubs, Company CSRs in this sector, with years of experience and expertise.</li>
+    			     	    <li>Attractive prizes for top 3 positions including best performer in each round and certificates for all participants.</li>
+    			     	    <li>All students who qualify to the second round will receive an official certificate of participation.</li>
+    			     	    <li>Opportunity to look at scenarios from macro perspectives and sharpen the crucial skill of <b>looking at the bigger picture</b>.</li>
+    			     	    <li>Learn how the board of the any company could take crucial decision for company.</li>
+    			     	    <li>Meet new people, socialize and make your presence felt by being a part of this wonderful journey.</li>
+    			     	    <li>Opportunity to enhance your knowledge by way of discussion and deliberation with students as well as experts.</li>
+    			     	    <li>A chance to network with like-minded people and gain positive exposure.</li>
+    			     	    <li>Participation increases confidence level and the hurdles faced can help recognize strengths and weaknesses.</li>
     			     	    <li>Various internships opportunities. </li>
     			     	</ol>
-    			     	<h6>Eligibility Criteria</h6>
 
-    			     	<ol>
-    			     	    <li>Participation is allowed in teams consisting of 2-4 members only.</li>
-    			     	    <li>There is no restriction as such. Anyone above 16 years of age can participate.</li>
-    			     	</ol>
-    			     	<br>
-    			     	<a href="#newform">Register</a>
-    			     	<p></p>
+    			     	<br/>
 
     				</div>
     				<div id="bizmantra5">
-    		    	    <p>
-    		    	        One of the rudimentary aspects of our education is the attainment of skills to ease the struggles of our community.
-    		    	        We at SWADES, make the entrepreneurs get an insight into blurred segments of the village life and pave them towards a clear path that focuses on a pragmatic, yet a sustainable solution.
-    		    	    </p>
-    		    	    <br>
+              <h5><b>Eligibility Criteria</b></h5>
+    		    	<br/>
+              <br/>
+              <h5><b>How to participate</b></h5>
+              <br/>
+              <p>The key step in order to participate is to take the CEO test which will be conducted soon in schools and colleges across Nagpur. If you would like the test to be conducted in your school or college, kindly contact us by phone with the necessary details.</p>
+
     		    	    <h6>Structure</h6>
     		    	    <p>Competition is divided into three rounds as follows:</p>
     		    	    <ol>
@@ -134,7 +129,7 @@
 
         <!-- End Features -->
 
-        <div class="g-promo-section" style="background:#000" id="about">
+        <div class="g-promo-section" style="background:#000" id="contact">
             <div class="container g-padding-y-30--xs g-padding-y-30--sm g-padding-x-80--md g-padding-x-60--sm g-padding-x-40--xs">
                 <h2 class="g-font-size-30--xs g-font-size-30--sm g-font-size-30--md g-color--white g-padding-x-20--xs">Get In Touch</h2>
         <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
