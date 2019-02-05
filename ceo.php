@@ -118,7 +118,14 @@
     		    	</div>
     		    	<div id="bizmantra6">
 
-                        TimeLine
+                            <ol>
+
+                                <li><h5>Offline Questionnaire Round</h5>
+                                    <p>15th - 25th February’19</p>
+                                </li>
+
+
+                            </ol>
     		    	</div>
 
     		    </div>
