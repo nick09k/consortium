@@ -13,6 +13,7 @@
 
         <!--========== HEADER ==========-->
         <?php include("includes/header.php")?>
+
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
@@ -276,7 +277,7 @@
 
         <!--ZeroToOne-->
 
-        <div class="s-promo-block-v3 zerotoone" style="background: #111000" id="#zerotoone">
+        <div class="s-promo-block-v3 zerotoone" style="background: #111" id="#zerotoone">
             <div class="g-bg-position--center" id="zerotoone-inner" style=""></div>
             <div class="container g-padding-y-40--xs g-padding-y-50--md g-padding-y-0--lg">
                 <div class="g-margin-t-150--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm" style="padding-top: 50px;">
@@ -372,9 +373,9 @@
 
 
         <!--Merchandise-->
-        <div class="s-promo-block-v3  tee g-padding-y-20--xs g-padding-y-40--md" style="">
+        <div class="s-promo-block-v3  tee g-padding-y-0--xs g-padding-y-40--md" style="min-height:60vh">
             <div class="container g-padding-y-125--md g-padding-y-40--xs g-padding-y-40--md tee-inner" style=" position: relative;">
-                <div class="g-margin-t-30--xs g-margin-t-0--sm  g-padding-x-20--xs g-margin-t-125--lg g-margin-b-30--xs g-margin-b-40--md">
+                <div class="g-margin-t-30--xs g-margin-t-0--sm  g-padding-x-20--xs g-margin-t-125--lg g-margin-l-20--xs g-margin-l-80--sm">
                     <h1 class="g-font-size-30--xs g-font-size-40--sm g-font-size-60--lg g-color--white g-font-weight--600">CONSORTIUM'19<br><span style="color:#aaa;">OFFICIAL</span><br><span style="color:#555;"><b>MERCHANDISE</b></span></h1>
                 <p style="color:#aaa">*Available Sizes: S, M, L, XL, XXL</p>
                 <div class="pm-button text-uppercase btn-block s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-20--xs g-margin-b-20--xs tee-button" style=""><a href="https://www.payumoney.com/paybypayumoney/#/FEC5F0175992F7F3DE3976C404338B8D">Buy Now</a></div>
@@ -478,6 +479,9 @@
 
 
         </script>
+
+
+
         <!-- END: Mobile Autoplay Video -->
 
 
