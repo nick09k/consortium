@@ -79,15 +79,15 @@
     		    	<div id="why">
     			     	<h5><b>Prizes Worth &#8377; 50K </b></h5><br/>
     			     	<ol>
-    			     	    <li>Attractive prizes for top 3 positions including best performer in each round and certificates for all participants.</li>
-    			     	    <li>All students who qualify to the second round will receive an official certificate of participation.</li>
-    			     	    <li>Opportunity to look at scenarios from macro perspectives and sharpen the crucial skill of <b>looking at the bigger picture</b>.</li>
-    			     	    <li>Learn how the board of the any company could take crucial decision for company.</li>
-    			     	    <li>Meet new people, socialize and make your presence felt by being a part of this wonderful journey.</li>
-    			     	    <li>Opportunity to enhance your knowledge by way of discussion and deliberation with students as well as experts.</li>
-    			     	    <li>A chance to network with like-minded people and gain positive exposure.</li>
-    			     	    <li>Participation increases confidence level and the hurdles faced can help recognize strengths and weaknesses.</li>
-    			     	    <li>Various internships opportunities. </li>
+    			     	    <li><p>Attractive prizes for top 3 positions including best performer in each round and certificates for all participants.</p></li>
+    			     	    <li><p>All students who qualify to the second round will receive an official certificate of participation.</p></li>
+    			     	    <li><p>Opportunity to look at scenarios from macro perspectives and sharpen the crucial skill of <b>looking at the bigger picture</b>.</p></li>
+    			     	    <li><p>Learn how the board of the any company could take crucial decision for company.</p></li>
+    			     	    <li><p>Meet new people, socialize and make your presence felt by being a part of this wonderful journey.</p></li>
+    			     	    <li><p>Opportunity to enhance your knowledge by way of discussion and deliberation with students as well as experts.</p></li>
+    			     	    <li><p>A chance to network with like-minded people and gain positive exposure.</p></li>
+    			     	    <li><p>Participation increases confidence level and the hurdles faced can help recognize strengths and weaknesses.</p></li>
+    			     	    <li><p>Various internships opportunities.</p> </li>
     			     	</ol>
 
     			     	<br/>
@@ -139,28 +139,34 @@
 
         <div class="g-promo-section" style="background:#000" id="contact">
             <div class="container g-padding-y-30--xs g-padding-y-30--sm g-padding-x-80--md g-padding-x-60--sm g-padding-x-40--xs">
-                <h2 class="g-font-size-30--xs g-font-size-30--sm g-font-size-30--md g-color--white g-padding-x-20--xs">Get In Touch</h2>
+                <h2 class="g-font-size-30--xs g-font-size-30--sm g-font-size-30--md g-color--white g-padding-x-20--xs">Event Managers</h2>
         <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
             <!--<div class="g-container--md g-padding-y-40--xs">-->
 
-            <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
-                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+            <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-40--lg">
+                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Nachiket Dhande</h4>
-                         <p class="g-color--white">+91 95453 02811<br>nachiket.dhande@gmail.com</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Atul Krishna</h4>
+                         <p class="g-color--white">+91 9970125551<br>agnikrishnaa@gmail.com</p>
                     </div>
                 </div>
-                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Sagar Bansal</h4>
-                         <p class="g-color--white">+91 77580 11192<br>sagarbansal@ecellvnit.org</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Vishal kale</h4>
+                         <p class="g-color--white">+91 8369842914<br>kalevishal890@gmail.com</p>
                     </div>
                 </div>
 
-                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Anushree Rungta</h4>
-                         <p class="g-color--white">+91 98224 44112<br>anushree.rungta@gmail.com</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Ratnesh kumar</h4>
+                         <p class="g-color--white">+91 8308025238<br>ratneshkumar7591@gmail.com</p>
+                    </div>
+                </div>
+                 <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                    <div class="g-text-center--xs">
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Jagruti kusal</h4>
+                         <p class="g-color--white">+91 7030724439<br>jagrutikusal@gmail.com</p>
                     </div>
                 </div>
 
