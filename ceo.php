@@ -93,7 +93,7 @@
     			     	<br/>
 
     				</div>
-    				<div id="structure">
+    				<div id="structure" style="display:none;">
               <h5><b>How to participate</b></h5>
               <br/>
               <p>The key step in order to participate is to take the CEO test which will be conducted soon in schools and colleges across Nagpur. If you would like the test to be conducted in your school or college, kindly contact us by phone with the necessary details.</p>
@@ -110,25 +110,22 @@
     					</ol>
 
     		    	</div>
-    		    	<div id="timeline">
+    		    	<div id="timeline" style="display:none;">
                 <h5><b>Timeline</b></h5><br/>
-                            <ul>
-
-                                <li><h5>Offline Questionnaire Round</h5>
-                                    <p>15th - 25th February’19</p>
-                                </li><br/>
-                                <li><h5>Group Discussion Round</h5>
-                                    <p>8th March’19</p>
-                                </li><br/>
-                                <li><h5>Market Study Round</h5>
-                                    <p>8th March’19</p>
-                                </li><br/>
-                                <li><h5>Boardroom Round</h5>
-                                    <p>9th March’19</p>
-                                </li>
-
-
-                            </ul>
+                    <ul>
+                      <li><h5>Offline Questionnaire Round</h5>
+                        <p>15th - 25th February’19</p>
+                      </li><br/>
+                      <li><h5>Group Discussion Round</h5>
+                        <p>8th March’19</p>
+                        </li><br/>
+                      <li><h5>Market Study Round</h5>
+                        <p>8th March’19</p>
+                      </li><br/>
+                      <li><h5>Boardroom Round</h5>
+                        <p>9th March’19</p>
+                      </li>
+                    </ul>
     		    	</div>
 
     		    </div>
@@ -155,6 +152,7 @@
                     </div>
                 </div>
                 <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+
                     <div class="g-text-center--xs">
                         <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Ratnesh Kumar</h4>
                          <p class="g-color--white">+91 83080 25238<br>ratneshkumar7591@gmail.com</p>
@@ -162,6 +160,7 @@
                 </div>
                 <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
+
                         <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Jagruti Kusal</h4>
                          <p class="g-color--white">+91 70307 24439<br>jagrutikusal@gmail.com</p>
                     </div>
@@ -173,6 +172,10 @@
 
 
         <!--========== END PAGE CONTENT ==========-->
+
+        <!--========== FOOTER ==========-->
+        <?php include("includes/footer_landing.php");?>
+        <?php include("includes/script.php");?>
 
         <script type="text/javascript">
 
@@ -195,18 +198,14 @@
           });
 
           $("#but_timeline").click(function(){
-            $("#why").css({"display":"block"});
-            $("#why").animate({opacity: 0}, 1000);
+            $("#why").css({"display":"none"});
+            $("#why").animate({opacity: 0}, 100);
             $("#structure").css({"display":"none"});
             $("#structure").animate({opacity: 0}, 100);
             $("#timeline").css({"display":"block"});
             $("#timeline").animate({opacity: 1}, 1000);
           });
         </script>
-
-        <!--========== FOOTER ==========-->
-        <?php include("includes/footer_landing.php");?>
-        <?php include("includes/script.php");?>
         <!--========== END FOOTER ==========-->
 
         <!-- Back To Top -->
