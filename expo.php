@@ -86,7 +86,7 @@
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
-        <div class="s-promo-block-v3 g-bg-position--center g-fullheight--sm" style="background: #161616">
+        <div class="s-promo-block-v3 g-bg-position--center g-fullheight--xs" style="background: #161616">
 
             <div style="" class="expo-back-out"> </div>
             <div style="" class="expo-front-out"> </div>

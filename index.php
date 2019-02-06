@@ -359,11 +359,18 @@
 
                     <div class="row">
                         <div class="col-sm-4">
-                            <p class="g-color--white g-font-size-16--sm">An entrepreneur is also a job provider. Why shouldn't Consortium be one? Not interned yet?<br><b>Apna time aayega</b></p>
-                            <p class="g-color--white g-font-size-16--sm">Stay Tuned!</p>
+                            <p class="g-color--white g-font-size-16--sm">An entrepreneur is also a job provider. Why shouldn't Consortium be one? Not interned yet?<br><b>Apna time aayega</b></p><br>
+                            <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+
+                                <a id="reg_button" href="/intern.php" title="Register">
+                                    <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                    <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-20--xs g-padding-y-10--xs g-padding-x-30--md g-padding-y-15--md g-font-size-13--xs g-color--primary g-padding-x-15--xs">Know More</span>
+                                </a>
+                            </div>
 
                         </div>
                     </div>
+
 
                 </div>
 
