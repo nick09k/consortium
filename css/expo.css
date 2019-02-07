@@ -454,7 +454,6 @@ video::-webkit-media-controls-overlay-play-button {
 /*Event*/
 
 
-
 .event-landing-inner{
 
     width:100%;
@@ -462,5 +461,17 @@ video::-webkit-media-controls-overlay-play-button {
     display:flex;
     align-items:center;
 
+}
 
+
+
+.intern-model{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 1004;
+    top: 0;
+    left: 0;
+    background: #000000de;
+    overflow-y: hidden;
 }

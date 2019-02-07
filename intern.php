@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-    <?php $pagetitle = 'StartUp Expo | Consortium'; ?>
+    <?php $pagetitle = 'Internship Fair | Consortium'; ?>
     <!-- Begin Head -->
     <?php include("includes/head.php")?>
     <!-- End Head -->
@@ -80,9 +80,7 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <p class="g-color--white g-font-size-16--sm">An entrepreneur is also a job provider. Why shouldn't Consortium be one? Not interned yet?</p>
-                            <p class="g-color--white"> <span class="g-font-size-24--xs">Stipend Upto <span class="g-color--red">&#8377; 50K </span></span><br>8th - 10th March 2019 | VNIT Nagpur</p>
-
-
+                            <p class="g-color--white"> <span class="g-font-size-24--xs">Stipend Upto <span class="g-color--red">&#8377; 50K </span></span><br>8th - 10th March 2019 | VNIT Nagpur<br>Registrations are open!</p>
 
                         </div>
                     </div>
@@ -120,50 +118,51 @@
 
         <!--========== END PROMO BLOCK ==========-->
         <!-- Features -->
-        <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-40--xs g-padding-y-80--sm" id="compaanies">
+        <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-40--xs g-padding-y-60--sm" id="compaanies">
             <h1 class="g-margin-l-20--xs g-margin-l-80--sm g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--dark" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>Recruiters<br></b></h1>
 
             <div class="card" id="event-card-bg">
-    		    <div class="card-tabs">
-    		      <ul class="tabs tabs-fixed-width">
-    		        <li class="tab"><a class="active" href="#perks" id="but_perks">Companies</a></li>
-    		        <li class="tab"><a id="but_startups" href="#startups">Timeline</a></li>
-    		      </ul>
-    		    </div>
-    		    <div class="card-content code">
+    		    <!--<div class="card-tabs">-->
+    		    <!--  <ul class="tabs tabs-fixed-width">-->
+    		    <!--    <li class="tab"><a class="active" href="#perks" id="but_perks">Companies</a></li>-->
+    		    <!--    <li class="tab"><a id="but_startups" href="#startups">Timeline</a></li>-->
+    		    <!--  </ul>-->
+    		    <!--</div>-->
+    		    <div class="">
     		    	<div id="perks">
 
 
-    				<div class="container g-padding-y-0--xs">
+    				<div class="container g-padding-y-30--xs g-padding-x-40--sm g-padding-x-0--xs" style="text-align:center">
 
-                        <div class="row">
+                        <div class="row ">
                             <div class="col-sm-12 col-md-4">
                                 <a href="https://www.oneplus.in/" class="g-color--dark-light footer-para g-font-size-14--xs">
-                                    <img src="img/internshipfair/oneplus.png" width="250" alt="logo">
+                                    <img src="img/internshipfair/oneplus.png" width="200" alt="logo" style="margin-left:calc(50% - 100px)">
                                 </a>
-                                <p>Registrations will be open soon</p>
+
+                                <p><a class="g-padding-x-10--xs g-padding-y-10--xs g-font-size-13--xs g-color--primary g-padding-x-10--xs" href="#oneplus" onclick="showmodel('oneplus');">Register Now</a></p>
                             </div>
                             <div class="col-sm-12 col-md-4">
                                 <a href="https://www.simplecrm.com.sg/" class="g-color--dark-light footer-para g-font-size-14--xs">
-                                    <img src="img/internshipfair/simplecrm.png" width="250" alt="logo">
+                                    <img src="img/internshipfair/simplecrm.png" width="220" alt="logo" style="margin-left:calc(50% - 100px)">
                                 </a>
                                 <p>Registrations will be open soon</p>
                             </div>
                             <div class="col-sm-12 col-md-4">
                                 <a href="https://navigus.in/" class="g-color--dark-light footer-para g-font-size-14--xs">
-                                    <img src="img/internshipfair/navigus.png" width="250" alt="logo">
+                                    <img src="img/internshipfair/navigus.png" width="220" alt="logo" style="margin-left:calc(50% - 100px)">
                                 </a>
                                 <p>Registrations will be open soon</p>
                             </div>
                             <div class="col-sm-12 col-md-4">
                                 <a href="http://eco-genenergy.com/" class="g-color--dark-light footer-para g-font-size-14--xs">
-                                    <img src="img/internshipfair/ecozen.png" width="250" alt="logo">
+                                    <img src="img/internshipfair/ecozen.png" width="220" alt="logo" style="margin-left:calc(50% - 100px)">
                                 </a>
                                 <p>Registrations will be open soon</p>
                             </div>
                             <div class="col-sm-12 col-md-4">
                                 <a href="https://makerdemy.com/" class="g-color--dark-light footer-para g-font-size-14--xs">
-                                    <img src="img/internshipfair/makerdomy.png" width="250" alt="logo">
+                                    <img src="img/internshipfair/makerdomy.png" width="220" alt="logo" style="margin-left:calc(50% - 100px)">
                                 </a>
                                 <p>Registrations will be open soon</p>
                             </div>
@@ -171,25 +170,25 @@
                         </div>
                     </div>
             </div>
-            <div id="startups" style="display:none;">
+        <!--    <div id="startups" style="display:none;">-->
 
-              <div class="container g-padding-y-0--xs">
+        <!--      <div class="container g-padding-y-0--xs">-->
 
-                  <div class="row">
-                      <div class="col-sm-12 col-md-4">
-                          Will be Updated Soon!
-                          <br>
-                          All the registration form will be released by Department Of Training & Placement soon!
+        <!--          <div class="row">-->
+        <!--              <div class="col-sm-12 col-md-4">-->
+        <!--                  Will be Updated Soon!-->
+        <!--                  <br>-->
+        <!--                  All the registration form will be released by Department Of Training & Placement soon!-->
 
-                      </div>
-
-
-                  </div>
+        <!--              </div>-->
 
 
+        <!--          </div>-->
 
-              </div>
-    				</div>
+
+
+        <!--      </div>-->
+    				<!--</div>-->
 
 
     		    </div>
@@ -202,7 +201,7 @@
             <h2 class="g-font-size-30--xs g-font-size-30--sm g-font-size-30--md g-color--white g-padding-x-20--xs" style="text-align:center">Get In Touch</h2>
 
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
-                <div class="col-xs-4 col-xs-offset-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-4 col-sm-offset-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
                         <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Ayush Singh</h4>
                          <p class="g-color--white">+91 94235 39984<br>ayushsingh@ecellvnit.org</p>
@@ -217,6 +216,25 @@
 
             </div>
         </div>
+
+
+        <!--<div id="oneplus" class="intern-model" style="display:none">-->
+        <!--        <div class="container g-padding-y-40--xs g-padding-y-80--sm g-padding-x-20--xs g-padding-x-80--xs g-margin-t-40--xs">-->
+
+        <!--            <a class="g-color--white g-font-size-20--xs" onclick="closemodel('oneplus');" style="position:absolute; left:90%" >X</a>-->
+
+        <!--            <h3 class="g-font-size-30--xs g-font-size-30--sm g-font-size-30--md g-color--white g-padding-x-20--xs">One Plus</h3>-->
+
+        <!--            <p class="g-color--white-opacity">All the details will be here</p>-->
+        <!--            <div class="wow fadeInLeft g-margin-t-40--xs" data-wow-duration=".3" data-wow-delay=".5s">-->
+        <!--                <a href="#about" title="Register">-->
+                            <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+        <!--                    <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Fill Form <span class="ti-angle-right"></span></span>-->
+        <!--                </a>-->
+        <!--            </div>-->
+
+        <!--        </div>-->
+        <!--</div>-->
 
 
 
@@ -255,6 +273,19 @@
             $("#startups").css({"display":"block"});
             $("#startups").animate({opacity: 1}, 100);
           });
+        </script>
+
+
+        <script>
+
+            function showmodel(company){
+                $("#"+company).css({"display": "block"});
+            }
+
+            function closemodel(company){
+                $("#"+company).css({"display": "none"},100);
+            }
+
         </script>
 
 
