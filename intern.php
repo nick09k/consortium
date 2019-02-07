@@ -40,9 +40,9 @@
                                     <div class="collapse navbar-collapse s-header-v2__navbar-collapse" id="nav-collapse">
                                         <ul class="s-header-v2__nav">
                                             <li class="s-header-v2__nav-item"><a href="index.php" class="s-header-v2__nav-link">Home</a></li>
-                                            <li class="s-header-v2__nav-item"><a href="/#about" class="s-header-v2__nav-link">About</a></li>
+                                            <li class="s-header-v2__nav-item"><a href="#about" class="s-header-v2__nav-link">About</a></li>
 
-                                            <li class="s-header-v2__nav-item"><a href="/#events" class="s-header-v2__nav-link">Events</a></li>
+                                            <li class="s-header-v2__nav-item"><a href="#companies" class="s-header-v2__nav-link">Companies</a></li>
                                             <li class="s-header-v2__nav-item"><a href="#contact" class="s-header-v2__nav-link">Contact</a></li>
                                             <?php if($_SESSION['email']){ ?>
                                               <li class="s-header-v2__nav-item"><a href="logout.php" class="s-header-v2__nav-link">Logout</a></li>
@@ -103,7 +103,7 @@
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
                         </div>
-                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Startup Expo provides a grand platform for startups to display their product and/ or service at our annual entrepreneurship Summit Consortium 19.<br>This is also an opportunity for the attendees to learn about the new entrepreneurial techniques that these startups have employed to become successful in their journey.</p>
+                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Internship Fair is a chance to refine your skills, build up your personality and attain an experience of a lifetime which impact on your CV.<br>And it's a time to put the first step forward in the journey of becoming a leader of tomorrow because the expert in anything was once a beginner.<br>Time aa gya!</p>
 
                     </div>
                     <div class="col-md-7 col-md-offset-1">
@@ -120,8 +120,8 @@
 
         <!--========== END PROMO BLOCK ==========-->
         <!-- Features -->
-        <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-40--xs g-padding-y-80--sm">
-            <h1 class="g-margin-l-20--xs g-margin-l-80--sm g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--dark" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>Why?<br></b></h1>
+        <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-40--xs g-padding-y-80--sm" id="compaanies">
+            <h1 class="g-margin-l-20--xs g-margin-l-80--sm g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--dark" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>Recruiters<br></b></h1>
 
             <div class="card" id="event-card-bg">
     		    <div class="card-tabs">
@@ -138,10 +138,34 @@
 
                         <div class="row">
                             <div class="col-sm-12 col-md-4">
-                                <h4 class="g-color--dark">Onground Visibility</h4>
-                                <a href="#" class="g-color--dark-light footer-para g-font-size-14--xs">
-                                    Product showcase & feedback from your Target Audience comprising of college students, corporate professionals, businessmen, investors.
+                                <a href="https://www.oneplus.in/" class="g-color--dark-light footer-para g-font-size-14--xs">
+                                    <img src="img/internshipfair/oneplus.png" width="250" alt="logo">
                                 </a>
+                                <p>Registraions will be open soon</p>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <a href="https://www.simplecrm.com.sg/" class="g-color--dark-light footer-para g-font-size-14--xs">
+                                    <img src="img/internshipfair/simplecrm.png" width="250" alt="logo">
+                                </a>
+                                <p>Registraions will be open soon</p>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <a href="https://navigus.in/" class="g-color--dark-light footer-para g-font-size-14--xs">
+                                    <img src="img/internshipfair/navigus.png" width="250" alt="logo">
+                                </a>
+                                <p>Registraions will be open soon</p>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <a href="http://eco-genenergy.com/" class="g-color--dark-light footer-para g-font-size-14--xs">
+                                    <img src="img/internshipfair/ecozen.png" width="250" alt="logo">
+                                </a>
+                                <p>Registraions will be open soon</p>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <a href="https://makerdemy.com/" class="g-color--dark-light footer-para g-font-size-14--xs">
+                                    <img src="img/internshipfair/makerdomy.png" width="250" alt="logo">
+                                </a>
+                                <p>Registraions will be open soon</p>
                             </div>
 
                         </div>
@@ -154,6 +178,9 @@
                   <div class="row">
                       <div class="col-sm-12 col-md-4">
                           Will be Updated Soon!
+                          <br>
+                          All the registration form will be released by Department Of Training & Placement soon!
+
                       </div>
 
 
@@ -199,7 +226,7 @@
         <!--========== END PAGE CONTENT ==========-->
 
         <!--========== FOOTER ==========-->
-        <?php include("includes/footer.php");?>
+        <?php include("includes/footer_landing.php");?>
         <?php include("includes/script.php");?>
 
         <script type="text/javascript">
