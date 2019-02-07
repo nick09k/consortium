@@ -141,31 +141,31 @@
                                 <a href="https://www.oneplus.in/" class="g-color--dark-light footer-para g-font-size-14--xs">
                                     <img src="img/internshipfair/oneplus.png" width="250" alt="logo">
                                 </a>
-                                <p>Registraions will be open soon</p>
+                                <p>Registrations will be open soon</p>
                             </div>
                             <div class="col-sm-12 col-md-4">
                                 <a href="https://www.simplecrm.com.sg/" class="g-color--dark-light footer-para g-font-size-14--xs">
                                     <img src="img/internshipfair/simplecrm.png" width="250" alt="logo">
                                 </a>
-                                <p>Registraions will be open soon</p>
+                                <p>Registrations will be open soon</p>
                             </div>
                             <div class="col-sm-12 col-md-4">
                                 <a href="https://navigus.in/" class="g-color--dark-light footer-para g-font-size-14--xs">
                                     <img src="img/internshipfair/navigus.png" width="250" alt="logo">
                                 </a>
-                                <p>Registraions will be open soon</p>
+                                <p>Registrations will be open soon</p>
                             </div>
                             <div class="col-sm-12 col-md-4">
                                 <a href="http://eco-genenergy.com/" class="g-color--dark-light footer-para g-font-size-14--xs">
                                     <img src="img/internshipfair/ecozen.png" width="250" alt="logo">
                                 </a>
-                                <p>Registraions will be open soon</p>
+                                <p>Registrations will be open soon</p>
                             </div>
                             <div class="col-sm-12 col-md-4">
                                 <a href="https://makerdemy.com/" class="g-color--dark-light footer-para g-font-size-14--xs">
                                     <img src="img/internshipfair/makerdomy.png" width="250" alt="logo">
                                 </a>
-                                <p>Registraions will be open soon</p>
+                                <p>Registrations will be open soon</p>
                             </div>
 
                         </div>
