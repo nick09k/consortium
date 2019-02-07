@@ -65,7 +65,7 @@
         <!--========== PROMO BLOCK ==========-->
         <!--Internship Fair-->
 
-        <div class="s-promo-block-v3 g-bg-position--center internship g-fullheight--xs" style="background:#121211">
+        <div class="s-promo-block-v3 g-bg-position--center internship g-fullheight--xs" style="background:#121211;    display: flex;align-items: center;">
             <div style="" class="intern-back"> </div>
 
             <div class="container g-padding-y-100--xs g-padding-y-0--lg">
@@ -74,7 +74,7 @@
 
                     <br>
                     <p class="g-color--white-opacity g-font-size-18--xs" style="position: relative;"><b>E-Cell VNIT & Department Of T&P VNIT</b><br>presents,</p>
-                    <h1 class="g-font-size-30--xs g-font-size-40--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>INTERNSHIP<br>FAIR</b></h1>
+                    <h1 class="g-font-size-36--xs g-font-size-40--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>INTERNSHIP<br>FAIR</b></h1>
 
 
                     <div class="row">
@@ -103,7 +103,7 @@
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
                         </div>
-                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Internship Fair is a chance to refine your skills, build up your personality and attain an experience of a lifetime which impact on your CV.<br>And it's a time to put the first step forward in the journey of becoming a leader of tomorrow because the expert in anything was once a beginner.<br>Time aa gya!</p>
+                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Internship Fair is a chance to refine your skills, build up your personality and attain an experience of a lifetime which impact on your CV.<br>And it's a time to put the first step forward in the journey of becoming a leader of tomorrow because the expert in anything was once a beginner.<br>Apna time aa gya!</p>
 
                     </div>
                     <div class="col-md-7 col-md-offset-1">
