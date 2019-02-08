@@ -197,13 +197,13 @@
 
         <!--Startup EXPO-->
 
-        <div class="s-promo-block-v3 g-bg-position--center expo" style="background: #161616" id="#expo">
+        <div class="s-promo-block-v3 g-bg-position--center expo" style="background: #161616" id="expo">
 
             <div style="" class="expo-back-out"> </div>
             <div style="" class="expo-front-out"> </div>
 
 
-            <div class="container g-padding-y-40--xs g-padding-y-0--md g-padding-y-0--lg" style="    height: 100%;
+            <div class="container g-padding-y-40--xs g-padding-y-0--md g-padding-y-0--lg" style=" height: 100%;
     display: flex;
     align-items: center;">
                 <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
@@ -223,10 +223,10 @@
                         <div class="col-sm-4">
                             <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
 
-                                <a id="reg_button" href="/expo.php" title="Register">
+                                <!--<a id="reg_button" href="/expo.php" title="Register">-->
                                     <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                                    <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--primary g-padding-x-15--xs">Know More</span>
-                                </a>
+                                <!--    <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--primary g-padding-x-15--xs">Know More</span>-->
+                                <!--</a>-->
                             </div>
                         </div>
                     </div>
@@ -238,7 +238,7 @@
 
         <!--TownHall-->
 
-        <div class="s-promo-block-v3 townhall" style="background: #000" id="#townhall">
+        <div class="s-promo-block-v3 townhall" style="background: #000" id="townhall">
             <div class="g-bg-position--center" id="townhall-inner" style=""></div>
             <div class="container g-padding-y-40--xs g-padding-y-50--md g-padding-y-0--lg">
                 <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
@@ -267,7 +267,7 @@
 
         <!--ZeroToOne-->
 
-        <div class="s-promo-block-v3 zerotoone" style="background: #111" id="#zerotoone">
+        <div class="s-promo-block-v3 zerotoone" style="background: #111" id="zerotoone">
             <div class="g-bg-position--center" id="zerotoone-inner" style=""></div>
             <div class="container g-padding-y-40--xs g-padding-y-50--md g-padding-y-0--lg">
                 <div class="g-margin-t-150--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm" style="padding-top: 50px;">
