@@ -475,3 +475,37 @@ video::-webkit-media-controls-overlay-play-button {
     background: #000000de;
     overflow-y: hidden;
 }
+
+
+.caption{
+  background: -webkit-gradient(50deg,#5ebaf6,#2c83cc);
+  background: linear-gradient(50deg,#5ebaf6,#2c83cc 90%);
+  padding-left:10px;
+}
+
+
+.core-container{
+    background:url(../img/1920x1080/footerback.png);
+    background-position:center;
+    background-attachment:fixed;
+    background-repeat:non-repeat
+}
+
+
+.core{
+    width:200px !important;
+    margin-left:50px;
+  filter:grayscale(40%) !important;
+  border-radius:50%;
+  box-shadow: 0 0.4rem 1rem rgba(39, 35, 36, 0.1);
+}
+
+.indicator{
+
+    font-size:30px;
+    color: #fff;
+    width: 20px;
+    padding-top:50px;
+    margin-left: calc(50% - 10px);
+
+}

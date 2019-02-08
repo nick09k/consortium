@@ -38,7 +38,7 @@
                                     <li class="s-header-v2__nav-item"><a href="#details" class="s-header-v2__nav-link dark" >Structure</a></li>
                                     <li class="s-header-v2__nav-item"><a href="https://www.ecellvnit.org/spons.php" target="_blank" class="s-header-v2__nav-link dark" >Sponsors</a></li>
                                     <li class="s-header-v2__nav-item"><a href="#contact" class="s-header-v2__nav-link dark" >Contact</a></li>
-                                    <li class="s-header-v2__nav-item"><a href="https://ecellvnit.org/team.php" target="_blank" class="s-header-v2__nav-link dark" >Team</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="/team.php" target="_blank" class="s-header-v2__nav-link dark" >Team</a></li>
                                     <?php if($_SESSION['email']){ ?>
                                       <li class="s-header-v2__nav-item"><a href="logout.php" class="s-header-v2__nav-link dark" >Logout</a></li>
                                   <?php }else{ ?>

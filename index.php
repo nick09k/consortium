@@ -7,9 +7,9 @@
 
     <!-- Body -->
     <body style="background: #FFF">
-        <div id="loading">
-          <img id="loading-image" src="img/landing-curiosity.gif" alt="Loading..." />
-        </div>
+        <!--<div id="loading">-->
+        <!--  <img id="loading-image" src="img/landing-curiosity.gif" alt="Loading..." />-->
+        <!--</div>-->
 
         <!--========== HEADER ==========-->
         <?php include("includes/header.php")?>
@@ -420,17 +420,17 @@
             $("html ,body").animate({ scrollTop: y},800);
           });
         </script>
-        <script language="javascript" type="text/javascript">
-            $(window).on('load', function() {
-                setTimeout(remove, 100);
-            });
+        // <script language="javascript" type="text/javascript">
+        //     $(window).on('load', function() {
+        //         setTimeout(remove, 100);
+        //     });
 
-            function remove(){
-                $('#loading').hide();
-            }
+        //     function remove(){
+        //         $('#loading').hide();
+        //     }
 
 
-        </script>
+        // </script>
 
         <script>
 
@@ -443,48 +443,17 @@
 
         <!-- START: Mobile Autoplay Video -->
         <script>
+            var mobilevideo = document.getElementsByTagName("video")[0];
+            mobilevideo.setAttribute("playsinline", "");
+            mobilevideo.setAttribute("muted", "");
+            if(window.innerWidth <= 425){
+                $(".landing").css({
+                    "background":"url(img/landing12.gif) -15%",
+                    "background-size":"cover"
+                });
+                mobilevideo.remove();
 
-    //   var mobilevideo = $("#iframe");
-
-
-    //         if(window.innerWidth <= 767){
-
-    //             mobilevideo.attr("src","https://streamable.com/s/r6qdu/dfjlop?autoplay=1&muted=1");
-    //             // mobilevideo.contents().find("#ad-overlay").remove();
-
-    //             // $("#play-button").click();
-    //             // $("#play-button").remove();
-
-
-    //         }
-
-    //     $( document ).ready(function() {
-
-    //         $("#ad-overlay").css({"display":"none"});
-
-    //         if(window.innerWidth <= 767){
-
-    //             $("#play-button").click();
-
-    //         }
-
-
-    //     });
-
-
-    var mobilevideo = document.getElementsByTagName("video")[0];
-        mobilevideo.setAttribute("playsinline", "");
-        mobilevideo.setAttribute("muted", "");
-        if(window.innerWidth <= 425){
-            $(".landing").css({
-                "background":"url(img/landing12.gif) -15%",
-                "background-size":"cover"
-            });
-            mobilevideo.remove();
-
-        }
-
-
+            }
         </script>
 
 
