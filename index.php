@@ -17,7 +17,7 @@
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
-        <div class="s-promo-block-v3 g-bg-position--center landing-outer">
+        <div class="s-promo-block-v3 g-bg-position--center landing-outer" style="min-height:100vh">
 
 
 
@@ -90,8 +90,8 @@
         <!--</div>-->
 
         <div class="g-promo-section" style="background:#fff00;" id="about">
-            <div class="container g-padding-y-30--xs g-padding-y-30--sm g-padding-x-80--md g-padding-x-60--sm g-padding-x-40--xs">
-                <div class="row" style="display: flex;align-items: center;">
+            <div class="container g-padding-y-30--xs g-padding-y-30--sm g-padding-x-80--md g-padding-x-60--sm g-padding-x-10--xs">
+                <div class="row" style="display: flex;">
                     <div class="col-xs-12 col-sm-5 col-lg-5 g-margin-t-45--xs g-margin-b-45--sm g-margin-b-0--lg">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--dark" style="font-weight:900">About</h2>
@@ -149,9 +149,6 @@
                     </div>
                 </div>
 
-                <div class="container g-padding-y-10--xs g-padding-y-15--sm">
-
-            </div>
             <!--<div style="position:relative;height:0;padding-bottom:56.24%"><iframe src="https://www.youtube.com/embed/gKfnDdUL-LE?ecver=2&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;vq=highres&amp;rel=0" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div>-->
 
             </div>
