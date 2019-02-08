@@ -31,7 +31,7 @@
             <div class="g-container--md g-text-center--xs g-padding-y-100--xs">
                 <h1 class="g-font-size-30--xs g-font-size-40--sm g-font-size-50--md g-color--white g-letter-spacing--3">Consortium'19</h1>
                 <h2 class="g-font-size-36--xs g-font-size-50--sm g-font-size-60--md g-color--white g-letter-spacing--1">Our Team</h2>
-                <div class="indicator"><i class="ti-angle-double-down"></i></div>
+                <div class="indicate"><i class="ti-angle-double-down"></i></div>
             </div>
         </div>
         <!--========== END PROMO BLOCK ==========-->
@@ -249,7 +249,7 @@
         <!-- End Speakers -->
 
         <!--========== FOOTER ==========-->
-        <?php include("includes/footer.php");?>
+        <?php include("includes/footer_landing.php");?>
         <!--========== END FOOTER ==========-->
 
         <!-- Back To Top -->

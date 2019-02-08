@@ -1,6 +1,55 @@
 
         <footer class=" full-height-footer g-padding-x-30--xs g-padding-x-60--md" style="background:#161616" id="contact">
 
+
+                <!--<div class=" g-margin-b-40--xs">-->
+                    <!--<p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Partners</p>-->
+                <!--    <h2 class="g-font-size-24--xs g-font-size-36--md g-color--white">Under patronage of</h2>-->
+                <!--</div>-->
+                <!--<div class="container g-padding-y-40--xs g-padding-y-40--sm" id="partners">-->
+                    <!-- Swiper Clients -->
+                <!--    <div class="container" id="foot">-->
+                <!--        <div class="row">-->
+
+                <!--            <div class="col-md-2 col-sm-3 col-xs-6">-->
+                <!--                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".1s">-->
+                <!--                    <img class="s-clients-v1" src="img/clients/Make_In_India.png" alt="Clients Logo">-->
+                <!--                </div>-->
+                <!--            </div>-->
+
+
+                <!--            <div class="col-md-2 col-sm-3 col-xs-6">-->
+                <!--                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".3s">-->
+                <!--                    <img class="s-clients-v1" src="img/clients/TiE.png" alt="Clients Logo">-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--            <div class="col-md-2 col-sm-3 col-xs-6">-->
+                <!--                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".4s">-->
+                <!--                    <img class="s-clients-v1" src="img/clients/CIVN.png" alt="Clients Logo">-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--            <div class="col-md-2 col-sm-3 col-xs-6">-->
+                <!--                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".5s">-->
+                <!--                    <img class="s-clients-v1" src="img/clients/pmyuva.png" alt="Clients Logo">-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--            <div class="col-md-2 col-sm-3 col-xs-6">-->
+                <!--                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".2s">-->
+                <!--                    <img class="s-clients-v1" src="img/clients/digital-india.png" alt="Clients Logo">-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--            <div class="col-md-2 col-sm-3 col-xs-6">-->
+                <!--                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".5s">-->
+                <!--                    <img class="s-clients-v1" src="img/clients/vnit_aa.png" alt="Clients Logo">-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                    <!-- End Swiper Clients -->
+                <!--</div>-->
+
+
+
             <div class="container g-padding-y-30--xs">
                 <h1 class="g-color--white-opacity">Quick Links</h1>
                 <br>
