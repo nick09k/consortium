@@ -60,7 +60,7 @@
                     <div class="product-card__item-text">
                         <h3 class="g-color--white">Stock Investing Workshop</h3>
                         <p class="g-color--white">Want to learn how to invest in a stock market and let your money work for you?<br>
-                        E-Cell VNIT brings to you a stock investing workshop in association with Zerodha. Join us live for the interactive workshop to get the lay of the land. <br>Date: 12 FEB 19</p>
+                        E-Cell VNIT brings to you a stock investing workshop in association with Zerodha. Join us live for the interactive workshop to get the lay of the land. <br>Date: 17 FEB 19</p>
                         <p class="g-color--white"><b>Register Now!</b></p>
                         <p class="g-color--white"><i>#Workshop</i></p>
 
