@@ -120,25 +120,29 @@
             <div style="" class="expo-front-out"> </div>
 
 
-            <div class="container g-ver-center--sm g-padding-y-100--xs g-padding-y-0--lg">
+            <div class="container g-ver-center--xs g-padding-y-100--xs g-padding-y-0--lg">
                 <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
                 <div class="g-margin-t-10--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm" >
 
 
                      <div style="display:flex; align-items:center">
                      <img src="https://startupconclave.ecellvnit.org/static/img/E-Cell_white.png" alt="Ecell Logo" height="50" style="float:right; z-index:2"/>
-                     <p class="g-color--white-opacity" style="z-index:2; margin:20px;">&</p>
+                     <!--<p class="g-color--white-opacity" style="z-index:2; margin:20px;">&</p>-->
+                     <p class="g-color--white-opacity" style="position: relative;margin-left:10px;z-index:2; margin-top:22px">presents</p>
 
-                    <img src="img/tielogo.jpg" alt="TIE Nagpur" style="z-index:2" height="50"/>
+                    <!--<img src="img/tielogo.jpg" alt="TIE Nagpur" style="z-index:2" height="50"/>-->
                     </div>
 
-                    <p class="g-color--white-opacity" style="position: relative;text-align:center; width:300px">present</p>
+
 
 
                     <h1 class="g-font-size-50--xs g-font-size-60--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>STARTUP<br>EXPO</b></h1>
+                    <p class="g-color--white-opacity" style="position: relative;">in association with</p>
+                    <img src="img/tielogo.jpg" alt="TIE Nagpur" style="z-index:2; position:relative; margin-top: -20px;" height="35"/>
 
                     <div class="row">
-                        <div class="col-sm-6 col-sm-5 col-lg-5">
+                        <br>
+                        <div class="col-sm-6 col-sm-5 col-lg-5" style="padding-left:0px !important;">
                             <p class="g-color--white-opacity g-font-size-20--xs"><b>Ready, Set, Network!</p>
                             <p class="g-color--white-opacity g-font-size-18--xs"> 9th March 2019</p>
                         </div>
