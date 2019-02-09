@@ -540,3 +540,22 @@ video::-webkit-media-controls-overlay-play-button {
     margin-left: calc(50% - 10px);
 
 }
+
+
+.grad {
+    height: 400px;
+    width: 300px;
+    background: black;
+    -webkit-background: black;
+    -moz-background: black;
+    -o-background: black;
+}
+
+
+.pad {
+    padding-left: 1.875rem !important;
+    padding-right: 1.875rem !important;
+    margin-top: 25px !important;
+    padding-bottom: 400px !important;
+    padding-top: 1px !important;
+}

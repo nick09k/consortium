@@ -1,27 +1,27 @@
-<?php
-  session_start();
+ <?php
+//   session_start();
 
-  $db_host = "localhost:3306";
-  $db_username = "conso19";
-  $db_pass = "Conso@123";
-  $db_name = "conso19";
+//   $db_host = "localhost:3306";
+//   $db_username = "conso19";
+//   $db_pass = "Conso@123";
+//   $db_name = "conso19";
 
-  $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
-  mysqli_select_db($con,$db_name) or die ("no database");
+//   $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
+//   mysqli_select_db($con,$db_name) or die ("no database");
 
-  $regquery ="CREATE TABLE IF NOT EXISTS Expo(
-    ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    Startup VARCHAR(255) NOT NULL,
-    Description VARCHAR(1000) NOT NULL,
-    Email VARCHAR(255) NOT NULL,
-    Website VARCHAR(255) NOT NULL,
-    Phone VARCHAR(16) NOT NULL,
-    Hiring TINYINT(1) NOT NULL
-  )";
+//   $regquery ="CREATE TABLE IF NOT EXISTS Expo(
+//     ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+//     Startup VARCHAR(255) NOT NULL,
+//     Description VARCHAR(1000) NOT NULL,
+//     Email VARCHAR(255) NOT NULL,
+//     Website VARCHAR(255) NOT NULL,
+//     Phone VARCHAR(16) NOT NULL,
+//     Hiring TINYINT(1) NOT NULL
+//   )";
 
-  mysqli_query($con,$regquery);
+//   mysqli_query($con,$regquery);
 
-?>
+// ?>
 
 <!DOCTYPE html>
 <html lang="en" class="no-js">
@@ -51,7 +51,7 @@
                                     <!-- Logo -->
                                     <div class="s-header-v2__logo">
                                         <a href="/" class="s-header-v2__logo-link">
-                                            <!-- <img class="s-header-v2__logo-img s-header-v2__logo-img--default" src="https://startupconclave.ecellvnit.org/static/img/E-Cell_white.png" alt="Ecell Logo" height="50"> -->
+                                            <!-- <img class="s-header-v2__logo-img s-header-v2__logo-img--default" src="https://startupconclave.ecellvnit.org/img/E-Cell_white.png" alt="Ecell Logo" height="50"> -->
                                             <img class="s-header-v2__logo-img s-header-v2__logo-img--shrink" src="img/icon.png" alt="Conso" height="40">
                                         </a>
                                     </div>
@@ -97,15 +97,18 @@
                 <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
 
 
-                    <p class="g-color--white-opacity" style="position: relative;">E-Cell, VNIT presents</p>
-                    <!--<img src="img/tielogo.jpg" alt="TIE Nagpur" width="120">-->
+                     <div style="display:flex">
+                     <img src="https://startupconclave.ecellvnit.org/static/img/E-Cell_white.png" alt="Ecell Logo" height="50" style="float:right; margin-right:20px; z-index:2"/>
 
+                    <img src="img/tielogo.jpg" alt="TIE Nagpur" style="z-index:2" height="50"/></div>
+
+                    <p class="g-color--white-opacity" style="position: relative;">presents</p>
 
                     <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>STARTUP<br>EXPO</b></h1>
 
                     <div class="row">
-                        <div class="col-sm-4">
-                            <p class="g-color--white-opacity g-font-size-16--sm">Startup Expo is a chance for tech startups to get out of their shell and interact with mentors and investors from all over the country.<br><b>Ready, Set, Network!</p>
+                        <div class="col-sm-6 col-sm-5 col-lg-5">
+                            <p class="g-color--white-opacity g-font-size-16--sm">Startup Expo is a chance for startups to get out of their shell and interact with mentors and investors from all over the country.<br><b>Ready, Set, Network!</p>
                             <p class="g-color--white-opacity g-font-size-16--sm"> 9th Mar 2019</p>
                             <p class="g-color--white-opacity g-font-size-16--sm">Registration Fee: <b>800 INR</b></p>
 
@@ -190,6 +193,29 @@
             </div>
         </div>
 
+        <div class="g-promo-section" style="background:#000" id="about">
+            <div class="container g-padding-y-30--xs g-padding-y-30--sm g-padding-x-80--md g-padding-x-60--sm g-padding-x-40--xs">
+                <div class="row">
+                    <div class="col-md-4 g-margin-t-45--xs g-margin-b-60--xs g-margin-b-0--lg">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                            <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
+                        </div>
+                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">
+                            Startup Expo provides a grand platform to help Entrepreneurs/Startups to showcase their early stage prototypes, products, and services directly to the customers and investors.
+                            <br>
+                            This is a perfect low-cost opportunity for marketing startup ideas to the investors to get investment opportunities and live feedback from the general public.
+                        </p>
+
+                    </div>
+                    <div class="col-md-7 col-md-offset-1">
+                        <img src="img/expo-about.jpg" alt="" style="max-width:100%; max-height:400px">
+                    </div>
+                </div>
+            <!--</div>-->
+            </div>
+        </div>
+        <!-- End Coordinator -->
+
         <!--========== END PROMO BLOCK ==========-->
         <!-- Features -->
         <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-40--xs g-padding-y-80--sm">
@@ -210,24 +236,47 @@
 
                 <div class="row">
                     <div class="col-sm-12 col-md-4">
-                        <h4 class="g-color--dark">Onground Visibility</h4>
-                        <a href="#" class="g-color--dark-light footer-para g-font-size-14--xs">
-                            Product showcase & feedback from your Target Audience comprising of college students, corporate professionals, businessmen, investors.
+                        <h4 class="g-color--dark">On Ground Visibilty</h4>
+                        <a class="g-color--dark-light footer-para g-font-size-14--xs">
+                            Product showcase & feedback from your Target Audience comprising of college students, corporate professionals, investors and entrepreneurs.
                         </a>
                     </div>
                     <div class="col-sm-12 col-md-4">
+                        <h4 class="g-color--dark">Mentoring Sessions</h4>
+                        <a class="g-color--dark-light footer-para g-font-size-14--xs">
+                            Online mentoring sessions by our venerable mentors to scrutinize your startup and provide valuable remarks.
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <h4 class="g-color--dark">Investor Trail</h4>
+                        <a class="g-color--dark-light footer-para g-font-size-14--xs">
+                             Investors from your sector that are present will personally visit your kiosk at different times during the consortium to interact with you.
+                        </a>
+                    </div>
+
+
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
                         <h4 class="g-color--dark">Networking Arena</h4>
-                        <a href="#" class="g-color--dark-light footer-para g-font-size-14--xs">
-                            Exclusive Entry to Networking Events - Investors Arena & High Tea. Meet mentors & investors from Matrix Partners, Indian Angels, Sequoia etc as well as speakers.
+                        <a  class="g-color--dark-light footer-para g-font-size-14--xs">
+                            Meet startups to gain invaluable contacts, which they’ll be able to leverage with time. The arena will include all finalists of startup conclave, a panel of investors, judges for startup conclave, students in college pursuing their own ideas.
+
                         </a>
                     </div>
                     <div class="col-sm-12 col-md-4">
                         <h4 class="g-color--dark">Publicity</h4>
-                        <a href="#" class="g-color--dark-light footer-para g-font-size-14--xs">
-                             Presence in the E-Summit in the form of standees, banners & pamphlets put in registration kits. Also, presence in social media posts and official website of Consortium ‘19
+                        <a  class="g-color--dark-light footer-para g-font-size-14--xs">
+                             Presence in consortium in the form of standees, banners & pamphlets put in registration kits. Also, presence in social media posts and official website of Consortium ‘19.
                         </a>
                     </div>
-
+                    <div class="col-sm-12 col-md-4">
+                        <h4 class="g-color--dark">Complimentary Passes</h4>
+                        <div  class="g-color--dark-light footer-para g-font-size-14--xs">
+                            Free Entry to Zero To One, TownHall, and access to Startup Conclave pitching sessions.
+                        </div>
+                    </div>
 
                 </div>
 
@@ -247,11 +296,7 @@
 
                   </div>
 
-
-
               </div>
-
-
 
     				</div>
 
@@ -262,26 +307,360 @@
         <!-- End Features -->
 
 
+        <div id="mentors" class="container-fluid g-padding-y-20--xs g-padding-y-40--sm">
+            <div class="g-text-center--xs g-margin-b-40--xs">
+                <p class="text-uppercase g-font-size-20--xs g-font-weight--700 g-letter-spacing--2 g-margin-b-25--xs" style="color: #bd2026">MENTORS</p>
+            </div>
 
-        <div class="g-promo-section" style="background:#000" id="about">
-            <div class="container g-padding-y-30--xs g-padding-y-30--sm g-padding-x-80--md g-padding-x-60--sm g-padding-x-40--xs">
-                <div class="row">
-                    <div class="col-md-4 g-margin-t-45--xs g-margin-b-60--xs g-margin-b-0--lg">
-                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
-                            <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
+            <!-- Swiper -->
+            <div class="s-swiper js__swiper-news swiper-container-horizontal">
+                <!-- Wrapper -->
+                <div class="swiper-wrapper g-margin-b-0--xs" style="transform: translate3d(-1046px, 0px, 0px); transition-duration: 0ms;"><article class="g-bg-position--center swiper-slide grad swiper-slide-duplicate" data-swiper-slide-index="11" style="width: 231.5px; margin-right: 30px;">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/mahesh.jpeg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">MAHESH RAKHEJA</h3>
+                                <p class="g-color--white">Former Director, Religare</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/maheshrakheja/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More</a>
                         </div>
-                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Startup Expo provides a grand platform for startups to display their product and/ or service at our annual entrepreneurship Summit Consortium 19.<br>This is also an opportunity for the attendees to learn about the new entrepreneurial techniques that these startups have employed to become successful in their journey.</p>
+                    </article><article class="g-bg-position--center swiper-slide grad swiper-slide-duplicate" style="width: 231.5px; margin-right: 30px;" data-swiper-slide-index="12">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/anil.jpeg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">ANIL KUMAR REDDY</h3>
+                                <p class="g-color--white">CEO &amp; Co-founder at Donatekart</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/anil-kumar-reddy/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Read More</a>
+                        </div>
+                    </article><article class="g-bg-position--center swiper-slide grad swiper-slide-duplicate" style="width: 231.5px; margin-right: 30px;" data-swiper-slide-index="13">
+                       <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                           <div class="g-margin-b-15--xs">
+                               <img src="img/pictures/harshad.jpeg" style="border-radius: 100px; width: 200px;height: 200px">
+                               <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">HARSHAD SACHANI</h3>
+                               <p class="g-color--white">Co-Founder at Career Mentors</p>
+                           </div>
+                           <a href="https://www.linkedin.com/in/harshadsachani/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Read More</a>
+                       </div>
+                   </article><article class="g-bg-position--center swiper-slide grad swiper-slide-duplicate swiper-slide-prev" style="width: 231.5px; margin-right: 30px;" data-swiper-slide-index="14">
+                      <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                          <div class="g-margin-b-15--xs">
+                              <img src="img/pictures/manish.jpeg" style="border-radius: 100px; width: 200px;height: 200px">
+                              <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">MANISH KHANCHANDANI</h3>
+                              <p class="g-color--white">Co-Founder at Khichadiwala LLP</p>
+                          </div>
+                          <a href="https://www.linkedin.com/in/manish-khanchandani-1b303b33/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Read More</a>
+                      </div>
+                  </article>
+                    <article class="g-bg-position--center swiper-slide grad swiper-slide-active" style="width: 231.5px; margin-right: 30px;" data-swiper-slide-index="0">
+                      <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-20--lg g-padding-y-40--xs g-margin-t-120--xs pad">
+                          <div class="g-margin-b-15--xs">
+                              <img src="img/pictures/yukti.jpg" style="border-radius: 100px; width: 200px;height: 200px">
+                              <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">YUKTI MEHANDIRATTA</h3>
+                              <p class="g-color--white">Silhouette by Yukti</p>
+                          </div>
+                          <a href="https://www.linkedin.com/in/yukti-mehandiratta-3164b652" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More</a>
+                      </div>
+                    </article>
+                    <article class="g-bg-position--center swiper-slide grad" style="width: 231.5px; margin-right: 30px;" data-swiper-slide-index="2">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/anup.jpeg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:30px">ANUP PANDEY</h3>
+                                <p class="g-color--white">Chief Customer Officer at Kare4u Healthcare Solutions </p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/anuppandey/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More</a>
+                        </div>
+                    </article>
+                    <article class="g-bg-position--center swiper-slide grad" data-swiper-slide-index="3" style="width: 231.5px; margin-right: 30px;">
+                       <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                           <div class="g-margin-b-15--xs">
+                               <img src="img/pictures/balaji.jpg" style="border-radius: 100px; width: 200px;height: 200px">
+                               <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">Balaji Viswanathan</h3>
+                               <p class="g-color--white">CEO - Invento Robotics</p>
+                           </div>
+                           <a href="https://www.linkedin.com/in/balajivi/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Read More</a>
+                       </div>
+                   </article>
 
-                    </div>
-                    <div class="col-md-7 col-md-offset-1">
-                        <img src="img/expo-about.jpg" alt="" style="max-width:100%; max-height:400px">
-                    </div>
-                </div>
+                    <article class="g-bg-position--center swiper-slide grad" data-swiper-slide-index="6" style="width: 231.5px; margin-right: 30px;">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/dashradh.jpeg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:30px">DASHRADH RAM NUTAKKI</h3>
+                                <p class="g-color--white">Mentor &amp; Coach - Factoryal Business Incubator (OPC) Pvt. Ltd. </p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/ramnutakki/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More</a>
+                        </div>
+                    </article>
+                    <article class="g-bg-position--center swiper-slide grad" data-swiper-slide-index="7" style="width: 231.5px; margin-right: 30px;">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/aparna.jpg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:30px">APARNA MISHRA</h3>
+                                <p class="g-color--white">Founder CafeBiz Women Entrepreneurs Hub</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/aparna-mishra-8a685810/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More</a>
+                        </div>
+                    </article>
+                    <article class="g-bg-position--center swiper-slide grad" data-swiper-slide-index="8" style="width: 231.5px; margin-right: 30px;">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/giridhar.jpg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:30px">T R GIRIDHAR</h3>
+                                <p class="g-color--white">Founder Partner - Just Bespoke Advisory LLP</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/tarakad-giridhar-ab33012/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More</a>
+                        </div>
+                    </article>
+                    <article class="g-bg-position--center swiper-slide grad" data-swiper-slide-index="9" style="width: 231.5px; margin-right: 30px;">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/krishna.jpeg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">KRISHNAKUMAR DEVNALLY</h3>
+                                <p class="g-color--white">Director, mPower Solutions</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/krishnakumardevnally/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More</a>
+                        </div>
+                    </article>
+                    <article class="g-bg-position--center swiper-slide grad" data-swiper-slide-index="10" style="width: 231.5px; margin-right: 30px;">
+                       <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                           <div class="g-margin-b-15--xs">
+                               <img src="img/pictures/dipesh.jpeg" style="border-radius: 100px; width: 200px;height: 200px">
+                               <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">DIPESH AJMERA</h3>
+                               <p class="g-color--white">CEO, Ajmera Tyres, Nagpur</p>
+                           </div>
+                           <a href="https://www.linkedin.com/in/dipesh-ajmera-757b4315/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Read More</a>
+                       </div>
+                   </article>
+                     <article class="g-bg-position--center swiper-slide grad" data-swiper-slide-index="11" style="width: 231.5px; margin-right: 30px;">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/mahesh.jpeg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">MAHESH RAKHEJA</h3>
+                                <p class="g-color--white">Former Director, Religare</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/maheshrakheja/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More</a>
+                        </div>
+                    </article>
+                     <article class="g-bg-position--center swiper-slide grad" style="width: 231.5px; margin-right: 30px;" data-swiper-slide-index="12">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/anil.jpeg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">ANIL KUMAR REDDY</h3>
+                                <p class="g-color--white">CEO &amp; Co-founder at Donatekart</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/anil-kumar-reddy/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Read More</a>
+                        </div>
+                    </article>
+                    <article class="g-bg-position--center swiper-slide grad" style="width: 231.5px; margin-right: 30px;" data-swiper-slide-index="13">
+                       <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                           <div class="g-margin-b-15--xs">
+                               <img src="img/pictures/harshad.jpeg" style="border-radius: 100px; width: 200px;height: 200px">
+                               <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">HARSHAD SACHANI</h3>
+                               <p class="g-color--white">Co-Founder at Career Mentors</p>
+                           </div>
+                           <a href="https://www.linkedin.com/in/harshadsachani/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Read More</a>
+                       </div>
+                   </article>
+                   <article class="g-bg-position--center swiper-slide grad" style="width: 231.5px; margin-right: 30px;" data-swiper-slide-index="14">
+                      <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                          <div class="g-margin-b-15--xs">
+                              <img src="img/pictures/manish.jpeg" style="border-radius: 100px; width: 200px;height: 200px">
+                              <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">MANISH KHANCHANDANI</h3>
+                              <p class="g-color--white">Co-Founder at Khichadiwala LLP</p>
+                          </div>
+                          <a href="https://www.linkedin.com/in/manish-khanchandani-1b303b33/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Read More</a>
+                      </div>
+                  </article>
+                <article class="g-bg-position--center swiper-slide grad swiper-slide-duplicate" style="width: 231.5px; margin-right: 30px;" data-swiper-slide-index="0">
+                      <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-20--lg g-padding-y-40--xs g-margin-t-120--xs pad">
+                          <div class="g-margin-b-15--xs">
+                              <img src="img/pictures/yukti.jpg" style="border-radius: 100px; width: 200px;height: 200px">
+                              <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">YUKTI MEHANDIRATTA</h3>
+                              <p class="g-color--white">Silhouette by Yukti</p>
+                          </div>
+                          <a href="https://www.linkedin.com/in/yukti-mehandiratta-3164b652" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More</a>
+                      </div>
+                    </article><article class="g-bg-position--center swiper-slide grad swiper-slide-duplicate" style="width: 231.5px; margin-right: 30px;" data-swiper-slide-index="1">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/saurabh.jpeg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:30px"> SAURABH MOODY VOICEMAN</h3>
+                                <p class="g-color--white">CEO - alphaa.ai </p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/saurabhmoody/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More</a>
+                        </div>
+                    </article><article class="g-bg-position--center swiper-slide grad swiper-slide-duplicate" style="width: 231.5px; margin-right: 30px;" data-swiper-slide-index="2">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/anup.jpeg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:30px">ANUP PANDEY</h3>
+                                <p class="g-color--white">Chief Customer Officer at Kare4u Healthcare Solutions </p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/anuppandey/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More</a>
+                        </div>
+                    </article><article class="g-bg-position--center swiper-slide grad swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 231.5px; margin-right: 30px;">
+                       <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                           <div class="g-margin-b-15--xs">
+                               <img src="img/pictures/balaji.jpg" style="border-radius: 100px; width: 200px;height: 200px">
+                               <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">Balaji Viswanathan</h3>
+                               <p class="g-color--white">CEO - Invento Robotics</p>
+                           </div>
+                           <a href="https://www.linkedin.com/in/balajivi/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Read More</a>
+                       </div>
+                   </article></div>
+                <!-- End Wrapper -->
+
+                <!-- Pagination -->
+                <div class="s-swiper__pagination-v1 s-swiper__pagination-v1--dark g-text-center--xs js__swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+            </div>
+            <!-- End Swiper -->
+        </div>
 
 
-            <h2 class="g-font-size-30--xs g-font-size-30--sm g-font-size-30--md g-color--white g-padding-x-20--xs">Get In Touch</h2>
-        <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
-            <!--<div class="g-container--md g-padding-y-40--xs">-->
+        <div id="investors" class="container-fluid g-padding-y-60--xs g-padding-y-80--sm">
+            <div class="g-text-center--xs g-margin-b-80--xs">
+                <p class="text-uppercase g-font-size-20--xs g-font-weight--700 g-letter-spacing--2 g-margin-b-25--xs" style="color: #bd2026"> PREVIOUS INVESTORS</p>
+            </div>
+
+            <!-- Swiper -->
+            <div class="s-swiper js__swiper-news swiper-container-horizontal">
+                <!-- Wrapper -->
+                <div class="swiper-wrapper g-margin-b-60--xs" style="transform: translate3d(-1046px, 0px, 0px); transition-duration: 0ms;"><article class="g-bg-position--center swiper-slide grad swiper-slide-duplicate" data-swiper-slide-index="1" style="width: 231.5px; margin-right: 30px;">
+                      <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                          <div class="g-margin-b-15--xs">
+                              <img src="img/pictures/shashikant.png" style="border-radius: 100px; width: 200px;height: 200px">
+                              <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">SHASHIKANT CHAUDHARY</h3>
+                              <p class="g-color--white">Cofounder, Nagpur Angels</p>
+                          </div>
+                          <a href="https://www.linkedin.com/in/bhaveshkothari1511/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More<img src=""></a>
+                      </div>
+                  </article><article class="g-bg-position--center swiper-slide grad swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 231.5px; margin-right: 30px;">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/devesh.jpg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">DEVESH CHAWLA</h3>
+                                <p class="g-color--white">CEO &amp; Founder - Chatur Ideas</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/devesh-chawla/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More<img src=""></a>
+                        </div>
+                    </article><article class="g-bg-position--center swiper-slide grad swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 231.5px; margin-right: 30px;">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/shwetank.jpg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">SHWETANK SHRIMAL</h3>
+                                <p class="g-color--white">Serial Entrepreneur &amp; Investor - UK</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/shwetank-shrimal-43b74625/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More<img src=""></a>
+                        </div>
+                    </article><article class="g-bg-position--center swiper-slide grad swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="4" style="width: 231.5px; margin-right: 30px;">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/neha.jpeg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">NEHA JAIN</h3>
+                                <p class="g-color--white">Co-founder at Z Nation Lab</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/neha-jain-820ab5120/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More<img src=""></a>
+                        </div>
+                    </article>
+                  <article class="g-bg-position--center swiper-slide grad swiper-slide-active" data-swiper-slide-index="0" style="width: 231.5px; margin-right: 30px;">
+                      <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                          <div class="g-margin-b-15--xs">
+                              <img src="img/pictures/kishor.jpg" style="border-radius: 100px; width: 200px;height: 200px">
+                              <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">KISHOR PANPALIYA</h3>
+                              <p class="g-color--white">Vice President At Americas &amp; APAC</p>
+                          </div>
+                          <a href="https://www.linkedin.com/in/kishorbampaliya/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More<img src=""></a>
+                      </div>
+                  </article>
+                  <article class="g-bg-position--center swiper-slide grad swiper-slide-next" data-swiper-slide-index="1" style="width: 231.5px; margin-right: 30px;">
+                      <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                          <div class="g-margin-b-15--xs">
+                              <img src="img/pictures/shashikant.png" style="border-radius: 100px; width: 200px;height: 200px">
+                              <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">SHASHIKANT CHAUDHARY</h3>
+                              <p class="g-color--white">Cofounder, Nagpur Angels</p>
+                          </div>
+                          <a href="https://www.linkedin.com/in/bhaveshkothari1511/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More<img src=""></a>
+                      </div>
+                  </article>
+                    <article class="g-bg-position--center swiper-slide grad" data-swiper-slide-index="2" style="width: 231.5px; margin-right: 30px;">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/devesh.jpg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">DEVESH CHAWLA</h3>
+                                <p class="g-color--white">CEO &amp; Founder - Chatur Ideas</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/devesh-chawla/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More<img src=""></a>
+                        </div>
+                    </article>
+                    <article class="g-bg-position--center swiper-slide grad" data-swiper-slide-index="3" style="width: 231.5px; margin-right: 30px;">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/shwetank.jpg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">SHWETANK SHRIMAL</h3>
+                                <p class="g-color--white">Serial Entrepreneur &amp; Investor - UK</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/shwetank-shrimal-43b74625/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More<img src=""></a>
+                        </div>
+                    </article>
+                    <article class="g-bg-position--center swiper-slide grad" data-swiper-slide-index="4" style="width: 231.5px; margin-right: 30px;">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/neha.jpeg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">NEHA JAIN</h3>
+                                <p class="g-color--white">Co-founder at Z Nation Lab</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/neha-jain-820ab5120/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More<img src=""></a>
+                        </div>
+                    </article>
+                <article class="g-bg-position--center swiper-slide grad swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 231.5px; margin-right: 30px;">
+                      <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                          <div class="g-margin-b-15--xs">
+                              <img src="img/pictures/kishor.jpg" style="border-radius: 100px; width: 200px;height: 200px">
+                              <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">KISHOR PANPALIYA</h3>
+                              <p class="g-color--white">Vice President At Americas &amp; APAC</p>
+                          </div>
+                          <a href="https://www.linkedin.com/in/kishorbampaliya/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More<img src=""></a>
+                      </div>
+                  </article><article class="g-bg-position--center swiper-slide grad swiper-slide-duplicate" data-swiper-slide-index="1" style="width: 231.5px; margin-right: 30px;">
+                      <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                          <div class="g-margin-b-15--xs">
+                              <img src="img/pictures/shashikant.png" style="border-radius: 100px; width: 200px;height: 200px">
+                              <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">SHASHIKANT CHAUDHARY</h3>
+                              <p class="g-color--white">Cofounder, Nagpur Angels</p>
+                          </div>
+                          <a href="https://www.linkedin.com/in/bhaveshkothari1511/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More<img src=""></a>
+                      </div>
+                  </article><article class="g-bg-position--center swiper-slide grad swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 231.5px; margin-right: 30px;">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/devesh.jpg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">DEVESH CHAWLA</h3>
+                                <p class="g-color--white">CEO &amp; Founder - Chatur Ideas</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/devesh-chawla/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More<img src=""></a>
+                        </div>
+                    </article><article class="g-bg-position--center swiper-slide grad swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 231.5px; margin-right: 30px;">
+                        <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                            <div class="g-margin-b-15--xs">
+                                <img src="img/pictures/shwetank.jpg" style="border-radius: 100px; width: 200px;height: 200px">
+                                <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">SHWETANK SHRIMAL</h3>
+                                <p class="g-color--white">Serial Entrepreneur &amp; Investor - UK</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/shwetank-shrimal-43b74625/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More<img src=""></a>
+                        </div>
+                    </article></div>
+                <!-- End Wrapper -->
+
+                <!-- Pagination -->
+                <div class="s-swiper__pagination-v1 s-swiper__pagination-v1--dark g-text-center--xs js__swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+            </div>
+            <!-- End Swiper -->
+        </div>
+
+        <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-40--xs g-padding-y-80--sm" style="background:#000" >
+            <h2 class="g-font-size-30--xs g-font-size-30--sm g-font-size-30--md g-color--white g-padding-x-20--xs" style="text-align:center">Get In Touch</h2>
 
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
                 <div class="col-xs-4 col-xs-offset-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
@@ -305,10 +684,11 @@
                 </div>
 
             </div>
-            <!--</div>-->
-            </div>
         </div>
-        <!-- End Coordinator -->
+
+
+
+
 
         <!--========== END PAGE CONTENT ==========-->
 

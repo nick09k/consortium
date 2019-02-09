@@ -223,10 +223,10 @@
                         <div class="col-sm-4">
                             <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
 
-                                <!--<a id="reg_button" href="/expo.php" title="Register">-->
-                                    <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                                <!--    <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--primary g-padding-x-15--xs">Know More</span>-->
-                                <!--</a>-->
+                                <a id="reg_button" href="/expo.php" title="Register">
+                                    <i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>
+                                    <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--primary g-padding-x-15--xs">Know More</span>
+                                </a>
                             </div>
                         </div>
                     </div>
