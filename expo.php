@@ -34,7 +34,82 @@
     <body>
 
         <!--========== HEADER ==========-->
-        <?php include("includes/header.php")?>
+
+        <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
+            <!-- Navbar -->
+            <nav class="s-header-v2__navbar">
+                <div class="container g-display-table--lg">
+                    <!-- Navbar Row -->
+                    <div class="s-header-v2__navbar-row">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="s-header-v2__navbar-col">
+                            <button type="button" class="collapsed s-header-v2__toggle" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+                                <span class="s-header-v2__toggle-icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="s-header-v2__navbar-col s-header-v2__navbar-col-width--180">
+                            <!-- Logo -->
+                            <div class="s-header-v2__logo">
+                                <a href="/" class="s-header-v2__logo-link">
+                                    <!--<img class="s-header-v2__logo-img s-header-v2__logo-img--default" src="https://startupconclave.ecellvnit.org/static/img/E-Cell_white.png" alt="Ecell Logo" height="50">-->
+                                    <img class="s-header-v2__logo-img s-header-v2__logo-img--shrink" src="img/icon.png" alt="Conso" height="40">
+                                </a>
+                            </div>
+                            <!-- End Logo -->
+                        </div>
+
+                        <div class="s-header-v2__navbar-col s-header-v2__navbar-col--right">
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse s-header-v2__navbar-collapse" id="nav-collapse">
+                                <ul class="s-header-v2__nav">
+                                    <li class="s-header-v2__nav-item"><a href="index.php" class="s-header-v2__nav-link">Home</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="#about" class="s-header-v2__nav-link">About</a></li>
+
+                                    <li class="s-header-v2__nav-item">
+                                        <!--<a href="#events" class="s-header-v2__nav-link">Events</a>-->
+                                        <a href="index.html" class="dropdown-toggle s-header-v2__nav-link -is-active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="g-font-size-10--xs g-margin-l-5--xs ti-angle-down"></span></a>
+                                        <ul class="dropdown-menu s-header-v2__dropdown-menu">
+                                            <li><a href="https://startupconclave.ecellvnit.org" class="s-header-v2__dropdown-menu-link">Startup Conclave</a></li>
+                                            <li><a href="/ceo.php" class="s-header-v2__dropdown-menu-link">CEO</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="s-header-v2__nav-item">
+                                        <!--<a href="#events" class="s-header-v2__nav-link">Events</a>-->
+                                        <a href="/attractions.php" class="dropdown-toggle s-header-v2__nav-link -is-active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Attractions <span class="g-font-size-10--xs g-margin-l-5--xs ti-angle-down"></span></a>
+                                        <ul class="dropdown-menu s-header-v2__dropdown-menu">
+                                            <li><a href="#townhall" class="s-header-v2__dropdown-menu-link">TownHall</a></li>
+                                            <li><a href="#zerotoone" class="s-header-v2__dropdown-menu-link">Zero To One</a></li>
+                                            <li><a href="/intern.php" class="s-header-v2__dropdown-menu-link">Internship Fair</a></li>
+                                            <li><a href="#expo" class="s-header-v2__dropdown-menu-link">Startup Expo</a></li>
+                                            <li><a href="/attractions.php" class="s-header-v2__dropdown-menu-link">Workshops & Webinars</a></li>
+
+
+                                        </ul>
+                                    </li>
+                                    <li class="s-header-v2__nav-item"><a href="https://www.ecellvnit.org/store.php" class="s-header-v2__nav-link">Merchandise</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="https://www.ecellvnit.org/spons.php" class="s-header-v2__nav-link">Sponsors</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="/team.php" class="s-header-v2__nav-link">Team</a></li>
+                                    <?php if($_SESSION['email']){ ?>
+                                      <li class="s-header-v2__nav-item"><a href="logout.php" class="s-header-v2__nav-link">Logout</a></li>
+                                  <?php }else{ ?>
+                                    <!--<li class="s-header-v2__nav-item"><a href="reg.php" class="s-header-v2__nav-link">Register</a></li>-->
+                                    <!-- <li class="s-header-v2__nav-item"><a href="login.php" class="s-header-v2__nav-link">Login</a></li> -->
+                                    <?php } ?>
+                                </ul>
+                            </div>
+                            <!-- End Nav Menu -->
+                        </div>
+                    </div>
+                    <!-- End Navbar Row -->
+                </div>
+            </nav>
+            <!-- End Navbar -->
+        </header>
+
+
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
@@ -44,23 +119,26 @@
             <div style="" class="expo-front-out"> </div>
 
 
-            <div class="container g-ver-center--sm g-padding-y-125--xs g-padding-y-0--lg">
+            <div class="container g-ver-center--sm g-padding-y-50--xs g-padding-y-0--lg">
                 <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
-                <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
+                <div class="g-margin-t-10--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm" >
 
 
-                     <div style="display:flex">
-                     <img src="https://startupconclave.ecellvnit.org/static/img/E-Cell_white.png" alt="Ecell Logo" height="50" style="float:right; margin-right:20px; z-index:2"/>
+                     <div style="display:flex; align-items:center">
+                     <img src="https://startupconclave.ecellvnit.org/static/img/E-Cell_white.png" alt="Ecell Logo" height="50" style="float:right; z-index:2"/>
+                     <p class="g-color--white-opacity" style="z-index:2; margin:20px;">&</p>
 
-                    <img src="img/tielogo.jpg" alt="TIE Nagpur" style="z-index:2" height="50"/></div>
+                    <img src="img/tielogo.jpg" alt="TIE Nagpur" style="z-index:2" height="50"/>
+                    </div>
 
-                    <p class="g-color--white-opacity" style="position: relative;">presents</p>
+                    <p class="g-color--white-opacity" style="position: relative;text-align:center; width:300px">present</p>
 
-                    <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>STARTUP<br>EXPO</b></h1>
+
+                    <h1 class="g-font-size-50--xs g-font-size-60--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>STARTUP<br>EXPO</b></h1>
 
                     <div class="row">
                         <div class="col-sm-6 col-sm-5 col-lg-5">
-                            <p class="g-color--white-opacity g-font-size-16--sm">Startup Expo is a chance for startups to get out of their shell and interact with mentors and investors from all over the country.<br><b>Ready, Set, Network!</p>
+                            <p class="g-color--white-opacity g-font-size-16--sm">Startup Expo is a chance for startups to get out of their shell and interact with mentors and investors.<br><b>Ready, Set, Network!</p>
                             <p class="g-color--white-opacity g-font-size-16--sm"> 9th Mar 2019</p>
                             <p class="g-color--white-opacity g-font-size-16--sm">Registration Fee: <b>800 INR</b></p>
 
@@ -74,7 +152,7 @@
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                             <a id="reg_button" href="#newform" title="Register">
                                 <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                                <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--primary g-padding-x-15--xs">Register Now!</span>
+                                <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Register Now!</span>
                             </a>
                         </div>
                     </div>
@@ -304,6 +382,16 @@
                           <a href="https://www.linkedin.com/in/manish-khanchandani-1b303b33/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Read More</a>
                       </div>
                   </article>
+                  <article class="g-bg-position--center swiper-slide grad" data-swiper-slide-index="3" style="width: 231.5px; margin-right: 30px;">
+                       <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
+                           <div class="g-margin-b-15--xs">
+                               <img src="img/pictures/balaji.jpg" style="border-radius: 100px; width: 200px;height: 200px">
+                               <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">Balaji Viswanathan</h3>
+                               <p class="g-color--white">CEO - Invento Robotics</p>
+                           </div>
+                           <a href="https://www.linkedin.com/in/balajivi/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Read More</a>
+                       </div>
+                   </article>
                     <article class="g-bg-position--center swiper-slide grad swiper-slide-active" style="width: 231.5px; margin-right: 30px;" data-swiper-slide-index="0">
                       <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-20--lg g-padding-y-40--xs g-margin-t-120--xs pad">
                           <div class="g-margin-b-15--xs">
@@ -324,16 +412,7 @@
                             <a href="https://www.linkedin.com/in/anuppandey/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More</a>
                         </div>
                     </article>
-                    <article class="g-bg-position--center swiper-slide grad" data-swiper-slide-index="3" style="width: 231.5px; margin-right: 30px;">
-                       <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
-                           <div class="g-margin-b-15--xs">
-                               <img src="img/pictures/balaji.jpg" style="border-radius: 100px; width: 200px;height: 200px">
-                               <h3 class="g-font-size-16--xs g-color--white g-margin-b-10--xs" style="padding-top:50px">Balaji Viswanathan</h3>
-                               <p class="g-color--white">CEO - Invento Robotics</p>
-                           </div>
-                           <a href="https://www.linkedin.com/in/balajivi/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Read More</a>
-                       </div>
-                   </article>
+
 
                     <article class="g-bg-position--center swiper-slide grad" data-swiper-slide-index="6" style="width: 231.5px; margin-right: 30px;">
                         <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
