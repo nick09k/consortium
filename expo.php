@@ -89,8 +89,9 @@
 
                                         </ul>
                                     </li>
-                                    <li class="s-header-v2__nav-item"><a href="https://www.ecellvnit.org/store.php" class="s-header-v2__nav-link">Merchandise</a></li>
+
                                     <li class="s-header-v2__nav-item"><a href="https://www.ecellvnit.org/spons.php" class="s-header-v2__nav-link">Sponsors</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="#register" class="s-header-v2__nav-link">Register</a></li>
                                     <li class="s-header-v2__nav-item"><a href="/team.php" class="s-header-v2__nav-link">Team</a></li>
                                     <?php if($_SESSION['email']){ ?>
                                       <li class="s-header-v2__nav-item"><a href="logout.php" class="s-header-v2__nav-link">Logout</a></li>
@@ -119,7 +120,7 @@
             <div style="" class="expo-front-out"> </div>
 
 
-            <div class="container g-ver-center--sm g-padding-y-50--xs g-padding-y-0--lg">
+            <div class="container g-ver-center--sm g-padding-y-100--xs g-padding-y-0--lg">
                 <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
                 <div class="g-margin-t-10--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm" >
 
@@ -138,90 +139,17 @@
 
                     <div class="row">
                         <div class="col-sm-6 col-sm-5 col-lg-5">
-                            <p class="g-color--white-opacity g-font-size-16--sm">Startup Expo is a chance for startups to get out of their shell and interact with mentors and investors.<br><b>Ready, Set, Network!</p>
-                            <p class="g-color--white-opacity g-font-size-16--sm"> 9th Mar 2019</p>
-                            <p class="g-color--white-opacity g-font-size-16--sm">Registration Fee: <b>800 INR</b></p>
-
+                            <p class="g-color--white-opacity g-font-size-20--xs"><b>Ready, Set, Network!</p>
+                            <p class="g-color--white-opacity g-font-size-18--xs"> 9th March 2019</p>
                         </div>
                     </div>
-                    <div class="row">
 
-
-
-                    <div class="col-sm-4">
-                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                            <a id="reg_button" href="#newform" title="Register">
-                                <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                                <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Register Now!</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
                 </div>
 
             </div>
         </div>
 
-        <div id="popup" style="background:#000; display:none;">
 
-            <div class="g-container--sm g-padding-y-80--xs g-padding-y-80--sm">
-                <div id="close" class="g-text-center--xs g-padding-y-40--xs" >
-                  <i class="ti-close"></i>
-                </div>
-
-
-                <div class="g-text-center--xs g-margin-b-60--xs">
-                    <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Startup Expo</p>
-                    <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">Register Now</h2>
-                    <p id="message" class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"></p>
-
-                </div>
-                <form class="center-block g-width-550--sm g-width-650--md g-width-700--lg" method="post" action="exposub.php" onsubmit="return validateData();">
-                    <div class="permanent">
-                        <div class="g-margin-b-30--xs">
-                            <input type="text" class="form-control s-form-v3__input" placeholder="* Startup Name" name="startup">
-                        </div>
-                        <div class="g-margin-b-30--xs">
-                            <input type="text" class="form-control s-form-v3__input" placeholder="* Basic Description" name="desc">
-                        </div>
-                        <div class="row g-margin-b-50--xs">
-                            <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                                <input type="email" class="form-control s-form-v3__input" placeholder="* EMAIL" name="email" style="text-transform: none">
-                            </div>
-                            <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                                <input type="text" class="form-control s-form-v3__input" placeholder="* WEBSITE" name="website" style="text-transform: none">
-                            </div>
-
-
-                        </div>
-
-                        <div class="row g-margin-b-50--xs">
-                            <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                                    <input type="text" class="form-control s-form-v3__input" placeholder="* Phone" name="phone" style="text-transform: none">
-                            </div>
-                            <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                                <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input" name="hiring" placeholder="* No. of members">
-                                    <option value="" selected="" disabled="" hidden="">Interested In hiring?</option>
-                                    <option value="1" style="color:black">Yes</option>
-                                    <option value="0" style="color:black">No</option>
-                                    <!-- <option value="More" style="color:black">More</option> -->
-
-                                </select>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <!--<div class="temp"></sdiv>-->
-
-                    <br>
-
-                    <div class="g-text-center--xs">
-                        <button type="submit" name="register" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Register</button>
-                    </div>
-                </form>
-            </div>
-        </div>
 
         <div class="g-promo-section" style="background:#000" id="about">
             <div class="container g-padding-y-30--xs g-padding-y-30--sm g-padding-x-80--md g-padding-x-60--sm g-padding-x-40--xs">
@@ -337,9 +265,9 @@
         <!-- End Features -->
 
 
-        <div id="mentors" class="container-fluid g-padding-y-20--xs g-padding-y-40--sm">
+        <div id="mentors" class="container-fluid g-padding-y-40--xs g-padding-y-60--sm" style="background:#000;">
             <div class="g-text-center--xs g-margin-b-40--xs">
-                <p class="text-uppercase g-font-size-20--xs g-font-weight--700 g-letter-spacing--2 g-margin-b-25--xs" style="color: #bd2026">MENTORS</p>
+                <p class="text-uppercase g-font-size-20--xs g-font-weight--700 g-letter-spacing--2 g-margin-b-25--xs" style="color: #fff">MENTORS</p>
             </div>
 
             <!-- Swiper -->
@@ -552,7 +480,7 @@
 
         <div id="investors" class="container-fluid g-padding-y-60--xs g-padding-y-80--sm">
             <div class="g-text-center--xs g-margin-b-80--xs">
-                <p class="text-uppercase g-font-size-20--xs g-font-weight--700 g-letter-spacing--2 g-margin-b-25--xs" style="color: #bd2026"> PREVIOUS INVESTORS</p>
+                <p class="text-uppercase g-font-size-20--xs g-font-weight--700 g-letter-spacing--2 g-margin-b-25--xs" style="color: #111"> PREVIOUS INVESTORS</p>
             </div>
 
             <!-- Swiper -->
@@ -688,6 +616,86 @@
                 <div class="s-swiper__pagination-v1 s-swiper__pagination-v1--dark g-text-center--xs js__swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
             </div>
             <!-- End Swiper -->
+        </div>
+        <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-40--xs g-padding-y-80--sm" style="background:#161416" id="register">
+            <div class="g-text-center--xs g-margin-b-40--xs">
+                <p class="text-uppercase g-font-size-20--xs g-font-weight--700 g-letter-spacing--2 g-margin-b-10--xs" style="color: #fff">REGISTER</p>
+            </div>
+
+            <div class="row">
+
+
+                    <div class="col-md-6 col-md-offset-3" style="text-align: center;">
+                        <p class="g-color--white-opacity g-font-size-16--sm">Here is your chance to showcase your startup to a pool of intellectual minds and network with eminent personalities!<br><br>Registration Fee: <b>800 INR</b></p>
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                            <a id="reg_button" href="#newform" title="Register">
+                                <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Register Now!</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        <div id="popup" style="background:#000; display:none;">
+
+            <div class="g-container--sm g-padding-y-80--xs g-padding-y-80--sm">
+                <div id="close" class="g-text-center--xs g-padding-y-40--xs" >
+                  <i class="ti-close"></i>
+                </div>
+
+
+                <div class="g-text-center--xs g-margin-b-60--xs">
+                    <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Startup Expo</p>
+                    <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">Register Now</h2>
+                    <p id="message" class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"></p>
+
+                </div>
+                <form class="center-block g-width-550--sm g-width-650--md g-width-700--lg" method="post" action="exposub.php" onsubmit="return validateData();">
+                    <div class="permanent">
+                        <div class="g-margin-b-30--xs">
+                            <input type="text" class="form-control s-form-v3__input" placeholder="* Startup Name" name="startup">
+                        </div>
+                        <div class="g-margin-b-30--xs">
+                            <input type="text" class="form-control s-form-v3__input" placeholder="* Basic Description" name="desc">
+                        </div>
+                        <div class="row g-margin-b-50--xs">
+                            <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                                <input type="email" class="form-control s-form-v3__input" placeholder="* EMAIL" name="email" style="text-transform: none">
+                            </div>
+                            <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                                <input type="text" class="form-control s-form-v3__input" placeholder="* WEBSITE" name="website" style="text-transform: none">
+                            </div>
+
+
+                        </div>
+
+                        <div class="row g-margin-b-50--xs">
+                            <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                                    <input type="text" class="form-control s-form-v3__input" placeholder="* Phone" name="phone" style="text-transform: none">
+                            </div>
+                            <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                                <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input" name="hiring" placeholder="* No. of members">
+                                    <option value="" selected="" disabled="" hidden="">Interested In hiring?</option>
+                                    <option value="1" style="color:black">Yes</option>
+                                    <option value="0" style="color:black">No</option>
+                                    <!-- <option value="More" style="color:black">More</option> -->
+
+                                </select>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--<div class="temp"></sdiv>-->
+
+                    <br>
+
+                    <div class="g-text-center--xs">
+                        <button type="submit" name="register" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Register</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-40--xs g-padding-y-80--sm" style="background:#000" >
