@@ -16,7 +16,6 @@
                 Email VARCHAR(255) NOT NULL,
                 Contact INT(255) NOT NULL,
                 Password VARCHAR(255) NOT NULL,
-                TeamID VARCHAR(255) NOT NULL,
                 Swadesh TINYINT(1) DEFAULT '0',
                 AdVenture TINYINT(1) DEFAULT '0',
                 Pitch_Perfect TINYINT(1) DEFAULT '0',

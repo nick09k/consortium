@@ -2,6 +2,9 @@
 session_start();
 $pagetitle = 'Register | Consortium';
 error_reporting(E_ALL);
+$email = $_SESSION['email'];
+$name = $_SESSION['name'];
+$contact = $_SESSION['contact'];
 ini_set('display_errors', 1);
   $db_host = "localhost:3306";
   $db_username = "conso";
@@ -17,7 +20,6 @@ ini_set('display_errors', 1);
               Email VARCHAR(255) NOT NULL,
               Contact VARCHAR(255) NOT NULL,
               Password VARCHAR(255) NOT NULL,
-              TeamID VARCHAR(255) NOT NULL,
               Swadesh TINYINT(1) DEFAULT '0',
               AdVenture TINYINT(1) DEFAULT '0',
               Pitch_Perfect TINYINT(1) DEFAULT '0',
@@ -42,13 +44,41 @@ ini_set('display_errors', 1);
               )";
     mysqli_query($con,$evequery);
   }
+
+  if(isset($_POST['sub_event'])) {
+    $event = $con->real_escape_string($_POST['event']);
+
+    if($event == ""){
+      $msg = "Please Select an event!";
+    }else{
+      $query = "SELECT * FROM Registrations WHERE Email = '$email'";
+      $result = mysqli_query($con,$query);
+      $num = mysqli_num_rows($result);
+
+      if($num > 0){
+        $data = mysqli_fetch_array($result);
+        if($data[$event] != 1){
+          $q1 = "UPDATE Registrations SET $event = 1";
+          mysqli_query($con,$q1);
+
+          $q2 = "INSERT INTO $event(Name,Email,Contact) VALUES('$name','$email','$contact')";
+          mysqli_query($con,$q2);
+
+          $msg = "You have successfully registered for the event. View your <a href='dashboard.php'>Dashboard</a>.";
+        }else{
+          $msg = "You have already registered for the event! Visit your <a href='dashboard.php'>Dashboard</a>.";
+        }
+      }
+    }
+  }
 ?>
-<?php if($_SESSION['email']){ ?>
+
 <!DOCTYPE html>
 <html>
   <?php include("includes/head.php"); ?>
   <body class="back">
     <?php include("includes/header.php"); ?>
+    <?php if($_SESSION['email']){ ?>
     <div id="register">
         <div class="g-container--sm g-padding-y-80--xs g-padding-y-125--xsm">
             <div class="g-text-center--xs g-margin-b-60--xs">
@@ -57,9 +87,9 @@ ini_set('display_errors', 1);
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
                 <!-- <p id="message" class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"></p> -->
             </div>
-            <form class="center-block g-width-500--sm g-width-550--md" method="post" action="regnew.php">
+            <form class="center-block g-width-500--sm g-width-550--md" method="post" action="register.php">
                 <div class="permanent">
-                  <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="event" placeholder="* No. of members" id="members" >
+                  <select pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="event" placeholder="* No. of members" id="members" >
                       <option value='' selected disabled hidden>Choose an Event</option>
                       <option value='Swadesh'>Swadesh</option>
                       <option value='AdVenture'>AdVenture</option>
@@ -74,63 +104,12 @@ ini_set('display_errors', 1);
                 </div>
 
                 <div class="g-text-center--xs">
-                    <button type="submit" name="events" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Next</button>
+                    <button type="submit" name="sub_event" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Next</button>
                 </div>
             </form>
         </div>
     </div>
-
-    <?php include("includes/footer.php");?>
-</html>
-</body>
-<?php }else{ ?>
-  <!DOCTYPE html>
-  <html>
-    <?php include("includes/head.php"); ?>
-    <body class="back">
-      <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
-                  <!-- Navbar -->
-                  <nav class="s-header-v2__navbar">
-                      <div class="container g-display-table--lg">
-                          <!-- Navbar Row -->
-                          <div class="s-header-v2__navbar-row">
-                              <!-- Brand and toggle get grouped for better mobile display -->
-                              <div class="s-header-v2__navbar-col">
-                                  <button type="button" class="collapsed s-header-v2__toggle" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
-                                      <span class="s-header-v2__toggle-icon-bar"></span>
-                                  </button>
-                              </div>
-
-                              <div class="s-header-v2__navbar-col s-header-v2__navbar-col-width--180">
-                                  <!-- Logo -->
-                                  <div class="s-header-v2__logo">
-                                      <a href="/" class="s-header-v2__logo-link">
-                                          <!--<img class="s-header-v2__logo-img s-header-v2__logo-img--default" src="static/img/E-Cell_white.png" alt="Ecell Logo" height="50">-->
-                                          <img class="s-header-v2__logo-img s-header-v2__logo-img--shrink" src="/img/icon.png" alt="StartUp Conclave">
-                                      </a>
-                                  </div>
-                                  <!-- End Logo -->
-                              </div>
-
-                              <div class="s-header-v2__navbar-col s-header-v2__navbar-col--right">
-                                  <!-- Collect the nav links, forms, and other content for toggling -->
-                                  <div class="collapse navbar-collapse s-header-v2__navbar-collapse" id="nav-collapse">
-                                      <ul class="s-header-v2__nav">
-                                          <li class="s-header-v2__nav-item"><a href="index.php" class="s-header-v2__nav-link">Home</a></li>
-                                          <li class="s-header-v2__nav-item"><a href="#about" class="s-header-v2__nav-link">About Us</a></li>
-
-                                          <li class="s-header-v2__nav-item"><a href="/partners" class="s-header-v2__nav-link">Partners</a></li>
-                                          <li class="s-header-v2__nav-item"><a href="#contact" class="s-header-v2__nav-link">Contact</a></li>
-                                      </ul>
-                                  </div>
-                                  <!-- End Nav Menu -->
-                              </div>
-                          </div>
-                          <!-- End Navbar Row -->
-                      </div>
-                  </nav>
-                  <!-- End Navbar -->
-              </header>
+    <?php }else{ ?>
       <div id="register">
           <div class="g-container--sm g-padding-y-80--xs g-padding-y-125--xsm">
               <div class="g-text-center--xs g-margin-b-60--xs">
@@ -145,8 +124,12 @@ ini_set('display_errors', 1);
               </div>
           </div>
       </div>
+      <?php } ?>
 
       <?php include("includes/footer.php");?>
     </body>
   </html>
-<?php } ?>
+
+  <?php
+
+  ?>
