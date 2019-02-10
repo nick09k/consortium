@@ -162,8 +162,8 @@
 
                     </div>
             </a>
-             <a href="/ceo.php" class="product-card col-xs-12 col-md-4" >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/events-02.jpg)">
+             <a href="/CEO.php" class="product-card col-xs-12 col-md-4" >
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/CEO.jpg)">
 
 
                     </div>

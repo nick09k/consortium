@@ -3,14 +3,15 @@ error_reporting(E_ALL);
 ini_set('display_errors', '1');
 $pagetitle = 'Login | Consortium';
   session_start();
-    $db_host = "localhost:3306";
-    $db_username = "conso";
-    $db_pass = "Conso@123";
-    $db_name = "conso19";
-
-    $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
-    mysqli_select_db($con,$db_name) or die ("no database");
     if(isset($_POST['login1'])) {
+      $db_host = "localhost:3306";
+      $db_username = "conso";
+      $db_pass = "Conso@123";
+      $db_name = "conso19";
+
+      $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
+      mysqli_select_db($con,$db_name) or die ("no database");
+
       $email = $con->real_escape_string($_POST['email']);
       $password = $con->real_escape_string($_POST['password']);
 
@@ -21,9 +22,7 @@ $pagetitle = 'Login | Consortium';
         $query = "SELECT * from Registrations WHERE Email='$email'";
         $result = mysqli_query($con,$query);
         $num = mysqli_num_rows($result);
-        if($num == 0){
-          $msg = "This email id isn't registered with us. Register <a href='regnew.php'>here</a>.";
-        }else{
+        if($num > 0){
           $data = mysqli_fetch_array($result);
           if(password_verify($password,$data['Password'])){
             $_SESSION['email'] = $email;
@@ -34,6 +33,8 @@ $pagetitle = 'Login | Consortium';
           }else {
             $msg = "Incorrect Password. Please try again.";
           }
+        }else{
+          $msg = "This email id isn't registered with us. Register <a href='regnew.php'>here</a>.";
         }
       }
     }else {

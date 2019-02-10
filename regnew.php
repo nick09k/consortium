@@ -50,7 +50,7 @@
     $cpassword = $con->real_escape_string($_POST['cpassword']);
 
     if($password == $cpassword){
-      $hashed_password = $con->real_escape_string(password_hash($npassword, PASSWORD_DEFAULT));
+      $hashed_password = $con->real_escape_string(password_hash($cpassword, PASSWORD_DEFAULT));
 
       $query = "SELECT * from Registrations where Email='$email'";
       $result = mysqli_query($con,$query);

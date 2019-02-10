@@ -54,14 +54,12 @@
                       for($var = 0;$var < 9; $var++ ){
                         if($row[$events[$var]] == 1){
                   ?>
-            <a href="#" class="product-card col-xs-12 col-md-5 col-lg-4">
+            <a href="<?php echo $events[$var] ?>.php" class="product-card col-xs-12 col-md-5 col-lg-4">
                 <div class="product-card__item-grid" style="background:url(img/events/<?php echo $events[$var] ?>.jpg)">
                     <div class="product-card__item-text">
                         <h3 class="g-color--white"><?php echo $events[$var] ?></h3>
-                        <p class="g-color--white">A goal without a plan is just a wish.<br>
-                        Join us for a lively and interactive session on "How to Create a B-Plan" exclusively for all VNITians and shortlisted teams of StartUp Conclave'19.<br>Date: 21 JAN 19</p>
                         <p class="g-color--white"><b>Registerations are closed!</b></p>
-                        <pclass="g-color--white"><i>#Webinar</i></p>
+                        <pclass="g-color--white"><i>#Event</i></p>
 
 
                     </div>
