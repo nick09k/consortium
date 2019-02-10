@@ -1,11 +1,9 @@
 <?php
 session_start();
 $pagetitle = 'Register | Consortium';
-error_reporting(E_ALL);
 $email = $_SESSION['email'];
 $name = $_SESSION['name'];
 $contact = $_SESSION['contact'];
-ini_set('display_errors', 1);
   $db_host = "localhost:3306";
   $db_username = "conso";
   $db_pass = "Conso@123";

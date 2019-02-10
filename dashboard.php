@@ -1,7 +1,5 @@
 <?php
   session_start();
-  error_reporting(E_ALL);
-  ini_set('display_errors', '1');
   $db_host = "localhost:3306";
   $db_username = "conso";
   $db_pass = "Conso@123";
