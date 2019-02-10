@@ -169,25 +169,25 @@
                     </div>
             </a>
              <a class="product-card col-xs-12 col-md-4" >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/events-03.jpg)">
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizMantra.jpg)">
 
 
                     </div>
             </a>
             <a class="product-card col-xs-12 col-md-4">
-                <div class="product-card__item-grid g-padding-y-40--xs"  style="background:url(img/events/events-04.jpg)">
+                <div class="product-card__item-grid g-padding-y-40--xs"  style="background:url(img/events/renderico.jpg)">
 
 
                     </div>
             </a>
             <a class="product-card col-xs-12 col-md-4" >
-                <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/events-05.jpg)">
+                <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/AdVenture.jpg)">
 
 
                     </div>
             </a>
             <a class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/events-06.jpg)">
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/Swadesh.jpg)">
 
 
                     </div>
