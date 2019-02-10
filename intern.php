@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en" class="no-js">
     <?php $pagetitle = 'Internship Fair | Consortium'; ?>
@@ -9,7 +7,6 @@
 
     <!-- Body -->
     <body>
-
         <!--========== HEADER ==========-->
         <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
                     <!-- Navbar -->

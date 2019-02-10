@@ -1,9 +1,9 @@
 <?php
-  session_start();
+  @session_start();
   $pagetitle = "Register Now | Consortium'19";
 
     $db_host = "localhost:3306";
-    $db_username = "conso";
+    $db_username = "conso19";
     $db_pass = "Conso@123";
     $db_name = "conso19";
 
@@ -103,14 +103,13 @@
   <body class="back">
     <?php include('includes/header.php'); ?>
     <div id="register">
-        <div class="g-container--sm g-padding-y-80--xs g-padding-y-125--xsm">
+        <div class="g-container--sm g-padding-y-80--xs g-padding-y-125--sm">
             <div class="g-text-center--xs g-margin-b-60--xs">
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Sign Up</p>
-                <a href="login.php"><p id="message" class="g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs">Already registered?</p></a>
                 <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">Register Now</h2>
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
             </div>
-            <form class="center-block g-width-500--sm g-width-550--md" method="post" action="regnew.php">
+            <form class="center-block g-width-500--sm g-width-550--md" method="post" action="">
                 <div class="permanent">
                     <div class="g-margin-b-30--xs">
                           <input type="text" class="form-control s-form-v3__input" placeholder="* Full Name" name="name" style="text-transform: none" id="name">
@@ -146,7 +145,9 @@
                 <div class="g-text-center--xs">
                     <button type="submit" name="regnew" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Register</button>
                 </div>
+                <a href="login.php"><p id="message" class="g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs">Already registered?</p></a>
             </form>
+
         </div>
     </div>
     <?php include("includes/footer.php");?>

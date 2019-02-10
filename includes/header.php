@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php @session_start(); ?>
 <html>
 <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
             <!-- Navbar -->

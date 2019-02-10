@@ -1,7 +1,7 @@
 <?php
-  session_start();
+  @session_start();
   $db_host = "localhost:3306";
-  $db_username = "conso";
+  $db_username = "conso19";
   $db_pass = "Conso@123";
   $db_name = "conso19";
 
