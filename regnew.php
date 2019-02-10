@@ -3,7 +3,7 @@
   $pagetitle = "Register Now | Consortium'19";
 
     $db_host = "localhost:3306";
-    $db_username = "conso19";
+    $db_username = "conso";
     $db_pass = "Conso@123";
     $db_name = "conso19";
 
@@ -16,7 +16,6 @@
                 Email VARCHAR(255) NOT NULL,
                 Contact INT(255) NOT NULL,
                 Password VARCHAR(255) NOT NULL,
-                TeamID VARCHAR(255) NOT NULL,
                 Swadesh TINYINT(1) DEFAULT '0',
                 AdVenture TINYINT(1) DEFAULT '0',
                 Pitch_Perfect TINYINT(1) DEFAULT '0',
@@ -50,7 +49,7 @@
     $cpassword = $con->real_escape_string($_POST['cpassword']);
 
     if($password == $cpassword){
-      $hashed_password = $con->real_escape_string(password_hash($npassword, PASSWORD_DEFAULT));
+      $hashed_password = $con->real_escape_string(password_hash($cpassword, PASSWORD_DEFAULT));
 
       $query = "SELECT * from Registrations where Email='$email'";
       $result = mysqli_query($con,$query);
@@ -65,7 +64,7 @@
 
         $q = "INSERT INTO Registrations(Name,Email,Contact,Password) VALUES('$name','$email','$contact','$hashed_password')";
         if(mysqli_query($con,$q)){
-          $msg = "You are registered with us. Now you can register in various events of Consortium <a href='register.php'>here</a>";
+          $msg = "You are registered with us. Now you can register in various events of Consortium by logging in <a href='login.php'>here</a>";
 
           $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','ConsoWorld');
           $tid = 1;
@@ -86,10 +85,6 @@
               mysqli_query($con,$reg_event);
             }
           }
-          $_SESSION['email'] = $email;
-          $_SESSION['name'] = $name;
-          $_SESSION['contact'] = $contact;
-          $_SESSION['teamid'] = $tid;
         }else {
           echo("Error description: " . mysqli_error($con));
         }
@@ -111,9 +106,9 @@
         <div class="g-container--sm g-padding-y-80--xs g-padding-y-125--xsm">
             <div class="g-text-center--xs g-margin-b-60--xs">
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Sign Up</p>
+                <a href="login.php"><p id="message" class="g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs">Already registered?</p></a>
                 <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">Register Now</h2>
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
-                <p id="message" class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"></p>
             </div>
             <form class="center-block g-width-500--sm g-width-550--md" method="post" action="regnew.php">
                 <div class="permanent">
