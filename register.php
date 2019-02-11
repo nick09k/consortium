@@ -5,7 +5,7 @@ $email = $_SESSION['email'];
 $name = $_SESSION['name'];
 $contact = $_SESSION['contact'];
   $db_host = "localhost:3306";
-  $db_username = "conso19";
+  $db_username = "conso";
   $db_pass = "Conso@123";
   $db_name = "conso19";
 
@@ -36,9 +36,20 @@ $contact = $_SESSION['contact'];
     $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
               ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
               Name VARCHAR(255) NOT NULL,
+              Main_Email VARCHAR(255) NOT NULL,
               Email VARCHAR(255) NOT NULL,
               Contact VARCHAR(255) NOT NULL,
-              TeamID INT(11) NOT NULL
+              )";
+    mysqli_query($con,$evequery);
+  }
+
+  $eve = array('Swadesh_team','AdVenture_team','Pitch_Perfect_team','renderico_team','BizMantra_team','BizQuiz_team','ConsoWorld_team');
+  for($var = 0; $var < 9; $var++){
+    $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
+              ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+              Name VARCHAR(255) NOT NULL,
+              Email VARCHAR(255) NOT NULL,
+              Contact VARCHAR(255) NOT NULL,
               )";
     mysqli_query($con,$evequery);
   }
@@ -59,7 +70,7 @@ $contact = $_SESSION['contact'];
           $q1 = "UPDATE Registrations SET $event = 1";
           mysqli_query($con,$q1);
 
-          $q2 = "INSERT INTO $event(Name,Email,Contact) VALUES('$name','$email','$contact')";
+          $q2 = "INSERT INTO $event(Name,Main_Email,Email,Contact) VALUES('$name','$email','$email','$contact')";
           mysqli_query($con,$q2);
 
           $msg = "You have successfully registered for the event. View your <a href='dashboard.php'>Dashboard</a>.";

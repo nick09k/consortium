@@ -1,12 +1,47 @@
 <?php
   @session_start();
+  error_reporting(E_ALL);
+    ini_set('display_errors', '1');
   $db_host = "localhost:3306";
-  $db_username = "conso19";
+  $db_username = "conso";
   $db_pass = "Conso@123";
   $db_name = "conso19";
 
   $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
   mysqli_select_db($con,$db_name) or die ("no database");
+
+  $email = $_SESSION['email'];
+
+  if(isset($_POST['swanewmem'])){
+    $name2 = $con->real_escape_string($_POST['name']);
+    $email2 = $con->real_escape_string($_POST['email']);
+    $contact2 = $con->real_escape_string($_POST['contact']);
+
+    if($name2 == "" || $email2 == "" || $contact2 == "" ){
+      $msg = "Please fill all the details";
+    }else{
+      $query = "SELECT * from Registrations where Email='$email'";
+      $result = mysqli_query($con,$query);
+      $num = mysqli_num_rows($result);
+
+      if($num == 0){
+        $query = "INSERT INTO Swadesh(Name,Main_Email,Email,Contact) VALUES('$name2','$email','$email2','$contact2')";
+        if(mysqlii_query($con,$query)){
+          $msg = "User added successfully";
+        }else{
+          echo("Error description: " . mysqli_error($con));
+        }
+      }else{
+        $query = "UPDATE Swadesh SET Main_Email='$email' WHERE Email = '$email2'";
+        if(mysqli_query($con,$query)){
+          $msg = "User added successfully";
+        }else{
+          echo("Error description: " . mysqli_error($con));
+        }
+      }
+    }
+  }
+
   if($_SESSION['email']){
 ?>
 <!DOCTYPE html>
@@ -31,18 +66,18 @@
                 <h1 class="g-font-size-30--xs g-font-size-40--sm g-font-size-50--md g-color--white g-letter-spacing--3">Your Events - Consortium'19</h1>
                 <h2 class="g-font-size-36--xs g-font-size-50--sm g-font-size-60--md g-color--white g-letter-spacing--1">Dashboard</h2>
                 <a href="register.php"><p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs">Register for more events</p></a>
+                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
                 <div class="indicate"><i class="ti-angle-double-down"></i></div>
             </div>
         </div>
         <!--========== END PROMO BLOCK ==========-->
 
         <!--========== PAGE CONTENT ==========-->
-        <!-- Speakers -->
+        <!-- Events -->
         <div class="core-container">
             <div class="container g-padding-y-80--xs g-padding-y-125--sm  g-padding-x-0--xs g-padding-x-40--sm g-padding-x-100--md" style="background:rgba(0, 0, 0, 0.4)">
                 <div class="row product-grid">
                   <?php
-                    $email = $_SESSION['email'];
                     $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','ConsoWorld');
                     $query = "SELECT * FROM Registrations WHERE Email='$email'";
                     $result = mysqli_query($con,$query);
@@ -52,23 +87,91 @@
                       for($var = 0;$var < 9; $var++ ){
                         if($row[$events[$var]] == 1){
                   ?>
-            <a href="<?php echo $events[$var] ?>.php" class="product-card col-xs-12 col-md-5 col-lg-4">
-                <div class="product-card__item-grid" style="background:url(img/events/<?php echo $events[$var] ?>.jpg)">
-                    <div class="product-card__item-text">
-                        <h3 class="g-color--white"><?php echo $events[$var] ?></h3>
-                        <p class="g-color--white"><b>Registerations are closed!</b></p>
-                        <pclass="g-color--white"><i>#Event</i></p>
-
-
-                    </div>
-                </div>
-            </a>
+                    <a href="#<?php echo $events[$var] ?>" class="product-card col-xs-12 col-md-5 col-lg-4">
+                        <div class="product-card__item-grid" style="background:url(img/events/<?php echo $events[$var] ?>.jpg)">
+                            <div class="product-card__item-text">
+                                <h3 class="g-color--white"><?php echo $events[$var] ?></h3>
+                                <p class="g-color--white"><b>Registerations are closed!</b></p>
+                                <pclass="g-color--white"><i>#Event</i></p>
+                            </div>
+                        </div>
+                    </a>
                   <?php }
                       }
                     }
                    ?>
-        </div>
+                 </div>
             </div>
+        </div>
+
+        <div class="" id="Swadesh">
+          <p>Your team:
+          <?php
+            $query = "SELECT * FROM Swadesh WHERE Email='$email'";
+            $result = mysqli_query($con,$query);
+            $num = mysqli_num_rows($result);
+            while($row = mysqli_fetch_array($result)){
+          ?>
+          <?php echo $row['Name']; ?> <br/>
+          <?php }
+            if($num < 4){
+            ?>
+            Add a member to your team:
+            <form class="center-block g-width-500--sm g-width-550--md" method="post" action="dashboard.php">
+                <div class="permanent">
+                    <div class="g-margin-b-30--xs">
+                          <input type="text" class="form-control s-form-v3__input" placeholder="* Full Name" name="name" style="text-transform: none" id="name">
+                    </div>
+                    <div class="row g-margin-b-50--xs">
+                        <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                            <input type="email" class="form-control s-form-v3__input" placeholder="* Email" name="email" style="text-transform: none" id="email">
+                        </div>
+                        <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
+                            <input type="tel" class="form-control s-form-v3__input" placeholder="* Contact" name="contact" style="text-transform: none">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="g-text-center--xs">
+                    <button type="submit" name="swanewmem" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Submit</button>
+                </div>
+            </form>
+          <?php
+            }
+          ?>
+          </p>
+        </div>
+
+        <div class="" id="AdVenture">
+
+        </div>
+
+        <div class="" id="Pitch_Perfect">
+
+        </div>
+
+        <div class="" id="BizMantra">
+
+        </div>
+
+        <div class="" id="BizQuiz">
+
+        </div>
+
+        <div class="" id="CEO">
+
+        </div>
+
+        <div class="" id="Teen_Titans">
+
+        </div>
+
+        <div class="" id="renderico">
+
+        </div>
+
+        <div class="" id="ConsoWorld">
+
         </div>
 
             <!--<div class="row g-overflow--hidden">-->
