@@ -207,7 +207,7 @@
             </div>
         </div>
     </div>
-    <?php include("includes/footer.php");?>
+    <?php include("includes/footer_landing.php");?>
     <?php include("includes/script.php");?>
   </body>
 </html>

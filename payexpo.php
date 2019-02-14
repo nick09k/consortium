@@ -25,7 +25,7 @@
 
       if($num > 0){
 
-          $msg = "Congratulations! You are now a part of Central India’s Biggest Entrepreneurship Summit.<br>Your transaction ID: ".$txnid;
+          $donemsg = "Congratulations! You are now a part of Central India’s Biggest Entrepreneurship Summit.<br>Your transaction ID: <b>".$txnid ."</b>";
           $to = $email;
           $subject = "Welcome To The Startup Expo | Consortium'19";
           $html = '
@@ -75,16 +75,19 @@
                       <h2 style="font-size:22px;">Welcome to Startup Expo</h2><br>
 
                       <div class="context">
-                          <h3><b>Hello '.$startup.',</b></h3>
+                          <h3><b>Hello,</b></h3>
 
 
                           <p>Congratulations! You are now a part of Central India’s Biggest Entrepreneurship Summit.</p>
                           <div>
                               <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board for this event.</p>
+                              <p> Your Transaction ID: <b>'.$txnid.'</b><br>
+                                  Registration Fee: 800 INR
+                              </p>
                               <p>
-                                  To keep you updated, all the relevant details will be e-mailed to you very shortly.
-                                  Over this month, you will get access to plenty of valuable resources, which will help you guide your way through this program.<br>
-                                  For queries and in case of any difficulty, feel free to contact us.<br>
+                                  To keep you updated, all the relevant details will be emailed to you very shortly.<br>
+
+                                  <br>
                               </p>
                               <p>For queries and in case of any difficulty, feel free to contact us.</p>
                               <p>
@@ -137,6 +140,7 @@
                       Pay Now
                     </h2>
                     <p id="message" class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
+                    <p class="text-uppercase g-font-size-16--xs g-font-weight--700 g-letter-spacing--2 g-margin-b-25--xs"><?php echo $donemsg; ?></p>
 
                     <div class="col-md-8 col-md-offset-2" style="text-align: center;">
                         <p class="g-color--white-opacity g-font-size-16--sm">
@@ -171,7 +175,7 @@
                 </div>
             </div>
     </div>
-    <?php include("includes/footer.php");?>
+    <?php include("includes/footer_landing.php");?>
     <?php include("includes/script.php");?>
   </body>
 </html>
