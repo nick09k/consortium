@@ -1,30 +1,6 @@
- <?php
-//   session_start();
-
-//   $db_host = "localhost:3306";
-//   $db_username = "conso19";
-//   $db_pass = "Conso@123";
-//   $db_name = "conso19";
-
-//   $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
-//   mysqli_select_db($con,$db_name) or die ("no database");
-
-//   $regquery ="CREATE TABLE IF NOT EXISTS Expo(
-//     ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-//     Startup VARCHAR(255) NOT NULL,
-//     Description VARCHAR(1000) NOT NULL,
-//     Email VARCHAR(255) NOT NULL,
-//     Website VARCHAR(255) NOT NULL,
-//     Phone VARCHAR(16) NOT NULL,
-//     Hiring TINYINT(1) NOT NULL
-//   )";
-
-//   mysqli_query($con,$regquery);
-
-// ?>
-
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+    
     <?php $pagetitle = 'StartUp Expo | Consortium'; ?>
     <!-- Begin Head -->
     <?php include("includes/head.php")?>
@@ -109,7 +85,6 @@
             </nav>
             <!-- End Navbar -->
         </header>
-
 
         <!--========== END HEADER ==========-->
 
@@ -215,8 +190,6 @@
                              Investors from your sector that are present will personally visit your kiosk at different times during the consortium to interact with you.
                         </a>
                     </div>
-
-
 
                 </div>
                 <div class="row">
@@ -537,7 +510,7 @@
                           <a href="https://www.linkedin.com/in/kishorbampaliya/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More<img src=""></a>
                       </div>
                   </article>
-                  <article class="g-bg-position--center swiper-slide grad swiper-slide-next" data-swiper-slide-index="1" style="width: 231.5px; margin-right: 30px;">
+                  <!-- <article class="g-bg-position--center swiper-slide grad swiper-slide-next" data-swiper-slide-index="1" style="width: 231.5px; margin-right: 30px;">
                       <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
                           <div class="g-margin-b-15--xs">
                               <img src="img/pictures/shashikant.png" style="border-radius: 100px; width: 200px;height: 200px">
@@ -546,7 +519,7 @@
                           </div>
                           <a href="https://www.linkedin.com/in/bhaveshkothari1511/" target="_blank" class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Know More<img src=""></a>
                       </div>
-                  </article>
+                  </article> -->
                     <article class="g-bg-position--center swiper-slide grad" data-swiper-slide-index="2" style="width: 231.5px; margin-right: 30px;">
                         <div class="g-text-center--xs g-padding-x-15--xs g-padding-x-30--lg g-padding-y-50--xs g-margin-t-120--xs pad">
                             <div class="g-margin-b-15--xs">
@@ -661,7 +634,7 @@
                             <input type="text" class="form-control s-form-v3__input" placeholder="* Startup Name" name="startup">
                         </div>
                         <div class="g-margin-b-30--xs">
-                            <input type="text" class="form-control s-form-v3__input" placeholder="* Basic Description" name="desc">
+                            <input type="text" class="form-control s-form-v3__input" placeholder="* Basic Description" name="description">
                         </div>
                         <div class="row g-margin-b-50--xs">
                             <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">

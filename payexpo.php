@@ -9,69 +9,30 @@
   $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
   mysqli_select_db($con,$db_name) or die ("no database");
 
-  $regquery ="CREATE TABLE IF NOT EXISTS Expo(
-    ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    startup VARCHAR(255) NOT NULL,
-    description VARCHAR(1000) NOT NULL,
-    email VARCHAR(255) NOT NULL,
-    website VARCHAR(255) NOT NULL,
-    phone VARCHAR(16) NOT NULL,
-    hiring TINYINT(1) NOT NULL,
-    paid TINYINT(1) NOT NULL
-  )";
+  if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
-  mysqli_query($con,$regquery);
-
-  if(isset($_POST['register'])){
-    $startup = $con->real_escape_string($_POST['startup']);
-    $desc = $con->real_escape_string($_POST['description']);
     $email = $con->real_escape_string($_POST['email']);
-    $website = $con->real_escape_string($_POST['website']);
-    $phone = $con->real_escape_string($_POST['phone']);
-    $hiring = $con->real_escape_string($_POST['hiring']);
+    $txnid = $con->real_escape_string($_POST['txnid']);
 
-    if($startup=="" || $desc=="" || $email=="" || $website=="" || $phone=="" || $hiring==""){
-        $msg = "Please fill all the details. <a href='expo.php' style='color:#eee;'>Try Again</a>";
-    }else{
-      $query = "SELECT * from Expo where Email='$email'";
+    if($email=="" || $txnid==""){
+        $msg = "Something went wrong. <a href='expo.php' style='color:#eee;'>Try Again</a>";
+    }
+    else{
+
+      $query = "UPDATE Expo SET paid = 1 WHERE email='$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
 
       if($num!=0){
-        $msg = "Your startup is already registered.";
-      }
-      else{
 
-        $q = "INSERT INTO Expo(startup,description,email,website,phone,hiring, paid) VALUES('$startup','$desc','$email','$website','$phone','$hiring','0')";
-
-
-        if(mysqli_query($con,$q)){
-
-          $msg = "You are registered with us. All the required information has been sent to you.";
-
-
+          $msg = "Congratulations! You are now a part of Central India’s Biggest Entrepreneurship Summit.<br>Your transaction ID: ".$txnid;
           $to = $email;
-
           $subject = "Welcome To The Startup Expo | Consortium'19";
           $html = '
-          <!DOCTYPE html>
+              <!DOCTYPE html>
               <html>
                   <head>
-
-
-
-          <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-125403862-1"></script>
-              
-          <script>window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag("js", new Date());
-
-                gtag("config", "UA-125403862-1");
-            </script>
-            <title>Email-Template</title>
                       <style>
-
-
                           li{
                               padding:10px;
                           }
@@ -117,25 +78,16 @@
                           <h3><b>Hello '.$startup.',</b></h3>
 
 
-                          <p>Thank You for registering!</p>
+                          <p>Congratulations! You are now a part of Central India’s Biggest Entrepreneurship Summit.</p>
                           <div>
-                              <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board for the <b>Startup Expo</b></p>
+                              <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board for this event.</p>
                               <p>
-                                  To complete your registration follow the button below and become a part of Central India’s Biggest Entrepreneurship Summit Consortium 19 <br>
+                                  To keep you updated, all the relevant details will be e-mailed to you very shortly.
+                                  Over this month, you will get access to plenty of valuable resources, which will help you guide your way through this program.<br>
                                   For queries and in case of any difficulty, feel free to contact us.<br>
                               </p>
-                              <br>
-
-                                <a style="display:block; text-align: center;width:100px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://consortium.ecellvnit.org/payexpo.php">Pay Now!</a>
-
+                              <p>For queries and in case of any difficulty, feel free to contact us.</p>
                               <p>
-
-
-                                <br>
-                                <p>For queries and in case of any difficulty, feel free to contact us.</p>
-                                <br>
-
-                                <br>
                                   With warm regards,<br>
                                   Anushree Rungta<br>
                                   Core-Coordinator, Ecell VNIT
@@ -143,8 +95,8 @@
                           </div>
                       </div>
                   </body>
-              </html>';
-
+              </html>
+            ';
 
           $url = 'https://startupconclave.ecellvnit.org/send';
           $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'intheend');
@@ -159,18 +111,14 @@
           );
           $context  = stream_context_create($options);
           $result = file_get_contents($url, false, $context);
-          if ($result === FALSE) { 
-
-              $msg = 'We are facing problem in sending email. Please use this link to pay your registration fees.';
-              header('https://consortium.ecellvnit.org/payexpo.php');
-
-          }
-        }
+          if ($result === FALSE) { /* Handle error */ }
+      }
 
       else{
-          $msg = "Something went Wrong. <a href='expo.php' style='color:#eee;'>Try Again</a>";
-        }
+
+        $msg = "Your startup is not registered with us. Kindly first register <a href='expo.php'> here</a>. Or your have entered wrong email address while payment. Kindly Contact Us";
       }
+      
     }
   }
 ?>
@@ -182,12 +130,46 @@
   <body class="back">
     <?php include('includes/header.php'); ?>
     <div id="register">
-        <div class="g-container--sm g-padding-y-80--xs g-padding-y-125--xsm">
-            <div class="g-text-center--xs g-margin-b-60--xs" style="padding-bottom:10em; padding-top:10em;">
-                <!-- <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Sign Up</p> -->
-                <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white"><?php echo $msg; ?></h2>
+        <div class="g-container--sm g-padding-y-80--xs g-padding-y-125--sm">
+                <div class="g-text-center--xs g-margin-b-60--xs">
+                    <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Sign Up</p>
+                    <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">
+                      Pay Now
+                    </h2>
+                    <p id="message" class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
+
+                    <div class="col-md-8 col-md-offset-2" style="text-align: center;">
+                        <p class="g-color--white-opacity g-font-size-16--sm">
+                          <?php 
+                            if($_SERVER['REQUEST_METHOD'] != 'POST'){
+
+                              echo 'Here is your chance to showcase your startup to a pool of intellectual minds and network with eminent personalities!';
+
+                            }
+                          ?>
+                          
+                          <br><br>Registration Fee: <b>800 INR</b>
+                        </p>
+
+                        <?php 
+                            if($_SERVER['REQUEST_METHOD'] != 'POST'){
+                        
+                        echo '<p class="g-color--white-opacity g-font-size-12--sm">
+
+                          *Note: Kindly only use your startup email address while payment.
+                        </p>
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                            <a id="reg_button" href="https://www.payumoney.com/paybypayumoney/#/3CE4A3B78852ADA9D1FCA3DE063D08C4" title="Register">
+                                <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Pay Now!</span>
+                            </a>
+                        </div>';
+                      }
+                        ?>
+
+                    </div>
+                </div>
             </div>
-        </div>
     </div>
     <?php include("includes/footer.php");?>
     <?php include("includes/script.php");?>
