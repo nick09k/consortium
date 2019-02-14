@@ -21,9 +21,9 @@
 
       $query = "UPDATE Expo SET paid = 1 WHERE email='$email'";
       $result = mysqli_query($con,$query);
-      $num = mysqli_num_rows($result);
+      $num = mysqli_affected_rows($con);
 
-      if($num!=0){
+      if($num > 0){
 
           $msg = "Congratulations! You are now a part of Central India’s Biggest Entrepreneurship Summit.<br>Your transaction ID: ".$txnid;
           $to = $email;

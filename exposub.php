@@ -36,9 +36,30 @@
       $query = "SELECT * from Expo where Email='$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
+      $data = $result->fetch_array(MYSQLI_ASSOC);
 
       if($num!=0){
-        $msg = "Your startup is already registered.";
+
+        if($data['paid'] == '0'){
+            $msg = 'Your startup <b>'.$data['startup'].'</b> is already registered.<br> <span style="font-size:18px;">Kindly pay the required registration fee to ensure your registration.</span><br>
+              <p class="g-color--white-opacity g-font-size-12--sm">
+
+                          *Note: Kindly only use your startup email address while payment.
+                        </p>
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                            <a id="reg_button" href="https://www.payumoney.com/paybypayumoney/#/3CE4A3B78852ADA9D1FCA3DE063D08C4" title="Register">
+                                <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Pay Now!</span>
+                            </a>
+                        </div>
+            ';
+
+        }
+        else{
+          $msg = "Your startup <b>".$data['startup']."</b> is already registered.<br> <span style='font-size:18px;'>Kindly use different email address for new registration.</span>";
+        }
+
+        
       }
       else{
 
@@ -47,19 +68,16 @@
 
         if(mysqli_query($con,$q)){
 
-          $msg = "You are registered with us. All the required information has been sent to you.";
+          $msg = "You are registered with us. To ensure complete complete registration, kindly check the email.";
 
 
           $to = $email;
 
-          $subject = "Welcome To The Startup Expo | Consortium'19";
+          $subject = "Thank you for registering in Startup Expo | Consortium'19";
           $html = '
           <!DOCTYPE html>
               <html>
                   <head>
-
-
-
           <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-125403862-1"></script>
               
           <script>window.dataLayer = window.dataLayer || [];
