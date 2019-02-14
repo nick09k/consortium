@@ -503,7 +503,7 @@ video::-webkit-media-controls-overlay-play-button {
     z-index: 1004;
     top: 0;
     left: 0;
-    background: #000000de;
+    background: rgba(0,0,0,0.93);
     overflow-y: hidden;
 }
 
