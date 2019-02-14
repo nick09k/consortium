@@ -68,7 +68,7 @@
 
         if(mysqli_query($con,$q)){
 
-          $msg = "You are registered with us. To ensure complete complete registration, kindly check the email.";
+          $msg = "You are registered with us. To ensure complete registration, kindly check the email.";
 
 
           $to = $email;
