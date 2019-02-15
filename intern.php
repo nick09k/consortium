@@ -70,7 +70,7 @@
                 <div class="g-margin-t-34--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
 
                     <br>
-                    <p class="g-color--white-opacity g-font-size-18--xs" style="position: relative;"><b>E-Cell VNIT & Department Of T&P VNIT</b><br>presents,</p>
+                    <p class="g-color--white-opacity g-font-size-18--xs" style="position: relative;"><b>E-Cell VNIT </b>presents</p>
                     <h1 class="g-font-size-36--xs g-font-size-40--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>INTERNSHIP<br>FAIR</b></h1>
 
 
@@ -215,23 +215,57 @@
         </div>
 
 
-        <!--<div id="oneplus" class="intern-model" style="display:none">-->
-        <!--        <div class="container g-padding-y-40--xs g-padding-y-80--sm g-padding-x-20--xs g-padding-x-80--xs g-margin-t-40--xs">-->
+        <div id="oneplus" class="intern-model" style="display:none; overflow:scroll;">
+                <div class="container g-padding-y-40--xs g-padding-y-80--sm g-padding-x-20--xs g-padding-x-20--xs g-padding-x-100--md g-margin-t-40--xs">
 
-        <!--            <a class="g-color--white g-font-size-20--xs" onclick="closemodel('oneplus');" style="position:absolute; left:90%" >X</a>-->
+                    <a class="g-color--white g-font-size-20--xs" onclick="closemodel('oneplus');" style="position:absolute; left:90%" >X</a>
 
-        <!--            <h3 class="g-font-size-30--xs g-font-size-30--sm g-font-size-30--md g-color--white g-padding-x-20--xs">One Plus</h3>-->
+                    <h3 class="g-font-size-30--xs g-font-size-30--sm g-font-size-40--md g-color--white ">One Plus</h3>
 
-        <!--            <p class="g-color--white-opacity">All the details will be here</p>-->
-        <!--            <div class="wow fadeInLeft g-margin-t-40--xs" data-wow-duration=".3" data-wow-delay=".5s">-->
-        <!--                <a href="#about" title="Register">-->
-                            <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-        <!--                    <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Fill Form <span class="ti-angle-right"></span></span>-->
-        <!--                </a>-->
-        <!--            </div>-->
+                    <p class="g-color--white g-font-size-16--xs">
+                        OnePlus started in the winter of 2013 with a simple, bold idea: make a better phone. But, not just a better phone – a better way of doing things. A new kind of tech company that works hand in hand with users to do something amazing, something meaningful.
 
-        <!--        </div>-->
-        <!--</div>-->
+                    </p>
+                    <p class="g-color--white g-font-size-16--xs">We gather exceptional talent from all over the world with various backgrounds, beliefs, and perspectives, but we all share one common dream: change things for the better and leave a mark on the world.</p>
+
+                    <p class="g-color--white g-font-size-16--xs">
+                        Visit us at the mentioned website to know more : <a href="https://www.oneplus.in/">https://www.oneplus.in/</a>
+                    </p>
+                    <p class="g-color--white">Name of the company : <b>OnePlus (ENASYN is our new entity name in for Hyderabad R&D center)</b><br>
+                        Eligible branch and qualifications : <b>B.Tech and M.Tech : CSE, ECE, EEE, Mechanical Engineering</b> <br>
+                        Year Of Study : <b>FINAL YEARS ONLY (Open to all students - Already Placed & Unplaced)</b> <br>
+                        Job profile : <b>Software Trainee – 6 Months Internship program followed by PPO</b></p>
+
+                    <h4 class="g-font-size-22--xs g-font-size-26--md g-color--white ">Roles & responsibilities</h4>
+                    <ol>
+                        <li class="g-color--white g-font-size-16--xs">Develop and implement new software programs in the Domains like: Android platform, Kernel, Network and Applications.</li>
+                        <li class="g-color--white g-font-size-16--xs">Maintain and improve the performance of existing software modules.</li>
+                        <li class="g-color--white g-font-size-16--xs">Clearly and regularly communicate with management and technical support colleagues.</li>
+                        <li class="g-color--white g-font-size-16--xs">Test and maintain software products to ensure strong functionality and optimisation.</li>
+                        <li class="g-color--white g-font-size-16--xs">Recommend improvements to existing software programs as necessary.</li>
+                    </ol>
+
+                    <h4 class="g-font-size-22--xs g-font-size-26--md g-color--white">Job location</h4>
+                    <p class="g-color--white g-font-size-16--xs">Hyderabad</p>
+
+                    <h4 class="g-font-size-22--xs g-font-size-26--md g-color--white">Selection Process </h4>
+                    <ol>
+                        <li class="g-color--white g-font-size-16--xs">Online Test : MCQs (Android, Linux, Java, C++, C, Imaging) Programming questions (Counting Subarrays, Distribute the weights)</li>
+                        <li class="g-color--white g-font-size-16--xs">In Person Interview – Technical, HR</li>
+                    </ol>
+
+                    <p class="g-color--white g-font-size-16--xs">Stipend / CTC : 25K PM during internship.
+                    (PPO shall be given basis performance during internship.)
+                    <br><br><b>Please note : Recruitment is not through the Training & Placement Department of VNIT.</b></p>
+                    <div class="wow fadeInLeft g-margin-t-40--xs" data-wow-duration=".3" data-wow-delay=".5s">
+                        <a href="https://goo.gl/forms/eVGNHsJfTGjl902i2" title="Register" target="_blank">
+
+                            <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Fill Form <span class="ti-angle-right"></span></span>
+                        </a>
+                    </div>
+
+                </div>
+        </div>
 
 
 

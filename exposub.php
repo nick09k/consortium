@@ -59,7 +59,7 @@
           $msg = "Your startup <b>".$data['startup']."</b> is already registered.<br> <span style='font-size:18px;'>Kindly use different email address for new registration.</span>";
         }
 
-        
+
       }
       else{
 
@@ -68,7 +68,7 @@
 
         if(mysqli_query($con,$q)){
 
-          $msg = "You are registered with us. To ensure complete complete registration, kindly check the email.";
+          $msg = "You are registered with us. To ensure complete registration, kindly check the email.";
 
 
           $to = $email;
@@ -79,7 +79,7 @@
               <html>
                   <head>
           <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-125403862-1"></script>
-              
+
           <script>window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag("js", new Date());
@@ -140,15 +140,13 @@
                               <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board for the <b>Startup Expo</b></p>
                               <p>
                                   To complete your registration follow the button below and become a part of Central India’s Biggest Entrepreneurship Summit Consortium 19 <br>
-                                  For queries and in case of any difficulty, feel free to contact us.<br>
+                                  <br>
                               </p>
                               <br>
 
                                 <a style="display:block; text-align: center;width:100px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://consortium.ecellvnit.org/payexpo.php">Pay Now!</a>
 
                               <p>
-
-
                                 <br>
                                 <p>For queries and in case of any difficulty, feel free to contact us.</p>
                                 <br>
@@ -177,7 +175,7 @@
           );
           $context  = stream_context_create($options);
           $result = file_get_contents($url, false, $context);
-          if ($result === FALSE) { 
+          if ($result === FALSE) {
 
               $msg = 'We are facing problem in sending email. Please use this link to pay your registration fees.';
               header('https://consortium.ecellvnit.org/payexpo.php');
