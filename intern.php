@@ -133,13 +133,13 @@
 
                         <div class="row ">
                             <div class="col-sm-12 col-md-4">
-                                <a href="https://www.oneplus.in/" class="g-color--dark-light footer-para g-font-size-14--xs">
+                                <a class="g-color--dark-light footer-para g-font-size-14--xs">
                                     <img src="img/internshipfair/oneplus.png" width="200" alt="logo" style="margin-left:calc(50% - 100px)">
                                 </a>
 
-                                <p><a class="g-padding-x-10--xs g-padding-y-10--xs g-font-size-13--xs g-color--primary g-padding-x-10--xs" href="#oneplus" onclick="showmodel('oneplus');">Register Now</a></p>
+                                <p><a class="g-padding-x-10--xs g-padding-y-10--xs g-font-size-15--xs g-color--primary g-padding-x-10--xs" href="#oneplus" onclick="showmodel('oneplus');">Register Now</a></p>
                             </div>
-                            <div class="col-sm-12 col-md-4">
+                            <!-- <div class="col-sm-12 col-md-4">
                                 <a href="https://www.simplecrm.com.sg/" class="g-color--dark-light footer-para g-font-size-14--xs">
                                     <img src="img/internshipfair/simplecrm.png" width="220" alt="logo" style="margin-left:calc(50% - 100px)">
                                 </a>
@@ -150,44 +150,23 @@
                                     <img src="img/internshipfair/navigus.png" width="220" alt="logo" style="margin-left:calc(50% - 100px)">
                                 </a>
                                 <p>Registrations will be open soon</p>
-                            </div>
+                            </div> -->
                             <div class="col-sm-12 col-md-4">
-                                <a href="http://eco-genenergy.com/" class="g-color--dark-light footer-para g-font-size-14--xs">
+                                <a class="g-color--dark-light footer-para g-font-size-14--xs">
                                     <img src="img/internshipfair/ecozen.png" width="220" alt="logo" style="margin-left:calc(50% - 100px)">
                                 </a>
-                                <p><a class="g-padding-x-10--xs g-padding-y-10--xs g-font-size-13--xs g-color--primary g-padding-x-10--xs" href="#oneplus" onclick="showmodel('ecozen');">Register Now</a></p>
+                                <p><a class="g-padding-x-10--xs g-padding-y-10--xs g-font-size-15--xs g-color--primary g-padding-x-10--xs" href="#ecozen" onclick="showmodel('ecozen');">Register Now</a></p>
                             </div>
-                            <div class="col-sm-12 col-md-4">
+                            <!-- <div class="col-sm-12 col-md-4">
                                 <a href="https://makerdemy.com/" class="g-color--dark-light footer-para g-font-size-14--xs">
                                     <img src="img/internshipfair/makerdomy.png" width="220" alt="logo" style="margin-left:calc(50% - 100px)">
                                 </a>
                                 <p>Registrations will be open soon</p>
-                            </div>
+                            </div> -->
 
                         </div>
                     </div>
             </div>
-        <!--    <div id="startups" style="display:none;">-->
-
-        <!--      <div class="container g-padding-y-0--xs">-->
-
-        <!--          <div class="row">-->
-        <!--              <div class="col-sm-12 col-md-4">-->
-        <!--                  Will be Updated Soon!-->
-        <!--                  <br>-->
-        <!--                  All the registration form will be released by Department Of Training & Placement soon!-->
-
-        <!--              </div>-->
-
-
-        <!--          </div>-->
-
-
-
-        <!--      </div>-->
-    				<!--</div>-->
-
-
     		    </div>
 		  </div>
         </div>
@@ -259,6 +238,64 @@
                     <br><br><b>Please note : Recruitment is not through the Training & Placement Department of VNIT.</b></p>
                     <div class="wow fadeInLeft g-margin-t-40--xs" data-wow-duration=".3" data-wow-delay=".5s">
                         <a href="https://goo.gl/forms/eVGNHsJfTGjl902i2" title="Register" target="_blank">
+
+                            <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Fill Form <span class="ti-angle-right"></span></span>
+                        </a>
+                    </div>
+
+                </div>
+        </div>
+
+
+        <!-- EcoZen -->
+
+        <div id="ecozen" class="intern-model" style="display:none; overflow:scroll;">
+                <div class="container g-padding-y-40--xs g-padding-y-80--sm g-padding-x-20--xs g-padding-x-20--xs g-padding-x-100--md g-margin-t-40--xs">
+
+                    <a class="g-color--white g-font-size-20--xs" onclick="closemodel('ecozen');" style="position:absolute; left:90%" >X</a>
+
+                    <h3 class="g-font-size-30--xs g-font-size-30--sm g-font-size-40--md g-color--white ">EcoZen Solutions</h3>
+
+                    <p class="g-color--white g-font-size-16--xs">
+                        Ecozen Solutions is an energy-focussed company that provides renewable energy based products. It was started in Sep ’09 with a motive to create awareness against poor energy management practices, to drive sustainability in the burgeoning Indian market, and elevate the Indian industry to the standards and expectations of a developed nation in the new era.
+
+                    </p>
+                    <p class="g-color--white g-font-size-16--xs">Our primary USP is our innovative and a fresh approach to real life problems and solving them with the philosophy of lean solutions. Our team consists of extremely motivated and energetic individuals who walk hand in hand with company's principles and vision. We are extremely good at engineering our solutions according to the demand. These underlying traits of our model make us conventionally unconventional.</p>
+
+                    
+                    <p class="g-color--white">Name of the company : <b>Ecozen Solutions Pvt Ltd</b><br>
+                        Eligible branch and qualifications : <b> Mechanical Engg, Chemical Engg. , Electrical Engg. , Electronics and Communications Engg.</b> <br>
+                        Year Of Study : <b>Pre Final Year ( 3rd Year B.Tech and 1st Year M.Tech)</b><br>(Open to all - Already Placed & Unplaced)<br>
+                        
+
+
+                        <h4 class="g-font-size-22--xs g-font-size-26--md g-color--white ">Job profile</h4>
+                    <ol>
+                        <li class="g-color--white g-font-size-16--xs">Mechanical Engineering Intern (Undergrad/Postgrad: Mechanical engineering)
+Design or analysis of systems or components
+Applications oriented around Solar or cooling systems</li>
+                        <li class="g-color--white g-font-size-16--xs">Thermal Engineering Intern (Undergrad: Mechanical engineering, Postgrad: Mechanical/Chemical with specialization Thermal/Refrigeration engineering)
+To analyze heat transfer, air-flow and other requirements aspects of refrigeration system.
+To analyze novel cooling systems.
+Needs to be familiar with some programming language or FLUENT. </li>
+                        <li class="g-color--white g-font-size-16--xs">Electronics Engineering Intern (Undergrad: Electrical, Electronics, Instrumentation, Energy)
+Evaluate and/or develop hardware systems or software algorithms for novel sensing or driving technologies</li>
+                        <li class="g-color--white g-font-size-16--xs">Thermal Application Engineering Intern (Undergrad: Mechanical/Chemical engineering, Postgrad: Mechanical/Chemical )
+To design/analysis innovative cooling systems like Vacuum cooling.
+To understand crop chemistry and experiment novel ways to extend their shelf-life.</li>
+                        
+                    </ol>
+
+                    
+
+                    <h4 class="g-font-size-22--xs g-font-size-26--md g-color--white">Job location</h4>
+                    <p class="g-color--white g-font-size-16--xs">Pune</p>
+
+                    <p class="g-color--white g-font-size-16--xs">Stipend: Rs. 20,000 per month.
+                    
+                    <br><br><b>Please note : Recruitment is not through the Training & Placement Department of VNIT.</b></p>
+                    <div class="wow fadeInLeft g-margin-t-40--xs" data-wow-duration=".3" data-wow-delay=".5s">
+                        <a href="https://goo.gl/forms/sb15I2uj2ElbOVGb2" title="Register" target="_blank">
 
                             <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Fill Form <span class="ti-angle-right"></span></span>
                         </a>
