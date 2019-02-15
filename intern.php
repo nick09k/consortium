@@ -155,7 +155,7 @@
                                 <a href="http://eco-genenergy.com/" class="g-color--dark-light footer-para g-font-size-14--xs">
                                     <img src="img/internshipfair/ecozen.png" width="220" alt="logo" style="margin-left:calc(50% - 100px)">
                                 </a>
-                                <p>Registrations will be open soon</p>
+                                <p><a class="g-padding-x-10--xs g-padding-y-10--xs g-font-size-13--xs g-color--primary g-padding-x-10--xs" href="#oneplus" onclick="showmodel('ecozen');">Register Now</a></p>
                             </div>
                             <div class="col-sm-12 col-md-4">
                                 <a href="https://makerdemy.com/" class="g-color--dark-light footer-para g-font-size-14--xs">
