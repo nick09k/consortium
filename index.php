@@ -32,7 +32,7 @@
                     </div>
                     <div class="col-md-8 col-md-offset-2">
                         <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>8th - 10th March</b></p>
-                        <p class="g-font-size-16--xs g-color--white g-margin-b-0--xs">Registrations for <a style="color:#fff; text-decoration:underline" href="/attractions.php">Stock Investment Workshop</a> are now open!</p>
+                        <p class="g-font-size-16--xs g-color--white g-margin-b-0--xs">Registrations for <a style="color:#fff; text-decoration:underline" href="/intern.php">EcoZen Solutions</a> Internship Test are now open!</p>
                     </div>
 
                   </div>

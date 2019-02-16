@@ -137,8 +137,15 @@
                                     <img src="img/internshipfair/oneplus.png" width="200" alt="logo" style="margin-left:calc(50% - 100px)">
                                 </a>
 
-                                <p><a class="g-padding-x-10--xs g-padding-y-10--xs g-font-size-15--xs g-color--primary g-padding-x-10--xs" href="#oneplus" onclick="showmodel('oneplus');">Register Now</a></p>
+                                <p><a class="g-padding-x-10--xs g-padding-y-10--xs g-font-size-15--xs g-color--primary g-padding-x-10--xs" href="#oneplus">Registrations are closed!</a></p>
                             </div>
+                            <div class="col-sm-12 col-md-4">
+                                <a class="g-color--dark-light footer-para g-font-size-14--xs">
+                                    <img src="img/internshipfair/ecozen.png" width="220" alt="logo" style="margin-left:calc(50% - 100px)">
+                                </a>
+                                <p><a class="g-padding-x-10--xs g-padding-y-10--xs g-font-size-15--xs g-color--primary g-padding-x-10--xs" href="https://goo.gl/forms/sb15I2uj2ElbOVGb2" target="_blank">Register Now</a></p>
+                            </div>
+
                             <!-- <div class="col-sm-12 col-md-4">
                                 <a href="https://www.simplecrm.com.sg/" class="g-color--dark-light footer-para g-font-size-14--xs">
                                     <img src="img/internshipfair/simplecrm.png" width="220" alt="logo" style="margin-left:calc(50% - 100px)">
@@ -151,12 +158,7 @@
                                 </a>
                                 <p>Registrations will be open soon</p>
                             </div> -->
-                            <div class="col-sm-12 col-md-4">
-                                <a class="g-color--dark-light footer-para g-font-size-14--xs">
-                                    <img src="img/internshipfair/ecozen.png" width="220" alt="logo" style="margin-left:calc(50% - 100px)">
-                                </a>
-                                <p><a class="g-padding-x-10--xs g-padding-y-10--xs g-font-size-15--xs g-color--primary g-padding-x-10--xs" href="#ecozen" onclick="showmodel('ecozen');">Register Now</a></p>
-                            </div>
+
                             <!-- <div class="col-sm-12 col-md-4">
                                 <a href="https://makerdemy.com/" class="g-color--dark-light footer-para g-font-size-14--xs">
                                     <img src="img/internshipfair/makerdomy.png" width="220" alt="logo" style="margin-left:calc(50% - 100px)">
@@ -165,6 +167,7 @@
                             </div> -->
 
                         </div>
+                        <p class="g-color--dark-light footer-para g-font-size-14--xs">Other Companies will be released soon!</p>
                     </div>
             </div>
     		    </div>
@@ -262,11 +265,11 @@
                     </p>
                     <p class="g-color--white g-font-size-16--xs">Our primary USP is our innovative and a fresh approach to real life problems and solving them with the philosophy of lean solutions. Our team consists of extremely motivated and energetic individuals who walk hand in hand with company's principles and vision. We are extremely good at engineering our solutions according to the demand. These underlying traits of our model make us conventionally unconventional.</p>
 
-                    
+
                     <p class="g-color--white">Name of the company : <b>Ecozen Solutions Pvt Ltd</b><br>
                         Eligible branch and qualifications : <b> Mechanical Engg, Chemical Engg. , Electrical Engg. , Electronics and Communications Engg.</b> <br>
                         Year Of Study : <b>Pre Final Year ( 3rd Year B.Tech and 1st Year M.Tech)</b><br>(Open to all - Already Placed & Unplaced)<br>
-                        
+
 
 
                         <h4 class="g-font-size-22--xs g-font-size-26--md g-color--white ">Job profile</h4>
@@ -283,16 +286,16 @@ Evaluate and/or develop hardware systems or software algorithms for novel sensin
                         <li class="g-color--white g-font-size-16--xs">Thermal Application Engineering Intern (Undergrad: Mechanical/Chemical engineering, Postgrad: Mechanical/Chemical )
 To design/analysis innovative cooling systems like Vacuum cooling.
 To understand crop chemistry and experiment novel ways to extend their shelf-life.</li>
-                        
+
                     </ol>
 
-                    
+
 
                     <h4 class="g-font-size-22--xs g-font-size-26--md g-color--white">Job location</h4>
                     <p class="g-color--white g-font-size-16--xs">Pune</p>
 
                     <p class="g-color--white g-font-size-16--xs">Stipend: Rs. 20,000 per month.
-                    
+
                     <br><br><b>Please note : Recruitment is not through the Training & Placement Department of VNIT.</b></p>
                     <div class="wow fadeInLeft g-margin-t-40--xs" data-wow-duration=".3" data-wow-delay=".5s">
                         <a href="https://goo.gl/forms/sb15I2uj2ElbOVGb2" title="Register" target="_blank">
