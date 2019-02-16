@@ -87,7 +87,7 @@
                       for($var = 0;$var < 9; $var++ ){
                         if($row[$events[$var]] == 1){
                   ?>
-                    <a href="#<?php echo $events[$var] ?>" class="product-card col-xs-12 col-md-5 col-lg-4">
+                    <a id="<?php echo $events[$var] ?>click" class="product-card col-xs-12 col-md-5 col-lg-4" style="cursor:pointer;">
                         <div class="product-card__item-grid" style="background:url(img/events/<?php echo $events[$var] ?>.jpg)">
                             <div class="product-card__item-text">
                                 <h3 class="g-color--white"><?php echo $events[$var] ?></h3>
@@ -104,7 +104,7 @@
             </div>
         </div>
 
-        <div class="" id="Swadesh">
+        <div class="" id="Swadesh" style="display:none;">
           <p>Your team:
           <?php
             $query = "SELECT * FROM Swadesh WHERE Email='$email'";
@@ -213,7 +213,12 @@
 
         </script>
         <!--========== END JAVASCRIPTS ==========-->
-
+        <script type="text/javascript">
+        $("#Swadeshclick").click(function(){
+          $("#Swadesh").css({"display":"block"});
+          $("#Swadesh").animate({opacity: 1}, 1000);
+        });
+        </script>
     </body>
     <!-- End Body -->
 </html>
