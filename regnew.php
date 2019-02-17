@@ -58,7 +58,7 @@
     mysqli_query($con,$evequery);
     }
 
-    if(isset($_POST['regnew'])){
+    if(isset($_POST['regnew'])) {
     $name = $con->real_escape_string($_POST['name']);
     $email = $con->real_escape_string($_POST['email']);
     $contact = $con->real_escape_string($_POST['contact']);
@@ -66,22 +66,37 @@
     $password = $con->real_escape_string($_POST['password']);
     $cpassword = $con->real_escape_string($_POST['cpassword']);
 
-    if($password == $cpassword){
+    if( $name == "" || $email == "" || $contact == "" || $password == "" || $cpassword == ""){
+      $msg = "Please enter all the details";
+    }elseif($password == $cpassword){
       $hashed_password = $con->real_escape_string(password_hash($cpassword, PASSWORD_DEFAULT));
 
       $query = "SELECT * from Registrations where Email='$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
 
-      if($num!=0 && otp == 'Confirmed'){
+      if($num != 0 && otp == 'Confirmed'){
         $msg = "The email you entered is already registered.";
-      }elseif($num > 0 && otp != 'Confirmed'){
+      }elseif($num != 0 && otp != 'Confirmed'){
         $msg = "Please verify your email id <br>
         <div class='g-text-center--xs'>
+          <form class='center-block g-width-500--sm g-width-550--md' method='post' action='regnew.php'>
+              <div class='permanent'>
+              <div class='g-margin-b-30--xs'>
+                <input type='text' class='form-control s-form-v3__input' placeholder='* Your OTP' name='otp' style='text-transform: none' id='otp'>
+              </div>
+              </div>
+
+              <div class='g-text-center--xs'>
+                  <button type='submit' name='otp_sub' class='text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs'>Submit</button>
+              </div>
+          </form>
+          <form class='center-block g-width-500--sm g-width-550--md' method='post' action='regnew.php'>
             <button type='submit' name='resend' class='text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs'>Resend OTP</button>
+          </form>
         </div>
         ";
-      }elseif($num > 0){
+      }elseif($num == 0){
         $otp = '1234567890';
         $otp = str_shuffle($otp);
         $otp = substr($otp, 0, 6);
@@ -217,7 +232,7 @@
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
 
-      if(num >0){
+      if($num >0){
         $data = mysqli_fetch_array($result);
         if($data['otp'] == $otpver){
           $q = "UPDATE Registrations SET otp='Confirmed'";
@@ -237,6 +252,8 @@
               </div>
           </form>";
         }
+      }else{
+        $msg = "Something went wrong";
       }
     }
 
@@ -331,6 +348,19 @@
           )
       );
       $context  = stream_context_create($options);
+      $msg = "Welcome. An OTP is sent to your registered email id. Please enter the OTP below to confirm your email address.<br> (Please do not reload the page.)
+      <form class='center-block g-width-500--sm g-width-550--md' method='post' action='regnew.php'>
+          <div class='permanent'>
+          <div class='g-margin-b-30--xs'>
+            <input type='text' class='form-control s-form-v3__input' placeholder='* Your OTP' name='otp' style='text-transform: none' id='otp'>
+          </div>
+          </div>
+
+          <div class='g-text-center--xs'>
+              <button type='submit' name='otp_sub' class='text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs'>Submit</button>
+          </div>
+      </form>
+      ";
     }
 
     include('includes/head.php');
@@ -344,7 +374,7 @@
         <div id='register'>
             <div class='g-container--sm g-padding-y-80--xs g-padding-y-125--sm'>
                 <div class='g-text-center--xs g-margin-b-60--xs'>
-                    <h2 class='g-font-size-32--xs g-font-size-36--md g-color--white'>Register Now</h2>
+                    <h2 class='g-font-size-32--xs g-font-size-36--md g-color--white'>Registration</h2>
                     <p class='text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs'>$msg</p>
                 </div>
             </div>
