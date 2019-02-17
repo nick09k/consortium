@@ -158,10 +158,3 @@
 >>>>>>> 66ebcab8b38a24a76277ebf77f853971c9430a6d
     </body>
   </html>
-
-  <?php
-}else {
-  $_SESSION['login_error'] = "Kindly Login First";
-  header('location:login.php?ref=1');
-}
-  ?>
