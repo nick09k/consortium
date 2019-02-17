@@ -20,6 +20,7 @@
         <script type="text/javascript" src="vendor/jquery.wow.min.js"></script>
         <script type="text/javascript" src="/js/cards.js"></script>
 	<script type="text/javascript" src="/js/materialize.js"></script>
+        <script type="text/javascript" src="/js/custom.js"></script>
 
 
         <!-- General Components and Settings -->

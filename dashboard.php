@@ -66,27 +66,38 @@
 
 
     <!-- Body -->
-    <body style="background: black">
+    <body>
 
         <!--========== HEADER ==========-->
         <?php include("includes/header.php")?>
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
-        <div class="g-bg-position--center js__parallax-window" style="background:#000;height:100vh;">
-            <div class="g-container--md g-text-center--xs g-padding-y-100--xs">
-                <h2 class="g-font-size-36--xs g-font-size-50--sm g-font-size-60--md g-color--white g-letter-spacing--1">Dashboard</h2>
-                <a href="register.php"><p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs">Register for more events</p></a>
-                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
-                <div class="indicate"><i class="ti-angle-double-down"></i></div>
+        <div class="core-container">
+        <div class="g-bg-position--center js__parallax-window" style="background:#000;height:auto;">
+            <div class="g-container--md g-text-center--xs g-padding-y-40--xs">
+                <h2 class="g-font-size-30--xs g-font-size-40--sm g-font-size-50--md g-margin-t-70--xs g-color--white g-letter-spacing--1">Dashboard</h2>
             </div>
         </div>
+        
         <!--========== END PROMO BLOCK ==========-->
 
         <!--========== PAGE CONTENT ==========-->
-        <!-- Events -->
-        <div class="core-container">
-            <div class="container g-padding-y-80--xs g-padding-y-125--sm  g-padding-x-0--xs g-padding-x-40--sm g-padding-x-100--md" style="background:rgba(0, 0, 0, 0.4)">
+        <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="details" style="background:rgba(255, 255, 255,0.97);">
+
+            <div class="card" id="event-card-bg">
+            <div class="card-tabs">
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a class="active" href="#why" id="but_why">YOUR EVENTS</a></li>
+                <li class="tab"><a  href="#structure" id="but_structure">TICKETS</a></li>
+                
+              </ul>
+            </div>
+            <div class="card-content code">
+
+              <div id="why">
+                <br>
+                <h5><b>Registered Events</b></h5><br/>
                 <div class="row product-grid">
                   <?php
                     $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','ConsoWorld');
@@ -98,11 +109,11 @@
                       for($var = 0;$var < 9; $var++ ){
                         if($row[$events[$var]] == 1){
                   ?>
-                    <a id="<?php echo $events[$var] ?>click" class="product-card col-xs-12 col-md-5 col-lg-4" style="cursor:pointer;">
+                    <a id="<?php echo $events[$var] ?>click" class="product-card col-xs-12 col-md-3" style="cursor:pointer;">
                         <div class="product-card__item-grid" style="background:url(img/events/<?php echo $events[$var] ?>.jpg)">
                             <div class="product-card__item-text">
                                 <h3 class="g-color--white"><?php echo $events[$var] ?></h3>
-                                <p class="g-color--white"><b>Registerations are closed!</b></p>
+                                
                                 <pclass="g-color--white"><i>#Event</i></p>
                             </div>
                         </div>
@@ -112,46 +123,91 @@
                     }
                    ?>
                  </div>
-            </div>
-        </div>
 
-        <div class="" id="Swadesh" style="display:none;">
-          <p>Your team:
+                <br/>
+                <br>
+                <a href="register.php"><p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs">Register for more events</p></a>
+                <br>
+
+            </div>
+            <div id="structure" style="display:none;">
+              <h5><b>Counter will be open soon</b></h5>
+              <br/>
+              
+
+              </div>
+              
+
+            </div>
+      </div>
+        </div>
+      </div>
+
+
+        <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="Swadesh" style="display:none;background: #000">
+
+
+          <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Swades</h2>
+
           <?php
-            $query = "SELECT * FROM Swadesh WHERE Email='$email'";
+
+
+            $query = "SELECT * FROM Swadesh_team WHERE Email='$email'";
             $result = mysqli_query($con,$query);
             $num = mysqli_num_rows($result);
-            while($row = mysqli_fetch_array($result)){
-          ?>
-          <?php echo $row['Name']; ?> <br/>
-          <?php }
-            if($num < 4){
-            ?>
-            Add a member to your team:
-            <form class="center-block g-width-500--sm g-width-550--md" method="post" action="dashboard.php">
-                <div class="permanent">
-                    <div class="g-margin-b-30--xs">
-                          <input type="text" class="form-control s-form-v3__input" placeholder="* Full Name" name="name" style="text-transform: none" id="name">
-                    </div>
-                    <div class="row g-margin-b-50--xs">
-                        <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                            <input type="email" class="form-control s-form-v3__input" placeholder="* Email" name="email" style="text-transform: none" id="email">
-                        </div>
-                        <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                            <input type="tel" class="form-control s-form-v3__input" placeholder="* Contact" name="contact" style="text-transform: none">
-                        </div>
-                    </div>
-                </div>
+            $data = $result->fetch_array(MYSQLI_ASSOC);
 
+            if($num!=0){
+
+              echo '<h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">'.$data['Name'].'</h2>';
+
+              $query = "SELECT * FROM Swadesh WHERE TeamID='$email'";
+            
+              $num = mysqli_num_rows($result);
+
+              echo "<ol>";
+              while($row = mysqli_fetch_array($result)){
+
+                echo "<li>".$row['Name'].", ".$row['Email'].", ".$row['Contact']."</li>";
+              }
+
+            }
+
+            else{
+            ?>
+            
+            <form class="center-block g-width-600--sm" method="post" action="">
+                <div class="permanent row">
+                    <div class="col-sm-6 g-margin-b-30--xs">
+                          <input type="text" class="form-control s-form-v3__input" placeholder="* Team Name" name="name" style="text-transform: none" id="teamname">
+                    </div>
+
+                    <div class="col-sm-6 g-margin-b-30--xs">
+                        <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input" name="number" placeholder="* No. of members" id="members">
+                            <option value="" selected="" disabled="" hidden="">Number of members</option>
+                            <option value="2" style="color:black">2</option>
+                            <option value="3" style="color:black">3</option>
+                            <option value="4" style="color:black">4</option>
+                            <option value="5" style="color:black">5</option>
+                        </select>
+                    </div>
+
+                    
+                </div>
                 <div class="g-text-center--xs">
-                    <button type="submit" name="swanewmem" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Submit</button>
+                    <button type="submit" name="swanewmem" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Create Team</button>
                 </div>
             </form>
           <?php
             }
           ?>
-          </p>
+          
         </div>
+
+
+
+
+
 
         <div class="" id="AdVenture">
 
@@ -195,26 +251,9 @@
         <!--========== FOOTER ==========-->
         <?php include("includes/footer_landing.php");?>
         <!--========== END FOOTER ==========-->
+        <?php include("includes/script.php");?>
 
-        <!-- Back To Top -->
-        <a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a>
-
-        <!--========== JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) ==========-->
-        <!-- Vendor -->
-        <script type="text/javascript" src="vendor/jquery.min.js"></script>
-        <script type="text/javascript" src="vendor/jquery.migrate.min.js"></script>
-        <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="vendor/jquery.smooth-scroll.min.js"></script>
-        <script type="text/javascript" src="vendor/jquery.back-to-top.min.js"></script>
-        <script type="text/javascript" src="vendor/scrollbar/jquery.scrollbar.min.js"></script>
-        <script type="text/javascript" src="vendor/jquery.parallax.min.js"></script>
-        <script type="text/javascript" src="vendor/jquery.wow.min.js"></script>
-
-        <!-- General Components and Settings -->
-        <script type="text/javascript" src="js/global.min.js"></script>
-        <script type="text/javascript" src="js/components/header-sticky.min.js"></script>
-        <script type="text/javascript" src="js/components/scrollbar.min.js"></script>
-        <script type="text/javascript" src="js/components/wow.min.js"></script>
+        
         <script>
 
             var wid = $(".product-card__item-grid").width();
@@ -228,8 +267,13 @@
         $("#Swadeshclick").click(function(){
           $("#Swadesh").css({"display":"block"});
           $("#Swadesh").animate({opacity: 1}, 1000);
+          var y = $("#Swadesh").offset().top;
+            $("html ,body").animate({ scrollTop: y},800);
+
         });
         </script>
+
+
     </body>
     <!-- End Body -->
 </html>
