@@ -74,13 +74,16 @@
       $query = "SELECT * from Registrations where Email='$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
+      if($num > 0){
+        $row = mysqli_fetch_array($result);
+      }
 
-      if($num != 0 && otp == 'Confirmed'){
-        $msg = "The email you entered is already registered.";
-      }elseif($num != 0 && otp != 'Confirmed'){
+      if($num != 0 && $row['otp'] == 'Confirmed'){
+        $msg = "The email you entered is already registered. Login <a href='login.php'>here</a>.";
+      }elseif($num != 0 && $row['otp'] != 'Confirmed'){
         $msg = "Please verify your email id <br>
         <div class='g-text-center--xs'>
-          <form class='center-block g-width-500--sm g-width-550--md' method='post' action='regnew.php'>
+          <form class='center-block g-width-500--sm g-width-550--md' method='post' action='regnew.php?email=$email'>
               <div class='permanent'>
                 <div class='g-margin-b-30--xs'>
                   <input type='text' class='form-control s-form-v3__input' placeholder='* Your OTP' name='otp' style='text-transform: none' id='otp'>
@@ -198,7 +201,7 @@
           $context  = stream_context_create($options);
           if($result = file_get_contents($url, false, $context)){
             $msg = "Welcome. An OTP is sent to your registered email id. Please enter the OTP below to confirm your email address.<br> (Please do not reload the page.)
-            <form class='center-block g-width-500--sm g-width-550--md' method='post' action='regnew.php'>
+            <form class='center-block g-width-500--sm g-width-550--md' method='post' action='regnew.php?email=$email'>
                 <div class='permanent'>
                 <div class='g-margin-b-30--xs'>
                   <input type='text' class='form-control s-form-v3__input' placeholder='* Your OTP' name='otp' style='text-transform: none' id='otp'>
@@ -247,6 +250,7 @@
                 ";
   }elseif(isset($_POST['otp_sub'])){
     $otpver = $con->real_escape_string($_POST['otp']);
+    $email = $con->real_escape_string($_GET['email']);
 
     $query = "SELECT * from Registrations where Email='$email'";
     $result = mysqli_query($con,$query);
@@ -273,8 +277,28 @@
         </form>";
       }
     }else{
-      $msg = "Something went wrong";
+      echo("Error description: " . mysqli_error($con));
     }
+
+    include('includes/head.php');
+    include('includes/header.php');
+    // include("includes/footer.php");
+    include("includes/script.php");
+    echo "<html>
+      <?php include('includes/head.php'); ?>
+      <body class='back'>
+        <?php include('includes/header.php'); ?>
+        <div id='register'>
+            <div class='g-container--sm g-padding-y-80--xs g-padding-y-125--sm'>
+                <div class='g-text-center--xs g-margin-b-60--xs'>
+                    <h2 class='g-font-size-32--xs g-font-size-36--md g-color--white'>Registration</h2>
+                    <p class='text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs'>$msg</p>
+                </div>
+            </div>
+        </div>
+
+      </body>
+                ";
   }elseif(isset($_POST['resend'])) {
     $otpver = '1234567890';
     $otpver = str_shuffle($otp);
@@ -368,7 +392,7 @@
     $context  = stream_context_create($options);
     if($result = file_get_contents($url, false, $context)){
       $msg = "Welcome. An OTP is sent to your registered email id. Please enter the OTP below to confirm your email address.<br> (Please do not reload the page.)
-      <form class='center-block g-width-500--sm g-width-550--md' method='post' action='regnew.php'>
+      <form class='center-block g-width-500--sm g-width-550--md' method='post' action='regnew.php?email=$email'>
           <div class='permanent'>
           <div class='g-margin-b-30--xs'>
             <input type='text' class='form-control s-form-v3__input' placeholder='* Your OTP' name='otp' style='text-transform: none' id='otp'>
@@ -384,6 +408,25 @@
     if ($result === FALSE) {
       $msg = "We are facing problem in sending email. Please contact our <a href='https://www.ecellvnit.org/team.php' >team.</a>";
     }
+    include('includes/head.php');
+    include('includes/header.php');
+    // include("includes/footer.php");
+    include("includes/script.php");
+    echo "<html>
+      <?php include('includes/head.php'); ?>
+      <body class='back'>
+        <?php include('includes/header.php'); ?>
+        <div id='register'>
+            <div class='g-container--sm g-padding-y-80--xs g-padding-y-125--sm'>
+                <div class='g-text-center--xs g-margin-b-60--xs'>
+                    <h2 class='g-font-size-32--xs g-font-size-36--md g-color--white'>Registration</h2>
+                    <p class='text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs'>$msg</p>
+                </div>
+            </div>
+        </div>
+
+      </body>
+                ";
   }else{
 
 ?>
