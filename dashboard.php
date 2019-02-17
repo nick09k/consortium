@@ -35,7 +35,7 @@
       if($number == "" || $teamname == "" ){
         $msg = "Please fill all the details";
       }else{
-        $tquery = "INSERT INTO Swadesh_team(Teamname) VALUES('$teamname') WHERE Email = '$email'";
+        $tquery = "INSERT INTO Swadesh_team(Teamname) VALUES('$teamname')";
         if(mysqli_query($con,$tquery)){
           echo "great";
         }else{
@@ -49,7 +49,7 @@
           $mn = $$mn;
           $me = $$me;
           $mp = $$mp;
-          
+
           $query = "SELECT * FROM Registrations WHERE Email='$me'";
           $result = mysqli_query($con,$query);
           $num = mysqli_num_rows($result);

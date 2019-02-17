@@ -50,7 +50,7 @@
     for($var = 0; $var < 9; $var++){
       $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
                 ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                Teamame VARCHAR(255) NOT NULL,
+                Teamname VARCHAR(255) NOT NULL,
                 Email VARCHAR(255) NOT NULL
                 )";
     mysqli_query($con,$evequery);
@@ -486,7 +486,7 @@
                     <button type="submit" name="regnew" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Register</button>
                 </div>
                 <a href="login.php" class="g-color--white g-font-size-13--xs ">Already Registered?</a><br>
-                
+
             </form>
 
         </div>
