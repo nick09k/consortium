@@ -40,4 +40,50 @@ $(document).ready(function(){
 	});
 });
 
+function validateData(){
+
+  var team_name = document.getElementById('name').value;
+  var team_email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+  var message = "";
+
+  // checking empty fields
+
+  
+
+if (team_name == ""){
+    message = "Enter your Name";
+
+  }
+  else if (team_email == ""){
+    message = "Enter Email";
+
+  }
+  else if (team_email != ""){
+      var emailPat = /^(\".*\"|[A-Za-z]\w*)@(\[\d{1,3}(\.\d{1,3}){3}]|[A-Za-z]\w*(\.[A-Za-z]\w*)+)$/
+     var EmailmatchArray = team_email.match(emailPat);
+
+     if (EmailmatchArray == false){
+          message += "Your email address seems incorrect. Please try again.";
+     }
+  }
+  else if (password =""){
+   message = "Enter password";
+ }
+  
+ else if (password.length < 8){
+   message = "Minimum 8 digit password";
+ }
+
+
+  if(message == ""){
+      return true;
+  }
+  else{
+
+     $("#message").html(message);
+     return false;
+  }
+
+}
 
