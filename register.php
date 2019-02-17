@@ -134,27 +134,9 @@
             </form>
         </div>
     </div>
-<<<<<<< HEAD
-      <!-- <div id="register">
-          <div class="g-container--sm g-padding-y-80--xs g-padding-y-125--xsm">
-              <div class="g-text-center--xs g-margin-b-60--xs">
-                  <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Register for an event</p>
-                  <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">Register Now</h2> -->
-                  <!-- <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs">Login to register for an event</p> -->
-                  <!-- <p id="message" class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"></p> -->
-              <!-- </div>
-              <div class="g-text-center--xs">
-                  <a href="regnew.php"><button name="events" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Register</button></a>
-                  <a href="login.php"><button name="events" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Login</button></a>
-              </div>
-          </div>
-      </div> -->
-
-      <?php include("includes/footer.php");?>
-=======
 
       <?php include("includes/footer_landing.php");?>
       <?php include("includes/script.php");?>
->>>>>>> 66ebcab8b38a24a76277ebf77f853971c9430a6d
+
     </body>
   </html>
