@@ -1,6 +1,6 @@
 <?php
-$pagetitle = 'Login | Consortium';
   session_start();
+  $pagetitle = 'Login | Consortium';
     if(isset($_POST['login1'])) {
       $db_host = "localhost:3306";
       $db_username = "conso19";
@@ -23,8 +23,17 @@ $pagetitle = 'Login | Consortium';
         if($num > 0){
           $data = mysqli_fetch_array($result);
           if(password_verify($password,$data['Password'])){
+
+
+            function split_name($name) {
+              $name = trim($name);
+              $last_name = (strpos($name, ' ') === false) ? '' : preg_replace('#.*\s([\w-]*)$#', '$1', $name);
+              $first_name = trim( preg_replace('#'.$last_name.'#', '', $name ) );
+              return array($first_name, $last_name);
+            }
+
             $_SESSION['email'] = $email;
-            $_SESSION['name'] = $data['Name'];
+            $_SESSION['name'] = split_name($data['Name'])[0];
             $_SESSION['contact'] = $data['Contact'];
             $_SESSION['TeamID'] = $data['TeamID'];
             header('location:dashboard.php');

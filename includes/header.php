@@ -24,7 +24,7 @@
                             <!-- End Logo -->
                         </div>
 
-                        <div class="s-header-v2__navbar-col s-header-v2__navbar-col--right">
+                        <div class="s-header-v2__navbar-col s-header-v2__navbar-col--right" style="margin-right: 25px;">
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse s-header-v2__navbar-collapse" id="nav-collapse">
                                 <ul class="s-header-v2__nav">
@@ -68,7 +68,7 @@
                                         </ul>
                                       </li>
                                   <?php }else{ ?>
-                                    <li class="s-header-v2__nav-item"><a href="regnew.php" class="s-header-v2__nav-link">Register</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="/login.php" class="s-header-v2__nav-link">Login</a></li>
                                     <!-- <li class="s-header-v2__nav-item"><a href="login.php" class="s-header-v2__nav-link">Login</a></li> -->
                                     <?php } ?>
                                 </ul>

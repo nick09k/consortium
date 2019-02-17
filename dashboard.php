@@ -10,39 +10,51 @@
   $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
   mysqli_select_db($con,$db_name) or die ("no database");
 
-  $email = $_SESSION['email'];
+  // Connected
 
-  if(isset($_POST['swanewmem'])){
-    $name2 = $con->real_escape_string($_POST['name']);
-    $email2 = $con->real_escape_string($_POST['email']);
-    $contact2 = $con->real_escape_string($_POST['contact']);
 
-    if($name2 == "" || $email2 == "" || $contact2 == "" ){
-      $msg = "Please fill all the details";
-    }else{
-      $query = "SELECT * from Registrations where Email='$email'";
-      $result = mysqli_query($con,$query);
-      $num = mysqli_num_rows($result);
+  if(isset($_SESSION['email'])){
 
-      if($num == 0){
-        $query = "INSERT INTO Swadesh(Name,Main_Email,Email,Contact) VALUES('$name2','$email','$email2','$contact2')";
-        if(mysqlii_query($con,$query)){
-          $msg = "User added successfully";
-        }else{
-          echo("Error description: " . mysqli_error($con));
-        }
+    $email = $_SESSION['email'];
+
+    if(isset($_POST['swanewmem'])){
+      $name2 = $con->real_escape_string($_POST['name']);
+      $email2 = $con->real_escape_string($_POST['email']);
+      $contact2 = $con->real_escape_string($_POST['contact']);
+
+      if($name2 == "" || $email2 == "" || $contact2 == "" ){
+        $msg = "Please fill all the details";
       }else{
-        $query = "UPDATE Swadesh SET Main_Email='$email' WHERE Email = '$email2'";
-        if(mysqli_query($con,$query)){
-          $msg = "User added successfully";
+        $query = "SELECT * from Registrations where Email='$email'";
+        $result = mysqli_query($con,$query);
+        $num = mysqli_num_rows($result);
+
+        if($num == 0){
+          $query = "INSERT INTO Swadesh(Name,Main_Email,Email,Contact) VALUES('$name2','$email','$email2','$contact2')";
+          if(mysqlii_query($con,$query)){
+            $msg = "User added successfully";
+          }else{
+            echo("Error description: " . mysqli_error($con));
+          }
         }else{
-          echo("Error description: " . mysqli_error($con));
+          $query = "UPDATE Swadesh SET Main_Email='$email' WHERE Email = '$email2'";
+          if(mysqli_query($con,$query)){
+            $msg = "User added successfully";
+          }else{
+            echo("Error description: " . mysqli_error($con));
+          }
         }
       }
     }
   }
+  else{
 
-  if($_SESSION['email']){
+    $_SESSION['login_error'] = "Kindly Login First";
+
+    header('location:/login.php');
+  }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
@@ -61,9 +73,8 @@
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
-        <div class="g-bg-position--center js__parallax-window" style="background:#000;height:100vh; display:flex; align-items:center">
+        <div class="g-bg-position--center js__parallax-window" style="background:#000;height:100vh;">
             <div class="g-container--md g-text-center--xs g-padding-y-100--xs">
-                <h1 class="g-font-size-30--xs g-font-size-40--sm g-font-size-50--md g-color--white g-letter-spacing--3">Your Events - Consortium'19</h1>
                 <h2 class="g-font-size-36--xs g-font-size-50--sm g-font-size-60--md g-color--white g-letter-spacing--1">Dashboard</h2>
                 <a href="register.php"><p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs">Register for more events</p></a>
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
@@ -222,6 +233,4 @@
     </body>
     <!-- End Body -->
 </html>
-<?php }else{
-  header('location:login.php');
-} ?>
+

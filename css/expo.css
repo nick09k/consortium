@@ -544,6 +544,15 @@ video::-webkit-media-controls-overlay-play-button {
     margin-left: calc(50% - 10px);
 
 }
+.notice{
+        background: rgba(189, 32, 38, 0.6);
+    padding: 4px;
+    border-radius: 2px;
+    display: block;
+    box-shadow: 1px 1px #d43b308a;
+    position: relative;
+    margin-top: 20px;
+}
 
 
 .grad {
