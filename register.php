@@ -80,19 +80,12 @@
 
           $q2 = "INSERT INTO $event(Name,Main_Email,Email,Contact) VALUES('$name','$email','$email','$contact')";
           mysqli_query($con,$q2);
-          $table = $event.$team . '_team';
-          $q3 = "INSERT INTO $table(Email) VALUES('$email')";
-          if(mysqli_query($con,$q3)){
-            echo "great";
-          }else{
-            echo("Error description: " . mysqli_error($con));
-          }
 
-          $_SESSION['msg'] = "You have successfully registered for the event.";
+          $_SESSION['msg'] = "Thank You for showing interest in Swades. Kindly add team members to complete the registration.";
           header('location:/dashboard.php');
-
         }else{
-          $msg = "You have already registered for the event! Visit your <a 'g-font-size-13--xs' href='dashboard.php'>Dashboard</a>.";
+          $_SESSION['msg'] = "You have already registered for this event!";
+          header('location:/dashboard.php');
         }
       }else{
         echo("Error description: " . mysqli_error($con));

@@ -136,10 +136,14 @@
       $contact = $_SESSION['contact'];
       $query = "INSERT INTO Swadesh_team(Name,Email,Contact) VALUES('$teamname','$teamemail','$contact')";
       if(mysqli_query($con,$query)){
+        $s = 'Welcome Aboard Team '.$teamname.' | Swades19';
+
+        htmlMail($teamemail,$s,$_SESSION['name'],$teamname);
         #Adding Menbers
         $number = $con->real_escape_string($_POST['number']);
 
-        for($i=1; $i<=$number; $i++){
+
+        for($i=2; $i<=$number; $i++){
 
           $membername = $con->real_escape_string($_POST['membername'.$i]);
           $memberemail = $con->real_escape_string($_POST['memberemail'.$i]);
@@ -191,7 +195,7 @@
                 <h2 class="g-font-size-30--xs g-font-size-40--sm g-font-size-50--md g-margin-t-70--xs g-color--white g-letter-spacing--1">Dashboard</h2>
                 <p class="text-uppercase g-font-size-14--xs g-text-center--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs">
                   <?php if(isset($msg)) {echo $msg;} ?></p>
-                  <p class="text-uppercase g-font-size-14--xs g-text-center--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php  if(isset($_SESSION['msg'])){ echo $_SESSION['msg']; }?></p>
+                  <p class="text-uppercase g-font-size-14--xs g-text-center--xs g-color--white g-letter-spacing--2 g-margin-b-25--xs"><?php  if(isset($_SESSION['msg'])){ echo $_SESSION['msg']; }?></p>
             </div>
         </div>
         
@@ -209,43 +213,45 @@
             <div class="card-content code">
               <div id="why">
                 <br>
-                <h5 class="g-color--dark">Registered Events</h5><br/>
                 <div class="row product-grid">
+                
                   <?php
                     $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','ConsoWorld');
                     $query = "SELECT * FROM Registrations WHERE Email='$email'";
                     $result = mysqli_query($con,$query);
                     $num = mysqli_num_rows($result);
                     if($num>0){
+                      echo "<p class='g-color--dark g-font-size-16--xs'>Your registered events will be shown here.</p><br/>";
                       $row = mysqli_fetch_array($result);
                       for($var = 0;$var < 9; $var++ ){
                         if($row[$events[$var]] == 1){
                   ?>
                     <a id="<?php echo $events[$var] ?>click" class="product-card col-xs-12 col-md-3" style="cursor:pointer;">
                         <div class="product-card__item-grid" style="background:url(img/events/<?php echo $events[$var] ?>.jpg)">
-                            
+                            <div class="product-card__item-text-v2">
+                              <h2 class="g-color--white g-text-center--xs g-font-size-16--xs"><?php echo $events[$var] ?></h2>
+                              <br>
+                              <p class="g-color--white g-text-center--xs g-font-size-14--xs">Edit Your Team Members</p>
+                            </div>
                         </div>
                     </a>
                   <?php }
                       }
                     }
+                    
                    ?>
                  </div>
 
                 <br/>
                 <br>
-                <a href="register.php"><p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs">Register for more events</p></a>
+                <a href="register.php"><p class="g-font-size-14--xs g-color--red g-letter-spacing--2 g-margin-b-25--xs">Register for more events</p></a>
                 <br>
 
             </div>
             <div id="structure" style="display:none;">
               <h5><b>Counter will be open soon</b></h5>
               <br/>
-              
-
               </div>
-              
-
             </div>
       </div>
         </div>
@@ -254,7 +260,7 @@
 
         <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="Swadesh" style="display:none;background: #000">
 
-
+          <a class="g-color--white g-font-size-20--xs" onclick="closemodel();" style="position:absolute; left:90%" >X</a>
           <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Swades</h2>
 
           <?php
@@ -278,6 +284,7 @@
             
             <form class="center-block g-width-600--sm" method="post" action="">
                 <div class="permanent row">
+                  <p class="g-color--white g-text-center--xs g-font-size-14--xs">You're a Team Leader by default</p>
                     <div class="col-sm-6 g-margin-b-30--xs">
                           <input type="text" class="form-control s-form-v3__input" placeholder="* Team Name" name="teamname" style="text-transform: none" id="teamname">
                     </div>
@@ -287,8 +294,8 @@
                             <option value="" selected="" disabled="" hidden="">Number of members</option>
                             <option value="2" style="color:black">2</option>
                             <option value="3" style="color:black">3</option>
-                            <option value="4" style="color:black">4</option>
-                            <option value="5" style="color:black">5</option>
+                            <option value="3" style="color:black">4</option>
+                            
                         </select>
                     </div>
 
@@ -303,11 +310,6 @@
           ?>
           
         </div>
-
-
-
-
-
 
         <div class="" id="AdVenture">
 
@@ -368,6 +370,11 @@
           var y = $("#Swadesh").offset().top;
             $("html ,body").animate({ scrollTop: y},800);
         });
+
+        function closemodel(){
+                $("#Swadesh").css({"display": "none"},100);
+            }
+
         </script>
 
 

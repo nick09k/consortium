@@ -109,6 +109,13 @@
                             </b><br>All the participants will be given a week’s time to find an appropriate solution to their identified problem which will be suitable to convert into a social enterprise as well as be feasible to work on ground level with the constraint resources and make an impact to the villager's life.</p></li><br/>
                   
     					</ol>
+                        <br/>
+              <h5><b>Eligibility Criteria </b></h5>
+              <ol>
+                  <li><h6>Individual participation is allowed in the competition, although participation in teams is encouraged.<br>However, maximum members allowed per team are 4.</h6></li>
+                  <li><h6>There is no restriction as such. Anyone above 16 years of age can participate</h6></li>
+              </ol>
+              <br/>
 
     		    	</div>
     		    	<div id="timeline" style="display:none;">
