@@ -118,7 +118,7 @@
 
           $to = $email;
 
-          $subject = "Welcome On Board";
+          $subject = "Welcome To Consortium'19 Inspiring Curiosity";
           $html = "
           <!DOCTYPE html>
               <html>
@@ -310,7 +310,7 @@
 
     $to = $email;
 
-    $subject = "Welcome On Board";
+    $subject = "Verify Your Email!";
     $html = "
     <!DOCTYPE html>
         <html>

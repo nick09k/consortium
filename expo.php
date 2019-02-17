@@ -603,7 +603,7 @@
 
 
                     <div class="col-md-6 col-md-offset-3" style="text-align: center;">
-                        <p class="g-color--white-opacity g-font-size-16--sm">Here is your chance to showcase your startup to a pool of intellectual minds and network with eminent personalities!<br><br>Registration Fee: <b>800 INR</b></p>
+                        <p class="g-color--white-opacity g-font-size-16--sm">Here is your chance to showcase your startup to a pool of intellectual minds and network with eminent personalities!<br><br>Registration Fee: <b>1500 INR</b></p>
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                             <a id="reg_button" href="#newform" title="Register">
                                 <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
