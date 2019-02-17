@@ -155,7 +155,8 @@
             $s = 'Welcome Aboard Team '.$teamname.' | Swades19';
             htmlMail($memberemail,$s,$membername,$teamname);
             
-          }else{
+          }
+          else{
             $msg = "Error member: " . mysqli_error($con);
           }
 

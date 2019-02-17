@@ -51,7 +51,8 @@
       $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
                 ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                 Teamname VARCHAR(255) NOT NULL,
-                Email VARCHAR(255) NOT NULL
+                Email VARCHAR(255) NOT NULL,
+                Contact VARCHAR(255) NOT NULL
                 )";
     mysqli_query($con,$evequery);
     }
