@@ -78,7 +78,7 @@
 
                             <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white">Farzan Shaikh</p>
                             <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">President</p>
-                            <p class="g-color--white-opacity">+91 95614 83304<br>farzan@ecellvnit.org</p>
+                            <p class="g-color--white-opacity">+91 95614 83304</p>
                         </div>
                     </div>
                     <!-- End Speaker -->
@@ -91,7 +91,7 @@
 
                             <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white">Utkarsh Gupta</p>
                             <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Vice President</p>
-                            <p class="g-color--white-opacity">+91 80058 81457<br>utkarsh_gupta@ecellvnit.org</p>
+                            <p class="g-color--white-opacity">+91 80058 81457</p>
                         </div>
                     </div>
                     <!-- End Speaker -->

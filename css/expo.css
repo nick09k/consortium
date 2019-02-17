@@ -359,6 +359,10 @@ video::-webkit-media-controls-overlay-play-button {
         background-size: cover !important;
         background-position: 45% !important;
     }
+    #swades{
+        background-size: cover !important;
+        background-position: 65% !important;
+    }
 
 
 
