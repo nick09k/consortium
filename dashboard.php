@@ -78,7 +78,7 @@
                     <h3><b>Hello '.$name.',</b></h3>
 
 
-                    <p>Thank You for registering in Swades with a team <b>'.$teamname.'</b></p>
+                    <p>Thank You for registering team <b>'.$teamname.'</b></p>
                     <div>
                         <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board for the <b>Swades</b></p>
                         <p>
@@ -148,7 +148,7 @@
 
           $query = "INSERT INTO Swadesh(Name,Main_Email,Email,Contact) VALUES('$membername','$memberteam','$memberemail','$memberphone')";
           if(mysqli_query($con,$query)){
-            $s = 'Welcome Board Team '.$teamname.' | Swades19';
+            $s = 'Welcome Aboard Team '.$teamname.' | Swades19';
             htmlMail($memberemail,$s,$membername,$teamname);
             
           }else{

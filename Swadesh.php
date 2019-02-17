@@ -23,15 +23,14 @@
 
                     <h3 class="g-color--white" style="    text-shadow: 2px 0 #333;">Grass Root Innovation</h3>
                     <p class="g-color--white g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>Beyond Imagination</b></p><br/>
-                    <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 30K </span></h3>
+                    <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 50K </span></h3>
                     <br>
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                                <a href="#about" title="Register">
-                                    <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                                    <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Know More <span class="ti-angle-down"></span></span>
-                                </a>
-                            </div>
-
+                        <a href="/regnew.php" title="Register">
+                            <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                            <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Register Now <span class="ti-angle-right"></span></span>
+                        </a>
+                    </div>
                 </div>
 
             </div>
@@ -75,7 +74,7 @@
     		    <div class="card-content code">
 
     		    	<div id="why">
-    			     	<h5><b>Prizes Worth &#8377; 30K </b></h5><br/>
+    			     	<h5><b>Prizes Worth &#8377; 50K </b></h5><br/>
     			     	<ol>
     			     	    <li><p>Opportunity to interact with some of the renowned personalities in the field of Social Entrepreneurship. </p></li>
     			     	    <li><p>Opportunity of a first-hand experience to interact with the village environment face to face. </p></li>
@@ -103,7 +102,7 @@
     		    	    <p>Competition is divided into three rounds as follows:</p><br/>
     		    	    <ol>
 
-    					    <li><h6>Round 1: Questionnaire (Pre-Elimination)</h6><p><b>9th February, 2019 – 23th February, 2019 | Colleges in and around Nagpur</b><br>This will be a questionnaire round. Participants will be filling a questionnaire in which problem statement will be provided to them through mail. Participants will be selected for the next round on the basis of the answers to given problem statement. 25 teams will be selected for the further round.</p></li><br/>
+    					    <li><h6>Round 1: Questionnaire (Pre-Elimination)</h6><p><b>18th February, 2019 – 26th February, 2019 | Colleges in and around Nagpur</b><br>This will be a questionnaire round. Participants will be filling a questionnaire in which problem statement will be provided to them through mail. Participants will be selected for the next round on the basis of the answers to given problem statement. 25 teams will be selected for the further round.</p></li><br/>
 
     					    <li><h6>Round 2: Village Round (Eliminations)</h6><p><b>3th March , 2019 | Journey from VNIT, Nagpur </b><br>This will be the village visit round. Participants will be allowed to peek into the village life, interact with the village inmates and identify their day to day problems. On the spot activities will skim off 10 teams resulting in 15 qualifying teams for the final round. </p></li><br/>
     					    <li><h6>Presentation Round (Final Round)</h6><p><b> 10th March, 2019 | 10:00 am onwards
