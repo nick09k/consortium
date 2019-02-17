@@ -46,7 +46,7 @@
     for($var = 0; $var < 9; $var++){
       $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
                 ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                Teamame VARCHAR(255) NOT NULL,
+                Teamname VARCHAR(255) NOT NULL,
                 Email VARCHAR(255) NOT NULL
                 )";
       mysqli_query($con,$evequery);
@@ -135,8 +135,10 @@
         </div>
     </div>
 
+
       <?php include("includes/footer_landing.php");?>
       <?php include("includes/script.php");?>
+
 
     </body>
   </html>
