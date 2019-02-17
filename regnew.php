@@ -50,9 +50,8 @@
     for($var = 0; $var < 9; $var++){
       $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
                 ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                Name VARCHAR(255) NOT NULL,
-                Email VARCHAR(255) NOT NULL,
-                Contact VARCHAR(255) NOT NULL
+                Teamame VARCHAR(255) NOT NULL,
+                Email VARCHAR(255) NOT NULL
                 )";
     mysqli_query($con,$evequery);
     }
@@ -74,7 +73,7 @@
     elseif($password == $cpassword){
       $hashed_password = $con->real_escape_string(password_hash($cpassword, PASSWORD_DEFAULT));
 
-      $query = "SELECT * from Registrations where Email='$email'";
+      $query = "SELECT * FROM Registrations WHERE Email='$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
       if($num > 0){
@@ -262,7 +261,7 @@
     if($num >0){
       $data = mysqli_fetch_array($result);
       if($data['otp'] == $otpver){
-        $q = "UPDATE Registrations SET otp='Confirmed'";
+        $q = "UPDATE Registrations SET otp='Confirmed' WHERE Email = $email";
         mysqli_query($con,$q);
         $msg = "Your email has been verified! <a href='login.php'>Login</a> to your dashboard.";
       }else{

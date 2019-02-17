@@ -18,9 +18,9 @@
         <script type="text/javascript" src="vendor/jquery.parallax.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U"></script>
         <script type="text/javascript" src="vendor/jquery.wow.min.js"></script>
-        <script type="text/javascript" src="/js/cards.js"></script>
-	<script type="text/javascript" src="/js/materialize.js"></script>
-        <script type="text/javascript" src="/js/custom.js"></script>
+        <script type="text/javascript" src="js/cards.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
 
 
         <!-- General Components and Settings -->
