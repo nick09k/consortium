@@ -66,7 +66,11 @@
 
     if( $name == "" || $email == "" || $contact == "" || $password == "" || $cpassword == ""){
       $msg = "Please enter all the details";
-    }elseif($password == $cpassword){
+      header('location:/regnew.php');
+    }
+
+
+    elseif($password == $cpassword){
       $hashed_password = $con->real_escape_string(password_hash($cpassword, PASSWORD_DEFAULT));
 
       $query = "SELECT * FROM Registrations WHERE Email='$email'";
@@ -181,7 +185,6 @@
                       </div>
                   </body>
               </html>
-
       ";
 
 
@@ -246,7 +249,8 @@
 
       </body>
                 ";
-  }elseif(isset($_POST['otp_sub'])){
+  }
+  elseif(isset($_POST['otp_sub'])){
     $otpver = $con->real_escape_string($_POST['otp']);
     $email = $con->real_escape_string($_GET['email']);
 
@@ -297,7 +301,8 @@
 
       </body>
                 ";
-  }elseif(isset($_POST['resend'])) {
+  }
+  elseif(isset($_POST['resend'])) {
     $otpver = '1234567890';
     $otpver = str_shuffle($otp);
     $otpver = substr($otp, 0, 6);
@@ -441,8 +446,10 @@
                 <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">Register Now</h2>
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg1; ?></p>
+                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs" id="message"></p>
             </div>
-            <form class="center-block g-width-500--sm g-width-550--md" method="post" action="regnew.php">
+            <form class="center-block g-width-500--sm g-text-center--xs g-width-600--md" method="post" action="regnew.php" onsubmit="return validateData();">
+
                 <div class="permanent">
                     <div class="g-margin-b-30--xs">
                           <input type="text" class="form-control s-form-v3__input" placeholder="* Full Name" name="name" style="text-transform: none" id="name">
@@ -478,7 +485,8 @@
                 <div class="g-text-center--xs">
                     <button type="submit" name="regnew" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Register</button>
                 </div>
-                <a href="login.php"><p id="message" class="g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs">Already registered?</p></a>
+                <a href="login.php" class="g-color--white g-font-size-13--xs ">Already Registered?</a><br>
+                
             </form>
 
         </div>

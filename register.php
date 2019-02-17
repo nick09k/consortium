@@ -53,11 +53,16 @@
     }
 
 
-  if(isset($_SESSION['email'])){
+  if(!isset($_SESSION['email'])){
+      $_SESSION['login_error'] = "Kindly Login First";
+      header('location:/login.php');
+  }
+
+  else if(isset($_POST['sub_event'])) {
+
     $email = $_SESSION['email'];
     $name = $_SESSION['name'];
     $contact = $_SESSION['contact'];
-  if(isset($_POST['sub_event'])) {
     $event = $con->real_escape_string($_POST['event']);
 
     if($event == ""){
@@ -83,9 +88,9 @@
             echo("Error description: " . mysqli_error($con));
           }
 
-          $msg = "You have successfully registered for the event. View your <a href='dashboard.php'>Dashboard</a>.";
+          $msg = "You have successfully registered for the event. View your <a class='g-font-size-13--xs' href='dashboard.php'>Dashboard</a>.";
         }else{
-          $msg = "You have already registered for the event! Visit your <a href='dashboard.php'>Dashboard</a>.";
+          $msg = "You have already registered for the event! Visit your <a 'g-font-size-13--xs' href='dashboard.php'>Dashboard</a>.";
         }
       }else{
         echo("Error description: " . mysqli_error($con));
@@ -100,26 +105,26 @@
   <body class="back">
     <?php include("includes/header.php"); ?>
     <div id="register">
-        <div class="g-container--sm g-padding-y-80--xs g-padding-y-125--xsm">
+        <div class="g-container--sm g-padding-y-125--xs g-padding-y-125--sm g-margin-t-60--xs">
             <div class="g-text-center--xs g-margin-b-60--xs">
-                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Register for an event</p>
+                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Event</p>
                 <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">Register Now</h2>
-                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
+                <p class="text-uppercase g-font-size-14--xs g-color--white g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
                 <!-- <p id="message" class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"></p> -->
             </div>
             <form class="center-block g-width-500--sm g-width-550--md" method="post" action="register.php">
                 <div class="permanent">
                   <select pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="event" placeholder="* No. of members" id="members" >
                       <option value='' selected disabled hidden>Choose an Event</option>
-                      <option value='Swadesh'>Swadesh</option>
-                      <option value='AdVenture'>AdVenture</option>
+                      <option value='Swadesh'>Swades</option>
+                      <!-- <option value='AdVenture'>AdVenture</option>
                       <option value='Pitch_Perfect'>Pitch Perfect</option>
                       <option value='renderico'>render.ico</option>
                       <option value='CEO'>CEO</option>
                       <option value='Teen_Titans'>Teen Titans</option>
                       <option value='BizMantra'>BizMantra</option>
                       <option value='BizQuiz'>BizQuiz</option>
-                      <option value='ConsoWorld'>ConsoWorld</option>
+                      <option value='ConsoWorld'>ConsoWorld</option> -->
                   </select>
                 </div>
 
@@ -129,6 +134,7 @@
             </form>
         </div>
     </div>
+<<<<<<< HEAD
       <!-- <div id="register">
           <div class="g-container--sm g-padding-y-80--xs g-padding-y-125--xsm">
               <div class="g-text-center--xs g-margin-b-60--xs">
@@ -145,6 +151,11 @@
       </div> -->
 
       <?php include("includes/footer.php");?>
+=======
+
+      <?php include("includes/footer_landing.php");?>
+      <?php include("includes/script.php");?>
+>>>>>>> 66ebcab8b38a24a76277ebf77f853971c9430a6d
     </body>
   </html>
 
