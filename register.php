@@ -10,47 +10,47 @@
     $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
     mysqli_select_db($con,$db_name) or die ("no database");
 
-    $regquery = "CREATE TABLE IF NOT EXISTS Registrations(
-                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                Name VARCHAR(255) NOT NULL,
-                Email VARCHAR(255) NOT NULL,
-                Contact VARCHAR(255) NOT NULL,
-                Password VARCHAR(255) NOT NULL,
-                Swadesh TINYINT(1) DEFAULT '0',
-                AdVenture TINYINT(1) DEFAULT '0',
-                Pitch_Perfect TINYINT(1) DEFAULT '0',
-                renderico TINYINT(1) DEFAULT '0',
-                CEO TINYINT(1) DEFAULT '0',
-                Teen_Titans TINYINT(1) DEFAULT '0',
-                BizMantra TINYINT(1) DEFAULT '0',
-                BizQuiz TINYINT(1) DEFAULT '0',
-                ConsoWorld TINYINT(1) DEFAULT '0',
-                otp VARCHAR(255) NOT NULL
-                )";
+    // $regquery = "CREATE TABLE IF NOT EXISTS Registrations(
+    //             ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    //             Name VARCHAR(255) NOT NULL,
+    //             Email VARCHAR(255) NOT NULL,
+    //             Contact VARCHAR(255) NOT NULL,
+    //             Password VARCHAR(255) NOT NULL,
+    //             Swadesh TINYINT(1) DEFAULT '0',
+    //             AdVenture TINYINT(1) DEFAULT '0',
+    //             Pitch_Perfect TINYINT(1) DEFAULT '0',
+    //             renderico TINYINT(1) DEFAULT '0',
+    //             CEO TINYINT(1) DEFAULT '0',
+    //             Teen_Titans TINYINT(1) DEFAULT '0',
+    //             BizMantra TINYINT(1) DEFAULT '0',
+    //             BizQuiz TINYINT(1) DEFAULT '0',
+    //             ConsoWorld TINYINT(1) DEFAULT '0',
+    //             otp VARCHAR(255) NOT NULL
+    //             )";
 
-    mysqli_query($con,$regquery);
+    // mysqli_query($con,$regquery);
 
-    $eve = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','ConsoWorld');
-    for($var = 0; $var < 9; $var++){
-      $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
-                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                Name VARCHAR(255) NOT NULL,
-                Main_Email VARCHAR(255) NOT NULL,
-                Email VARCHAR(255) NOT NULL,
-                Contact VARCHAR(255) NOT NULL
-                )";
-    mysqli_query($con,$evequery);
-    }
+    // $eve = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','ConsoWorld');
+    // for($var = 0; $var < 9; $var++){
+    //   $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
+    //             ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    //             Name VARCHAR(255) NOT NULL,
+    //             Main_Email VARCHAR(255) NOT NULL,
+    //             Email VARCHAR(255) NOT NULL,
+    //             Contact VARCHAR(255) NOT NULL
+    //             )";
+    // mysqli_query($con,$evequery);
+    // }
 
-    $eve = array('Swadesh_team','AdVenture_team','Pitch_Perfect_team','renderico_team','BizMantra_team','BizQuiz_team','ConsoWorld_team');
-    for($var = 0; $var < 9; $var++){
-      $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
-                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                Teamname VARCHAR(255) NOT NULL,
-                Email VARCHAR(255) NOT NULL
-                )";
-      mysqli_query($con,$evequery);
-    }
+    // $eve = array('Swadesh_team','AdVenture_team','Pitch_Perfect_team','renderico_team','BizMantra_team','BizQuiz_team','ConsoWorld_team');
+    // for($var = 0; $var < 9; $var++){
+    //   $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
+    //             ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    //             Teamname VARCHAR(255) NOT NULL,
+    //             Email VARCHAR(255) NOT NULL
+    //             )";
+    //   mysqli_query($con,$evequery);
+    // }
 
 
   if(!isset($_SESSION['email'])){
@@ -88,7 +88,9 @@
             echo("Error description: " . mysqli_error($con));
           }
 
-          $msg = "You have successfully registered for the event. View your <a class='g-font-size-13--xs' href='dashboard.php'>Dashboard</a>.";
+          $_SESSION['msg'] = "You have successfully registered for the event.";
+          header('location:/dashboard.php');
+
         }else{
           $msg = "You have already registered for the event! Visit your <a 'g-font-size-13--xs' href='dashboard.php'>Dashboard</a>.";
         }
