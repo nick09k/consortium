@@ -35,7 +35,7 @@
       if($number == "" || $teamname == "" ){
         $msg = "Please fill all the details";
       }else{
-        $tquery = "INSERT INTO Swadesh_team(Teamname) VALUES('$teamname')";
+        $tquery = "UPDATE Swadesh_team SET Teamname = '$teamname' WHERE Email = '$email'";
         if(mysqli_query($con,$tquery)){
           echo "great";
         }else{
@@ -176,34 +176,76 @@
 
           <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Swades</h2>
 
+          <form class="center-block g-width-600--sm" method="post" action="">
+              <div class="permanent row">
+                <?php
+                  $query = "SELECT * FROM Swadesh_team WHERE Email = $email";
+                  $result = mysqli_query($con,$query);
+                  $num = mysqli_num_rows($result);
+
+                  if($num > 0){
+                    $row = mysqli_fetch_array($result);
+                    if($row['Teamname' == ""]){
+
+                 ?>
+                  <div class="col-sm-6 g-margin-b-30--xs">
+                        <input type="text" class="form-control s-form-v3__input" placeholder="* Team Name" name="teamname" style="text-transform: none" id="teamname">
+                  </div>
+                  <?php
+                  }else{
+                    echo $row['Teamname'];
+                  }
+                  }
+                  $q = "SELECT * FROM Swadesh WHERE Main_Email = $email";
+                  $res = mysqli_query($con,$q);
+                  $n = mysqli_num_rows($res);
+
+                  if($n <= 4){
+                    $row = mysqli_fetch_array($res);
+                  ?>
+
+                  <div class="col-sm-6 g-margin-b-30--xs">
+                      <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input" name="number" placeholder="* No. of members" id="members">
+                          <option value="" selected="" disabled="" hidden="">Add more members</option>
+                          <option value="2" style="color:black">2</option>
+                          <option value="3" style="color:black">3</option>
+                      </select>
+                  </div>
+                  <?php } ?>
+
+              </div>
+              <div class="g-text-center--xs">
+                  <button type="submit" name="swanewmem" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Create Team</button>
+              </div>
+          </form>
+
+
           <?php
-
-
-            $query = "SELECT * FROM Swadesh WHERE Main_Email='$email'";
-            $result = mysqli_query($con,$query);
-            $num = mysqli_num_rows($result);
-            $data = $result->fetch_array(MYSQLI_ASSOC);
-
-            if($num > 4){
-
-              echo '<h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">'.$data['Name'].'</h2>';
-
-              $query = "SELECT * FROM Swadesh WHERE Main_Email='$email'";
-
-              $num = mysqli_num_rows($result);
-
-              echo "<ol>";
-              while($row = mysqli_fetch_array($result)){
-
-                echo "<li>".$row['Name'].", ".$row['Email'].", ".$row['Contact']."</li>";
-              }
-
-            }
-
-            else{
+            // $query = "SELECT * FROM Swadesh WHERE Main_Email='$email'";
+            // $result = mysqli_query($con,$query);
+            // $num = mysqli_num_rows($result);
+            // $data = $result->fetch_array(MYSQLI_ASSOC);
+            //
+            // if($num > 4){
+            //
+            //   echo '<h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">'.$data['Name'].'</h2>';
+            //
+            //   $query = "SELECT * FROM Swadesh WHERE Main_Email='$email'";
+            //
+            //   $num = mysqli_num_rows($result);
+            //
+            //   echo "<ol>";
+            //   while($row = mysqli_fetch_array($result)){
+            //
+            //     echo "<li>".$row['Name'].", ".$row['Email'].", ".$row['Contact']."</li>";
+            //   }
+            //
+            // }
+            //
+            // else{
             ?>
 
-            <form class="center-block g-width-600--sm" method="post" action="">
+            <!-- <form class="center-block g-width-600--sm" method="post" action="">
                 <div class="permanent row">
 
                     <div class="col-sm-6 g-margin-b-30--xs">
@@ -216,12 +258,10 @@
                             <option value="" selected="" disabled="" hidden="">Add more members</option>
                             <?php if($num == 3){ ?>
                             <option value="1" style="color:black">1</option>
-                            <?php } ?>
-                            <?php if($num == 2){ ?>
+                            <?php }elseif($num == 2){ ?>
                             <option value="1" style="color:black">1</option>
                             <option value="2" style="color:black">2</option>
-                            <?php } ?>
-                            <?php if($num == 1){ ?>
+                            <?php }elseif($num == 1){ ?>
                             <option value="1" style="color:black">1</option>
                             <option value="2" style="color:black">2</option>
                             <option value="3" style="color:black">3</option>
@@ -233,9 +273,9 @@
                 <div class="g-text-center--xs">
                     <button type="submit" name="swanewmem" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Create Team</button>
                 </div>
-            </form>
+            </form> -->
           <?php
-            }
+            // }
           ?>
 
         </div>
