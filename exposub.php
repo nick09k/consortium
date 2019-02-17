@@ -178,7 +178,7 @@
           if ($result === FALSE) {
 
               $msg = 'We are facing problem in sending email. Please use this link to pay your registration fees.';
-              header('https://consortium.ecellvnit.org/payexpo.php');
+              header('location:https://consortium.ecellvnit.org/payexpo.php');
 
           }
         }
