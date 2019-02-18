@@ -50,8 +50,9 @@
     for($var = 0; $var < 9; $var++){
       $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
                 ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                Teamname VARCHAR(255) NOT NULL,
-                Email VARCHAR(255) NOT NULL
+                Name VARCHAR(255) NOT NULL,
+                Email VARCHAR(255) NOT NULL,
+                Contact VARCHAR(255) NOT NULL
                 )";
     mysqli_query($con,$evequery);
     }
@@ -117,7 +118,7 @@
 
           $to = $email;
 
-          $subject = "Welcome On Board";
+          $subject = "Welcome To Consortium'19 Inspiring Curiosity";
           $html = "
           <!DOCTYPE html>
               <html>
@@ -173,7 +174,7 @@
                           <p>Thank You for registering! You are now a part of one of the India's Biggest Entrepreneurship Summit.</p>
                           <div>
                               <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board.<br/><br/>
-                              Your OTP is<br/> <span style='font-size:24px'>$otp</span></p>
+                              To verify your Conso-ID: $email use this OTP <br/> <span style='font-size:24px'>$otp</span></p>
                               For queries and in case of any difficulty, feel free to contact us.<br>
 				                          <p>
                                   With warm regards,<br>
@@ -263,7 +264,8 @@
       if($data['otp'] == $otpver){
         $q = "UPDATE Registrations SET otp='Confirmed' WHERE Email = $email";
         mysqli_query($con,$q);
-        $msg = "Your email has been verified! <a href='login.php'>Login</a> to your dashboard.";
+        $_SESSION['login_error'] = "Your email has been verified! You can Login now";
+        header('location:/login.php');
       }else{
         $msg = "Your OTP is incorrect. Please try again.
         <form class='center-block g-width-500--sm g-width-550--md' method='post' action='register.php'>
@@ -309,7 +311,7 @@
 
     $to = $email;
 
-    $subject = "Welcome On Board";
+    $subject = "Verify Your Email!";
     $html = "
     <!DOCTYPE html>
         <html>

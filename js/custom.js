@@ -33,7 +33,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		$(".temp").remove();
 		// permanent.append("<div class='temp'></div>");
-		for(var i=1; i<= members.val(); i++){
+		for(var i=2; i<= members.val(); i++){
 			permanent.append(stringvalue(i));
 		}
 
