@@ -63,10 +63,10 @@
 <?php include("includes/head.php"); ?>
   <body class="black">
     <?php include("includes/header.php"); ?>
-    
+
     <!--========== PROMO BLOCK ==========-->
 
-    <div id="login" class="s-promo-block-v1 g-bg-color--primary-ltr">
+    <div id="login" class="s-promo-block-v1">
         <div class="container g-ver-center--md g-padding-y-100--xs">
             <div class="row g-hor-centered-row--md g-margin-t-20--sm">
                 <div class="col-lg-4 col-sm-4 g-hor-centered-row__col">

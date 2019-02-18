@@ -166,7 +166,7 @@
         $msg = "Error Team: " . mysqli_error($con);
       }
       $_SESSION['msg'] = "You've registered successfully. Check your email, to begin with the first round of Swades which is a questionnaire.";
-      header('location:/dashboard.php');
+      header('location:dashboard.php');
 
     }
   }
@@ -289,8 +289,8 @@
                     </div>
 
                     <div class="col-sm-6 g-margin-b-30--xs">
-                        <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input" name="number" placeholder="* No. of members" id="members">
-                            <option value="" selected="" disabled="" hidden="">Number of members</option>
+                        <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input" name="number" placeholder="* Add more members" id="members">
+                            <option value="" selected="" disabled="" hidden="">Add more members</option>
                             <option value="2" style="color:black">1</option>
                             <option value="3" style="color:black">2</option>
                             <option value="4" style="color:black">3</option>
