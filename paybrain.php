@@ -159,9 +159,6 @@
                                 else{
                                     echo 'Get ready to Brainathon your way to a one-hour aptitude test and to put your brain cells to work.';
                                 }
-
-                              
-
                             }
                           ?>
                           
@@ -173,7 +170,7 @@
                         
                         echo '<p class="g-color--white-opacity g-font-size-12--sm">
 
-                          *Note: Kindly only use your startup email address while payment.
+                          *Note: Kindly only use your consoID i.e. your registered email address while payment.
                         </p>
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                             <a id="reg_button" href="https://www.payumoney.com/paybypayumoney/#/181F3A6D16B573419FAFEF4AC191211E" title="Register">

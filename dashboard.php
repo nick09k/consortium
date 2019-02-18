@@ -247,7 +247,7 @@
                                     echo 'Your are successfully registered.';
                                   }
                                   else{
-                                      echo 'Kindly pay your registration fee.';
+                                      echo 'You have not paid your registration fee. Click here to proceed.';
                                   }
 
                                 }
