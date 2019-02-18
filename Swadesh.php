@@ -26,7 +26,7 @@
                     <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 1 Lac </span></h3>
                     <br>
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                        <a href="/regnew.php" title="Register">
+                        <a href="/register.php" title="Register">
                             <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
                             <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Register Now <span class="ti-angle-right"></span></span>
                         </a>
@@ -68,7 +68,6 @@
     		      <ul class="tabs tabs-fixed-width">
     		        <li class="tab"><a class="active" href="#why" id="but_why">WHY PARTICIPATE?</a></li>
     		        <li class="tab"><a  href="#structure" id="but_structure">STRUCTURE</a></li>
-    		        <li class="tab"><a href="#timeline" id="but_timeline">PRIZES</a></li>
     		      </ul>
     		    </div>
     		    <div class="card-content code">
@@ -118,23 +117,7 @@
               <br/>
 
     		    	</div>
-    		    	<div id="timeline" style="display:none;">
-                <h5><b>Prizes</b></h5><br/>
-                    <ul>
-                      <li><h5>Winning Team</h5>
-                        <p>Prizes worth Rs. 12,000 with a Certificate of Excellence. </p>
-                      </li><br/>
-                      <li><h5>1st Runners Up</h5>
-                        <p>Prizes worth Rs. 9,000 with a Certificate of Excellence.</p>
-                        </li><br/>
-                      <li><h5>2nd Runners Up</h5>
-                        <p>Prizes worth Rs. 6,000 with a Certificate of Excellence.</p>
-                      </li><br/>
-                      <li><h5>Note: Participation Certificate to all the participants selected for Round 2.</h5>
-                    
-                      </li>
-                    </ul>
-    		    	</div>
+    		    	
 
     		    </div>
 		  </div>

@@ -33,7 +33,7 @@
                     <div class="col-md-6 col-md-offset-3">
                         <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>8th - 10th March</b></p>
 
-                        <a href="/intern.php" class="notice"><p class="g-font-size-16--xs g-color--white g-margin-b-0--xs">Register for EcoZen Solutions</p></a> 
+                        <a href="/brainathon.php" class="notice"><p class="g-font-size-16--xs g-color--white g-margin-b-0--xs">Register for Brainathon</p></a> 
                         
                     </div>
 
@@ -182,15 +182,14 @@
 
                     </div>
             </a>
-            <a class="product-card col-xs-12 col-md-4" >
-                <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/AdVenture.jpg)">
+            <a href="/brainathon.php" class="product-card col-xs-12 col-md-4" >
+                <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/brainathon.jpg)">
 
 
                     </div>
             </a>
             <a href="/Swadesh.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/swades.png)">
-
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/Swadesh.jpg)">
 
                     </div>
             </a>

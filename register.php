@@ -10,54 +10,68 @@
     $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
     mysqli_select_db($con,$db_name) or die ("no database");
 
-    // $regquery = "CREATE TABLE IF NOT EXISTS Registrations(
-    //             ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    //             Name VARCHAR(255) NOT NULL,
-    //             Email VARCHAR(255) NOT NULL,
-    //             Contact VARCHAR(255) NOT NULL,
-    //             Password VARCHAR(255) NOT NULL,
-    //             Swadesh TINYINT(1) DEFAULT '0',
-    //             AdVenture TINYINT(1) DEFAULT '0',
-    //             Pitch_Perfect TINYINT(1) DEFAULT '0',
-    //             renderico TINYINT(1) DEFAULT '0',
-    //             CEO TINYINT(1) DEFAULT '0',
-    //             Teen_Titans TINYINT(1) DEFAULT '0',
-    //             BizMantra TINYINT(1) DEFAULT '0',
-    //             BizQuiz TINYINT(1) DEFAULT '0',
-    //             ConsoWorld TINYINT(1) DEFAULT '0',
-    //             otp VARCHAR(255) NOT NULL
-    //             )";
+    $altquery = "ALTER TABLE `Registrations` CHANGE `ConsoWorld` `Brainathon` TINYINT(1) NULL DEFAULT '0';";
+    mysqli_query($con,$altquery);
 
-    // mysqli_query($con,$regquery);
 
-    // $eve = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','ConsoWorld');
-    // for($var = 0; $var < 9; $var++){
-    //   $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
-    //             ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    //             Name VARCHAR(255) NOT NULL,
-    //             Main_Email VARCHAR(255) NOT NULL,
-    //             Email VARCHAR(255) NOT NULL,
-    //             Contact VARCHAR(255) NOT NULL
-    //             )";
-    // mysqli_query($con,$evequery);
-    // }
+    $regquery = "CREATE TABLE IF NOT EXISTS Registrations(
+                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                Name VARCHAR(255) NOT NULL,
+                Email VARCHAR(255) NOT NULL,
+                Contact VARCHAR(255) NOT NULL,
+                Password VARCHAR(255) NOT NULL,
+                Swadesh TINYINT(1) DEFAULT '0',
+                AdVenture TINYINT(1) DEFAULT '0',
+                Pitch_Perfect TINYINT(1) DEFAULT '0',
+                renderico TINYINT(1) DEFAULT '0',
+                CEO TINYINT(1) DEFAULT '0',
+                Teen_Titans TINYINT(1) DEFAULT '0',
+                BizMantra TINYINT(1) DEFAULT '0',
+                BizQuiz TINYINT(1) DEFAULT '0',
+                Brainathon TINYINT(1) DEFAULT '0',
+                otp VARCHAR(255) NOT NULL,
 
-    // $eve = array('Swadesh_team','AdVenture_team','Pitch_Perfect_team','renderico_team','BizMantra_team','BizQuiz_team','ConsoWorld_team');
-    // for($var = 0; $var < 9; $var++){
-    //   $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
-    //             ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    //             Teamname VARCHAR(255) NOT NULL,
-    //             Email VARCHAR(255) NOT NULL
-    //             )";
-    //   mysqli_query($con,$evequery);
-    // }
+                )";
+
+    mysqli_query($con,$regquery);
+
+    $eve = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz');
+    for($var = 0; $var < 9; $var++){
+      $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
+                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                Name VARCHAR(255) NOT NULL,
+                Main_Email VARCHAR(255) NOT NULL,
+                Email VARCHAR(255) NOT NULL,
+                Contact VARCHAR(255) NOT NULL
+                )";
+    mysqli_query($con,$evequery);
+    }
+
+    $eve = array('Swadesh_team','AdVenture_team','Pitch_Perfect_team','renderico_team','BizMantra_team','BizQuiz_team');
+    for($var = 0; $var < 9; $var++){
+      $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
+                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                Name VARCHAR(255) NOT NULL,
+                Email VARCHAR(255) NOT NULL,
+                Contact VARCHAR(255) NOT NULL
+                )";
+      mysqli_query($con,$evequery);
+    }
+
+    $brainquery = "CREATE TABLE IF NOT EXISTS Brainathon(
+                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                Name VARCHAR(255) NOT NULL,
+                Email VARCHAR(255) NOT NULL,
+                Contact VARCHAR(255) NOT NULL,
+                isPaid TINYINT(1) DEFAULT '0'
+                )";
+    mysqli_query($con,$brainquery);
 
 
   if(!isset($_SESSION['email'])){
       $_SESSION['login_error'] = "Kindly Login First";
       header('location:/login.php');
   }
-
   else if(isset($_POST['sub_event'])) {
 
     $email = $_SESSION['email'];
@@ -67,7 +81,41 @@
 
     if($event == ""){
       $msg = "Please Select an event!";
-    }else{
+    }
+    else if($event == "CEO"){
+        $msg = "This is an offline event. Please contact Event Managers of CEO";
+    }
+    else if($event == "sc"){
+        $msg = "Registrations are closed. Please proceed <a href='https://startupconclave.ecellvnit.org'>here</a> for for information.";
+    }
+    else if($event == "Brainathon"){
+        $msg = "Registrations are closed. Please proceed <a href='https://startupconclave.ecellvnit.org'>here</a> for for information.";
+        $query = "SELECT * FROM Registrations WHERE Email = '$email'";
+        $result = mysqli_query($con,$query);
+        $num = mysqli_num_rows($result);
+
+        if($num > 0){
+
+          $data = mysqli_fetch_array($result);
+          if($data[$event] != 1){
+            $q1 = "UPDATE Registrations SET $event = 1 WHERE Email = '$email'";
+            mysqli_query($con,$q1);
+            $n = 'Name';
+
+            $q2 = "INSERT INTO $event(Name,Email,Contact) VALUES('$data[$n]','$email','$contact')";
+            mysqli_query($con,$q2);
+            $_SESSION['msg'] = "Thank You for showing interest in Brainathon. Kindly pay the required registration fee that is INR 100 to ensure your registration";
+            header('location:/paybrain.php');
+          }else{
+            $_SESSION['msg'] = "You have already registered for this event!";
+            header('location:/dashboard.php');
+          }
+      }else{
+        echo("Error description: " . mysqli_error($con));
+      }
+
+    }
+    else{
       $query = "SELECT * FROM Registrations WHERE Email = '$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
@@ -111,15 +159,17 @@
                 <div class="permanent">
                   <select pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="event" placeholder="* No. of members" id="members" >
                       <option value='' selected disabled hidden>Choose an Event</option>
+                      <option value='sc'>Startup Conclave</option>
                       <option value='Swadesh'>Swades</option>
-                      <!-- <option value='AdVenture'>AdVenture</option>
-                      <option value='Pitch_Perfect'>Pitch Perfect</option>
-                      <option value='renderico'>render.ico</option>
+                      <!-- <option value='AdVenture'>AdVenture</option> -->
+                      <!-- <option value='Pitch_Perfect'>Pitch Perfect</option> -->
+                      <!-- <option value='renderico'>render.ico</option> -->
                       <option value='CEO'>CEO</option>
-                      <option value='Teen_Titans'>Teen Titans</option>
-                      <option value='BizMantra'>BizMantra</option>
-                      <option value='BizQuiz'>BizQuiz</option>
-                      <option value='ConsoWorld'>ConsoWorld</option> -->
+                      <!-- <option value='Teen_Titans'>Teen Titans</option> -->
+                      <!-- <option value='BizMantra'>BizMantra</option> -->
+                      <!-- <option value='BizQuiz'>BizQuiz</option> -->
+                      <option value='Brainathon'>Brainathon</option>
+                      <!-- <option value='Wallstreet'>Wallstreet</option> -->
                   </select>
                 </div>
 
@@ -129,8 +179,6 @@
             </form>
         </div>
     </div>
-
-
       <?php include("includes/footer_landing.php");?>
       <?php include("includes/script.php");?>
 

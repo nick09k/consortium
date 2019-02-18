@@ -28,7 +28,7 @@
                 Teen_Titans TINYINT(1) DEFAULT '0',
                 BizMantra TINYINT(1) DEFAULT '0',
                 BizQuiz TINYINT(1) DEFAULT '0',
-                ConsoWorld TINYINT(1) DEFAULT '0',
+                Brainathon TINYINT(1) DEFAULT '0',
                 otp VARCHAR(255) NOT NULL
                 )";
 
@@ -57,6 +57,15 @@
     mysqli_query($con,$evequery);
     }
 
+    $brainquery = "CREATE TABLE IF NOT EXISTS Brainathon(
+                ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                Name VARCHAR(255) NOT NULL,
+                Email VARCHAR(255) NOT NULL,
+                Contact VARCHAR(255) NOT NULL,
+                isPaid TINYINT(1) DEFAULT '0'
+                )";
+    mysqli_query($con,$brainquery);
+
     if(isset($_POST['regnew'])) {
     $name = $con->real_escape_string($_POST['name']);
     $email = $con->real_escape_string($_POST['email']);
@@ -69,8 +78,6 @@
       $msg = "Please enter all the details";
       header('location:/regnew.php');
     }
-
-
     elseif($password == $cpassword){
       $hashed_password = $con->real_escape_string(password_hash($cpassword, PASSWORD_DEFAULT));
 

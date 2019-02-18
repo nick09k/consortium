@@ -215,7 +215,7 @@
                 <div class="row product-grid">
                 
                   <?php
-                    $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','ConsoWorld');
+                    $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','Brainathon');
                     $query = "SELECT * FROM Registrations WHERE Email='$email'";
                     $result = mysqli_query($con,$query);
                     $num = mysqli_num_rows($result);
@@ -225,12 +225,35 @@
                       for($var = 0;$var < 9; $var++ ){
                         if($row[$events[$var]] == 1){
                   ?>
-                    <a id="<?php echo $events[$var] ?>click" class="product-card col-xs-12 col-md-3" style="cursor:pointer;">
+                    <a href="<?php if($events[$var] == 'Brainathon'){echo'/paybrain.php';}else{echo '#'.$events[$var].'click';} ?>" id="<?php echo $events[$var] ?>click" class="product-card col-xs-12 col-md-3" style="cursor:pointer;">
                         <div class="product-card__item-grid" style="background:url(img/events/<?php echo $events[$var] ?>.jpg)">
                             <div class="product-card__item-text-v2">
                               <h2 class="g-color--white g-text-center--xs g-font-size-16--xs"><?php echo $events[$var] ?></h2>
                               
-                              <p class="g-color--white g-text-center--xs g-font-size-14--xs">Edit Your Team Members</p>
+                              <p class="g-color--white g-text-center--xs g-font-size-14--xs">
+                                <?php
+
+                                if($events[$var] != "Brainathon"){
+                                  echo 'Edit Your Team Members';
+                                }
+                                else{
+
+                                  $query = "SELECT * FROM Brainathon WHERE Email = '$email'";
+                                  $result = mysqli_query($con,$query);
+                                  $data = mysqli_fetch_assoc($result);
+
+                                  if($data['isPaid'] == 1){
+                                    echo 'Your are successfully registered.';
+                                  }
+                                  else{
+                                      echo 'Kindly pay your registration fee.';
+                                  }
+
+                                }
+                                 
+                                 ?> 
+
+                              </p>
                             </div>
                         </div>
                     </a>
