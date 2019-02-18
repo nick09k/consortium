@@ -157,7 +157,7 @@
                                   echo 'Your are already registered.';
                                 }
                                 else{
-                                    echo 'Here is your chance to showcase your startup to a pool of intellectual minds and network with eminent personalities!';
+                                    echo 'Get ready to Brainathon your way to a one-hour aptitude test and to put your brain cells to work.';
                                 }
 
                               
