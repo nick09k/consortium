@@ -38,6 +38,7 @@
                                             <li><a href="https://startupconclave.ecellvnit.org" class="s-header-v2__dropdown-menu-link">Startup Conclave</a></li>
                                             <li><a href="/CEO.php" class="s-header-v2__dropdown-menu-link">CEO</a></li>
                                             <li><a href="/Swadesh.php" class="s-header-v2__dropdown-menu-link">Swades</a></li>
+                                            <li><a href="/brainathon.php" class="s-header-v2__dropdown-menu-link">Brainathon</a></li>
 
                                         </ul>
                                     </li>
