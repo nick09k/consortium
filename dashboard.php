@@ -123,7 +123,7 @@
     }
 
   }
-  
+
   // Connected
   if(isset($_SESSION['email'])){
     $email = $_SESSION['email'];
@@ -154,7 +154,7 @@
           if(mysqli_query($con,$query)){
             $s = 'Welcome Aboard Team '.$teamname.' | Swades19';
             htmlMail($memberemail,$s,$membername,$teamname);
-            
+
           }
           else{
             $msg = "Error member: " . mysqli_error($con);
@@ -166,8 +166,8 @@
         $msg = "Error Team: " . mysqli_error($con);
       }
       $_SESSION['msg'] = "You've registered successfully. Check your email, to begin with the first round of Swades which is a questionnaire.";
-      header('location:/dashboard.php');
-      
+      header('location:dashboard.php');
+
     }
   }
   else{
@@ -197,7 +197,7 @@
                   <p class="text-uppercase g-font-size-14--xs g-text-center--xs g-color--white g-letter-spacing--2 g-margin-b-25--xs"><?php  if(isset($_SESSION['msg'])){ echo $_SESSION['msg']; }?></p>
             </div>
         </div>
-        
+
         <!--========== END PROMO BLOCK ==========-->
         <!--========== PAGE CONTENT ==========-->
         <div class="container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="details" style="background:rgba(255, 255, 255,1);">
@@ -206,14 +206,14 @@
               <ul class="tabs tabs-fixed-width">
                 <li class="tab"><a class="active" href="#why" id="but_why">YOUR EVENTS</a></li>
                 <li class="tab"><a  href="#structure" id="but_structure">TICKETS</a></li>
-                
+
               </ul>
             </div>
             <div class="card-content code">
               <div id="why">
                 <br>
                 <div class="row product-grid">
-                
+
                   <?php
                     $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','Brainathon');
                     $query = "SELECT * FROM Registrations WHERE Email='$email'";
@@ -229,6 +229,7 @@
                         <div class="product-card__item-grid" style="background:url(img/events/<?php echo $events[$var] ?>.jpg)">
                             <div class="product-card__item-text-v2">
                               <h2 class="g-color--white g-text-center--xs g-font-size-16--xs"><?php echo $events[$var] ?></h2>
+
                               
                               <p class="g-color--white g-text-center--xs g-font-size-14--xs">
                                 <?php
@@ -254,13 +255,14 @@
                                  ?> 
 
                               </p>
+
                             </div>
                         </div>
                     </a>
                   <?php }
                       }
                     }
-                    
+
                    ?>
                  </div>
 
@@ -303,7 +305,7 @@
             }
             else{
             ?>
-            
+
             <form class="center-block g-width-600--sm" method="post" action="">
                 <div class="permanent row">
                   <p class="g-color--white g-text-center--xs g-font-size-14--xs">You're a Team Leader by default</p>
@@ -312,16 +314,16 @@
                     </div>
 
                     <div class="col-sm-6 g-margin-b-30--xs">
-                        <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input" name="number" placeholder="* No. of members" id="members">
-                            <option value="" selected="" disabled="" hidden="">Number of members</option>
-                            <option value="2" style="color:black">2</option>
-                            <option value="3" style="color:black">3</option>
-                            <option value="3" style="color:black">4</option>
-                            
+                        <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input" name="number" placeholder="* Add more members" id="members">
+                            <option value="" selected="" disabled="" hidden="">Add more members</option>
+                            <option value="2" style="color:black">1</option>
+                            <option value="3" style="color:black">2</option>
+                            <option value="4" style="color:black">3</option>
+
                         </select>
                     </div>
 
-                    
+
                 </div>
                 <div class="g-text-center--xs">
                     <button type="submit" name="swanewmem" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Create Team</button>
@@ -330,7 +332,7 @@
           <?php
             }
           ?>
-          
+
         </div>
 
         <div class="" id="AdVenture">
@@ -377,7 +379,7 @@
         <!--========== END FOOTER ==========-->
         <?php include("includes/script.php");?>
 
-        
+
         <script>
             var wid = $(".product-card__item-grid").width();
             $(".product-card__item-grid").css({
