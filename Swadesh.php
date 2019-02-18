@@ -23,7 +23,7 @@
 
                     <h3 class="g-color--white" style="    text-shadow: 2px 0 #333;">Grass Root Innovation</h3>
                     <p class="g-color--white g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>Beyond Imagination</b></p><br/>
-                    <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 50K </span></h3>
+                    <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 1 Lac </span></h3>
                     <br>
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                         <a href="/regnew.php" title="Register">
@@ -74,7 +74,7 @@
     		    <div class="card-content code">
 
     		    	<div id="why">
-    			     	<h5><b>Prizes Worth &#8377; 50K </b></h5><br/>
+    			     	<h5><b>Prizes Worth &#8377; 1 Lac </b></h5><br/>
     			     	<ol>
     			     	    <li><p>Opportunity to interact with some of the renowned personalities in the field of Social Entrepreneurship. </p></li>
     			     	    <li><p>Opportunity of a first-hand experience to interact with the village environment face to face. </p></li>
