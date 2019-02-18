@@ -189,7 +189,7 @@
                     </div>
             </a>
             <a href="/Swadesh.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/Swadesh.jpg)">
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/swades.png)">
 
 
                     </div>
