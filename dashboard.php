@@ -161,13 +161,11 @@
           }
 
         }
-        
-        
 
       }else{
         $msg = "Error Team: " . mysqli_error($con);
       }
-      $_SESSION['msg'] = "Registration Successful. All the relevant details have been mailed to you.";
+      $_SESSION['msg'] = "You've registered successfully. Check your email, to begin with the first round of Swades which is a questionnaire.";
       header('location:/dashboard.php');
       
     }
@@ -231,7 +229,7 @@
                         <div class="product-card__item-grid" style="background:url(img/events/<?php echo $events[$var] ?>.jpg)">
                             <div class="product-card__item-text-v2">
                               <h2 class="g-color--white g-text-center--xs g-font-size-16--xs"><?php echo $events[$var] ?></h2>
-                              <br>
+                              
                               <p class="g-color--white g-text-center--xs g-font-size-14--xs">Edit Your Team Members</p>
                             </div>
                         </div>
@@ -369,7 +367,7 @@
           $("#Swadesh").css({"display":"block"});
           $("#Swadesh").animate({opacity: 1}, 1000);
           var y = $("#Swadesh").offset().top;
-            $("html ,body").animate({ scrollTop: y},800);
+            $("html ,body").animate({ scrollTop: y},200);
         });
 
         function closemodel(){
