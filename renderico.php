@@ -97,6 +97,9 @@
               <br/>
               <p>Register on our <a href="/register.php">website</a> with the name of your <b>consoID</b>. As soon as your registration process gets complete you will get confirmation along with the problem statements on your mail id..</p>
               <br/>
+
+              <h5><a href="https://drive.google.com/open?id=1sAFvYDP4dwP4pt9BWmCtx5EDMno3WCfX" target="_blank" class="g-color--primary">View Problem Statement</a></h5>
+              <br>
               <h5><b>Rules to follow</b></h5>
               <br/>
     		    	    <!-- <p>Competition is divided into three rounds as follows:</p><br/> -->
@@ -111,6 +114,8 @@
                     </ol></li><br/>
                     <li>The Logo should be designed as per the brief provided.</li>
     					</ol>
+
+
               <h5><b>Deadline: </b> 6th March’19</h5>
 
     		    	</div>

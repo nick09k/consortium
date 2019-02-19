@@ -165,7 +165,8 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                         </p>
                         <br>
 
-                          <a style="display:block; text-align: center;width:100px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://goo.gl/forms/xXRcPeOWCat1gGtr1">Problem Statement</a>
+                          <a style="display:block; text-align: center;width:100px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://drive.google.com/open?id=1sAFvYDP4dwP4pt9BWmCtx5EDMno3WCfX">Problem Statement
+                          </a>
 
                         <p>
 

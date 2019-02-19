@@ -157,10 +157,10 @@
                       for($var = 0;$var < 9; $var++ ){
                         if($row[$events[$var]] == 1){
                   ?>
-                    <a href="<?php if($events[$var] == 'Brainathon'){echo'/paybrain.php';}else{echo '#'.$events[$var].'click';} ?>" id="<?php echo $events[$var] ?>click" class="product-card col-xs-12 col-md-3" style="cursor:pointer;">
+                    <div id="<?php echo $events[$var] ?>click" class="product-card col-xs-12 col-md-3" style="cursor:pointer;">
                         <div class="product-card__item-grid" style="background:url(img/events/<?php echo $events[$var] ?>.jpg)">
                             <div class="product-card__item-text-v2">
-                              <h2 class="g-color--white g-text-center--xs g-font-size-16--xs"><?php echo $events[$var] ?></h2>
+                              <h2 class="g-color--white g-text-center--xs g-font-size-16--xs" style="text-decoration: underline;"><b><?php echo $events[$var] ?></b></h2>
 
                               
                               <p class="g-color--white g-text-center--xs g-font-size-14--xs">
@@ -187,10 +187,22 @@
                                  ?> 
 
                               </p>
+                              <br>
+                              <br>
+
+                              <div class="wow fadeInLeft g-text-center--xs" data-wow-duration=".3" data-wow-delay=".5s" style="display: flex;justify-content: center;">
+                                  <a id="reg_button" href="/<?php echo $events[$var].'.php' ?>" target="_blank" title="Register">  
+                                      <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">View Event</span>
+                                  </a>
+                                  <a id="reg_button" href="<?php if($events[$var] == 'Brainathon'){echo'/paybrain.php';}else{echo '#'.$events[$var].'click';} ?>" title="Register">  
+                                      <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50"><?php if($events[$var] == 'Brainathon'){echo'Pay Here';}else{echo 'Your Team';} ?></span>
+                                  </a>
+                              </div>
+
 
                             </div>
                         </div>
-                    </a>
+                    </div>
                   <?php }
                       }
                     }
@@ -229,7 +241,7 @@
               $num = mysqli_num_rows($result);
               echo "<p class='g-color--white g-font-size-20--xs'>Team Members</p><ol>";
               while($row = mysqli_fetch_array($result)){
-                echo "<li class='g-color--white'>".$row['Name'].", ".$row['Email'].", ".$row['Contact']."</li>";
+                echo "<li class='g-color--white' style='text-decoration:none;'>".$row['Name'].", ".$row['Email'].", ".$row['Contact']."</li>";
               }
               echo "</ol>";
             }
