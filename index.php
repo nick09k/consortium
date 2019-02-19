@@ -176,10 +176,8 @@
 
                     </div>
             </a>
-            <a class="product-card col-xs-12 col-md-4">
+            <a href="/renderico.php" class="product-card col-xs-12 col-md-4">
                 <div class="product-card__item-grid g-padding-y-40--xs"  style="background:url(img/events/renderico.jpg)">
-
-
                     </div>
             </a>
             <a href="/brainathon.php" class="product-card col-xs-12 col-md-4" >

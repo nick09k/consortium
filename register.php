@@ -1,6 +1,7 @@
 <?php
   @session_start();
   $pagetitle = "Register | Consortium'19";
+  require_once('includes/mailing.php');
 
     $db_host = "localhost:3306";
     $db_username = "conso19";
@@ -105,6 +106,7 @@
             $q2 = "INSERT INTO $event(Name,Email,Contact) VALUES('$data[$n]','$email','$contact')";
             mysqli_query($con,$q2);
             $_SESSION['msg'] = "Thank You for showing interest in Brainathon. Kindly pay the required registration fee that is INR 100 to ensure your registration";
+            htmlMail($email, "Complete your registration | Brainathon", $name, "", "Brainathon");
             header('location:/paybrain.php');
           }else{
             $_SESSION['msg'] = "You have already registered for this event!";
@@ -129,10 +131,10 @@
           $q2 = "INSERT INTO $event(Name,Main_Email,Email,Contact) VALUES('$name','$email','$email','$contact')";
           mysqli_query($con,$q2);
 
-          $_SESSION['msg'] = "Thank You for showing interest in $event. Kindly add team members to complete the registration.";
+          $_SESSION['msg'] = "Thank You for showing interest in $event. Click on the registered events below to complete your registration.";
           header('location:/dashboard.php');
         }else{
-          $_SESSION['msg'] = "You have already registered for this event!";
+          $_SESSION['msg'] = "You have already registered for this event! To manage or create your team please go below.";
           header('location:/dashboard.php');
         }
       }else{
