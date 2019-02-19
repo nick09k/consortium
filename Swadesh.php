@@ -94,7 +94,7 @@
     				<div id="structure" style="display:none;">
               <h5><b>How to participate</b></h5>
               <br/>
-              <p>To participate in Swades, visit our <a href="https://consortium.ecellvnit.org/">website</a> and register with the name of your team leader. As soon your registration process gets complete you will get confirmation along with the questionnaire for the first round on your mail-id.  This would also unlock vast repository of resources to help you throughout the competition cycle and even beyond.</p>
+              <p>To participate in Swades, visit our <a href="https://consortium.ecellvnit.org/">website</a> and register with your <b>consoID</b>. As soon your registration process gets complete you will get confirmation along with the questionnaire for the first round on your mail-id.  This would also unlock vast repository of resources to help you throughout the competition cycle and even beyond.</p>
               <br/>
               <h5><b>Structure</b></h5>
               <br/>

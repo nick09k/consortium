@@ -39,6 +39,7 @@
                                             <li><a href="/CEO.php" class="s-header-v2__dropdown-menu-link">CEO</a></li>
                                             <li><a href="/Swadesh.php" class="s-header-v2__dropdown-menu-link">Swades</a></li>
                                             <li><a href="/brainathon.php" class="s-header-v2__dropdown-menu-link">Brainathon</a></li>
+                                            <li><a href="/renderico.php" class="s-header-v2__dropdown-menu-link">Render.ico</a></li>
 
                                         </ul>
                                     </li>

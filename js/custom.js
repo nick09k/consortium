@@ -1,6 +1,9 @@
 
-var members = $("#members");
-var permanent = $(".permanent");
+var membersSwadesh = $("#members-Swadesh");
+var membersrenderico = $("#members-renderico");
+// var members = $("#members");
+var permanentSwadesh = $(".permanent-Swadesh");
+var permanentrenderico = $(".permanent-renderico");
 var lock = $("#lock:checked");
 var temp = $(".temp");
 const my = '<div class="temp row g-margin-b-50--xs">'
@@ -28,16 +31,29 @@ function stringvalue(i){
 
 // alert(members.val());
 $(document).ready(function(){
-	members.on("change", function(e){
+	membersSwadesh.on("change", function(e){
 
 		e.preventDefault();
 		$(".temp").remove();
 		// permanent.append("<div class='temp'></div>");
-		for(var i=2; i<= members.val(); i++){
-			permanent.append(stringvalue(i));
+		for(var i=2; i<= membersSwadesh.val(); i++){
+			permanentSwadesh.append(stringvalue(i));
 		}
 
 	});
+  membersrenderico.on("change", function(e){
+
+    e.preventDefault();
+    $(".temp").remove();
+    // permanent.append("<div class='temp'></div>");
+    for(var i=2; i<= membersrenderico.val(); i++){
+      permanentrenderico.append(stringvalue(i));
+    }
+
+  });
+
+
+
 });
 
 function validateData(){

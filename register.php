@@ -129,7 +129,7 @@
           $q2 = "INSERT INTO $event(Name,Main_Email,Email,Contact) VALUES('$name','$email','$email','$contact')";
           mysqli_query($con,$q2);
 
-          $_SESSION['msg'] = "Thank You for showing interest in Swades. Kindly add team members to complete the registration.";
+          $_SESSION['msg'] = "Thank You for showing interest in $event. Kindly add team members to complete the registration.";
           header('location:/dashboard.php');
         }else{
           $_SESSION['msg'] = "You have already registered for this event!";
@@ -163,7 +163,7 @@
                       <option value='Swadesh'>Swades</option>
                       <!-- <option value='AdVenture'>AdVenture</option> -->
                       <!-- <option value='Pitch_Perfect'>Pitch Perfect</option> -->
-                      <!-- <option value='renderico'>render.ico</option> -->
+                      <option value='renderico'>render.ico</option>
                       <option value='CEO'>CEO</option>
                       <!-- <option value='Teen_Titans'>Teen Titans</option> -->
                       <!-- <option value='BizMantra'>BizMantra</option> -->
