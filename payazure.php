@@ -157,7 +157,7 @@
                                   echo 'Your are already registered.';
                                 }
                                 else{
-                                    echo 'Get ready to Brainathon your way to a one-hour aptitude test and to put your brain cells to work.';
+                                    echo 'Grab this golden opportunity to know how the tech game has changed!';
                                 }
                             }
                           ?>
