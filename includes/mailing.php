@@ -266,6 +266,154 @@ function htmlMail($t, $sub, $name, $teamname, $event){
               </html>';
 
 
+    $htmlAzure = '<!DOCTYPE html>
+              <html>
+                  <head>
+                      <style>
+                          li{
+                              padding:10px;
+                          }
+                          p{
+                              font-size:16px;
+                          }
+
+                          *{
+                              font-family:Helvetica,Arial,sans-serif;
+                          }
+
+                          h2{
+                              text-align: center;
+                              margin-top: 150px;
+
+                          }
+                          html, body{
+                              background-color:#f7f9fb;
+                              margin: 0;
+                          }
+                          .context {
+                              font-size: 12px;
+                              padding: 40px 60px;
+                              margin-left:10%;
+                              margin-right: 10%;
+                          }
+
+                          .context p{
+                              font-size: 12px;
+                          }
+                          p{
+                              margin: 15px 0px;
+                          }
+
+                      </style>
+                  </head>
+                  <body>
+
+                      <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
+                      <h2 style="font-size:22px;">Welcome to Azure Space</h2><br>
+
+                      <div class="context">
+                          <h3><b>Hello</b></h3>
+
+
+                          <p>Thank You for showing interest in the Azure Space!</p>
+                          <div>
+                              <p>We are well pleased to have you on board for this event.
+                              </p>
+                              <p>
+                                  To complete your registration for Azure Space follow the button below and become a part of Central India’s Biggest Entrepreneurship Summit Consortium 19 <br>
+                                  <br>
+                              </p>
+
+                              <a style="display:block; text-align: center;width:100px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://consortium.ecellvnit.org/payazure.php">Pay Now!</a>
+
+                              
+                              <p>
+                                  To keep you updated, all the relevant details will be emailed to you very shortly.<br>
+                                  <br>
+                              </p>
+                              <p>For queries and in case of any difficulty, feel free to contact us.</p>
+                              <p>
+                                  With warm regards,<br>
+                                  Anushree Rungta<br>
+                                  Core-Coordinator, E-Cell VNIT
+                              </p>
+                          </div>
+                      </div>
+                  </body>
+              </html>';          
+    $htmlAzureSuccess = '<!DOCTYPE html>
+              <html>
+                  <head>
+                      <style>
+                          li{
+                              padding:10px;
+                          }
+                          p{
+                              font-size:16px;
+                          }
+
+                          *{
+                              font-family:Helvetica,Arial,sans-serif;
+                          }
+
+                          h2{
+                              text-align: center;
+                              margin-top: 150px;
+
+                          }
+                          html, body{
+                              background-color:#f7f9fb;
+                              margin: 0;
+                          }
+                          .context {
+                              font-size: 12px;
+                              padding: 40px 60px;
+                              margin-left:10%;
+                              margin-right: 10%;
+                          }
+
+                          .context p{
+                              font-size: 12px;
+                          }
+                          p{
+                              margin: 15px 0px;
+                          }
+
+                      </style>
+                  </head>
+                  <body>
+
+                      <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
+                      <h2 style="font-size:22px;">Welcome to Azure Space</h2><br>
+
+                      <div class="context">
+                          <h3><b>Hello</b></h3>
+
+
+                          <p>Congratulations! You are now a part of Central India’s Biggest Entrepreneurship Summit.</p>
+                          <div>
+                              <p>We are well pleased to have you on board for this event.
+                              </p>
+                              <p>
+                                  You are successfully registered for Azure Space. Kindly bring your college Id at time of workshop for verification. <br>
+                                  <br>
+                              </p>
+                              
+                              <p>
+                                  To keep you updated, all the relevant details will be emailed to you very shortly.<br>
+                                  <br>
+                              </p>
+                              <p>For queries and in case of any difficulty, feel free to contact us.</p>
+                              <p>
+                                  With warm regards,<br>
+                                  Anushree Rungta<br>
+                                  Core-Coordinator, E-Cell VNIT
+                              </p>
+                          </div>
+                      </div>
+                  </body>
+              </html>';
+
     $html = "";
     if($event == 'Swadesh'){
       $html = $htmlSwadesh;
@@ -276,6 +424,12 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     }
     else if($event == 'Brainathon'){
       $html = $htmlBrainathon;
+    }
+    else if($event == 'Azure'){
+      $html = $htmlAzure;
+    }
+    else if($event == 'Azurevnit'){
+      $html = $htmlAzureSuccess;
     }
     $url = 'https://startupconclave.ecellvnit.org/send';
     $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'intheend');

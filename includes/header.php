@@ -52,6 +52,7 @@
                                             <li><a href="#zerotoone" class="s-header-v2__dropdown-menu-link">Zero To One</a></li>
                                             <li><a href="/intern.php" class="s-header-v2__dropdown-menu-link">Internship Fair</a></li>
                                             <li><a href="/expo.php" class="s-header-v2__dropdown-menu-link">Startup Expo</a></li>
+                                            <li><a href="/azure.php" class="s-header-v2__dropdown-menu-link">Azure Space</a></li>
                                             <li><a href="/attractions.php" class="s-header-v2__dropdown-menu-link">Workshops & Webinars</a></li>
 
 

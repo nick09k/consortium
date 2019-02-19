@@ -56,6 +56,18 @@
 
                 </div>
             </a>
+            <a href="/azure.php" class="product-card col-xs-12 col-md-4 col-lg-3" >
+                <div class="product-card__item-grid" style="background:url(img/events/azure.png)">
+
+                    <div class="product-card__item-text-v2">
+                        <h5 class="g-color--white"><b>Azure Zone | Workshop</b></h5>
+                        <p class="g-color--white">Consortium'19  and Microsoft Azure present a certified Cloud Computing workshop to hone your knowledge and technical skills. <br>Date: 9 FEB 19</p>
+                        <p class="g-color--white"><b>Register Now</b></p>
+                        <p class="g-color--white"><i>#Workshop</i></p>
+                    </div>
+
+                </div>
+            </a>
             
 
         </div>
