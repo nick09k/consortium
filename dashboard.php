@@ -191,7 +191,7 @@
                               <br>
 
                               <div class="wow fadeInLeft g-text-center--xs" data-wow-duration=".3" data-wow-delay=".5s" style="display: flex;justify-content: center;">
-                                  <a id="reg_button" href="/<?php echo $events[$var].'.php' ?>" target="_blank" title="Register">  
+                                  <a id="reg_button" href="/<?php if($events[$var] == 'Brainathon'){echo 'brainathon.php';}else {echo $events[$var].'.php';} ?>" target="_blank" title="Register">  
                                       <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">View Event</span>
                                   </a>
                                   <a id="reg_button" href="<?php if($events[$var] == 'Brainathon'){echo'/paybrain.php';}else{echo '#'.$events[$var].'click';} ?>" title="Register">  
