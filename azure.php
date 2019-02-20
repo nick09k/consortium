@@ -132,7 +132,7 @@
 
                     <h3 class="g-color--white ">A Cloud Computing Workshop</h3>
                     <p class="g-color--white ">Computing is not about computers any more. It's about living.</p>
-                    <p class="g-color--white g-font-size-18--xs"><b>AZ203 Certified </b><br>9 March 19</p>
+                    <p class="g-color--white g-font-size-18--xs"><b>AZ - 203 Certified </b><br>9 March 19</p>
 
                     <br>
 
