@@ -49,7 +49,7 @@
           else{
             header('location:dashboard.php');
           }
-          
+
         }
         else {
           $msg = "Incorrect Password. Please try again.";
@@ -92,6 +92,7 @@
                             </div>
                             <div class="g-text-center--xs">
                                 <button type="submit" name="login1" class="text-uppercase btn-block s-btn s-btn--md s-btn--white-bg g-radius--50 g-padding-x-50--xs g-margin-b-20--xs">Login</button>
+                                <a href="forgot.php" class="g-color--white g-font-size-13--xs regclass">Forgot Password</a><br>
                                 <a href="regnew.php" class="g-color--white g-font-size-13--xs regclass">Not Registered?</a><br>
                             </div>
                         </form>
