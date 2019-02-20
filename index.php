@@ -194,6 +194,9 @@
         </div>
 
 
+        
+
+
         <!--Startup EXPO-->
 
         <div class="s-promo-block-v3 g-bg-position--center expo" style="background: #161616" id="expo">
@@ -228,6 +231,43 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Azure Space -->
+        <div class="s-promo-block-v3 event-landing1" style="background: url('img/1920x1080/landing-azure-main.jpg');height: 80vh" id="swades">
+          <style type="text/css">
+                @media(max-width: 767px){
+                  .brain{
+                    background: rgba(0,0,0,0.6);
+                  }
+                }
+              </style>
+            <div class="container g-padding-y-125--xs g-padding-y-60--lg event-landing-inner brain">
+              
+
+                <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
+                    <!--<img src="img/logo/ceoblack.png" alt="" width="200" style="margin-top:-100px; margin-left:-20px">-->
+
+                    
+                    <h1 class="g-font-size-45--xs g-font-size-60--sm g-font-size-70--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>Azure Space</b> <i class="ti-cloud-down"></i></span></h1>
+                    
+                
+                    <p class="g-color--white g-font-size-16--sm"><b>A Cloud Computing Workshop</b><br>Computing is not about computers any more. It's about living.</p>
+                    <p class="g-color--white g-font-size-18--xs"><b>AZ203 Certified </b><br>9 March 19</p>
+
+                    <br>
+
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+
+                                <a id="reg_button" href="/azure.php" title="Register">
+                                    <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--primary g-padding-x-15--xs">Know More</span>
+                                </a>
+                            </div>
+
                 </div>
 
             </div>

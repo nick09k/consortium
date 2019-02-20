@@ -125,23 +125,26 @@
 
                     <!--<img src="img/tielogo.jpg" alt="TIE Nagpur" style="z-index:2" height="50"/>-->
                     </div>
-                    <h1 class="g-font-size-45--xs g-font-size-60--sm g-font-size-70--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>Azure Space</b> <i class="ti-cloud-down"></i></span></h1>
+                    <h1 class="g-font-size-45--xs g-font-size-60--sm g-font-size-70--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>Azure Space</b></h1>
                     <p class="g-color--white-opacity" style="position: relative;">in association with</p>
-                    <img src="img/azure.png" alt="Azure" style="z-index:2; position:relative; margin-top: -20px; margin-bottom: 10px" height="40"/>
-                    
+                    <img src="img/azure.png" alt="Azure" style="z-index:2; position:relative; margin-top: -20px;" height="40"/><br>
 
                     <h3 class="g-color--white ">A Cloud Computing Workshop</h3>
-                    <p class="g-color--white ">Computing is not about computers any more. It's about living.</p>
-                    <p class="g-color--white g-font-size-18--xs"><b>AZ203 Certified </b><br>9 March 19</p>
+                    <p class="g-color--white g-font-size-16--xs">Computing is not about computers any more. It's about living.</p><br/>
+                    <h3 class="g-color--white"><b>AZ203 Certified <i class="ti-cloud-down"></i></span></b><br>
+              
+
+                    </h3>
 
                     <br>
 
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                        <a href="#register" title="Register">
-                            <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                            <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Register Now <span class="ti-angle-down"></span></span>
-                        </a>
-                    </div>
+                                <a href="#register" title="Register">
+                                    <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                    <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Register Now <span class="ti-angle-down"></span></span>
+                                </a>
+                            </div>
+                            
 
                 </div>
 
@@ -206,7 +209,7 @@
                 </div>
 
                 <div class="g-text-center--xs">
-                    <button type="submit" name="register" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-40--xs g-margin-b-20--xs">Register with ConsoID</button>
+                    <button type="submit" name="register" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Register with ConsoID</button>
                 </div>
                 <a href="regnew.php" class="g-color--white g-font-size-13--xs ">Don't have ConsoID?</a><br>
 
@@ -217,7 +220,7 @@
 
         <!-- End Features -->
         <div class="g-promo-section" style="background:#000" id="contact">
-            <div class="container g-padding-y-30--xs g-padding-y-30--sm g-padding-x-80--md g-padding-x-60--sm g-padding-x-10--xs">
+            <div class="container g-padding-y-30--xs g-padding-y-30--sm g-padding-x-80--md g-padding-x-60--sm g-padding-x-40--xs">
                 <h2 class="g-font-size-30--xs g-font-size-30--sm g-font-size-30--md g-color--white g-padding-x-20--xs g-text-center--xs">Get In Touch</h2>
         <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
             <!--<div class="g-container--md g-padding-y-40--xs">-->
