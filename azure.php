@@ -141,6 +141,8 @@
                             <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
                             <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Register Now <span class="ti-angle-down"></span></span>
                         </a>
+                        <br>
+                        <p class="g-color--white g-font-size-14--xs g-margin-t-20--xs">*Free for VNITians</p>
                     </div>
 
                 </div>

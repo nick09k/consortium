@@ -393,7 +393,8 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <p>Congratulations! You are now a part of Central India’s Biggest Entrepreneurship Summit.</p>
                           <div>
                               <p>
-                                  We are well pleased to have you on board for this event.You are successfully registered for Azure Space. Kindly bring your college Id at time of workshop for verification. <br>
+                                  We are well pleased to have you on board for this event.You are successfully registered for Azure Space.
+                                  <br><b>Note: Kindly bring your college Id at time of workshop for verification.</b><br>
                                   
                               </p>
                               
