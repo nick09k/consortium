@@ -111,7 +111,7 @@
                         <br/>
               <h5><b>Eligibility Criteria </b></h5>
               <ol>
-                  <li><h6>Individual participation is allowed in the competition, although participation in teams is encouraged.<br>However, maximum members allowed per team are 4.</h6></li>
+                  <li><h6>Participation in teams is encouraged.<br>However, maximum members allowed per team are 4.</h6></li>
                   <li><h6>There is no restriction as such. Anyone above 16 years of age can participate</h6></li>
               </ol>
               <br/>

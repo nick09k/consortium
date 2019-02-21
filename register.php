@@ -163,7 +163,7 @@
                       <option value='' selected disabled hidden>Choose an Event</option>
                       <option value='sc'>Startup Conclave</option>
                       <option value='Swadesh'>Swades</option>
-                      <!-- <option value='AdVenture'>AdVenture</option> -->
+                      <option value='AdVenture'>AdVenture</option>
                       <!-- <option value='Pitch_Perfect'>Pitch Perfect</option> -->
                       <option value='renderico'>render.ico</option>
                       <option value='CEO'>CEO</option>

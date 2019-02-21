@@ -413,6 +413,88 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                   </body>
               </html>';
 
+
+    $htmlAdVenture = '<!DOCTYPE html>
+              <html>
+                  <head>
+                      <style>
+                          li{
+                              padding:10px;
+                          }
+                          p{
+                              font-size:16px;
+                          }
+
+                          *{
+                              font-family:Helvetica,Arial,sans-serif;
+                          }
+
+                          h2{
+                              text-align: center;
+                              margin-top: 150px;
+
+                          }
+                          html, body{
+                              background-color:#f7f9fb;
+                              margin: 0;
+                          }
+                          .context {
+                              font-size: 12px;
+                              padding: 40px 60px;
+                              margin-left:10%;
+                              margin-right: 10%;
+                          }
+
+                          .context p{
+                              font-size: 12px;
+                          }
+                          p{
+                              margin: 15px 0px;
+                          }
+
+                      </style>
+                  </head>
+                  <body>
+
+                      <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
+                      <h2 style="font-size:22px;">Welcome to AdVenture</h2><br>
+
+                      <div class="context">
+                          <h3><b>Hello</b></h3>
+
+
+                          <p>Congratulations! You are now a part of Central India’s Biggest Entrepreneurship Summit.</p>
+                          <div>
+                              <p>
+                                  We are well pleased to have you on board for this event.You are successfully registered for AdVenture.
+                                  <br>
+                                  Here is your way to the first step towards the journey of express yourself and to utilize the great opportunity for photographers to communicate and enrich image-making culture for professionals and amateurs alike.
+                                  
+                              </p>
+                              <br>
+
+
+                                <a style="display:block; text-align: center;width:100px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="">Problem Statement
+                                </a>
+                                <br>
+                                <p><b>All the submission will be done to adventure2k19@gmail.com on the google drive</b></p>
+
+                              
+                              <p>
+                                  To keep you updated, all the relevant details will be emailed to you very shortly.
+                                  <br>
+                              </p>
+                              <p>For queries and in case of any difficulty, feel free to contact us.</p>
+                              <p>
+                                  With warm regards,<br>
+                                  Anushree Rungta<br>
+                                  Core-Coordinator, E-Cell VNIT
+                              </p>
+                          </div>
+                      </div>
+                  </body>
+              </html>';
+
     $html = "";
     if($event == 'Swadesh'){
       $html = $htmlSwadesh;
@@ -429,6 +511,9 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     }
     else if($event == 'Azurevnit'){
       $html = $htmlAzureSuccess;
+    }
+    else if($event == 'AdVenture'){
+      $html = $htmlAdVenture;
     }
     $url = 'https://startupconclave.ecellvnit.org/send';
     $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'intheend');

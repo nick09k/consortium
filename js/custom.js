@@ -1,9 +1,11 @@
 
 var membersSwadesh = $("#members-Swadesh");
 var membersrenderico = $("#members-renderico");
+var membersAdVenture = $("#members-AdVenture");
 // var members = $("#members");
 var permanentSwadesh = $(".permanent-Swadesh");
 var permanentrenderico = $(".permanent-renderico");
+var permanentAdVenture = $(".permanent-AdVenture");
 var lock = $("#lock:checked");
 var temp = $(".temp");
 const my = '<div class="temp row g-margin-b-50--xs">'
@@ -48,6 +50,17 @@ $(document).ready(function(){
     // permanent.append("<div class='temp'></div>");
     for(var i=2; i<= membersrenderico.val(); i++){
       permanentrenderico.append(stringvalue(i));
+    }
+
+  });
+
+  membersAdVenture.on("change", function(e){
+
+    e.preventDefault();
+    $(".temp").remove();
+    // permanent.append("<div class='temp'></div>");
+    for(var i=2; i<= membersAdVenture.val(); i++){
+      permanentAdVenture.append(stringvalue(i));
     }
 
   });
