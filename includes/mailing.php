@@ -463,18 +463,17 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <h3><b>Hello</b></h3>
 
 
-                          <p>Congratulations! You are now a part of Central India’s Biggest Entrepreneurship Summit.</p>
+                          <p> You are successfully registered for AdVenture! You are now a part of Central India’s Biggest Entrepreneurship Summit. We are well pleased to have you on board for this event.</p>
                           <div>
                               <p>
-                                  We are well pleased to have you on board for this event.You are successfully registered for AdVenture.
+                                  
                                   <br>
-                                  Here is your way to the first step towards the journey of express yourself and to utilize the great opportunity for photographers to communicate and enrich image-making culture for professionals and amateurs alike.
+                                  Your time is now! This Conso\'19 grab your camera and bring your ideas to life!
                                   
                               </p>
                               <br>
 
-
-                                <a style="display:block; text-align: center;width:100px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="">Problem Statement
+                                <a style="display:block; text-align: center;width:150px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://drive.google.com/file/d/17tO-A0yNaQfsrAG65dP2ID3ya2I0iDuq/view?usp=sharing">Problem Statement
                                 </a>
                                 <br>
                                 <p><b>All the submission will be done to adventure2k19@gmail.com on the google drive</b></p>

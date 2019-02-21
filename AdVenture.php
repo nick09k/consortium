@@ -34,16 +34,16 @@
                 <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
                     <!--<img src="img/logo/ceoblack.png" alt="" width="200" style="margin-top:-100px; margin-left:-20px">-->
 
-                    <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>AdVenture</b></h1>
+                    <h1 class="g-font-size-48--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>AdVenture</b></h1>
 
-                    <h3 class="g-color--white" style="    text-shadow: 2px 0 #333;">Lens The Idea</h3>
-                    <p class="g-color--white g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>Be judge for your creativity, brevity, and orignality</b></p><br/>
+                    <h3 class="g-color--white" style=" text-shadow: 2px 0 #333;">Make Ads, Mint Money</h3>
+                    <p class="g-color--white g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>The judge for your creativity, brevity, and orignality</b></p><br/>
                     <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 10K </span></h3>
                     <br>
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                         <a href="/register.php" title="Register">
                             <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                            <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Register Now <span class="ti-angle-right"></span></span>
+                            <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Register Now <span class="ti-angle-right"></span></span>
                         </a>
                     </div>
                 </div>
@@ -117,7 +117,8 @@
                   <li><p>Anyone can participate in Ad-Venture and must not violate any terms and conditions. The participant should strictly follow the rules given in the manual.</p></li>
               </ol>
               <br/>
-              <a href="https://drive.google.com/open?id=1W9xRVa-r4uA48ryPOPVUKVz_d-wH7sQZ" target="_blank" class="g-color--primary">Competition Manual</a>
+              <a href="https://drive.google.com/open?id=1W9xRVa-r4uA48ryPOPVUKVz_d-wH7sQZ" target="_blank" class="g-color--primary">Competition Manual</a><br><br>
+              <a href="https://drive.google.com/file/d/17tO-A0yNaQfsrAG65dP2ID3ya2I0iDuq/view?usp=sharing" target="_blank" class="g-color--primary">Problem Statement</a>
 
     		    	</div>
     		    	
@@ -133,7 +134,7 @@
         <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
             <!--<div class="g-container--md g-padding-y-40--xs">-->
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
-                <div class="col-xs-4 col-xs-offset-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-4 col-md-offset-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
                         <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Rohit Maheswari</h4>
                          <p class="g-color--white">+91 8983682793</p>

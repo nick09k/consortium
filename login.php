@@ -43,7 +43,7 @@
           $_SESSION['name'] = split_name($data['Name'])[0];
           $_SESSION['contact'] = $data['Contact'];
 
-          if($_GET['v'] = 'azure'){
+          if($_GET['v'] == 'azure'){
             header('location:azure.php');
           }
           else{
