@@ -473,7 +473,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               </p>
                               <br>
 
-                                <a style="display:block; text-align: center;width:150px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://drive.google.com/file/d/17tO-A0yNaQfsrAG65dP2ID3ya2I0iDuq/view?usp=sharing">Problem Statement
+                                <a style="display:block; text-align: center;width:150px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://drive.google.com/open?id=128mPOoGkwqKqCvXf0ADeZcWHOXwLtQ66">Problem Statement
                                 </a>
                                 <br>
                                 <p><b>All the submission will be done to adventure2k19@gmail.com on the google drive</b></p>

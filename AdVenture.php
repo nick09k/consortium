@@ -117,8 +117,8 @@
                   <li><p>Anyone can participate in Ad-Venture and must not violate any terms and conditions. The participant should strictly follow the rules given in the manual.</p></li>
               </ol>
               <br/>
-              <a href="https://drive.google.com/open?id=1W9xRVa-r4uA48ryPOPVUKVz_d-wH7sQZ" target="_blank" class="g-color--primary">Competition Manual</a><br><br>
-              <a href="https://drive.google.com/file/d/17tO-A0yNaQfsrAG65dP2ID3ya2I0iDuq/view?usp=sharing" target="_blank" class="g-color--primary">Problem Statement</a>
+              <a href="https://drive.google.com/open?id=1EL1ImjvF1CJM5xjdwXosCHWibij9PVtM" target="_blank" class="g-color--primary">Competition Manual</a><br><br>
+              <a href="https://drive.google.com/open?id=128mPOoGkwqKqCvXf0ADeZcWHOXwLtQ66" target="_blank" class="g-color--primary">Problem Statement</a>
 
     		    	</div>
     		    	
