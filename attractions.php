@@ -68,7 +68,19 @@
 
                 </div>
             </a>
-            
+            <a href="https://goo.gl/forms/URehGCu7IScUzxJY2" class="product-card col-xs-12 col-md-4 col-lg-3" >
+                <div class="product-card__item-grid" style="background:url(img/events/patrick.png)">
+
+                    <div class="product-card__item-text-v2">
+                        <h5 class="g-color--white"><b>Patrick Bet-David | Webinar</b></h5>
+                        <p class="g-color--white">Consortium'19 presents a live webinar on "How to break the curse of your limiting beliefs" by Patrick Bet-David. <br>Date: 27 Feb 19</p>
+                        <p class="g-color--white"><b>Register Now</b></p>
+                        <p class="g-color--white"><i>#Webinar</i></p>
+                    </div>
+
+                </div>
+            </a>
+
 
         </div>
             </div>
