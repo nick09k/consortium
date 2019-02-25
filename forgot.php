@@ -1,7 +1,5 @@
 <?php
   session_start();
-  error_reporting(E_ALL);
-  ini_set('display_errors', '1');
   $pagetitle = 'Forgot Password | Consortium';
 
   $db_host = "localhost:3306";
@@ -127,6 +125,8 @@
       if ($result === FALSE) {
         $msg = "We are facing problem in sending email. Please contact our <a href='https://www.ecellvnit.org/team.php' >team.</a>";
       }
+    }else{
+      $msg = "Please enter a valid email id.";
     }
     include('includes/head.php');
     include('includes/header.php');
