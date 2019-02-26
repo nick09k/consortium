@@ -108,7 +108,7 @@
             
             <div class="container g-ver-center--sm g-padding-y-125--xs g-padding-y-0--lg event-landing-inner brain">
                 <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
-                <div class="g-margin-t-150--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
+                <div class="g-margin-t-100--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
 
 
 
@@ -117,8 +117,33 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
                             <p class="g-color--white g-font-size-16--sm">
-                              Consortium’19 presents a Townhall by <b>Mr. Simon Taufel</b>, widely regarded as the best Umpire that the game of cricket has ever seen.<br>Get a chance to get your questions answered by our celebrity guest, live. <br></p>
-                              <p class="g-color--white g-font-size-18--xs"><b>10 <sup>th</sup>  MARCH 19 - VNIT AUDITORIUM <br>#NotAWebinar </b></p>
+                              Consortium’19 presents a Townhall by <b>Mr. Simon Taufel</b>, widely regarded as the best Umpire that the game of cricket has ever seen.<br>Get a chance to get your questions answered by our celebrity guest during his <br><span style="" class="live g-font-size-18--xs">LIVE PRESENCE</span><br></p>
+
+                              <style type="text/css">
+                                .live{
+                                  background: #bd2620;padding: 2px;margin: 0px 5px;font-weight: lighter;
+                                  -webkit-animation: example 2s ease;
+                                    
+                                    animation: example 2s ease;
+                                    
+                                    animation-iteration-count: infinite;
+                                }
+                                /* Safari 4.0 - 8.0 */
+                                  @-webkit-keyframes example {
+                                    from {background-color: transparent;}
+                                    to {background-color: #bd2620;}
+                                  }
+
+                                  /* Standard syntax */
+                                  @keyframes example {
+                                    from {background-color: transparent;}
+                                    to {background-color: #bd2620;}
+                                  }
+
+
+
+                              </style>
+                              <p class="g-color--white g-font-size-18--xs"><b>10 <sup>th</sup>  MARCH 19 - VNIT AUDITORIUM</b></p>
 
                         </div>
                         <div class="col-xs-12">

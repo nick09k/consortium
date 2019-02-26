@@ -544,7 +544,10 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <p>Congratulations! You are successfully registered.</p>
                           <div>
                               <p>
-                                  We are well pleased to have you on board for this event.
+                                  Consortium’19 presents a Townhall by Mr. Simon Taufel, a chance to get your questions answered by our celebrity guest during his live presence.<br>
+                                  Date: <b>10<sup>th</sup> March\' 19</b><br>
+                                  Venue: <b>Auditorium, VNIT Nagpur</b>
+
                                   <br><b>Note: Kindly bring your college Id at time of the event for verification.</b><br>
                                   
                               </p>
