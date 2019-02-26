@@ -24,11 +24,13 @@
     }
     else{
       $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','ConsoWorld');
+      
       $query = "SELECT * from Registrations WHERE Email='$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
       if($num > 0){
         $data = mysqli_fetch_array($result);
+
         if(password_verify($password,$data['Password'])){
 
 

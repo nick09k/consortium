@@ -293,6 +293,12 @@
 
                         </div>
                     </div>
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+
+                                <a id="reg_button" href="/townhall.php" title="Register">
+                                    <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--primary g-padding-x-15--xs">Know More</span>
+                                </a>
+                            </div>
                 </div>
 
             </div>
