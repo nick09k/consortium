@@ -215,7 +215,7 @@
       if($num > 0){
         $query = "UPDATE Registrations SET Password = '$hashed_password'";
         mysqli_query($con,$query);
-        $_SESSION['login_error'] = "Your password was reset successful. ";
+        $_SESSION['login_error'] = "Your password was reset successfully. ";
         header('location:login.php');
       }else{
         echo("Error description: " . mysqli_error($con));
@@ -276,7 +276,7 @@
               <form class='center-block g-width-500--sm g-width-550--md' method='post' action='forgot.php'>
                   <div class='permanent'>
                     <div class='g-margin-b-30--xs'>
-                      <input type='email' class='form-control s-form-v3__input' placeholder='* Your Email ID' name='reset_email' style='text-transform: none' id='email'>
+                      <input type='email' class='form-control s-form-v3__input' placeholder='* Your CONSO ID?' name='reset_email' style='text-transform: none' id='email'>
                     </div>
                   </div>
 
