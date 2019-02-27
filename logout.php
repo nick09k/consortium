@@ -1,5 +1,12 @@
 <?php
   session_start();
   session_destroy();
-  header('location:index.php');
+
+  if($_GET['q'] == 'db'){
+  	header('location:logindb.php');
+  }
+  else{
+  	header('location:login.php');
+  }
+  
  ?>

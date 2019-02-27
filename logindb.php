@@ -1,24 +1,22 @@
 <?php
 session_start();
-if( $_SERVER['REQUEST_METHOD'] == 'POST' or $_SESSION['auth'])
-{
+
+
+if(isset($_POST['select']) && isset($_SESSION['auth']) && $_SESSION['auth'] ){
     $event = $_POST['event'];
-    $type = $_POST['type'];
-    $pass = $_POST['pass'];
-    if( empty($event) || empty($type) || empty($pass)) {
-        $msg = "ERROR: Please enter username!";
+    $type = $_SESSION['type'];
+    if(empty($event)) {
+        $msg = "ERROR: Please Select Event!";
     }
-
-
-    if( $type == 0 && $pass == "LINKINpark@123" ){
+    if( $type == 0){
         // Authentication successful - Set session
-        $_SESSION['auth'] = true;
+        
         $_SESSION['event'] = $event;
         // setcookie("username", $_POST['name'], time()+(84600*30));
         header('Location: database.php');
         exit;
     }
-    else if( $type == 1 && $pass == "intheend" ){
+    else if( $type == 1){
         // Authentication successful - Set session
         
 
@@ -27,18 +25,44 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' or $_SESSION['auth'])
 
         }
         else{
-            $_SESSION['auth'] = true;
             $_SESSION['event'] = $event;
             // setcookie("username", $_POST['name'], time()+(84600*30));
             header('Location: database.php');
             exit;
         }
+    }
+
+}
+
+
+else if(isset($_POST['login'])){
+    
+    $type = $_POST['type'];
+    $pass = $_POST['pass'];
+
+    if($type =='' || empty($pass)){
+        $msg = "ERROR: Please enter Details!";
+    }
+
+
+    else if( $type == 0 && $pass == "LINKINpark@123" ){
+        // Authentication successful - Set session
+        $_SESSION['auth'] = true;
+        $_SESSION['type'] = $type;
+        
+    }
+    else if( $type == 1 && $pass == "intheend" ){
+        // Authentication successful - Set session
+       
+        $_SESSION['auth'] = true;
+        $_SESSION['type'] = $type;
         
     }
     else {
         $msg = "ERROR: Invalid Relationship!";
     }
 }
+
 
 ?>
 <!DOCTYPE html>
@@ -59,12 +83,17 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' or $_SESSION['auth'])
                     <div class="col-lg-4 col-sm-4 g-hor-centered-row__col">
                         <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
                             <p class="g-text-center--xs text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
+                            <?php 
+
+                            if(isset($_SESSION['auth']) && $_SESSION['auth'] ){
+                            ?>
                             <form submit="" style="background: #bd2026 !important;" method="post" class="center-block g-width-300--xs g-width-350--md g-bg-color--white-opacity-lightest g-box-shadow__blueviolet-v1 g-padding-x-40--xs g-padding-y-40--xs g-radius--4">
                                 <div class="g-text-center--xs g-margin-b-40--xs">
-                                    <h2 class="g-font-size-30--xs g-color--white">Admin Login</h2>
+                                    <h2 class="g-font-size-30--xs g-color--white">Select Event</h2>
                                 </div>
                                 <div class="g-margin-b-30--xs">
                                     <select name="event" style="text-transform: none;" class="form-control s-form-v3__input" placeholder="* Type">
+                                        <option disabled selected>Select Event</option>
                                         <option value="AdVenture_team">Adventure</option>
                                         <option value="Swadesh_team">Swades</option>
                                         <option value="renderico_team">Render Ico</option>
@@ -74,8 +103,24 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' or $_SESSION['auth'])
                                         <option value="Expo">Startup Expo</option>
                                     </select>
                                 </div>
+                                
+                                <div class="g-text-center--xs">
+                                    <button type="submit" name="select" class="text-uppercase btn-block s-btn s-btn--md s-btn--white-bg g-radius--50 g-padding-x-50--xs g-margin-b-20--xs">View Now</button>
+                                </div>
+                                <div style="text-align: center;width: 100%;"><a href="/logout.php?q=db" class="g-color--white">Logout</a></div>
+
+                                
+                            </form>
+
+                        <?php }else{ ?>
+                            <form submit="" style="background: #bd2026 !important;" method="post" class="center-block g-width-300--xs g-width-350--md g-bg-color--white-opacity-lightest g-box-shadow__blueviolet-v1 g-padding-x-40--xs g-padding-y-40--xs g-radius--4">
+                                <div class="g-text-center--xs g-margin-b-40--xs">
+                                    <h2 class="g-font-size-30--xs g-color--white">Admin Login</h2>
+                                </div>
+                                
                                 <div class="g-margin-b-30--xs">
                                     <select name="type" style="text-transform: none;" class="form-control s-form-v3__input" placeholder="* Type">
+                                        <option disabled selected>Select Type</option>
                                         <option value="0">SagBan</option>
                                         <option value="1">Manager</option>
                                     </select>
@@ -86,9 +131,11 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' or $_SESSION['auth'])
                                     <input type="password" name="pass" style="text-transform: none;" class="form-control s-form-v3__input" placeholder="* Password">
                                 </div>
                                 <div class="g-text-center--xs">
-                                    <button type="submit" class="text-uppercase btn-block s-btn s-btn--md s-btn--white-bg g-radius--50 g-padding-x-50--xs g-margin-b-20--xs">You Better</button>
+                                    <button type="submit" name="login" class="text-uppercase btn-block s-btn s-btn--md s-btn--white-bg g-radius--50 g-padding-x-50--xs g-margin-b-20--xs">You Better</button>
                                 </div>
                             </form>
+                        <?php } ?>
+                            
                         </div>
                     </div>
                 </div>

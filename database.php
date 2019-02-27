@@ -3,7 +3,7 @@ session_start();
 if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
     $welcomeMessage = "Welcome to the databse!";
 } else {
-    header('Location: login_auth.php');
+    header('Location: logindb.php');
 }
 ?>
 <!DOCTYPE html>
@@ -31,7 +31,11 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
 
 <body style="width: 100%; overflow-x: hidden;">
 
-    <h1 style="text-align:center; margin-top:30px; padding:40px 20px;"><?php echo $_SESSION['event'];?></h1>
+    <div style="width:100%; text-align: center;"><h1 style="text-align:center; margin-top:50px; padding:20px 20px;"><?php echo $_SESSION['event'];?></h1>
+    <a style="text-align: center; color: #bd2620; text-decoration:none; font-size: 16px;" href="/logindb.php">Change Event Now</a></div>
+
+    
+
     <div style="overflow-x: auto; padding:10px 30px;">
 
 <table class="table" id="myTable" >
