@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 function htmlMail($t, $sub, $name, $teamname, $event){
 
@@ -249,7 +249,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
 
                               <a style="display:block; text-align: center;width:100px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://consortium.ecellvnit.org/payexpo.php">Pay Now!</a>
 
-                              
+
                               <p>
                                   To keep you updated, all the relevant details will be emailed to you very shortly.<br>
                                   <br>
@@ -326,7 +326,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
 
                               <a style="display:block; text-align: center;width:100px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://consortium.ecellvnit.org/payazure.php">Pay Now!</a>
 
-                              
+
                               <p>
                                   To keep you updated, all the relevant details will be emailed to you very shortly.<br>
                                   <br>
@@ -340,7 +340,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           </div>
                       </div>
                   </body>
-              </html>';          
+              </html>';
     $htmlAzureSuccess = '<!DOCTYPE html>
               <html>
                   <head>
@@ -395,9 +395,9 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               <p>
                                   We are well pleased to have you on board for this event.You are successfully registered for Azure Space.
                                   <br><b>Note: Kindly bring your college Id at time of workshop for verification.</b><br>
-                                  
+
                               </p>
-                              
+
                               <p>
                                   To keep you updated, all the relevant details will be emailed to you very shortly.
                                   <br>
@@ -466,19 +466,21 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <p> You are successfully registered for AdVenture! You are now a part of Central India’s Biggest Entrepreneurship Summit. We are well pleased to have you on board for this event.</p>
                           <div>
                               <p>
-                                  
+
                                   <br>
                                   Your time is now! This Conso\'19 grab your camera and bring your ideas to life!
-                                  
+
                               </p>
                               <br>
 
-                                <a style="display:block; text-align: center;width:150px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://drive.google.com/open?id=128mPOoGkwqKqCvXf0ADeZcWHOXwLtQ66">Problem Statement
+                                <a style="display:block; text-align: center;width:150px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://drive.google.com/open?id=1fpCjz-j6ZrK3aRwusBhg95PoJx-aiuyw">Problem Statement 1
+                                </a><br/>
+                                <a style="display:block; text-align: center;width:150px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://drive.google.com/open?id=1ciIxb855Rf3ff7WgXdFDGwvVrQmNbmDQ">Problem Statement 2
                                 </a>
                                 <br>
                                 <p><b>All the submission will be done to adventure2k19@gmail.com on the google drive</b></p>
 
-                              
+
                               <p>
                                   To keep you updated, all the relevant details will be emailed to you very shortly.
                                   <br>
@@ -549,9 +551,9 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                                   Venue: <b>Auditorium, VNIT Nagpur</b>
 
                                   <br><b>Note: Kindly bring your college Id at time of the event for verification.</b><br>
-                                  
+
                               </p>
-                              
+
                               <p>For queries and in case of any difficulty, feel free to contact us.</p>
                               <p>
                                   With warm regards,<br>
