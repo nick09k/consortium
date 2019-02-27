@@ -213,7 +213,7 @@
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
       if($num > 0){
-        $query = "UPDATE Registrations SET Password = '$hashed_password'";
+        $query = "UPDATE Registrations SET Password = '$hashed_password' WHERE Email='$email'";
         mysqli_query($con,$query);
         $_SESSION['login_error'] = "Your password was reset successfully. ";
         header('location:login.php');
