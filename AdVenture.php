@@ -120,10 +120,11 @@
               </ol>
               <br/>
               <a href="https://drive.google.com/open?id=1EL1ImjvF1CJM5xjdwXosCHWibij9PVtM" target="_blank" class="g-color--primary">Competition Manual</a><br><br>
-              <a href="https://drive.google.com/open?id=128mPOoGkwqKqCvXf0ADeZcWHOXwLtQ66" target="_blank" class="g-color--primary">Problem Statement</a>
+              <a href="https://drive.google.com/open?id=1fpCjz-j6ZrK3aRwusBhg95PoJx-aiuyw" target="_blank" class="g-color--primary">Problem Statement 1</a><br/>
+              <a href="https://drive.google.com/open?id=1ciIxb855Rf3ff7WgXdFDGwvVrQmNbmDQ" target="_blank" class="g-color--primary">Problem Statement 2</a>
 
     		    	</div>
-    		    	
+
 
     		    </div>
 		  </div>
@@ -148,7 +149,7 @@
                          <p class="g-color--white">+91 9102813905</p>
                     </div>
                 </div>
-                
+
             </div>
             </div>
         </div>
