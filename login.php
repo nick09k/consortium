@@ -24,42 +24,45 @@
     }
     else{
       $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','ConsoWorld');
-      
+
       $query = "SELECT * from Registrations WHERE Email='$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
       if($num > 0){
         $data = mysqli_fetch_array($result);
+        if($data['otp'] == 'Confirmed'){
+          if(password_verify($password,$data['Password'])){
 
-        if(password_verify($password,$data['Password'])){
 
+            function split_name($name) {
+              $name = trim($name);
+              $last_name = (strpos($name, ' ') === false) ? '' : preg_replace('#.*\s([\w-]*)$#', '$1', $name);
+              $first_name = trim( preg_replace('#'.$last_name.'#', '', $name ) );
+              return array($first_name, $last_name);
+            }
 
-          function split_name($name) {
-            $name = trim($name);
-            $last_name = (strpos($name, ' ') === false) ? '' : preg_replace('#.*\s([\w-]*)$#', '$1', $name);
-            $first_name = trim( preg_replace('#'.$last_name.'#', '', $name ) );
-            return array($first_name, $last_name);
+            $_SESSION['email'] = $email;
+            $_SESSION['name'] = split_name($data['Name'])[0];
+            $_SESSION['contact'] = $data['Contact'];
+            $_SESSION['fullname'] = $data['Name'];
+
+            if($_GET['v'] == 'azure'){
+              header('location:azure.php');
+            }
+            if($_GET['v'] == 'townhall'){
+              header('location:townhall.php');
+            }
+            else{
+              header('location:dashboard.php');
+            }
+
           }
-
-          $_SESSION['email'] = $email;
-          $_SESSION['name'] = split_name($data['Name'])[0];
-          $_SESSION['contact'] = $data['Contact'];
-          $_SESSION['fullname'] = $data['Name'];
-
-          if($_GET['v'] == 'azure'){
-            header('location:azure.php');
+          else {
+            $msg = "Incorrect Password. Please try again.";
           }
-          if($_GET['v'] == 'townhall'){
-            header('location:townhall.php');
-          }
-          else{
-            header('location:dashboard.php');
-          }
-
-        }
-        else {
-          $msg = "Incorrect Password. Please try again.";
-        }
+        }else{
+        $msg = "Please verify your email id to login.";
+      }
       }
       else{
         $msg = "This email id isn't registered with us. Register <a href='regnew.php'>here</a>.";
