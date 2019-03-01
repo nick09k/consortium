@@ -82,7 +82,7 @@
                           <div>
                               <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board for this event.</p>
                               <p> Your Transaction ID: <b>'.$txnid.'</b><br>
-                                  Registration Fee: 800 INR
+                                  Registration Fee: 1500 INR
                               </p>
                               <p>
                                   To keep you updated, all the relevant details will be emailed to you very shortly.<br>
@@ -152,7 +152,7 @@
                             }
                           ?>
                           
-                          <br><br>Registration Fee: <b>800 INR</b>
+                          <br><br>Registration Fee: <b>1500 INR</b>
                         </p>
 
                         <?php 
