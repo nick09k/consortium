@@ -2,6 +2,7 @@
 @session_start();
 // error_reporting(E_ALL);
 // ini_set('display_errors', '1');
+require_once('includes/mailing.php');
 $pagetitle = 'Verify | Consortium';
 $verify = $_SESSION['verify'];
 
@@ -60,9 +61,9 @@ elseif(isset($_POST['resend'])) {
   $otp = '1234567890';
   $otp = str_shuffle($otp);
   $otp = substr($otp, 0, 6);
-  
+
   $q = "UPDATE Registrations SET otp='$otp' WHERE Email = '$email'";
-  
+
   if(mysqli_query($con,$q)){
 
     $msg = "An OTP is sent to your registered email id. Please enter the OTP below to confirm your email address.";
@@ -75,7 +76,7 @@ elseif(isset($_POST['resend'])) {
     $msg = "Something Went Wrong";
   }
 
-  
+
 }
 ?>
 
