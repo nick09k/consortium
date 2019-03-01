@@ -6,6 +6,76 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     $to = $t;
 
     $subject = $sub;
+
+    $htmlOTP = "<!DOCTYPE html>
+              <html>
+                  <head>
+                      <style>
+                          li{
+                              padding:10px;
+                          }
+                          p{
+                              font-size:16px;
+                          }
+
+                          *{
+                              font-family:Helvetica,Arial,sans-serif;
+                          }
+
+                          h2{
+                              text-align: center;
+                              margin-top: 150px;
+
+                          }
+                          html, body{
+                              background-color:#f7f9fb;
+                              margin: 0;
+                          }
+                          .context {
+                              font-size: 12px;
+                              padding: 40px 60px;
+                              margin-left:10%;
+                              margin-right: 10%;
+                          }
+
+                          .context p{
+                              font-size: 12px;
+                          }
+                          p{
+                              margin: 15px 0px;
+                          }
+
+                      </style>
+                  </head>
+                  <body>
+
+                      <div style='background: #0b0b0b; padding:10px 30px;'><img src='https://www.ecellvnit.org/img/logo-ecell.png'></div>
+                      <h2 style='font-size:22px;'>Welcome to Consortium'19</h2><br>
+
+                      <div class='context'>
+
+
+                          <h3><b>Hello ".$name.",</b></h3>
+
+
+                          <p>Thank You for registering! You are now a part of one of the India's Biggest Entrepreneurship Summit.</p>
+                          <div>
+                              <p>We are well pleased to have you on board.<br/><br/>
+                              To verify your Conso-ID: $email use this OTP <br/> <span style='font-size:24px'>".$teamname."</span></p>
+                              For queries and in case of any difficulty, feel free to contact us.<br>
+                                  <p>
+                                  With warm regards,<br>
+                                  E-Cell VNIT
+                              </p>
+
+
+                          </div>
+                      </div>
+                  </body>
+              </html>";
+
+
+
     $htmlSwadesh = '
     <!DOCTYPE html>
         <html>
@@ -587,6 +657,9 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     }
     else if($event == 'townhall'){
       $html = $htmlTownhall;
+    }
+    else if($event == 'otp'){
+      $html = $htmlOTP;
     }
     $url = 'https://startupconclave.ecellvnit.org/send';
     $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'intheend');

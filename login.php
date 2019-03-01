@@ -1,8 +1,9 @@
 <?php
   session_start();
   $pagetitle = 'Login | Consortium';
-
-
+  require_once('includes/mailing.php');
+  // error_reporting(E_ALL);
+  // ini_set('display_errors', '1');
 
    if(isset($_SESSION['email'])){
       header('location:dashboard.php');
@@ -22,14 +23,19 @@
     if($email=="" || $password==""){
         $msg =  "Please fill all the details";
     }
+
     else{
-      $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','ConsoWorld');
+
+      $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz');
 
       $query = "SELECT * from Registrations WHERE Email='$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
+
       if($num > 0){
+
         $data = mysqli_fetch_array($result);
+
         if($data['otp'] == 'Confirmed'){
           if(password_verify($password,$data['Password'])){
 
@@ -53,16 +59,38 @@
               header('location:townhall.php');
             }
             else{
-              header('location:dashboard.php');
+              header('location:register.php');
             }
 
           }
           else {
             $msg = "Incorrect Password. Please try again.";
           }
-        }else{
-        $msg = "Please verify your email id to login.";
-      }
+        }
+        else{
+
+          $otp = '1234567890';
+          $otp = str_shuffle($otp);
+          $otp = substr($otp, 0, 6);
+          
+          $q = "UPDATE Registrations SET otp='$otp' WHERE Email = '$email'";
+
+          
+          if(mysqli_query($con,$q)){
+
+
+
+            $msg = "Please verify your email id to login.";
+            $s = "Verify Your ConsoID";
+            $_SESSION['verify'] = "Welcome. An OTP is sent to your registered email id. Please enter the OTP below to confirm your email address.";
+            htmlMail($email,$s,'',$otp, 'otp');
+            header('location:verify.php?email='.$email.'');
+          }
+          else{
+            $msg = "Something Went Wrong";
+          }
+          
+        }
       }
       else{
         $msg = "This email id isn't registered with us. Register <a href='regnew.php'>here</a>.";

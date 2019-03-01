@@ -1,6 +1,7 @@
 <?php
   @session_start();
   $pagetitle = "Register Now | Consortium'19";
+  require_once('includes/mailing.php');
   // error_reporting(E_ALL);
   // ini_set('display_errors', '1');
 
@@ -86,126 +87,43 @@
       $query = "SELECT * FROM Registrations WHERE Email='$email'";
       $result = mysqli_query($con,$query);
       $num = mysqli_num_rows($result);
+
+
       if($num > 0){
         $row = mysqli_fetch_array($result);
       }
 
       if($num != 0 && $row['otp'] == 'Confirmed'){
-        $msg = "The email you entered is already registered. Login <a href='login.php'>here</a>.";
-      }elseif($num != 0 && $row['otp'] != 'Confirmed'){
+        $msg = "The email you entered is already registered as ConsoID. Login <a href='login.php'>here</a>.";
+      }
+
+      elseif($num != 0 && $row['otp'] != 'Confirmed'){
         $_SESSION['verify'] = "Please verify your email id in order to login";
         header('location:verify.php?email='.$email.'');
-      }elseif($num == 0){
+      }
+
+      elseif($num == 0){
+
         $otp = '1234567890';
         $otp = str_shuffle($otp);
         $otp = substr($otp, 0, 6);
 
-        $token = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789!$^*';
-        $token = str_shuffle($token);
-        $token = substr($token, 0, 10);
-
         $q = "INSERT INTO Registrations(Name,Email,Contact,Password,otp) VALUES('$name','$email','$contact','$hashed_password','$otp')";
         if(mysqli_query($con,$q)){
 
-
-          $to = $email;
-
-          $subject = "Welcome To Consortium'19 Inspiring Curiosity";
-          $html = "
-          <!DOCTYPE html>
-              <html>
-                  <head>
-                      <style>
-                          li{
-                              padding:10px;
-                          }
-                          p{
-                              font-size:16px;
-                          }
-
-                          *{
-                              font-family:Helvetica,Arial,sans-serif;
-                          }
-
-                          h2{
-                              text-align: center;
-                              margin-top: 150px;
-
-                          }
-                          html, body{
-                              background-color:#f7f9fb;
-                              margin: 0;
-                          }
-                          .context {
-                              font-size: 12px;
-                              padding: 40px 60px;
-                              margin-left:10%;
-                              margin-right: 10%;
-                          }
-
-                          .context p{
-                              font-size: 12px;
-                          }
-                          p{
-                              margin: 15px 0px;
-                          }
-
-                      </style>
-                  </head>
-                  <body>
-
-                      <div style='background: #0b0b0b; padding:10px 30px;'><img src='https://www.ecellvnit.org/img/logo-ecell.png'></div>
-                      <h2 style='font-size:22px;'>Welcome to Consortium'19</h2><br>
-
-                      <div class='context'>
-
-
-                          <h3><b>Hello $name,</b></h3>
-
-
-                          <p>Thank You for registering! You are now a part of one of the India's Biggest Entrepreneurship Summit.</p>
-                          <div>
-                              <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board.<br/><br/>
-                              To verify your Conso-ID: $email use this OTP <br/> <span style='font-size:24px'>$otp</span></p>
-                              For queries and in case of any difficulty, feel free to contact us.<br>
-				                          <p>
-                                  With warm regards,<br>
-                                  E-Cell VNIT
-                              </p>
-
-
-                          </div>
-                      </div>
-                  </body>
-              </html>
-      ";
-
-
-          $url = 'https://startupconclave.ecellvnit.org/send';
-          $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'intheend');
-
-          // use key 'http' even if you send the request to https://...
-          $options = array(
-              'http' => array(
-                  'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-                  'method'  => 'POST',
-                  'content' => http_build_query($data)
-              )
-          );
-          $context  = stream_context_create($options);
-          if($result = file_get_contents($url, false, $context)){
-            $_SESSION['verify'] = "Welcome. An OTP is sent to your registered email id. Please enter the OTP below to confirm your email address.";
-            header('location:verify.php?email='.$email.'');
-          }
-          if ($result === FALSE) {
-            $msg = "We are facing problem in sending email. Please contact our <a href='https://www.ecellvnit.org/team.php' >team.</a>";
-          }
+          $msg = "Please verify your email id to login.";
+          $s = "Verify Your ConsoID";
+          $_SESSION['verify'] = "Welcome. An OTP is sent to your registered email id. Please enter the OTP below to confirm your email address.";
+          htmlMail($email,$s,'',$otp, 'otp');
+          header('location:verify.php?email='.$email.'');
 
         }
 
       }
-    }else{
-      $msg = "Passwords didn't match";
+
+    }
+    else{
+      $msg = "Passwords didn't matched";
     }
   }
 ?>
