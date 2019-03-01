@@ -164,8 +164,8 @@
         <!--========== PROMO BLOCK ==========-->
         <div class="core-container">
         <div class="g-bg-position--center js__parallax-window" style="background:#000;height:auto;">
-            <div class="g-container--md g-text-center--xs g-padding-y-40--xs">
-                <h2 class="g-font-size-30--xs g-font-size-40--sm g-font-size-50--md g-margin-t-70--xs g-color--white g-letter-spacing--1">Dashboard</h2>
+            <div class="g-container--md g-text-center--xs g-padding-y-60--xs">
+                <h2 class="g-font-size-26--xs g-font-size-36--sm g-font-size-40--md g-margin-t-90--xs g-color--white g-letter-spacing--1">Dashboard</h2>
                 <p class="text-uppercase g-font-size-14--xs g-text-center--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs">
                   <?php if(isset($msg)) {echo $msg;} ?></p>
                   <p class="text-uppercase g-font-size-14--xs g-text-center--xs g-color--white g-letter-spacing--2 g-margin-b-25--xs"><?php  if(isset($_SESSION['msg'])){ echo $_SESSION['msg']; }?></p>
@@ -174,7 +174,7 @@
 
         <!--========== END PROMO BLOCK ==========-->
         <!--========== PAGE CONTENT ==========-->
-        <div class="container g-padding-x-40--sm g-padding-x-0--xs g-padding-y-20--xs g-padding-y-50--sm" id="details" style="background:rgba(255, 255, 255,1);">
+        <div class="container g-padding-x-40--sm g-padding-x-100--md g-padding-x-0--xs g-padding-y-40--xs g-padding-y-80--sm" id="details" style="background:rgba(255, 255, 255,1);">
             <div class="card" id="event-card-bg">
             <div class="card-tabs">
               <ul class="tabs tabs-fixed-width">

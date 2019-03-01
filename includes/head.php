@@ -20,6 +20,7 @@
     <meta name="keywords" content="E-cell VNIT entreprenuship cell consortium 19 swades ecell vnit consortium swades" />
     <meta name="description" content="Consortium'19 E-CELL VNIT Annual Entrepreneurship Summit">
     <meta name="author" content="E-cell">
+    <meta name="theme-color" content="rgb(189,32,38)" )="">
 
     <!-- Web Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -38,6 +39,7 @@
     <link href="css/teampage.css" rel="stylesheet" type="text/css"/>
     <link href="css/materialize.css" rel="stylesheet" type="text/css"/>
     <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
+
 
     <!-- Theme Skins -->
     <link href="css/theme/red.css" rel="stylesheet" type="text/css"/>

@@ -177,7 +177,10 @@
 
                 <div class="g-text-center--xs">
                     <button type="submit" name="sub_event" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Next</button>
+                    <br>
+                    <a href="/dashboard.php">See Dashboard Here</a>
                 </div>
+
             </form>
         </div>
     </div>
