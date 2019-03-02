@@ -43,19 +43,7 @@
                     </div>
                 </div>
             </a>
-             <a class="product-card col-xs-12 col-md-4 col-lg-3" >
-                <div class="product-card__item-grid" style="background:url(img/events/zerodha.png)">
-
-                    <div class="product-card__item-text-v2">
-                        <h5 class="g-color--white"><b>Stock Investing | Workshop</b></h5>
-                        <p class="g-color--white">Want to learn how to invest in a stock market and let your money work for you?<br>
-                        A stock investing workshop in association with Zerodha to get the lay of the land. <br>Date: 17 FEB 19</p>
-                        <p class="g-color--white"><b>Registerations are closed!</b></p>
-                        <p class="g-color--white"><i>#Workshop</i></p>
-                    </div>
-
-                </div>
-            </a>
+             
             <a href="/azure.php" class="product-card col-xs-12 col-md-4 col-lg-3" >
                 <div class="product-card__item-grid" style="background:url(img/events/azure.png)">
 
@@ -68,7 +56,7 @@
 
                 </div>
             </a>
-            <a href="https://goo.gl/forms/URehGCu7IScUzxJY2" class="product-card col-xs-12 col-md-4 col-lg-3" >
+            <a class="product-card col-xs-12 col-md-4 col-lg-3" >
                 <div class="product-card__item-grid" style="background:url(img/events/patrick.png)">
 
                     <div class="product-card__item-text-v2">
@@ -80,8 +68,31 @@
 
                 </div>
             </a>
+            <a href="https://goo.gl/forms/e9w6g83HFuOXAzAz2" class="product-card col-xs-12 col-md-4 col-lg-3" >
+                <div class="product-card__item-grid" style="background:url(img/events/chatur.png)">
 
+                    <div class="product-card__item-text-v2">
+                        <h5 class="g-color--white"><b>The Art Of Stock Investing | Workshop</b></h5>
+                        <p class="g-color--white">Consortium'19 brings to you the certified workshop on "The Art of stock investing"  in association with Chatur Ideas.<br>Date: 10<sup>th</sup> March 19</p>
+                        <p class="g-color--white"><b>Register Now</b></p>
+                        <p class="g-color--white"><i>#Workshop</i></p>
+                    </div>
 
+                </div>
+            </a>
+            <a class="product-card col-xs-12 col-md-4 col-lg-3" >
+                <div class="product-card__item-grid" style="background:url(img/events/zerodha.png)">
+
+                    <div class="product-card__item-text-v2">
+                        <h5 class="g-color--white"><b>Stock Investing | Workshop</b></h5>
+                        <p class="g-color--white">Want to learn how to invest in a stock market and let your money work for you?<br>
+                        A stock investing workshop in association with Zerodha to get the lay of the land. <br>Date: 17 FEB 19</p>
+                        <p class="g-color--white"><b>Registerations are closed!</b></p>
+                        <p class="g-color--white"><i>#Workshop</i></p>
+                    </div>
+
+                </div>
+            </a>
         </div>
             </div>
         </div>
