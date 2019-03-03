@@ -93,6 +93,18 @@
 
                 </div>
             </a>
+            <a class="product-card col-xs-12 col-md-4 col-lg-3" href="https://goo.gl/forms/s2KqjAuZL9Fkb99J3" target="_blank" >
+                <div class="product-card__item-grid" style="background:url(img/events/ryan.png)">
+
+                    <div class="product-card__item-text-v2">
+                        <h5 class="g-color--primary"><b>The power of Digital Marketing - Ryan Patel | Webinar</b></h5>
+                        <p class="g-color--white">A lively and interactive webinar on "The Power of Digital Marketing" to power your digital dreams and take your business ahead. <br>Date: 9<sup>th</sup> March 19</p>
+                        <p class="g-color--white"><b>Register Now</b></p>
+                        <p class="g-color--white"><i>#Webinar</i></p>
+                    </div>
+
+                </div>
+            </a>
         </div>
             </div>
         </div>

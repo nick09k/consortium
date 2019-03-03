@@ -118,7 +118,7 @@
 
 .product-card__item-text-v2:hover{
 
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.4);
     background: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.9));
     background: -webkit-linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.9));
 }
