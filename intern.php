@@ -301,6 +301,15 @@
                         Job profile : <b>Director of Photography – 2 to 6 months internship</b></p>
 
 
+                    <h4 class="g-font-size-22--xs g-font-size-26--md g-color--white ">Job Profile</h4>
+                    <ol>
+                        <li class="g-color--white g-font-size-16--xs">Director of Photography – 2 to 6 months internship</li>
+                        <li class="g-color--white g-font-size-16--xs">Motions Graphics Designer – 2 to 6 months internship</li>
+                        <li class="g-color--white g-font-size-16--xs">VFX Designer – 2 to 6 months internship</li>
+                        
+                    </ol>
+
+
                     <h4 class="g-font-size-22--xs g-font-size-26--md g-color--white ">Eligible qualifications</h4>
                     <ol>
                         <li class="g-color--white g-font-size-16--xs">Thorough knowledge of continuity.</li>
@@ -324,7 +333,7 @@
                         <li class="g-color--white g-font-size-16--xs">Controlling natural or artificial lighting conditions.</li>
                         <li class="g-color--white g-font-size-16--xs">Determining elements such as filters, shutter angles, focus, depth of field and camera distance</li>
                         <li class="g-color--white g-font-size-16--xs">Editing visual elements in post-production.</li>
-        
+
                     </ol>
 
                     <h4 class="g-font-size-22--xs g-font-size-26--md g-color--white">Job location</h4>
