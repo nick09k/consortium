@@ -159,18 +159,26 @@
 
                         <div class="row ">
                             <div class="col-sm-12 col-md-4">
-                                <a class="g-color--dark-light footer-para g-font-size-14--xs">
+                                <a class="g-color--dark-light footer-para g-font-size-14--xs" style="display:flex; align-items: center;">
                                     <img src="img/internshipfair/oneplus.png" width="200" alt="logo" style="margin-left:calc(50% - 100px)">
                                 </a>
 
                                 <p><a class="g-padding-x-10--xs g-padding-y-10--xs g-font-size-15--xs g-color--primary g-padding-x-10--xs" href="#oneplus">Registrations are closed!</a></p>
                             </div>
                             <div class="col-sm-12 col-md-4">
-                                <a class="g-color--dark-light footer-para g-font-size-14--xs">
+                                <a class="g-color--dark-light footer-para g-font-size-14--xs" style="display:flex; align-items: center;">
+                                    <img src="img/internshipfair/ibhubs.png" width="180" alt="logo" style="margin-left:calc(50% - 90px)">
+                                </a>
+                                <p><a class="g-padding-x-10--xs g-padding-y-10--xs g-font-size-15--xs g-color--primary g-padding-x-10--xs" href="https://goo.gl/forms/XmXPZQ6Eb5ILWNRd2" target="_blank">Register Now</a></p>
+                                <p><a style="pointer:cursor" class="g-padding-x-10--xs g-padding-y-10--xs g-font-size-15--xs g-color--primary g-padding-x-10--xs" onclick="showmodel('ibhubs')">View Job Profile</a></p>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <a class="g-color--dark-light footer-para g-font-size-14--xs" style="display:flex; align-items: center;">
                                     <img src="img/internshipfair/ecozen.png" width="220" alt="logo" style="margin-left:calc(50% - 100px)">
                                 </a>
-                                <p><a class="g-padding-x-10--xs g-padding-y-10--xs g-font-size-15--xs g-color--primary g-padding-x-10--xs" href="https://goo.gl/forms/sb15I2uj2ElbOVGb2" target="_blank">Register Now</a></p>
+                                <p><a class="g-padding-x-10--xs g-padding-y-10--xs g-font-size-15--xs g-color--primary g-padding-x-10--xs" target="_blank">Registrations are closed!</a></p>
                             </div>
+                            
 
                             <!-- <div class="col-sm-12 col-md-4">
                                 <a href="https://www.simplecrm.com.sg/" class="g-color--dark-light footer-para g-font-size-14--xs">
@@ -267,6 +275,71 @@
                     <br><br><b>Please note : Recruitment is not through the Training & Placement Department of VNIT.</b></p>
                     <div class="wow fadeInLeft g-margin-t-40--xs" data-wow-duration=".3" data-wow-delay=".5s">
                         <a href="https://goo.gl/forms/eVGNHsJfTGjl902i2" title="Register" target="_blank">
+
+                            <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Fill Form <span class="ti-angle-right"></span></span>
+                        </a>
+                    </div>
+
+                </div>
+        </div>
+
+
+        <!-- Ibhubs -->
+
+        <div id="ibhubs" class="intern-model" style="display:none; overflow:scroll;">
+                <div class="container g-padding-y-40--xs g-padding-y-80--sm g-padding-x-20--xs g-padding-x-20--xs g-padding-x-100--md g-margin-t-40--xs">
+
+                    <a class="g-color--white g-font-size-20--xs" onclick="closemodel('ibhubs');" style="position:absolute; left:90%" >X</a>
+
+                    <h3 class="g-font-size-30--xs g-font-size-30--sm g-font-size-40--md g-color--white ">Ib Hubs (STARTUPS AND BEYOND...)</h3>
+
+
+                    <p class="g-color--white g-font-size-16--xs">
+                        Visit us at the mentioned website to know more : <a href="https://www.oneplus.in/">https://ibhubs.co/</a>
+                    </p>
+                    <p class="g-color--white">
+                        Job profile : <b>Director of Photography – 2 to 6 months internship</b></p>
+
+
+                    <h4 class="g-font-size-22--xs g-font-size-26--md g-color--white ">Eligible qualifications</h4>
+                    <ol>
+                        <li class="g-color--white g-font-size-16--xs">Thorough knowledge of continuity.</li>
+                        <li class="g-color--white g-font-size-16--xs">Hands-on experience on any DSLR camera (like Canon 5D, etc.)</li>
+                        <li class="g-color--white g-font-size-16--xs">Creativity and passion in film and cinematography.</li>
+                        <li class="g-color--white g-font-size-16--xs">The ability to listen to others and to work well as part of a team.</li>
+                        <li class="g-color--white g-font-size-16--xs">Good written and verbal communication.</li>
+                        <li class="g-color--white g-font-size-16--xs">Attention to detail.</li>
+                        <li class="g-color--white g-font-size-16--xs">Time management skills.</li>
+                        <li class="g-color--white g-font-size-16--xs">Ability to deliver with in deadlines.</li>
+                        <li class="g-color--white g-font-size-16--xs">Integrity and the zeal to grow.</li>
+                    </ol>
+
+                    <h4 class="g-font-size-22--xs g-font-size-26--md g-color--white ">Roles & responsibilities</h4>
+                    <ol>
+                        <li class="g-color--white g-font-size-16--xs">Determining lighting requirements on set.</li>
+                        <li class="g-color--white g-font-size-16--xs">Deciding on the best camera angles and frames for scenes.</li>
+                        <li class="g-color--white g-font-size-16--xs">Ordering and testing lighting and camera equipment.</li>
+                        <li class="g-color--white g-font-size-16--xs">Supervising camera crew and directing camera movement.</li>
+                        <li class="g-color--white g-font-size-16--xs">Determining camera aperture settings.</li>
+                        <li class="g-color--white g-font-size-16--xs">Controlling natural or artificial lighting conditions.</li>
+                        <li class="g-color--white g-font-size-16--xs">Determining elements such as filters, shutter angles, focus, depth of field and camera distance</li>
+                        <li class="g-color--white g-font-size-16--xs">Editing visual elements in post-production.</li>
+        
+                    </ol>
+
+                    <h4 class="g-font-size-22--xs g-font-size-26--md g-color--white">Job location</h4>
+                    <p class="g-color--white g-font-size-16--xs">Hyderabad</p>
+
+                    <h4 class="g-font-size-22--xs g-font-size-26--md g-color--white">Selection Process </h4>
+                    <ol>
+                        <li class="g-color--white g-font-size-16--xs">Porfolio screening</li>
+                        <li class="g-color--white g-font-size-16--xs">Online Interview</li>
+                    </ol>
+
+                    <p class="g-color--white g-font-size-16--xs">Stipend / CTC : 10K -20K per month.
+                    <br><br><b>Please note : Recruitment is not through the Training & Placement Department of VNIT.</b></p>
+                    <div class="wow fadeInLeft g-margin-t-40--xs" data-wow-duration=".3" data-wow-delay=".5s">
+                        <a href="https://goo.gl/forms/XmXPZQ6Eb5ILWNRd2" title="Register" target="_blank">
 
                             <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Fill Form <span class="ti-angle-right"></span></span>
                         </a>
