@@ -97,6 +97,7 @@ else if(isset($_POST['login'])){
                                         <option value="AdVenture_team">Adventure</option>
                                         <option value="Swadesh_team">Swades</option>
                                         <option value="renderico_team">Render Ico</option>
+                                        <option value="BizQuiz_team">Bizquiz</option>
                                         <option value="Azure">Azure</option>
                                         <option value="Brainathon">Brainathon</option>
                                         <option value="Townhall">Townhall</option>
