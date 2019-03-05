@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <?php $pagetitle = 'Bizquiz | Consortium'; ?>
+  <?php $pagetitle = 'Wallstreet | Consortium'; ?>
 
   <!-- Begin Head -->
   <?php include("includes/head.php")?>
