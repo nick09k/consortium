@@ -13,7 +13,7 @@
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
-        <div class="s-promo-block-v3 g-fullheight--xs event-landing1" style="background: url('img/1920x1080/landing-BizQuiz.png');" id="th">
+        <div class="s-promo-block-v3 g-fullheight--xs event-landing1" style="background: url('img/1920x1080/landing-wallstreet.jpg');" id="th">
             <style type="text/css">
                 @media(max-width: 767px){
                   .brain{
@@ -30,14 +30,14 @@
                 <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
                     <!--<img src="img/logo/ceoblack.png" alt="" width="200" style="margin-top:-100px; margin-left:-20px">-->
 
-                    <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>bizquiz</b></h1>
+                    <h1 class="g-font-size-40--xs g-font-size-60--sm g-font-size-80--lg g-color--white g-margin-t-50--xs" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>Wallstreet</b></h1>
 
-                    <h3 class="g-color--white" style="    text-shadow: 2px 0 #333;">Love facts & Trivia about the business?</h3>
-                    <p class="g-color--white g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>Then this is a right quiz for you</b></p><br/>
+                    <h3 class="g-color--white" style="    text-shadow: 2px 0 #333;">Earn, spend, party!</h3>
+                    <p class="g-color--white g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>Buy or sell shares in this competitive business world <br>and become the Wolf of Wall Street!</b></p><br/>
                     <h4 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 15K </span></h4>
-                    <br>
+                    
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                        <a href="/register.php" title="Register">
+                        <a href="https://goo.gl/forms/pYVinCErTub0btVw2" title="Register">
                             <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
                             <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Register Now <span class="ti-angle-right"></span></span>
                         </a>
@@ -57,14 +57,14 @@
         <div class="g-promo-section" style="background:#000" id="about">
             <div class="container g-padding-y-30--xs g-padding-y-30--sm g-padding-x-80--md g-padding-x-60--sm g-padding-x-40--xs">
                 <div class="row">
-                    <div class="col-md-4 g-margin-t-45--xs g-margin-b-60--xs g-margin-b-0--lg">
+                    <div class="col-md-5 g-margin-t-45--xs g-margin-b-60--xs g-margin-b-0--lg">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
                         </div>
-                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Bizquizz is the quiz which will be based on topics such as Business, Innovation in technology and current affairs. But do not mistake it for a mere quizzing event; for us, it is a battle of wits, challenge to the wise and knowledgeable, and a never like before experience for many.</p>
+                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Do you have the shrewdness to become the Wolf of Wall Street? Then this is the event for you. Buy shares, sell stock and interact with brokers looking to provide an exchange. Come and bet your wits to win cash prize along with exciting goodies.<br> And the interesting thing here is you win even if you lose as the loser gets a cash prize as well. Just remember never underestimate the other guy’s greed.</p>
 
                     </div>
-                    <div class="col-md-7 col-md-offset-1">
+                    <div class="col-md-6 col-md-offset-1">
                         <img src="img/expo-about.jpg" alt="" style="max-width:100%; max-height:400px">
                     </div>
                 </div>
@@ -89,13 +89,13 @@
 
     		    	<div id="why">
                         <br>
-    			     	<h5><b>Prizes Worth Rs. 15K</b><p>NOTE: Participation Certificate to all the participants selected for Round 2.</p></h5>
+    			     	<h5><b>Prizes Worth Rs. 15K</b></h5>
 
     			     	<ol>
-    			     	    <li><p>The quest for knowledge has been the part of humankind since time immemorial. So E-Cell VNIT brings to you one of the best quizzing events in the country on theme businesses.</p></li>
-    			     	    <li><p>This event gives an excellent opportunity for students to showcase their knowledge and skills.</p></li>
-    			     	    <li><p>Experience in performing certain mind-boggling questions in a given span of time.</p></li>
-    			     	    <li><p>Prizes for the Top 2 performing teams as stated below and goodies for other performing teams.</p></li>
+    			     	    <li><p>This event aims to test managing skills of the students and will help you discover the businessman/stock trader in you.</p></li>
+    			     	    <li><p>And the interesting thing here is you win even if you lose as there are cash prizes for the top 2
+winners as well as for the best loser (last place).</p></li>
+    			     	    <li><p>So don’t get disheartened even if you start losing and be there till the very end.</p></li>
     			     	</ol>
 
     			     	<br/>
@@ -103,37 +103,45 @@
     				</div>
     				<div id="structure" style="display:none;">
               <h5><b>How to participate</b></h5>
-              <br/>
-              <p>To participate in Bizquizz, visit our <a href="https://consortium.ecellvnit.org/register.php">website</a> and register with the name of your team . As soon your registration process gets complete you will get confirmation</p>
+              <ol>
+                  <li><p>To participate in Wallstreet, visit our <a href="/wallstreet.php">website</a> and register with your name. As soon your registration process gets complete you will get confirmation</p></li>
+                  <li><p>On spot registrations are allowed.</p></li>
+              </ol>
+              
               <br/>
               <h5><b>Structure</b></h5>
               <br/>
-    		    	    <p>The Event comprises of 2 rounds starting with the questionnaire round which would be on the 10th of March, 2019</p><br/>
+    		    	    <p>The event comprises of a single round taking place on 10th March 2019.</p><br/>
     		    	    <ol>
-    					    <li><h6>Round 1: Questionnaire (Elimination)</h6>
-                                <p><b>10th March, 2019</b>
-                                <br>The First round will be an offline elimination round which will be a pen and paper based round conducted in the auditorium of VNIT Nagpur in which both localities, as well as the outsider of Nagpur, will give the exam. Top 6 teams will qualify for the Second and final round.</p>
-                            </li><br/>
+    					    <li>
+                                <p>Each participant will be provided with a specified amount of Liquid Money on the spot which they can invest according to their choice.</p>
+                            </li>
 
-    					    <li><h6>Round 2: (Final Round)</h6>
-                                <p><b>10th March , 2019 </b><br>The Final round will be conducted by a well-known quizmaster Devendra Prabhune (devendra167@yahoo.co.in).<br>All the details of the round will be told on the spot by the Quizmaster followed by Prize Distribution to Winners.</p>
-                            </li><br/>
+    					    <li>
+                                <p>Participants have to buy/sell shares from the brokers (organizers) depending upon the newsfeed displayed on the venue of the event.</p>
+                            </li>
+                            <li>
+                                <p>The challenge is to use your given money and invest it wisely so as to get the maximum profits or to maximize your losses from your investments.</p>
+                            </li>
+                            <li>
+                                <p>A participant with the maximum profit and the maximum losses gets the prize.</p>
+                            </li>
+
     					</ol>
                         <br/>
               <h5><b>Eligibility Criteria </b></h5>
               <ol>
-                  <li><p>Students studying in courses of Undergraduate, Graduate level and Higher Secondary Students(11th,12th class) and also secondary students (9th, 10th class) can participate for the Quiz. Participants need to form a team of two to register for the event. Both the team members need to be students of the same institution. Both the team members need not be of the same year of study.</p></li>
-                  <li><p>Participants can register directly on the Consortium’s website. Entry fee is Rs 50 per team. There is no limit on the number of teams participating from the same institute.</p></li>
+                  <li><p>Students studying in courses of Undergraduate, Graduate level and Higher Secondary Students (11th, 12th class) and also secondary students (9th, 10th class) can participate for the event individually.</p></li>
+                  <li><p>Participants can register directly on the Consortium’s website. Entry fee is Rs 50 per person.</p></li>
               </ol>
 
 
               <br><h5><b>How to pay</b></h5>
               <ol>
-              <li>Google Pay or Paytm on +91 98224 44112</li>
+              <li>Google Pay or PHONEPE on 8007481127</li>
               <li>Registration Desk, near Auditorium VNIT Nagpur</li>
               </ol>
               <br/>
-
     		    	</div>
     		    	
 
@@ -150,19 +158,16 @@
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
                 <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Ashutosh Bhattacharjee</h4>
-                         <p class="g-color--white">+91 7745007997</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Sanket Manna</h4>
+                         <p class="g-color--white">mannasanket123@gmail.com <br>+91 8007481127</p>
                     </div>
                 </div>
                 <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Hrushikesh</h4>
-                         <p class="g-color--white">+91 9082386525</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Shivam Misra</h4>
+                         <p class="g-color--white">shivam.whiz@gmail.com <br>+91 7447588019</p>
                     </div>
                 </div>
-                <p class="col-xs-12 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm g-color--white g-color--white"><b>Mail us at</b> bizquizz19@gmail.com</p>
-
-                
                 
             </div>
             </div>

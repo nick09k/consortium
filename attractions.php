@@ -56,8 +56,7 @@
 
                 </div>
             </a>
-            
-            <a href="https://goo.gl/forms/e9w6g83HFuOXAzAz2" class="product-card col-xs-12 col-md-4 col-lg-3" >
+            <!-- <a href="https://goo.gl/forms/e9w6g83HFuOXAzAz2" class="product-card col-xs-12 col-md-4 col-lg-3" >
                 <div class="product-card__item-grid" style="background:url(img/events/chatur.png)">
 
                     <div class="product-card__item-text-v2">
@@ -68,7 +67,7 @@
                     </div>
 
                 </div>
-            </a>
+            </a> -->
             <a class="product-card col-xs-12 col-md-4 col-lg-3" >
                 <div class="product-card__item-grid" style="background:url(img/events/zerodha.png)">
 
