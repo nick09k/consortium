@@ -226,7 +226,7 @@
                       <!-- <option value='Teen_Titans'>Teen Titans</option> -->
                       <option value='BizMantra'>BizMantra</option>
                       <option value='BizQuiz'>BizQuiz</option>
-                      <option value='Brainathon'>Brainathon</option>
+                      <!-- <option value='Brainathon'>Brainathon</option> -->
                       <!-- <option value='Wallstreet'>Wallstreet</option> -->
                   </select>
                 </div>
