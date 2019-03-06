@@ -117,6 +117,62 @@
       }
 
     }
+    else if ($event == "BizMantra"){
+      $query = "SELECT * FROM Registrations WHERE Email = '$email'";
+      $result = mysqli_query($con,$query);
+      $num = mysqli_num_rows($result);
+
+      if($num > 0){
+        $data = mysqli_fetch_array($result);
+        if($data[$event] != 1){
+          $q1 = "UPDATE Registrations SET $event = 1 WHERE Email = '$email'";
+          mysqli_query($con,$q1);
+
+          $q2 = "INSERT INTO $event(Name,Main_Email,Email,Contact) VALUES('$name','$email','$email','$contact')";
+          mysqli_query($con,$q2);
+
+          $_SESSION['msg'] = "Thank You for showing interest in $event. Confirmation mail has been sent to you.";
+          $s = 'Welcome Aboard '.$name.' | BizMantra';
+
+          htmlMail($email,$s,$name,$name, 'BizMantra');
+          header('location:/dashboard.php');
+        }
+        else{
+          $_SESSION['msg'] = "You have already registered for this event! To manage or create your team please go below.";
+          header('location:/dashboard.php');
+        }
+      }else{
+        echo("Error description: " . mysqli_error($con));
+      }
+    }
+    else if ($event == "Pitch_Perfect"){
+      $query = "SELECT * FROM Registrations WHERE Email = '$email'";
+      $result = mysqli_query($con,$query);
+      $num = mysqli_num_rows($result);
+
+      if($num > 0){
+        $data = mysqli_fetch_array($result);
+        if($data[$event] != 1){
+          $q1 = "UPDATE Registrations SET $event = 1 WHERE Email = '$email'";
+          mysqli_query($con,$q1);
+
+          $q2 = "INSERT INTO $event(Name,Main_Email,Email,Contact) VALUES('$name','$email','$email','$contact')";
+          mysqli_query($con,$q2);
+
+          $_SESSION['msg'] = "Thank You for showing interest in $event. Confirmation mail has been sent to you.";
+          $s = 'Welcome Aboard '.$name.' | Pitch Perfect';
+
+          htmlMail($email,$s,$name,$name, 'Pitch_Perfect');
+          header('location:/dashboard.php');
+        }
+        else{
+          $_SESSION['msg'] = "You have already registered for this event! To manage or create your team please go below.";
+          header('location:/dashboard.php');
+        }
+      }else{
+        echo("Error description: " . mysqli_error($con));
+      }
+    }
     else{
       $query = "SELECT * FROM Registrations WHERE Email = '$email'";
       $result = mysqli_query($con,$query);
@@ -164,11 +220,11 @@
                       <option value='sc'>Startup Conclave</option>
                       <option value='Swadesh'>Swades</option>
                       <option value='AdVenture'>AdVenture</option>
-                      <!-- <option value='Pitch_Perfect'>Pitch Perfect</option> -->
+                      <option value='Pitch_Perfect'>Pitch Perfect</option>
                       <option value='renderico'>render.ico</option>
                       <option value='CEO'>CEO</option>
                       <!-- <option value='Teen_Titans'>Teen Titans</option> -->
-                      <!-- <option value='BizMantra'>BizMantra</option> -->
+                      <option value='BizMantra'>BizMantra</option>
                       <option value='BizQuiz'>BizQuiz</option>
                       <option value='Brainathon'>Brainathon</option>
                       <!-- <option value='Wallstreet'>Wallstreet</option> -->

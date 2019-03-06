@@ -33,7 +33,7 @@
                     <div class="col-md-6 col-md-offset-3">
                         <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>8th - 10th March</b></p>
 
-                        <a href="/brainathon.php" class="notice"><p class="g-font-size-16--xs g-color--white g-margin-b-0--xs">Register for Brainathon</p></a> 
+                        <!-- <a href="/brainathon.php" class="notice"><p class="g-font-size-16--xs g-color--white g-margin-b-0--xs">Register for Brainathon</p></a>  -->
                         
                     </div>
 
@@ -180,8 +180,14 @@
                 <div class="product-card__item-grid g-padding-y-40--xs"  style="background:url(img/events/renderico.jpg)">
                     </div>
             </a>
-            <a href="/brainathon.php" class="product-card col-xs-12 col-md-4" >
+            <!-- <a href="/brainathon.php" class="product-card col-xs-12 col-md-4" >
                 <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/Brainathon.jpg)">
+
+
+                    </div>
+            </a> -->
+            <a href="/Pitch_Perfect.php" class="product-card col-xs-12 col-md-4" >
+                <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/Pitch_Perfect.png)">
 
 
                     </div>
@@ -191,7 +197,7 @@
 
                     </div>
             </a>
-            <a class="product-card col-xs-12 col-md-4 " >
+            <a href="BizMantra.php" class="product-card col-xs-12 col-md-4 " >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizMantra.jpg)">
 
                     </div>
@@ -336,7 +342,7 @@
 
                     <div style="display: flex;flex-direction: inherit;text-align: center;align-items: center;">
                         <h2 class="g-font-size-50--xs g-font-size-50--sm g-font-size-60--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;">Zero</h2>
-                        <p class="g-font-size-20--xs g-color--white" style="z-index:1">TO</p>
+                        <p class="g-font-size-20--xs g-color--white" style="z-index:1"><b>TO</b></p>
                         <h2 class="g-font-size-50--xs g-font-size-50--sm g-font-size-60--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;">One</h2>
 
                     </div>
@@ -385,7 +391,14 @@
                         </div>
 
                     </div>
-
+                    <div class="row">
+                        <div class="col-sm-6 col-md-5">
+                            <a id="reg_button" href="/intern.php" title="Register">
+                                    <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                    <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-20--xs g-padding-y-10--xs g-padding-x-30--md g-padding-y-15--md g-font-size-13--xs g-color--primary g-padding-x-15--xs">Register Now</span>
+                                </a>
+                        </div>
+                    </div>
 
                 </div>
 

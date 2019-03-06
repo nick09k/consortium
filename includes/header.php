@@ -42,6 +42,8 @@
                                             <li><a href="/brainathon.php" class="s-header-v2__dropdown-menu-link">Brainathon</a></li>
                                             <li><a href="/renderico.php" class="s-header-v2__dropdown-menu-link">Render.ico</a></li>
                                             <li><a href="/BizQuiz.php" class="s-header-v2__dropdown-menu-link">Bizquiz</a></li>
+                                            <li><a href="/Bizmantra.php" class="s-header-v2__dropdown-menu-link">Bizmantra</a></li>
+                                            <li><a href="/Pitch_Perfect.php" class="s-header-v2__dropdown-menu-link">Pitch Perfect</a></li>
                                             <li><a href="/wallstreet.php" class="s-header-v2__dropdown-menu-link">Wallstreet</a></li>
 
                                         </ul>
