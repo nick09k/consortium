@@ -157,7 +157,7 @@
                 </div>
                 
             </div>
-            <p class="col-xs-12 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm g-color--white g-color--white"><b>Mail us at </b>bizmantra19@gmail.com </p>
+            
             </div>
         </div>
 
