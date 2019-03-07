@@ -33,7 +33,7 @@
                     <div class="col-md-6 col-md-offset-3">
                         <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>8th - 10th March</b></p>
 
-                        <a href="/consox.php" class="notice"><p class="g-font-size-16--xs g-color--white g-margin-b-0--xs">Registerations for CONSOx and are open!</p></a> 
+                        <a href="/consox.php" class="notice"><p class="g-font-size-16--xs g-color--white g-margin-b-0--xs">Registerations for CONSOx are open!</p></a> 
                         
                     </div>
 
