@@ -33,7 +33,7 @@
                     <div class="col-md-6 col-md-offset-3">
                         <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>8th - 10th March</b></p>
 
-                        <a href="/consox.php" class="notice"><p class="g-font-size-16--xs g-color--white g-margin-b-0--xs">Registerations for CONSOx are open!</p></a> 
+                        <a href="/townhall.php" class="notice"><p class="g-font-size-16--xs g-color--white g-margin-b-0--xs">Registrations for Townhall by <b>Mr. Simon Taufel</b> are open!</p></a> 
                         
                     </div>
 
@@ -444,7 +444,7 @@
                 <div class="g-margin-t-30--xs g-margin-t-0--sm  g-padding-x-20--xs g-margin-t-125--lg g-margin-l-20--xs g-margin-l-80--sm">
                     <h1 class="g-font-size-30--xs g-font-size-40--sm g-font-size-60--lg g-color--white g-font-weight--600">CONSORTIUM'19<br><span style="color:#aaa;">OFFICIAL</span><br><span style="color:#555;"><b>MERCHANDISE</b></span></h1>
                 <p style="color:#aaa">*Available Sizes: S, M, L, XL, XXL</p>
-                <div class="pm-button text-uppercase btn-block s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-20--xs g-margin-b-20--xs tee-button" style=""><a href="https://www.payumoney.com/paybypayumoney/#/FEC5F0175992F7F3DE3976C404338B8D">Buy Now</a></div>
+                <!-- <div class="pm-button text-uppercase btn-block s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-20--xs g-margin-b-20--xs tee-button" style=""><a href="https://www.payumoney.com/paybypayumoney/#/FEC5F0175992F7F3DE3976C404338B8D">Buy Now</a></div> -->
 
                 </div>
 
