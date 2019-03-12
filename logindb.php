@@ -94,7 +94,6 @@ else if(isset($_POST['login'])){
                                 <div class="g-margin-b-30--xs">
                                     <select name="event" style="text-transform: none;" class="form-control s-form-v3__input" placeholder="* Type">
                                         <option disabled selected>Select Event</option>
-                                        <option value="AdVenture_team">Adventure</option>
                                         <option value="Pitch_Perfect">Pitch Perfect</option>
                                         <option value="Swadesh_team">Swades</option>
                                         <option value="renderico_team">Render Ico</option>
