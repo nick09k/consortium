@@ -177,7 +177,7 @@
                 </div>
 
                 <div class="g-text-center--xs">
-                    <button type="submit" name="regnew" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Register</button>
+                    <!-- <button type="submit" name="regnew" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Register</button> -->
                 </div>
                 <a href="login.php" class="g-color--white g-font-size-13--xs ">Already Registered?</a><br>
 
