@@ -31,9 +31,9 @@
 
                     </div>
                     <div class="col-md-6 col-md-offset-3">
-                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>8th - 10th March</b></p>
+                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>8<sup>th</sup> - 10<sup>th</sup> March 19</b></p>
 
-                        <a href="/townhall.php" class="notice"><p class="g-font-size-16--xs g-color--white g-margin-b-0--xs">Thank You all for making this summit a grand success.</p></a> 
+                        <a href="/townhall.php" class="notice"><p class="g-font-size-16--xs g-color--white g-margin-b-0--xs">Thank you all for making this summit a grand success.</p></a> 
                         
                     </div>
 
@@ -180,18 +180,18 @@
                 <div class="product-card__item-grid g-padding-y-40--xs"  style="background:url(img/events/renderico.jpg)">
                     </div>
             </a>
-            <!-- <a href="/brainathon.php" class="product-card col-xs-12 col-md-4" >
+            <a href="/brainathon.php" class="product-card col-xs-12 col-md-4" >
                 <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/Brainathon.jpg)">
 
 
                     </div>
-            </a> -->
-            <a href="/Pitch_Perfect.php" class="product-card col-xs-12 col-md-4" >
+            </a>
+            <!-- <a href="/Pitch_Perfect.php" class="product-card col-xs-12 col-md-4" >
                 <div class="product-card__item-grid g-padding-y-40--xs"style="background:url(img/events/Pitch_Perfect.png)">
 
 
                     </div>
-            </a>
+            </a> -->
             <a href="/Swadesh.php" class="product-card col-xs-12 col-md-4 " >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/Swadesh.jpg)">
 
