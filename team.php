@@ -73,47 +73,47 @@
                 <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
                     <!-- Speaker -->
                     <div class="center-block g-width-300--xs">
-                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/farzan.jpg" alt="Image">
-                        <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
-
-                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white">Farzan Shaikh</p>
-                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">President</p>
-                            <p class="g-color--white-opacity">+91 95614 83304</p>
-                        </div>
-                    </div>
-                    <!-- End Speaker -->
-                </div>
-                <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
-                    <!-- Speaker -->
-                    <div class="center-block g-width-300--xs">
-                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/utkarsh.jpg" alt="Image">
-                        <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
-
-                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white">Utkarsh Gupta</p>
-                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Vice President</p>
-                            <p class="g-color--white-opacity">+91 80058 81457</p>
-                        </div>
-                    </div>
-                    <!-- End Speaker -->
-                </div>
-
-            </div>
-
-            <div class="row g-overflow--hidden">
-
-                <div class="col-xs-12 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
-                    <!-- Speaker -->
-                    <div class="center-block g-width-300--xs">
                         <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/ayush.jpg" alt="Image">
                         <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
 
                             <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/ayush-singh-91291511b/" class="link">Ayush Singh <i class="ti-linkedin"></i></a></p>
-                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Treasurer</p>
+                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">President</p>
                             <p class="g-color--white-opacity">+91 94235 39984<br>ayushsingh@ecellvnit.org</p>
                         </div>
                     </div>
                     <!-- End Speaker -->
                 </div>
+                <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <!-- Speaker -->
+                    <div class="center-block g-width-300--xs">
+                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/anushree.jpg" alt="Image">
+                        <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
+
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/anushree-rungta-820751144/" class="link">Anushree Rungta <i class="ti-linkedin"></i></a></p>
+                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Vice President</p>
+                            <p class="g-color--white-opacity">+91 98224 44112</p>
+                        </div>
+                    </div>
+                    <!-- End Speaker -->
+                </div>
+
+            </div>
+
+            <div class="row g-overflow--hidden">
+
+                <div class="col-xs-12 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <!-- Speaker -->
+                    <div class="center-block g-width-300--xs">
+                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/lakshya.jpeg" alt="Image">
+                        <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
+
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/lakshya-shukla" class="link">Lakshya Shukla <i class="ti-linkedin"></i></a></p>
+                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Treasurer</p>
+                            <p class="g-color--white-opacity">+91 77384 46941<br>lakshyashukla32@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- End Speaker -->
+                </div>
 
             </div>
 
@@ -123,12 +123,12 @@
                 <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
                     <!-- Speaker -->
                     <div class="center-block g-width-300--xs">
-                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/pratik.jpg" alt="Image">
+                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/kaustubh.jpeg" alt="Image">
                         <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
 
-                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/pratik-zodpey-623827167/" class="link">Pratik Zodpey <i class="ti-linkedin"></i></a></p>
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/kaustubh03" class="link">Kaustubh Rajimwale <i class="ti-linkedin"></i></a></p>
                             <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Head Of Events and Planning</p>
-                            <p class="g-color--white-opacity">+91 73788 97208</p>
+                            <p class="g-color--white-opacity">+91 96197 03630<br>kaustubh.rajimwale@gmail.com</p>
                         </div>
                     </div>
                     <!-- End Speaker -->
@@ -136,12 +136,12 @@
                 <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
                     <!-- Speaker -->
                     <div class="center-block g-width-300--xs">
-                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/nachiket.jpg" alt="Image">
+                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/ratnesh.jpg" alt="Image">
                         <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
 
-                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/nachiket-dhande-9a31a4137/" class="link">Nachiket Dhande <i class="ti-linkedin"></i></a></p>
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/ratnesh-kumar-81015b15a" class="link">Ratnesh kumar <i class="ti-linkedin"></i></a></p>
                             <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Head Of Events and Planning</p>
-                            <p class="g-color--white-opacity">+91 95453 02811</p>
+                            <p class="g-color--white-opacity">+91 83080 25238<br>ratneshkumar7591@gmail.com</p>
                         </div>
                     </div>
                     <!-- End Speaker -->
@@ -152,11 +152,11 @@
                 <div class="col-xs-12 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
                     <!-- Speaker -->
                     <div class="center-block g-width-300--xs">
-                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/sagar.jpg" alt="Image">
+                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/satyajeet.jpeg" alt="Image">
                         <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
-                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/sagar-bansal-448097140/" class="link">Sagar Bansal <i class="ti-linkedin"></i></a></p>
-                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Head Of Technical</p>
-                            <p class="g-color--white-opacity">+91 77580 11192<br>sagarbansal@ecellvnit.org</p>
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/sagar-bansal-448097140/" class="link">Satyajeet Sutar <i class="ti-linkedin"></i></a></p>
+                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Head Of Events and Planning</p>
+                            <p class="g-color--white-opacity">+91 90493 36219<br>satya179sutar@gmail.com</p>
                         </div>
                     </div>
                     <!-- End Speaker -->
@@ -167,12 +167,12 @@
                 <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
                     <!-- Speaker -->
                     <div class="center-block g-width-300--xs">
-                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/shubham.jpg" alt="Image">
+                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/aryan.jpeg" alt="Image">
                         <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
 
-                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/shubham-jadhav-a63b5abb/" class="link">Shubham Jadhav <i class="ti-linkedin"></i></a></p>
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/aryan-shah-4739b1184/" class="link">Aryan Shah <i class="ti-linkedin"></i></a></p>
                             <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Head Of Corporate Relations</p>
-                            <p class="g-color--white-opacity">+91 80076 57591<br>shubhamjadhav@ecellvnit.org</p>
+                            <p class="g-color--white-opacity">+91 80871 13811<br>aryan199841@gmail.com</p>
                         </div>
                     </div>
                     <!-- End Speaker -->
@@ -181,10 +181,10 @@
                 <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
                     <!-- Speaker -->
                     <div class="center-block g-width-300--xs">
-                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/ashish.jpg" alt="Image">
+                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/atul.jpeg" alt="Image">
                         <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
 
-                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/ashish-das-760531138/" class="link">Ashish Das <i class="ti-linkedin"></i></a></p>
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://in.linkedin.com/in/atul-krishna-248b99166" class="link">Atul Krishna <i class="ti-linkedin"></i></a></p>
                             <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Head Of Corporate Relations</p>
                             <p class="g-color--white-opacity">+91 89184 77717<br>ashish@ecellvnit.org</p>
                         </div>
@@ -198,12 +198,12 @@
                 <div class="col-xs-12 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
                     <!-- Speaker -->
                     <div class="center-block g-width-300--xs">
-                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/sricharan.jpg" alt="Image">
+                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/g2.jpeg" alt="Image">
                         <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
 
-                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/sricharan-mahavadi-834291152/" class="link">Sri Charan Mahavadi <i class="ti-linkedin"></i></a></p>
-                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Head Of Operations</p>
-                            <p class="g-color--white-opacity">+91 89194 84722</p>
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/jitendra-rahangdale-97b01a168" class="link">Jitendra Rahangdale <i class="ti-linkedin"></i></a></p>
+                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Head Of Web and Technical</p>
+                            <p class="g-color--white-opacity">+91 89560 79892<br>jitendra98rahangdale@gmail.com</p>
                         </div>
                     </div>
                     <!-- End Speaker -->
@@ -215,11 +215,11 @@
                 <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
                     <!-- Speaker -->
                     <div class="center-block g-width-300--xs">
-                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/prashant.jpg" alt="Image">
+                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/rohit.jpg" alt="Image">
                         <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
-                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/prashant-bramhanwade-624737144/" class="link">Prashant Bramhanwade <i class="ti-linkedin"></i></a></p>
-                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Head Of Public Relations</p>
-                            <p class="g-color--white-opacity">+91 70578 56961</p>
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/rohit-maheswari-vnit" class="link">Rohit Maheswari <i class="ti-linkedin"></i></a></p>
+                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Head Of Operations</p>
+                            <p class="g-color--white-opacity">+91 89836 82793<br>mahesmahesrohit@gmail.com</p>
                         </div>
                     </div>
                     <!-- End Speaker -->
@@ -227,17 +227,61 @@
                 <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
                     <!-- Speaker -->
                     <div class="center-block g-width-300--xs">
-                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/anushree.jpg" alt="Image">
+                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/manas.jpeg" alt="Image">
                         <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
 
-                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/anushree-rungta-820751144/" class="link">Anushree Rungta <i class="ti-linkedin"></i></a></p>
-                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Head Of Public Relations</p>
-                            <p class="g-color--white-opacity">+91 98224 44112</p>
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/anushree-rungta-820751144/" class="link">Manas Naik <i class="ti-linkedin"></i></a></p>
+                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Head Of Operations</p>
+                            <p class="g-color--white-opacity">+91 95035 50139<br>manasnaik96@gmail.com</p>
                         </div>
                     </div>
                     <!-- End Speaker -->
                 </div>
 
+            </div>
+            <div class="row g-overflow--hidden">
+
+                <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <!-- Speaker -->
+                    <div class="center-block g-width-300--xs">
+                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/muskan.jpeg" alt="Image">
+                        <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/muskan-gupta-5ba657180" class="link">Muskan Gupta <i class="ti-linkedin"></i></a></p>
+                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Head Of Public Relations</p>
+                            <p class="g-color--white-opacity">+91 94057 02815<br>mgmuskan99@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- End Speaker -->
+                </div>
+                <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <!-- Speaker -->
+                    <div class="center-block g-width-300--xs">
+                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/gourav.jpeg" alt="Image">
+                        <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
+
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/gourav-routray-021b7015a" class="link">Gourav Routray <i class="ti-linkedin"></i></a></p>
+                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Head Of Public Relations</p>
+                            <p class="g-color--white-opacity">+91 99690 23517<br>routraygourav07@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- End Speaker -->
+                </div>
+
+            </div>
+            <div class="row g-overflow--hidden">
+                <div class="col-xs-12 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <!-- Speaker -->
+                    <div class="center-block g-width-300--xs">
+                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/prajwal.jpeg" alt="Image">
+                        <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
+
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/prajjwal-khanna-8270b8178" class="link">Prajjwal Khanna <i class="ti-linkedin"></i></a></p>
+                            <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Head Of Public Relations</p>
+                            <p class="g-color--white-opacity">+91 99298 05957<br>prajjwalkhanna.98@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- End Speaker -->
+                </div>
             </div>
             </div>
 
