@@ -31,9 +31,9 @@
 
                     </div>
                     <div class="col-md-6 col-md-offset-3">
-                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>8<sup>th</sup> - 10<sup>th</sup> March 19</b></p>
+                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>21<sup>th</sup> - 23<sup>th</sup> February 20</b></p>
 
-                        <a href="/townhall.php" class="notice"><p class="g-font-size-16--xs g-color--white g-margin-b-0--xs">Thank you all for making this summit a grand success.</p></a>
+
 
                     </div>
 
