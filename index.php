@@ -27,14 +27,14 @@
 
                     <h4 class="g-color--white-opacity g-font-size-18--xs g-font-size-22--md" style="position: relative;">E-CELL VNIT presents</h4>
                     <div class="g-margin-b-20--xs g-margin-b-80--sm" style="display:flex; justify-content:center">
-                        <img class="resize" src="/img/newconsologo.png" alt="Conso">
+                        <img class="resize" src="img/newconsologo-white.png" alt="Conso">
 
                     </div>
                     <div class="col-md-6 col-md-offset-3">
                         <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>8<sup>th</sup> - 10<sup>th</sup> March 19</b></p>
 
-                        <a href="/townhall.php" class="notice"><p class="g-font-size-16--xs g-color--white g-margin-b-0--xs">Thank you all for making this summit a grand success.</p></a> 
-                        
+                        <a href="/townhall.php" class="notice"><p class="g-font-size-16--xs g-color--white g-margin-b-0--xs">Thank you all for making this summit a grand success.</p></a>
+
                     </div>
 
                   </div>
@@ -212,7 +212,7 @@
 
                     </div>
             </a>
-            
+
         </div>
 
         <!--Startup EXPO-->
@@ -265,15 +265,15 @@
                 }
               </style>
             <div class="container g-padding-y-125--xs g-padding-y-60--lg event-landing-inner brain">
-              
+
 
                 <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
                     <!--<img src="img/logo/ceoblack.png" alt="" width="200" style="margin-top:-100px; margin-left:-20px">-->
 
-                    
+
                     <h1 class="g-font-size-45--xs g-font-size-60--sm g-font-size-70--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>Azure Space</b> <i class="ti-cloud-down"></i></span></h1>
-                    
-                
+
+
                     <p class="g-color--white g-font-size-16--sm"><b>A Cloud Computing Workshop</b><br>Computing is not about computers any more. It's about living.</p>
                     <p class="g-color--white g-font-size-18--xs"><b>AZ - 203 Certified </b><br>9 March 19</p>
 

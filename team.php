@@ -154,7 +154,7 @@
                     <div class="center-block g-width-300--xs">
                         <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/satyajeet.jpeg" alt="Image">
                         <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
-                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/sagar-bansal-448097140/" class="link">Satyajeet Sutar <i class="ti-linkedin"></i></a></p>
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/satyajeet-sutar-744a4a14b" class="link">Satyajeet Sutar <i class="ti-linkedin"></i></a></p>
                             <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Head Of Events and Planning</p>
                             <p class="g-color--white-opacity">+91 90493 36219<br>satya179sutar@gmail.com</p>
                         </div>
