@@ -44,10 +44,10 @@
                 <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
                     <!-- Speaker -->
                     <div class="center-block g-width-300--xs">
-                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/fac1.jpg" alt="Image">
+                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/bhatt-sir.jpeg" alt="Image">
                         <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
 
-                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white">Dr. Vijayakumar R. P.</p>
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white">Dr. S. S. Bhatt</p>
                             <p class="g-font-weight--700 g-color--white-opacity">Professor Incharge</p>
                         </div>
                     </div>
@@ -56,10 +56,10 @@
                 <div class="col-xs-6 g-full-width--xs">
                     <!-- Speaker -->
                     <div class="center-block g-width-300--xs">
-                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/fac2.jpg" alt="Image">
+                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/taiwade-sir.jpeg" alt="Image">
                         <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
 
-                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white">Dr. Chayan Das</p>
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white">Dr. R. V. Taiwade</p>
                             <p class="g-font-weight--700 g-color--white-opacity">Professor Incharge</p>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
 
                             <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/ayush-singh-91291511b/" class="link">Ayush Singh <i class="ti-linkedin"></i></a></p>
                             <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">President</p>
-                            <p class="g-color--white-opacity">+91 94235 39984<br>ayushsingh@ecellvnit.org</p>
+                            <p class="g-color--white-opacity">+91 94235 39984</p>
                         </div>
                     </div>
                     <!-- End Speaker -->
@@ -86,12 +86,12 @@
                 <div class="col-xs-6 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
                     <!-- Speaker -->
                     <div class="center-block g-width-300--xs">
-                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/anushree.jpg" alt="Image">
+                        <img class="img-responsive g-width-100-percent--xs core" src="img/400x400/shubham.jpg" alt="Image">
                         <div class="g-position--overlay g-padding-x-30--xs g-padding-y-30--xs g-text-center--xs g-margin-t-o-5--xs">
 
-                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/anushree-rungta-820751144/" class="link">Anushree Rungta <i class="ti-linkedin"></i></a></p>
+                            <p class="g-font-size-20--xs g-font-weight--700 g-margin-b-0--xs g-color--white-opacity"><a href="https://www.linkedin.com/in/shubham-jadhav-a63b5abb" class="link">Shubham Jadhav <i class="ti-linkedin"></i></a></p>
                             <p class="g-font-weight--700 g-color--white-opacity" style="margin-bottom:0">Vice President</p>
-                            <p class="g-color--white-opacity">+91 98224 44112</p>
+                            <p class="g-color--white-opacity">+91 80076 57591</p>
                         </div>
                     </div>
                     <!-- End Speaker -->
