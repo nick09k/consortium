@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <?php $pagetitle = 'CEO | Consortium'; ?>
+  <?php $pagetitle = 'War of Worlds | Consortium'; ?>
 
   <!-- Begin Head -->
   <?php include("includes/head.php")?>
@@ -13,15 +13,15 @@
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
-        <div class="s-promo-block-v3 g-fullheight--xs event-landing1" style="background: url('img/1920x1080/landing-pitch.jpg');">
+        <div class="s-promo-block-v3 g-fullheight--xs event-landing1" style="background: url(https://image.freepik.com/free-photo/thai-soldiers-special-forces-team-full-uniform-walking-action-through-smoke-holding-gun-hand_44353-1136.jpg);">
             <div class="container g-ver-center--sm g-padding-y-125--xs g-padding-y-0--lg event-landing-inner">
 
                 <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
                     <!--<img src="img/logo/ceoblack.png" alt="" width="200" style="margin-top:-100px; margin-left:-20px">-->
 
-                    <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>CEO</b></h1>
+                    <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>War of Worlds</b></h1>
 
-                    <h3 class="g-color--white">Analytical Thinking Competition</h3>
+                    <h3 class="g-color--white">Survival of fittest</h3>
                     <p class="g-color--white">Leadership, Problem Solving Skills, Marketing Skills. <br/>Do you have what it takes to be a CEO?</p><br/>
                     <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 25K </span></h3>
 
@@ -49,7 +49,8 @@
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
                         </div>
-                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Leaders get out in front and stay there by raising the standards by which they judge themselves and by which they are willing to be judged.<br>CEO envisions putting you on the spot of showing just how deeply you understand the ethics and finer lines of your environment with respect to business, power, ethic and revolution.</p>
+                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Set in an era just after a World War, every nation has suffered a critical hit by each other. As a consequence of this only 30 nations survived the onslaught and have vowed for the betterment of their people.<br>
+                                War of Worlds is Survival-of-the-fittest type game show that welcomes the participants into a virtual world and challenges them to test their wits and skills to make their countries reach the top.</p>
 
                     </div>
                     <div class="col-md-7 col-md-offset-1">
@@ -71,22 +72,21 @@
     		      <ul class="tabs tabs-fixed-width">
     		        <li class="tab"><a class="active" href="#why" id="but_why">WHY PARTICIPATE?</a></li>
     		        <li class="tab"><a  href="#structure" id="but_structure">STRUCTURE</a></li>
-    		        <li class="tab"><a href="#timeline" id="but_timeline">TIMELINE</a></li>
+    		        <li class="tab"><a href="#timeline" id="but_timeline">RULES AND REGULATIONS</a></li>
     		      </ul>
     		    </div>
     		    <div class="card-content code">
 
     		    	<div id="why">
-    			     	<h5><b>Prizes Worth &#8377; 25K </b></h5><br/>
+    			     	<h5><b>Prizes Worth &#8377; 15K </b></h5><br/>
     			     	<ol>
-    			     	    <li><p>Attractive prizes for top 3 positions and goodies for best performers in each round and   e-certificates for all participants.</p></li>
-    			     	    <li><p>All students who qualify to the fourth round (on campus) will receive an official certificate of participation.</p></li>
+    			     	    <li><p>War of Worlds is an exciting event that will engage you into a fast-paced virtual world and test your quick thinking and decision making skills.</p></li>
+    			     	    <li><p>It is also a platform that will allow you to improve your communication skills and meet new people, either as allies or opponents,
+                        and help you gain an experience of dealing with people in different situations.</p></li>
     			     	    <li><p>Opportunity to look at scenarios from macro perspectives and sharpen the crucial skill of <b>looking at the bigger picture</b>.</p></li>
-    			     	    <li><p>Learn how the board of the any company could take crucial decision for company.</p></li>
-    			     	    <li><p>Meet new people, socialize and make your presence felt by being a part of this wonderful journey.</p></li>
-    			     	    <li><p>Opportunity to enhance your knowledge by way of discussion and deliberation with students as well as experts.</p></li>
-    			     	    <li><p>A chance to network with like-minded people and gain positive exposure.</p></li>
-    			     	    <li><p>Participation increases confidence level and the hurdles faced can help recognize strengths and weaknesses.</p></li>
+    			     	    <li><p>The unique concept of the event allows the participants to form a new perception of the world and turn it into an opportunity to adopt a distinct viewpoint.</p></li>
+    			     	    <li><p>Exciting prizes will be awarded to the top three participants.</p></li>
+
 
     			     	</ol>
 
@@ -103,36 +103,40 @@
     		    	    <p>Competition is divided into three rounds as follows:</p><br/>
     		    	    <ol>
 
-    					    <li><h6>Round 1: CEO Quiz </h6><p><b>20th to 25th December 2019 (in Pune & Sangamner) |  10th to 17th January 2020 (in Nagpur)</b><br>It is preliminary-cum-elimination round to shortlist the participants based on the scores. Duration: 30 minutes  (MCQ Questions: It will have three sections – <b>A) Aptitude, B) General Sciences, C) English Proficiency </b>.The test will be conducted offline in the respective colleges.</p></li><br/>
-    					    <li><h6>Round 2: Online Test</h6><p><b>1st February 2020</b><br>The Details regarding the same will be conveyed to the qualified candidates.</p></li><br/>
-    					    <li><h6>Round 3: PPDT</h6><p><b>21st February 2020 (First Day First Half) | Journey from VNIT, Nagpur </b><br>
-                    PPDT – Picture perception and dissection test <br>
-                    Highlights - Pictures shown in PPDT are very unclear and various different perception takes place for same. Round scheme – In this test, the candidates are shown a blurred picture for a period of 40 second. Based on that, candidates are allotted a time period of 6 minutes to write a story on the picture with details consisting of that handled to the situation, what is happening now and what will be the possible outcome.<br>
-                    After writing the story, candidates will be divided into groups of 10. And they will be told to narrate their story one by one (Each one have to narrate his/her story with in one and half minute). After the completion of stories of all the students, a group discussion conducted in which students discuss the story & try to come up with a common story (Time limit-10minutes).</p></li><br/>
-                  <li><h6>Round 4: Case Interview</h6><p><b>21st Feb 2020 (First Day Second Half) </b><br>Case interview Highlights: Explaining what case interview is and what is expected from them. A problem will be given to each team. Time will be given for each team to think. 5 minutes will be given for each team to explain solution they come up with. This is a team event, where you have to overcome the problem given to you related to Case Interview.
-                    Each one of will be given a sheet containing one problem related to market, publicity and crises.</p></li><br/>
-                  <li><h6>Round 5: Boardroom</h6><p><b>22nd Feb 2020 (Second Day)</b><br>The one-of-its-kind game where you are a part of the board of a corporation which is going through a major decision. Make allies wisely, know your opposition, influence the neutral people and put forward your point of view in front the other stakeholders of the corporation.</p></li>
-    					</ol>
+    					    <li><h6>Round 1: Questionnaire </h6><p><b>15th January 2020 -30th January 2020</b><br>A multiple-choice questionnaire that will be conducted offline in various institutes in Nagpur.
+                          Questions will be based on basic economics, currency conversions, international trades and affairs etc.</p></li><br/>
+    					    <li><h6>Round 2: Group Discussion (Eliminations)</h6><p><b>22nd February 2020 | Journey from VNIT, Nagpur </b><br>On the spot group discussion based on case studies and a problem statement. Participants will be judged individually based on the following criteria:<br>1.Creativity<br>2. Critical analysis<br>3. Spontaneity<br>4. Degree of acceptance of the solution proposed</p></li><br/>
+    					    <li><h6>Round 3: War of Worlds</h6><p><b>23rd February 2020</b><br>
+                    Participants will be given a virtual nation along with its elaborate description. The aim of the game is to fight till the end to make your nation reach the top.<br></p></li>
+
 
     		    	</div>
     		    	<div id="timeline" style="display:none;">
-                <h5><b>Timeline</b></h5><br/>
+                <h5><b>Rules and Regulations</b></h5><br/>
                     <ul>
-                      <li><h5>Offline CEO Quiz</h5>
-                        <p>20th to 25th December 2019 (in Pune & Sangamner)</p><br>
-                        <p>10th to 17th January 2020 (in Nagpur)</p>
+                      <li>
+                        <p>Round 1 consists of a questionnaire based on basic economics, currency conversions, international trades and affairs etc. Selected participants from this round will then proceed to Round 2.</p><br>
                       </li><br/>
-                      <li><h5>Online Test</h5>
-                        <p>1st February 2020</p>
+                      <li>
+                        <p>Participants selected from Level 1 will be divided into random groups and given a case study. 10 minutes will be provided to read the case study along with the problem statement. After 10 minutes the participants will have to engage in a group discussion addressing the problem statement.</p>
                         </li><br/>
-                      <li><h5>PPDT</h5>
-                        <p>21st February 2020 (First Day First Half)</p>
+                      <li>
+                        <p>Participants will be judged individually based on the following criteria for Level 2:<br>1. Creativity<br>2. Critical analysis<br>3. Spontaneity<br>4. Degree of acceptance of the solution proposed<br>
                       </li><br/>
-                      <li><h5>Case Interview Round</h5>
-                        <p>21st Feb 2020 (First Day Second Half)</p>
+                      <li>
+                        <p>30 Selected participants will then proceed to level 3.</p><br>
                       </li>
-                      <li><h5>Boardroom Round</h5>
-                        <p>22nd Feb 2020 (Second Day)<p>
+                      <li>
+                        <p>In the final round, all the decisions will be taken in front of the event managers</p><br>
+                      </li>
+                      <li>
+                        <p>In the final round, you will be judged on the basis of your knowledge and the growth of their nation.</p><br>
+                      </li>
+                      <li>
+                        <p>They have to present solutions for the problems that will be given during the start of the event </p><br>
+                      </li>
+                      <li><p>Any and all disputes will be resolved at the discretion of the Managing committee</p><br>
+                      </li>
                     </ul>
     		    	</div>
 
@@ -147,32 +151,29 @@
         <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
             <!--<div class="g-container--md g-padding-y-40--xs">-->
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Rushikesh</h4>
-                         <p class="g-color--white">+91 7038060390</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Harsh Mittal</h4>
+                         <p class="g-color--white">harsh.mittal1895@gmail.com</p>
+                         <p class="g-color--white">+91 8602761409</p>
                     </div>
                 </div>
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Nisha</h4>
-                         <p class="g-color--white">+91 7420874579</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Rishabh Runwal</h4>
+                         <p class="g-color--white"> rishabhprunwal@gmail.com</p>
+                         <p class="g-color--white">+91 9326512345</p>
                     </div>
                 </div>
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
 
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Abhishek</h4>
-                         <p class="g-color--white">+91 6392806041</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Ritika Kumar</h4>
+                         <p class="g-color--white">ritikakumar0204@gmail.com </p>
+                         <p class="g-color--white">+91 7666691242</p>
                     </div>
                 </div>
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
-                    <div class="g-text-center--xs">
 
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Tanmay</h4>
-                         <p class="g-color--white">+91 9373791216</p>
-                    </div>
-                </div>
             </div>
             </div>
         </div>

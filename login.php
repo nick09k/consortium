@@ -10,9 +10,9 @@
    }
   else if(isset($_POST['login1'])) {
     $db_host = "localhost:3306";
-    $db_username = "conso19";
+    $db_username = "conso20";
     $db_pass = "Conso@123";
-    $db_name = "conso19";
+    $db_name = "conso20";
 
     $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
     mysqli_select_db($con,$db_name) or die ("no database");
@@ -72,10 +72,10 @@
           $otp = '1234567890';
           $otp = str_shuffle($otp);
           $otp = substr($otp, 0, 6);
-          
+
           $q = "UPDATE Registrations SET otp='$otp' WHERE Email = '$email'";
 
-          
+
           if(mysqli_query($con,$q)){
 
 
@@ -89,7 +89,7 @@
           else{
             $msg = "Something Went Wrong";
           }
-          
+
         }
       }
       else{

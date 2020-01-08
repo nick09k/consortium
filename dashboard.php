@@ -3,9 +3,9 @@
   // error_reporting(E_ALL);
   //   ini_set('display_errors', '1');
   $db_host = "localhost:3306";
-  $db_username = "conso19";
+  $db_username = "conso20";
   $db_pass = "Conso@123";
-  $db_name = "conso19";
+  $db_name = "conso20";
   $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
   mysqli_select_db($con,$db_name) or die ("no database");
 
@@ -25,7 +25,7 @@
       $contact = $_SESSION['contact'];
       $query = "INSERT INTO Swadesh_team(Name,Email,Contact) VALUES('$teamname','$teamemail','$contact')";
       if(mysqli_query($con,$query)){
-        $s = 'Welcome Aboard Team '.$teamname.' | Swades19';
+        $s = 'Welcome Aboard Team '.$teamname.' | Swades20';
 
         htmlMail($teamemail,$s,$_SESSION['name'],$teamname, 'Swadesh');
         #Adding Menbers
@@ -41,7 +41,7 @@
 
           $query = "INSERT INTO Swadesh(Name,Main_Email,Email,Contact) VALUES('$membername','$memberteam','$memberemail','$memberphone')";
           if(mysqli_query($con,$query)){
-            $s = 'Welcome Aboard Team '.$teamname.' | Swades19';
+            $s = 'Welcome Aboard Team '.$teamname.' | Swades20';
             htmlMail($memberemail,$s,$membername,$teamname, 'Swadesh');
 
           }
@@ -246,7 +246,7 @@
                             <div class="product-card__item-text-v2">
                               <h2 class="g-color--white g-text-center--xs g-font-size-16--xs" style="text-decoration: underline;"><b><?php echo $events[$var] ?></b></h2>
 
-                              
+
                               <p class="g-color--white g-text-center--xs g-font-size-14--xs">
                                 <?php
 
@@ -267,18 +267,18 @@
                                   }
 
                                 }
-                                 
-                                 ?> 
+
+                                 ?>
 
                               </p>
                               <br>
                               <br>
 
                               <div class="wow fadeInLeft g-text-center--xs" data-wow-duration=".3" data-wow-delay=".5s" style="display: flex;justify-content: center;">
-                                  <a id="reg_button" href="/<?php if($events[$var] == 'Brainathon'){echo 'brainathon.php';}else {echo $events[$var].'.php';} ?>" target="_blank" title="Register">  
+                                  <a id="reg_button" href="/<?php if($events[$var] == 'Brainathon'){echo 'brainathon.php';}else {echo $events[$var].'.php';} ?>" target="_blank" title="Register">
                                       <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">View Event</span>
                                   </a>
-                                  <a id="reg_button" href="<?php if($events[$var] == 'Brainathon'){echo'/paybrain.php';}else{echo '#'.$events[$var].'click';} ?>" title="Register">  
+                                  <a id="reg_button" href="<?php if($events[$var] == 'Brainathon'){echo'/paybrain.php';}else{echo '#'.$events[$var].'click';} ?>" title="Register">
                                       <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50"><?php if($events[$var] == 'Brainathon'){echo'Pay Here';}else{echo 'Your Team';} ?></span>
                                   </a>
                               </div>
@@ -398,7 +398,7 @@
                             <option value="" selected="" disabled="" hidden="">Add more members</option>
                             <option value="1" style="color:black">0 (Single Member)</option>
                             <option value="2" style="color:black">1</option>
-                            
+
                         </select>
                     </div>
 
@@ -466,7 +466,7 @@
           ?>
         </div>
 
-        
+
 
         <!-- BizQuiz -->
 
@@ -504,7 +504,7 @@
                         <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input" name="number" placeholder="* Add more members" id="members-AdVenture">
                             <option value="" selected="" disabled="" hidden="">Add more members</option>
                             <option value="2" style="color:black">1</option>
-                            
+
                         </select>
                     </div>
 
@@ -536,7 +536,7 @@
 
         </div>
 
-        
+
 
         <div class="" id="ConsoWorld">
 
@@ -595,7 +595,7 @@
             $("html ,body").animate({ scrollTop: y},200);
         });
 
-        
+
 
         </script>
 

@@ -10,7 +10,7 @@ if(isset($_POST['select']) && isset($_SESSION['auth']) && $_SESSION['auth'] ){
     }
     if( $type == 0){
         // Authentication successful - Set session
-        
+
         $_SESSION['event'] = $event;
         // setcookie("username", $_POST['name'], time()+(84600*30));
         header('Location: database.php');
@@ -18,7 +18,7 @@ if(isset($_POST['select']) && isset($_SESSION['auth']) && $_SESSION['auth'] ){
     }
     else if( $type == 1){
         // Authentication successful - Set session
-        
+
 
         if($event == 'Townhall' || $event == 'Expo' || $event == 'Azure' || $event == 'Brainathon'){
             $msg = "ERROR: Access Denied!";
@@ -36,7 +36,7 @@ if(isset($_POST['select']) && isset($_SESSION['auth']) && $_SESSION['auth'] ){
 
 
 else if(isset($_POST['login'])){
-    
+
     $type = $_POST['type'];
     $pass = $_POST['pass'];
 
@@ -49,14 +49,14 @@ else if(isset($_POST['login'])){
         // Authentication successful - Set session
         $_SESSION['auth'] = true;
         $_SESSION['type'] = $type;
-        
+
     }
     else if( $type == 1 && $pass == "intheend" ){
         // Authentication successful - Set session
-       
+
         $_SESSION['auth'] = true;
         $_SESSION['type'] = $type;
-        
+
     }
     else {
         $msg = "ERROR: Invalid Relationship!";
@@ -83,7 +83,7 @@ else if(isset($_POST['login'])){
                     <div class="col-lg-4 col-sm-4 g-hor-centered-row__col">
                         <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
                             <p class="g-text-center--xs text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
-                            <?php 
+                            <?php
 
                             if(isset($_SESSION['auth']) && $_SESSION['auth'] ){
                             ?>
@@ -94,23 +94,23 @@ else if(isset($_POST['login'])){
                                 <div class="g-margin-b-30--xs">
                                     <select name="event" style="text-transform: none;" class="form-control s-form-v3__input" placeholder="* Type">
                                         <option disabled selected>Select Event</option>
-                                        <option value="Pitch_Perfect">Pitch Perfect</option>
                                         <option value="Swadesh_team">Swades</option>
+                                        <!-- <option value="Pitch_Perfect">Pitch Perfect</option>
                                         <option value="renderico_team">Render Ico</option>
                                         <option value="BizQuiz_team">Bizquiz</option>
                                         <option value="Azure">Azure</option>
                                         <option value="Brainathon">Brainathon</option>
                                         <option value="Townhall">Townhall</option>
-                                        <option value="Expo">Startup Expo</option>
+                                        <option value="Expo">Startup Expo</option> -->
                                     </select>
                                 </div>
-                                
+
                                 <div class="g-text-center--xs">
                                     <button type="submit" name="select" class="text-uppercase btn-block s-btn s-btn--md s-btn--white-bg g-radius--50 g-padding-x-50--xs g-margin-b-20--xs">View Now</button>
                                 </div>
                                 <div style="text-align: center;width: 100%;"><a href="/logout.php?q=db" class="g-color--white">Logout</a></div>
 
-                                
+
                             </form>
 
                         <?php }else{ ?>
@@ -118,7 +118,7 @@ else if(isset($_POST['login'])){
                                 <div class="g-text-center--xs g-margin-b-40--xs">
                                     <h2 class="g-font-size-30--xs g-color--white">Admin Login</h2>
                                 </div>
-                                
+
                                 <div class="g-margin-b-30--xs">
                                     <select name="type" style="text-transform: none;" class="form-control s-form-v3__input" placeholder="* Type">
                                         <option disabled selected>Select Type</option>
@@ -136,7 +136,7 @@ else if(isset($_POST['login'])){
                                 </div>
                             </form>
                         <?php } ?>
-                            
+
                         </div>
                     </div>
                 </div>

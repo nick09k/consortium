@@ -30,7 +30,7 @@
                 <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
                     <!--<img src="img/logo/ceoblack.png" alt="" width="200" style="margin-top:-100px; margin-left:-20px">-->
 
-                    <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>bizquiz</b></h1>
+                    <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>BizQuiz</b></h1>
 
                     <h3 class="g-color--white" style="    text-shadow: 2px 0 #333;">Love facts & Trivia about the business?</h3>
                     <p class="g-color--white g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>Then this is a right quiz for you</b></p><br/>
@@ -61,7 +61,7 @@
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
                         </div>
-                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Bizquizz is the quiz which will be based on topics such as Business, Innovation in technology and current affairs. But do not mistake it for a mere quizzing event; for us, it is a battle of wits, challenge to the wise and knowledgeable, and a never like before experience for many.</p>
+                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Bizquiz is the quiz which will be based on topics such as Business, Innovation in technology and current affairs. But do not mistake it for a mere quizzing event; for us, it is a battle of wits, challenge to the wise and knowledgeable, and a never like before experience for many.</p>
 
                     </div>
                     <div class="col-md-7 col-md-offset-1">
@@ -110,14 +110,23 @@
               <br/>
     		    	    <p>The Event comprises of 2 rounds starting with the questionnaire round which would be on the 10th of March, 2019</p><br/>
     		    	    <ol>
-    					    <li><h6>Round 1: Questionnaire (Elimination)</h6>
-                                <p><b>10th March, 2019</b>
-                                <br>The First round will be an offline elimination round which will be a pen and paper based round conducted in the auditorium of VNIT Nagpur in which both localities, as well as the outsider of Nagpur, will give the exam. Top 6 teams will qualify for the Second and final round.</p>
+
+    					    <li><h6>Round 1: General quiz round (Elimination)</h6>
+
+                                <br>There will be 25 questions (20 general + 5 Audio-visual)<br>
+                                  In case of tie breaks, qualifier will be decided on basis of 5 Audio-visual questions </p>
                             </li><br/>
 
-    					    <li><h6>Round 2: (Final Round)</h6>
-                                <p><b>10th March , 2019 </b><br>The Final round will be conducted by a well-known quizmaster Devendra Prabhune (devendra167@yahoo.co.in).<br>All the details of the round will be told on the spot by the Quizmaster followed by Prize Distribution to Winners.</p>
+    					    <li><h6>Round 2: Stage Round</h6>
+                                <p><br>The top 8 teams will be selected for this round.<br>
+                                  Every team will be asked a question. If it isn’t able to do so, the question will be passed on to the next team. The question would be passed till any team gives the correct answer. Total 16 questions would be asked. One round of question from the 1st to 8th team, and the next round of questions from 8th to 1st.<br>
+                                  After these 16 questions, a rapid fire round will be conducted, in which each team would be asked a series of questions in one minute. </p>
                             </li><br/>
+                  <li><h6>Round 3: Buzzer Round (Final)</h6>
+                                <p><br>This will be a buzzer round. Marks will be awarded for each correct question. Negative marks will be awarded for wrong answers.<br>
+                                        There will be 12 questions. After a question is asked, the one willing to give the answer will have to buzz, using the Sync Buzzer app on 4 phones.<br>
+                                        The top 2 teams will be awarded first and second positions. In case of a tie between highest scores, a tie breaker buzzer round will take place till the tie is broken. </p>
+                  </li>
     					</ol>
                         <br/>
               <h5><b>Eligibility Criteria </b></h5>
@@ -127,15 +136,8 @@
               </ol>
 
 
-              <br><h5><b>How to pay</b></h5>
-              <ol>
-              <li>Google Pay or Paytm on +91 98224 44112</li>
-              <li>Registration Desk, near Auditorium VNIT Nagpur</li>
-              </ol>
-              <br/>
-
     		    	</div>
-    		    	
+
 
     		    </div>
 		  </div>
@@ -150,20 +152,20 @@
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
                 <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Ashutosh Bhattacharjee</h4>
-                         <p class="g-color--white">+91 7745007997</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Anshu Beherae</h4>
+                         <p class="g-color--white">+91 98198 40087</p>
                     </div>
                 </div>
                 <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Hrushikesh</h4>
-                         <p class="g-color--white">+91 9082386525</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Anurag Baral</h4>
+                         <p class="g-color--white">+91 84519 88444</p>
                     </div>
                 </div>
-                <p class="col-xs-12 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm g-color--white g-color--white"><b>Mail us at</b> bizquizz19@gmail.com</p>
+                
 
-                
-                
+
+
             </div>
             </div>
         </div>

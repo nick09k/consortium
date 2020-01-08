@@ -13,7 +13,7 @@
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
-        <div class="s-promo-block-v3 g-fullheight--xs event-landing1" style="background: url('img/1920x1080/landing_swadesh.jpg');" id="swades">
+        <div class="s-promo-block-v3 g-fullheight--xs event-landing1" style="background: url('img/1920x1080/swades-landing-page.jpg');" id="swades">
             <div class="container g-ver-center--sm g-padding-y-125--xs g-padding-y-0--lg event-landing-inner">
 
                 <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
@@ -33,7 +33,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div>+91 8860548206
         </div>
         <!--========== END PROMO BLOCK ==========-->
 
@@ -101,23 +101,24 @@
     		    	    <p>Competition is divided into three rounds as follows:</p><br/>
     		    	    <ol>
 
-    					    <li><h6>Round 1: Questionnaire (Pre-Elimination)</h6><p><b>18th February, 2019 – 26th February, 2019 | Colleges in and around Nagpur</b><br>This will be a questionnaire round. Participants will be filling a questionnaire in which problem statement will be provided to them through mail. Participants will be selected for the next round on the basis of the answers to given problem statement. 25 teams will be selected for the further round.</p></li><br/>
+    					    <li><h6>Round 1: Questionnaire (Pre-Elimination)</h6><p><b>18th December, 2019 – 16th January, 2020 | Result - 24th January, 2020</b><br>Case studies related to effective water management, organic farming, crop rotation techniques, new age technologies will be given based on which multiple choice and brief theory questions will be asked.</p></li><br/>
 
-    					    <li><h6>Round 2: Village Round (Eliminations)</h6><p><b>3th March , 2019 | Journey from VNIT, Nagpur </b><br>This will be the village visit round. Participants will be allowed to peek into the village life, interact with the village inmates and identify their day to day problems. On the spot activities will skim off 10 teams resulting in 15 qualifying teams for the final round. </p></li><br/>
-    					    <li><h6>Presentation Round (Final Round)</h6><p><b> 10th March, 2019 | 10:00 am onwards
-                            </b><br>All the participants will be given a week’s time to find an appropriate solution to their identified problem which will be suitable to convert into a social enterprise as well as be feasible to work on ground level with the constraint resources and make an impact to the villager's life.</p></li><br/>
-                  
+    					    <li><h6>Round 2: Pitch Deck Preparation
+                  </h6><p><b>25th January, 2020 – 2nd February, 2020 | Result - 7th February, 2020 </b><br>In this round the selected teams from round 1 will be given a problem statement. This round will be a problem solving round and preparation of a pitch deck(a predifined template will be provided).</p></li><br/>
+    					    <li><h6>Round 3: Village Visit & Prototype</h6><p><b> 18th February, 2020 – 23th February, 2020 | Result - 23th February, 2020
+                            </b><br>Top 20 Teams selected on the basis of pitch deck submitted by the teams will go on a village tour where the teams are required to do a detailed study of the village conditions and problems faced by the people residing in the village and come up with innovative startups solving those problems.</p></li><br/>
+
     					</ol>
                         <br/>
               <h5><b>Eligibility Criteria </b></h5>
               <ol>
-                  <li><h6>Participation in teams is encouraged.<br>However, maximum members allowed per team are 4.</h6></li>
+                  <li><h6>Participation in teams is encouraged.<br>However, maximum members allowed per team are 5.</h6></li>
                   <li><h6>There is no restriction as such. Anyone above 16 years of age can participate</h6></li>
               </ol>
               <br/>
 
     		    	</div>
-    		    	
+
 
     		    </div>
 		  </div>
@@ -130,26 +131,33 @@
         <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
             <!--<div class="g-container--md g-padding-y-40--xs">-->
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
-                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Tejas Mulay</h4>
-                         <p class="g-color--white">+91 9146197728</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">B. Saketh</h4>
+                         <p class="g-color--white">+91 8501899949</p>+91 8860548206
                     </div>
                 </div>
-                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Ayushi Tiwari</h4>
-                         <p class="g-color--white">+91 8830314193</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Sakshi Anorkar</h4>
+                         <p class="g-color--white">+91 9637962363</p>
                     </div>
                 </div>
-                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
 
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Radhika Poddar</h4>
-                         <p class="g-color--white">+91 8975805110</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Suraj Kumar</h4>
+                         <p class="g-color--white">+91 8860548206</p>
                     </div>
                 </div>
-                
+                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+
+                    <div class="g-text-center--xs">
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Kanishka Meena</h4>
+                         <p class="g-color--white">+91 9325714868</p>
+                    </div>
+                </div>
+
             </div>
             </div>
         </div>

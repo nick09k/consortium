@@ -10,9 +10,9 @@
   }
 
     $db_host = "localhost:3306";
-    $db_username = "conso19";
+    $db_username = "conso20";
     $db_pass = "Conso@123";
-    $db_name = "conso19";
+    $db_name = "conso20";
 
     $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
     mysqli_select_db($con,$db_name) or die ("no database");
@@ -25,19 +25,17 @@
                 Password VARCHAR(255) NOT NULL,
                 Swadesh TINYINT(1) DEFAULT '0',
                 AdVenture TINYINT(1) DEFAULT '0',
-                Pitch_Perfect TINYINT(1) DEFAULT '0',
+                trec TINYINT(1) DEFAULT '0',
                 renderico TINYINT(1) DEFAULT '0',
                 CEO TINYINT(1) DEFAULT '0',
-                Teen_Titans TINYINT(1) DEFAULT '0',
-                BizMantra TINYINT(1) DEFAULT '0',
+                war_of_worlds TINYINT(1) DEFAULT '0',
                 BizQuiz TINYINT(1) DEFAULT '0',
-                Brainathon TINYINT(1) DEFAULT '0',
                 otp VARCHAR(255) NOT NULL
                 )";
 
     mysqli_query($con,$regquery);
 
-    $eve = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','ConsoWorld');
+    $eve = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz');
     for($var = 0; $var < 9; $var++){
       $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
                 ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -174,10 +172,11 @@
                     <div class="g-margin-b-30--xs">
                             <input type="password" class="form-control s-form-v3__input" placeholder="* Confirm Password" name="cpassword">
                     </div>
+
                 </div>
 
                 <div class="g-text-center--xs">
-                    <!-- <button type="submit" name="regnew" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Register</button> -->
+                    <button type="submit" name="regnew" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Register</button>
                 </div>
                 <a href="login.php" class="g-color--white g-font-size-13--xs ">Already Registered?</a><br>
 

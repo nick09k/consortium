@@ -110,7 +110,7 @@
               <br/>
               <h5><b>Structure</b></h5>
               <br/>
-    		  <p>The competition will run online as per the dates mentioned in this document. Participants have to submit their advertisements which will be focused on the given theme. <br>Registrations Start: <b>21st February, 2019</b><br>Registrations Ends: <b>6th March, 2019</b><br>Results Declaration: <b>9th March, 2019</b></p>
+    		  <p>The competition will run online as per the dates mentioned in this document. Participants have to submit their advertisements which will be focused on the given theme. <br>Registrations Start: <b>1st February, 2019</b><br>Registrations Ends: <b>22nd February, 2020</b><br>Results Declaration: <b>23rd February, 2020</b></p>
                         <br/>
               <h5><b>Eligibility Criteria </b></h5>
               <ol>
@@ -119,9 +119,6 @@
                   <li><p>Anyone can participate in Ad-Venture and must not violate any terms and conditions. The participant should strictly follow the rules given in the manual.</p></li>
               </ol>
               <br/>
-              <a href="https://drive.google.com/open?id=1EL1ImjvF1CJM5xjdwXosCHWibij9PVtM" target="_blank" class="g-color--primary">Competition Manual</a><br><br>
-              <a href="https://drive.google.com/open?id=1fpCjz-j6ZrK3aRwusBhg95PoJx-aiuyw" target="_blank" class="g-color--primary">Problem Statement 1</a><br/>
-              <a href="https://drive.google.com/open?id=1ciIxb855Rf3ff7WgXdFDGwvVrQmNbmDQ" target="_blank" class="g-color--primary">Problem Statement 2</a>
 
     		    	</div>
 
@@ -139,14 +136,14 @@
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
                 <div class="col-xs-4 col-md-offset-2 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Rohit Maheswari</h4>
-                         <p class="g-color--white">+91 8983682793</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Reetika Meena</h4>
+                         <p class="g-color--white">+91 9699173231</p>
                     </div>
                 </div>
                 <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Priyam Raj Bharti</h4>
-                         <p class="g-color--white">+91 9102813905</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Siddhant Wathore</h4>
+                         <p class="g-color--white">+91 8859393659</p>
                     </div>
                 </div>
 

@@ -50,7 +50,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                   <body>
 
                       <div style='background: #0b0b0b; padding:10px 30px;'><img src='https://www.ecellvnit.org/img/logo-ecell.png'></div>
-                      <h2 style='font-size:22px;'>Welcome to Consortium'19</h2><br>
+                      <h2 style='font-size:22px;'>Welcome to Consortium'20</h2><br>
 
                       <div class='context'>
 
@@ -622,7 +622,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                                   Your time is now! This Conso\'19, battle your wits and challenge the wise !
 
                               </p>
-                              
+
                               <p>
                                   To complete your registration for Bizquiz please make the required payment of <b>INR 50</b>.
                                   <br><br>
