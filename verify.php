@@ -1,7 +1,7 @@
 <?php
 @session_start();
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+// error_reporting(E_ALL);
+// ini_set('display_errors', '1');
 require_once('includes/mailing.php');
 $pagetitle = 'Verify | Consortium';
 $verify = $_SESSION['verify'];
@@ -69,7 +69,7 @@ elseif(isset($_POST['resend'])) {
     $msg = "An OTP is sent to your registered email id. Please enter the OTP below to confirm your email address.";
     $s = "Verify your Email | E-Cell VNIT Nagpur";
     $_SESSION['verify'] = "Welcome. An OTP is sent to your registered email id. Please enter the OTP below to confirm your email address.";
-    htmlMail($email,$s,'',$otp, 'otp');
+    htmlMail($email,$s,$name,$otp, 'otp');
     header('location:verify.php?email='.$email.'');
   }
   else{
