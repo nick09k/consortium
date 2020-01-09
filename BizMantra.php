@@ -44,7 +44,7 @@
                         <br>
                         <br>
 
-                        <a href="https://drive.google.com/file/d/1X0X61o3jGrTVy5emo81qXzuLEGcrfWdy/view?usp=drivesdk" class="g-color--white g-font-size-18--xs">View Round 1 Qualifiers</a>
+                        
                         <br>
                         <br>
 
