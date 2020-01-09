@@ -35,22 +35,23 @@
                                         <!--<a href="#events" class="s-header-v2__nav-link">Events</a>-->
                                         <a href="index.html" class="dropdown-toggle s-header-v2__nav-link -is-active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="g-font-size-10--xs g-margin-l-5--xs ti-angle-down"></span></a>
                                         <ul class="dropdown-menu s-header-v2__dropdown-menu">
+                                            <li><a href="/Swadesh.php" class="s-header-v2__dropdown-menu-link">Swades</a></li>
                                             <li><a href="https://startupconclave.ecellvnit.org" class="s-header-v2__dropdown-menu-link">Startup Conclave</a></li>
+                                            <li><a href="https://neo.ecellvnit.org" class="s-header-v2__dropdown-menu-link">NEO</a></li>
                                             <li><a href="/AdVenture.php" class="s-header-v2__dropdown-menu-link">AdVenture</a></li>
                                             <li><a href="/CEO.php" class="s-header-v2__dropdown-menu-link">CEO</a></li>
-                                            <li><a href="/Swadesh.php" class="s-header-v2__dropdown-menu-link">Swades</a></li>
-                                            <li><a href="/brainathon.php" class="s-header-v2__dropdown-menu-link">Brainathon</a></li>
+                                            <li><a href="/nirmaan.php" class="s-header-v2__dropdown-menu-link">Nirmaan</a></li>
                                             <li><a href="/renderico.php" class="s-header-v2__dropdown-menu-link">Render.ico</a></li>
                                             <li><a href="/BizQuiz.php" class="s-header-v2__dropdown-menu-link">Bizquiz</a></li>
                                             <li><a href="/BizMantra.php" class="s-header-v2__dropdown-menu-link">Bizmantra</a></li>
                                             <li><a href="/Pitch_Perfect.php" class="s-header-v2__dropdown-menu-link">Pitch Perfect</a></li>
-                                            <li><a href="/wallstreet.php" class="s-header-v2__dropdown-menu-link">Wallstreet</a></li>
+                                            <li><a href="/expo.php" class="s-header-v2__dropdown-menu-link">Startup Expo</a></li>
 
                                         </ul>
                                     </li>
 
-                                    <li class="s-header-v2__nav-item">
-                                        <!--<a href="#events" class="s-header-v2__nav-link">Events</a>-->
+                                    <!-- <li class="s-header-v2__nav-item">
+                                        <a href="#events" class="s-header-v2__nav-link">Events</a>
                                         <a href="/attractions.php" class="dropdown-toggle s-header-v2__nav-link -is-active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Attractions <span class="g-font-size-10--xs g-margin-l-5--xs ti-angle-down"></span></a>
                                         <ul class="dropdown-menu s-header-v2__dropdown-menu">
                                             <li><a href="/townhall.php" class="s-header-v2__dropdown-menu-link">TownHall</a></li>
@@ -63,8 +64,8 @@
 
 
                                         </ul>
-                                    </li>
-                                    <li class="s-header-v2__nav-item"><a href="https://www.ecellvnit.org/store.php" class="s-header-v2__nav-link">Merchandise</a></li>
+                                    </li> -->
+                                    <!-- <li class="s-header-v2__nav-item"><a href="https://www.ecellvnit.org/store.php" class="s-header-v2__nav-link">Merchandise</a></li> -->
                                     <li class="s-header-v2__nav-item"><a href="https://www.ecellvnit.org/spons.php" class="s-header-v2__nav-link">Previous Sponsors</a></li>
                                     <li class="s-header-v2__nav-item"><a href="/team.php" class="s-header-v2__nav-link">Team</a></li>
                                     <?php if($_SESSION['email']){ ?>

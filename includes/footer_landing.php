@@ -69,9 +69,9 @@
                     </div>
                     <div class="col-sm-12 col-md-3 col-lg-3">
                         <h4 class="g-color--white-opacity"><b>Buy Merchandise</b></h4>
-                        <a href="https://store.ecellvnit.org/" target="_blank" class="g-color--white-opacity-light footer-para g-font-size-16--xs">
-                            Buy official merchandise of Consortium'19 at Ecell VNIT online store.
-                        </a>
+                        <p class="g-color--white-opacity-light footer-para g-font-size-16--xs">
+                            Buy official merchandise of Consortium'20 at Ecell VNIT online store.
+                        </p>
                     </div>
                     <div class="col-sm-12 col-md-3 col-lg-3">
                         <h4 class="g-color--white-opacity"><b>Startup Expo</b></h4>
