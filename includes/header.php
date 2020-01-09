@@ -50,6 +50,7 @@
                                         </ul>
                                     </li>
 
+
                                     <!-- <li class="s-header-v2__nav-item">
                                         <a href="#events" class="s-header-v2__nav-link">Events</a>
                                         <a href="/attractions.php" class="dropdown-toggle s-header-v2__nav-link -is-active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Attractions <span class="g-font-size-10--xs g-margin-l-5--xs ti-angle-down"></span></a>
@@ -66,6 +67,7 @@
                                         </ul>
                                     </li> -->
                                     <!-- <li class="s-header-v2__nav-item"><a href="https://www.ecellvnit.org/store.php" class="s-header-v2__nav-link">Merchandise</a></li> -->
+
                                     <li class="s-header-v2__nav-item"><a href="https://www.ecellvnit.org/spons.php" class="s-header-v2__nav-link">Previous Sponsors</a></li>
                                     <li class="s-header-v2__nav-item"><a href="/team.php" class="s-header-v2__nav-link">Team</a></li>
                                     <?php if($_SESSION['email']){ ?>
@@ -79,6 +81,7 @@
                                       </li>
                                   <?php }else{ ?>
                                     <li class="s-header-v2__nav-item"><a href="/login.php" class="s-header-v2__nav-link">Login</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="/regnew.php" class="s-header-v2__nav-link">Register</a></li>
                                     <!-- <li class="s-header-v2__nav-item"><a href="login.php" class="s-header-v2__nav-link">Login</a></li> -->
                                     <?php } ?>
                                 </ul>
