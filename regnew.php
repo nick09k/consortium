@@ -2,8 +2,8 @@
   @session_start();
   $pagetitle = "Register Now | Consortium'19";
   require_once('includes/mailing.php');
-  error_reporting(E_ALL);
-  ini_set('display_errors', '1');
+  // error_reporting(E_ALL);
+  // ini_set('display_errors', '1');
 
   if($_SESSION['email']){
     header('location:dashboard.php');
