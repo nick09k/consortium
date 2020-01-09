@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-    
+
     <?php $pagetitle = 'StartUp Expo | Consortium'; ?>
     <!-- Begin Head -->
     <?php include("includes/head.php")?>
@@ -112,14 +112,14 @@
 
 
                     <h1 class="g-font-size-50--xs g-font-size-60--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>STARTUP<br>EXPO</b></h1>
-                    <p class="g-color--white-opacity" style="position: relative;">in association with</p>
-                    <img src="img/tielogo.jpg" alt="TIE Nagpur" style="z-index:2; position:relative; margin-top: -20px;" height="35"/>
+                    <!-- <p class="g-color--white-opacity" style="position: relative;">in association with</p>
+                    <img src="img/tielogo.jpg" alt="TIE Nagpur" style="z-index:2; position:relative; margin-top: -20px;" height="35"/> -->
 
                     <div class="row">
                         <br>
                         <div class="col-sm-6 col-sm-5 col-lg-5" style="padding-left:0px !important;">
                             <p class="g-color--white-opacity g-font-size-20--xs"><b>Ready, Set, Network!</p>
-                            <p class="g-color--white-opacity g-font-size-18--xs"> 9th March 2019</p>
+                            <p class="g-color--white-opacity g-font-size-18--xs"> 22<sup>nd</sup> February 2020</p>
                         </div>
                     </div>
 
@@ -224,9 +224,9 @@
               <div class="container g-padding-y-0--xs">
 
                   <div class="row">
-                      <div class="col-sm-12 col-md-4">
+                      <!-- <div class="col-sm-12 col-md-4">
                           <a href="https://novzo.in" target="_blank"><img src="img/expo/novzo.png" alt="Novzo" class="imgs" /></a>
-                      </div>
+                      </div> -->
 
 
                   </div>

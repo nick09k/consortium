@@ -234,7 +234,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
                             <p class="g-color--white-opacity g-font-size-16--sm">Startup Expo is a chance for tech startups to get out of their shell and interact with mentors and investors from all over the country.<br><b>Ready, Set, Network!</b></p>
-                            <p class="g-color--white-opacity g-font-size-16--sm">9th Mar 2019</p>
+                            <p class="g-color--white-opacity g-font-size-16--sm">22<sup>nd</sup> February 2020</p>
 
                         </div>
                     </div>
@@ -256,7 +256,7 @@
 
 
         <!-- Azure Space -->
-        <div class="s-promo-block-v3 event-landing1" style="background: url('img/1920x1080/landing-azure-main.jpg');height: 80vh" id="swades">
+        <!-- <div class="s-promo-block-v3 event-landing1" style="background: url('img/1920x1080/landing-azure-main.jpg');height: 80vh" id="swades">
           <style type="text/css">
                 @media(max-width: 767px){
                   .brain{
@@ -268,7 +268,7 @@
 
 
                 <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
-                    <!--<img src="img/logo/ceoblack.png" alt="" width="200" style="margin-top:-100px; margin-left:-20px">-->
+                    <img src="img/logo/ceoblack.png" alt="" width="200" style="margin-top:-100px; margin-left:-20px">
 
 
                     <h1 class="g-font-size-45--xs g-font-size-60--sm g-font-size-70--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>Azure Space</b> <i class="ti-cloud-down"></i></span></h1>
@@ -289,7 +289,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
 
         <!--TownHall-->
@@ -306,17 +306,17 @@
 
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
-                            <p class="g-color--white-opacity g-font-size-16--sm">Townhall is one of the star attractions of Consortium’19. Get a chance to get your question answered by our celebrity guest, live.<br><b>And the speaker? Stay Curious.</b></p>
+                            <p class="g-color--white-opacity g-font-size-16--sm">Townhall was one of the star attractions of Consortium’19. Get a chance to get your question answered by our celebrity guest, live.<br><b>And the speaker? Expect the Unexpected!</b></p>
 
 
                         </div>
                     </div>
-                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                    <!-- <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
 
                                 <a id="reg_button" href="/townhall.php" title="Register">
                                     <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--primary g-padding-x-15--xs">Know More</span>
                                 </a>
-                            </div>
+                    </div> -->
                 </div>
 
             </div>
@@ -345,7 +345,7 @@
 
                     <div class="row">
                         <div class="col-sm-6 col-md-5">
-                            <p class="g-color--white-opacity g-font-size-16--sm">Zero to One is a panel discussion event of Consortium’19. It aims to inculcate knowledge about corporate sector and spread awareness via discussion between our esteemed guests from various sectors having different experiences who guide the attendees in the field of entrepreneurship and innovation. </b></p>
+                            <p class="g-color--white-opacity g-font-size-16--sm">Zero to One was a panel discussion event of Consortium’19. It aims to inculcate knowledge about corporate sector and spread awareness via discussion between our esteemed guests from various sectors having different experiences who guide the attendees in the field of entrepreneurship and innovation. </b></p>
                         </div>
                     </div>
 
@@ -387,14 +387,14 @@
                         </div>
 
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-sm-6 col-md-5">
                             <a id="reg_button" href="/intern.php" title="Register">
-                                    <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                    <i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>
                                     <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-20--xs g-padding-y-10--xs g-padding-x-30--md g-padding-y-15--md g-font-size-13--xs g-color--primary g-padding-x-15--xs">Register Now</span>
                                 </a>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -407,11 +407,11 @@
 
         <!--Internship Fair-->
 
-        <div class="s-promo-block-v3 g-bg-position--center internship">
+        <!-- <div class="s-promo-block-v3 g-bg-position--center internship">
             <div style="" class="intern-back"> </div>
 
             <div class="container g-padding-y-100--xs g-padding-y-0--lg">
-                <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
+                <img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">
                 <div class="g-margin-t-30--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
 
                     <h1 class="g-font-size-30--xs g-font-size-40--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;position: relative;"><b>INTERNSHIP<br>FAIR</b></h1>
@@ -422,7 +422,7 @@
                             <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
 
                                 <a id="reg_button" href="/intern.php" title="Register">
-                                    <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                    <i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>
                                     <span class="text-uppercase s-btn--white-bg g-radius--50 g-padding-x-20--xs g-padding-y-10--xs g-padding-x-30--md g-padding-y-15--md g-font-size-13--xs g-color--primary g-padding-x-15--xs">Know More</span>
                                 </a>
                             </div>
@@ -434,22 +434,22 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
 
 
         <!--Merchandise-->
-        <div class="s-promo-block-v3  tee g-padding-y-0--xs g-padding-y-40--md" style="min-height:60vh">
+        <!-- <div class="s-promo-block-v3  tee g-padding-y-0--xs g-padding-y-40--md" style="min-height:60vh">
             <div class="container g-padding-y-125--md g-padding-y-40--xs g-padding-y-40--md tee-inner" style=" position: relative;">
                 <div class="g-margin-t-30--xs g-margin-t-0--sm  g-padding-x-20--xs g-margin-t-125--lg g-margin-l-20--xs g-margin-l-80--sm">
                     <h1 class="g-font-size-30--xs g-font-size-40--sm g-font-size-60--lg g-color--white g-font-weight--600">CONSORTIUM'19<br><span style="color:#aaa;">OFFICIAL</span><br><span style="color:#555;"><b>MERCHANDISE</b></span></h1>
                 <p style="color:#aaa">*Available Sizes: S, M, L, XL, XXL</p>
-                <!-- <div class="pm-button text-uppercase btn-block s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-20--xs g-margin-b-20--xs tee-button" style=""><a href="https://www.payumoney.com/paybypayumoney/#/FEC5F0175992F7F3DE3976C404338B8D">Buy Now</a></div> -->
+                <div class="pm-button text-uppercase btn-block s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-20--xs g-margin-b-20--xs tee-button" style=""><a href="https://www.payumoney.com/paybypayumoney/#/FEC5F0175992F7F3DE3976C404338B8D">Buy Now</a></div>
 
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
 
 

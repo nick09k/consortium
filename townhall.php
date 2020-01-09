@@ -4,9 +4,9 @@
   require_once('includes/mailing.php');
 
   $db_host = "localhost:3306";
-  $db_username = "conso19";
+  $db_username = "conso20";
   $db_pass = "Conso@123";
-  $db_name = "conso19";
+  $db_name = "conso20";
 
   $con = mysqli_connect("$db_host","$db_username","$db_pass") or die ("could not connect to mysql");
   mysqli_select_db($con,$db_name) or die ("no database");
@@ -45,19 +45,19 @@
 
         if($num!=0){
 
-          
+
             $msg = "You are already registered with this consoID <b>".$data['Email']."</b> is already registered.<br> <span style='font-size:18px;'>Kindly use different email address for new registration.</span>";
-          
+
         }
         else{
 
           $q = "INSERT INTO Townhall(name,Email,contact,college,year) VALUES('$name','$email','$contact','$college','$year')";
           if(mysqli_query($con,$q)){
 
-            
+
               $_SESSION['msg'] = "Thank You for showing interest in TownHall by Simon Taufel. Confirmation mail has been sent to you.";
               htmlMail($email,'Welcome to Townhall by Simon Taufel | Consortium19','','','townhall');
-            
+
           }
           else{
               $msg = "Something went Wrong. <a href='townhall.php' style='color:#eee;'>Try Again</a>";
@@ -72,9 +72,9 @@
 
 
   }
-  
 
-  
+
+
 ?>
 
 <!DOCTYPE html>
@@ -92,7 +92,7 @@
         <!--========== END HEADER ==========-->
 
         <!--========== PROMO BLOCK ==========-->
-        
+
         <div class="s-promo-block-v3 g-fullheight--xs event-landing1 townhall" style="background:url('img/1920x1080/landing-townhall.jpg');" id="th">
           <style type="text/css">
                 @media(max-width: 767px){
@@ -105,7 +105,7 @@
             }
                 }
               </style>
-            
+
             <div class="container g-ver-center--sm g-padding-y-125--xs g-padding-y-0--lg event-landing-inner brain">
                 <!--<img src="img/logo/logo-teentitans.png" alt="" width="280" style="margin-top:-180px">-->
                 <div class="g-margin-t-100--xs g-margin-t-60--sm g-margin-t-100--md g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
@@ -123,9 +123,9 @@
                                 .live{
                                   background: #bd2620;padding: 2px;margin: 0px 5px;font-weight: lighter;
                                   -webkit-animation: example 2s ease;
-                                    
+
                                     animation: example 2s ease;
-                                    
+
                                     animation-iteration-count: infinite;
                                 }
                                 /* Safari 4.0 - 8.0 */
@@ -152,10 +152,10 @@
                             <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Register Now <span class="ti-angle-down"></span></span>
                         </a>
                         </div>
-                        
+
                     </div>
-                    
-                    
+
+
                 </div>
 
             </div>
@@ -178,8 +178,8 @@
             <form class="center-block g-width-500--sm g-text-center--xs g-width-600--md" method="post" action="" onsubmit="return validateData();">
 
                 <div class="permanent">
-                    
-                    
+
+
                     <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="college" placeholder="* College" id="members" >
                         <option value='' selected disabled hidden>Choose your College</option>
                         <option value='VNIT'>Visvesvaraya National Institute of Technology Nagpur</option>
@@ -193,13 +193,13 @@
                         <option value='Anjuman College of Engineering and Technology, Nagpur'>Anjuman College of Engineering and Technology, Nagpur</option>
                         <option value='Central India College of Engineering and Technology, Nagpur'>Central India College of Engineering and Technology, Nagpur</option>
                         <option value='Others'>Others</option>
-                        
 
-                        
+
+
                     </select>
                     <div class="row g-margin-b-50--xs">
-                        
-                        
+
+
                         <div class="col-sm-12 g-margin-b-30--xs g-margin-b-0--md">
                             <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="year" placeholder="* Year" id="members" >
                                 <option value='' selected disabled hidden>Year Of Study</option>
@@ -208,7 +208,7 @@
                                 <option value='3'>3rd Year</option>
                                 <option value='4'>4th Year</option>
                                 <option value='5'>5th Year</option>
-                                
+
                             </select>
                         </div>
                     </div>
