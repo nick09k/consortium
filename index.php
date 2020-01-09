@@ -31,7 +31,7 @@
 
                     </div>
                     <div class="col-md-6 col-md-offset-3">
-                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>21<sup>th</sup> - 23<sup>th</sup> February 20</b></p>
+                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>21<sup>th</sup> - 23<sup>th</sup> February 2020</b></p>
 
 
 
@@ -46,7 +46,7 @@
 
 
             <video autoplay loop autobuffer muted playsinline id="vid">
-              <source src="updated_landing.mp4" type="video/mp4" style="position:absolute; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100vh; border:none; margin:0; padding:0; overflow:hidden; z-index:0;">
+              <source src="video_landing.mp4" type="video/mp4" style="position:absolute; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100vh; border:none; margin:0; padding:0; overflow:hidden; z-index:0;">
               <img src="img/alt_landing.png" alt="">
             </video>
 

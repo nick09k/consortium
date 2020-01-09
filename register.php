@@ -217,16 +217,15 @@
                 <div class="permanent">
                   <select pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="event" placeholder="* No. of members" id="members" >
                       <option value='' selected disabled hidden>Choose an Event</option>
-                      <option value='sc'>Startup Conclave</option>
                       <option value='Swadesh'>Swades</option>
-                      <option value='AdVenture'>AdVenture</option>
+                      <!--<option value='AdVenture'>AdVenture</option>
                       <option value='Pitch_Perfect'>Pitch Perfect</option>
                       <option value='renderico'>render.ico</option>
-                      <option value='CEO'>CEO</option>
-                      <!-- <option value='Teen_Titans'>Teen Titans</option> -->
+                      <option value='CEO'>CEO</option>-->
+                      <!-- <option value='Teen_Titans'>Teen Titans</option>
                       <option value='BizMantra'>BizMantra</option>
                       <option value='BizQuiz'>BizQuiz</option>
-                      <!-- <option value='Brainathon'>Brainathon</option> -->
+                       <option value='Brainathon'>Brainathon</option> -->
                       <!-- <option value='Wallstreet'>Wallstreet</option> -->
                   </select>
                 </div>

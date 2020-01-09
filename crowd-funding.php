@@ -50,7 +50,7 @@
                             <div class="col-md-4 col-xs-12 g-full-width--xs  g-margin-b-0--lg">
                                 <div class="g-text-center--xs">
                                     <div class=" g-margin-b-0--xs">
-                                        <h3>Alumni Outreach</h3>
+                                        <h3>Perks for Alumni Outreach</h3>
                                     </div>
                                     <div class="center-block g-hor-divider__solid--white g-width-40--xs g-margin-b-25--xs"></div>
                                     <p>Initial blast to the alumni network, primarily focusing on alumni working or heading start-ups / angel investors and upcoming start-ups.</p>

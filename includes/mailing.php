@@ -61,7 +61,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <p>Thank You for registering! You are now a part of one of the India's Biggest Entrepreneurship Summit.</p>
                           <div>
                               <p>We are well pleased to have you on board.<br/><br/>
-                              To verify your Conso-ID: $email use this OTP <br/> <span style='font-size:24px'>".$teamname."</span></p>
+                              To verify your email: $email use this OTP <br/> <span style='font-size:24px'>".$teamname."</span></p>
                               For queries and in case of any difficulty, feel free to contact us.<br>
                                   <p>
                                   With warm regards,<br>
@@ -146,7 +146,6 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                         </p>
                         <br>
 
-                          <a style="display:block; text-align: center;width:100px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://goo.gl/forms/xXRcPeOWCat1gGtr1">Questionnaire</a>
 
                         <p>
                           <br>
@@ -155,8 +154,8 @@ function htmlMail($t, $sub, $name, $teamname, $event){
 
                           <br>
                             With warm regards,<br>
-                            Anushree Rungta<br>
-                            Core-Coordinator, Ecell VNIT
+
+                            Ecell VNIT
                         </p>
                     </div>
                 </div>
@@ -235,8 +234,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                         </p>
                         <br>
 
-                          <a style="display:block; text-align: center;width:100px; padding:12px 10px; background: #111; color:#FFF; text-decoration: none; border-radius:30px; position: relative;" href="https://drive.google.com/open?id=1sAFvYDP4dwP4pt9BWmCtx5EDMno3WCfX">Problem Statement
-                          </a>
+
 
                         <p>
 
@@ -876,7 +874,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     }
 
     $url = 'https://startupconclave.ecellvnit.org/send';
-    $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'intheend');
+    $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'Entrepreneurs1999');
 
     // use key 'http' even if you send the request to https://...
     $options = array(
