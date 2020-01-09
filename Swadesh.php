@@ -101,18 +101,18 @@
     		    	    <p>Competition is divided into three rounds as follows:</p><br/>
     		    	    <ol>
 
-    					    <li><h6>Round 1: Questionnaire (Pre-Elimination)</h6><p><b>18th December, 2019 – 16th January, 2020 | Result - 24th January, 2020</b><br>Case studies related to effective water management, organic farming, crop rotation techniques, new age technologies will be given based on which multiple choice and brief theory questions will be asked.</p></li><br/>
+    					    <li><h6>Round 1: Questionnaire (Pre-Elimination)</h6><p><b>9<sup>th</sup> January, 2020 – 28<sup>th</sup> January, 2020 | Result - 1<sup>st</sup> February, 2020</b><br>Case studies related to effective water management, organic farming, crop rotation techniques, new age technologies will be given based on which multiple choice and brief theory questions will be asked.</p></li><br/>
 
     					    <li><h6>Round 2: Pitch Deck Preparation
-                  </h6><p><b>25th January, 2020 – 2nd February, 2020 | Result - 7th February, 2020 </b><br>In this round the selected teams from round 1 will be given a problem statement. This round will be a problem solving round and preparation of a pitch deck(a predifined template will be provided).</p></li><br/>
-    					    <li><h6>Round 3: Village Visit & Prototype</h6><p><b> 18th February, 2020 – 23th February, 2020 | Result - 23th February, 2020
+                  </h6><p><b>2<sup>nd</sup> February, 2020 – 8<sup>th</sup> February, 2020 | Result - 11<sup>th</sup> February, 2020 </b><br>In this round the selected teams from round 1 will be given a problem statement. This round will be a problem solving round and preparation of a pitch deck(a predifined template will be provided).</p></li><br/>
+    					    <li><h6>Round 3: Village Visit & Prototype</h6><p><b> 18<sup>th</sup> February, 2020 – 23<sup>th</sup> February, 2020 | Result - 23<sup>th</sup> February, 2020
                             </b><br>Top 20 Teams selected on the basis of pitch deck submitted by the teams will go on a village tour where the teams are required to do a detailed study of the village conditions and problems faced by the people residing in the village and come up with innovative startups solving those problems.</p></li><br/>
 
     					</ol>
                         <br/>
               <h5><b>Eligibility Criteria </b></h5>
               <ol>
-                  <li><h6>Participation in teams is encouraged.<br>However, maximum members allowed per team are 5.</h6></li>
+                  <li><h6>Participation in teams is encouraged.<br>However, maximum members allowed per team are 4.</h6></li>
                   <li><h6>There is no restriction as such. Anyone above 16 years of age can participate</h6></li>
               </ol>
               <br/>
@@ -134,7 +134,7 @@
                 <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
                         <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">B. Saketh</h4>
-                         <p class="g-color--white">+91 8501899949</p>+91 8860548206
+                         <p class="g-color--white">+91 8501899949</p>
                     </div>
                 </div>
                 <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">

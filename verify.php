@@ -89,7 +89,7 @@ elseif(isset($_POST['resend'])) {
         <div class="g-container--sm g-padding-y-80--xs g-padding-y-125--sm">
             <div class="g-text-center--xs g-margin-b-60--xs">
                 <!-- <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Sign Up</p> -->
-                <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">Kindly Verify Your Conso ID</h2>
+                <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">Kindly Verify Your Email ID</h2>
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $verify; ?></p>
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs"><?php echo $msg; ?></p>
                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--red g-letter-spacing--2 g-margin-b-25--xs" id="message"></p>

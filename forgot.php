@@ -26,7 +26,7 @@
 
       $to = $email;
 
-      $subject = "Reset Your Password | Consortium'19 Inspiring Curiosity";
+      $subject = "Reset Your Password | E-Cell VNIT Nagpur";
       $html = "
       <!DOCTYPE html>
           <html>
@@ -71,7 +71,7 @@
               <body>
 
                   <div style='background: #0b0b0b; padding:10px 30px;'><img src='https://www.ecellvnit.org/img/logo-ecell.png'></div>
-                  <h2 style='font-size:22px;'>Consortium'19, Inspiring Curiosity</h2><br>
+                  <h2 style='font-size:22px;'>E-Cell VNIT | Consortium'20</h2><br>
 
                   <div class='context'>
 
@@ -95,7 +95,7 @@
 
 
       $url = 'https://startupconclave.ecellvnit.org/send';
-      $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'intheend');
+      $data = array('subject' => $subject, 'email' => $to, 'html' => $html, 'pass' => 'Entrepreneurs1999');
 
       // use key 'http' even if you send the request to https://...
       $options = array(
@@ -276,7 +276,7 @@
               <form class='center-block g-width-500--sm g-width-550--md' method='post' action='forgot.php'>
                   <div class='permanent'>
                     <div class='g-margin-b-30--xs'>
-                      <input type='email' class='form-control s-form-v3__input' placeholder='* Your CONSO ID?' name='reset_email' style='text-transform: none' id='email'>
+                      <input type='email' class='form-control s-form-v3__input' placeholder='* Your EMAIL ID?' name='reset_email' style='text-transform: none' id='email'>
                     </div>
                   </div>
 
