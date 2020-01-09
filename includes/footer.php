@@ -17,7 +17,7 @@
                             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
                                 <h4 class="g-color--white-opacity">Contact Us</h4>
                                     <p class="g-color--white-opacity-light">For Association Opportunities:<br><b>contact@ecellvnit.org</b></p>
-                                    <p class="g-color--white-opacity-light">For Sponsorship Opportunities:<br><b>shubhamjadhav@ecellvnit.org<b></b></b></p>
+                                    <p class="g-color--white-opacity-light">For Sponsorship Opportunities:<br><b>aryan199841@gmail.com</b><br><b>agnikrishnaa@gmail.com</b></p>
                             </div>
                             <div class="col-sm-12 col-sm-5 col-md-3 col-lg-3">
 
