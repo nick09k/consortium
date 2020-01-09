@@ -41,41 +41,41 @@
           <ol>
             <li>Before starting the test, make sure you are connected with high speed internet connection.</li>
             <li>Once you start the test, do not refresh.</li>
-     <li>All the Questions are compulsory.</li>
-     <li>The Question Paper is divided in 2 parts(PART 1 AND PART 2).</li>
-     <li>PART 1 contains two case studies and 4 multiple choice questions are asked on each case study.</li>
-     <li>PART 2 contains two descriptive type questions.</li>
-     <li>+4 marks will be awarded for each correct answer and -1 for each wrong answer in PART 1.</li>
-     <li>+10 marks (best answer) for each answer in PART 2. Relative marking will be done.</li>
-     <li>Total time for the exam is 45 minutes.</li>
-     <li>Submit the paper before the time overs otherwise your responses will be submitted automatically.</li>
-   </ol>
-   <br>
-   <h5 class="maximummarks">M.M.:- 52</h5>
-    <br>
- </div>
+            <li>All the Questions are compulsory.</li>
+            <li>The Question Paper is divided in 2 parts(PART 1 AND PART 2).</li>
+            <li>PART 1 contains two case studies and 4 multiple choice questions are asked on each case study.</li>
+            <li>PART 2 contains two descriptive type questions.</li>
+            <li>+4 marks will be awarded for each correct answer and -1 for each wrong answer in PART 1.</li>
+            <li>+10 marks (best answer) for each answer in PART 2. Relative marking will be done.</li>
+            <li>Total time for the exam is 45 minutes.</li>
+            <li>Submit the paper before the time overs otherwise your responses will be submitted automatically.</li>
+          </ol>
+          <br>
+          <h5 class="maximummarks">M.M.:- 52</h5>
+          <br>
+        </div>
 
 
-  </div>
+        </div>
 
 
 
 
-<div id="test" style="display: none;">
+        <div id="test" style="display: none;">
 
- <form id="myForm1" name="myForm1" action="answer-submit.php" method='post' >
- <div id="questions">
-  <p class="allthebest">----ALL THE BEST----</p>
-<h3>PART 1: MULTIPLE CHOICE QUESTIONS:</h3>
-<h4>The Reforestation</h4></br>
-<h5>### Case study for Q1 to Q4.</h5>
-The Qiang people live in the Sichuan province of China. This area is important for its mountain forests, which are a major source of water for the Yangtze river which runs through China. Deforestation and popu¬lation growth over four decades have caused the forests to shrink by up to 40%. The loss of so much forest has also meant that many species of plants and animals (biodiversity) has been lost.</br>
-By the 1980’s so much of the forest had disappeared that the Government realized that something had to be done, and funded a reforestation program. However, before the government set up a specific program of action, it sent teams of scientists to the villages to figure out how they could work together. The government knew that if the villagers didn’t believe in their program, and know how it could benefit them, then there was no chance of success.</br>
-They decided that they would need to rely on the native knowledge of the Qiang people to help decide what to plant and how ta plant it, and incorporate their methods of forest management. It turned out that col¬lection of plants for herbal medicines was a major source of income for the Qiang people. The government decided to blend the cultivation of these plants with the project of reforestation. This guaranteed that the farmers would participate. The final solution was to plant trees in terraces, or strips. Horizontal bands of original vegetation, the native plants collected for medicines, were alternated with bands of tree seedlings.</br>
-This system of alternating bands protected the soil from erosion and water runoff, brought the forest back to life, and increased the diversity of species in the forests. Because wooded areas were being opened up for cultivation by Iocals, they no longer had to go into the areas of protected forest to grow and collect medicinal plants. This means that protected areas will actually remain protected. It has allowed for the replanting and restoration of forest. The terraces have also created the ideal conditions for cultivating medicinal plants, so that the income and standard of living of villagers has gone up. The project has also given a higher status to medicinal knowledge, which will help ensure that the knowledge is passed down to future generations.</br>
-In the past attempts at reforestation in China had involved banning locals from entering the forests. If the government had done this, the project would not have been sustainable, because Qiang people tradition¬ally cultivate medicinal plants in surrounding woodland and around their homes, and they were not about to change their way of life and means of supporting themselves. This project focused not only on replanting trees, but on opening up woodlands to locals, so that they could cultivate under the tree canopy as they had always done.</br>
-<h5>***Answer the following question after going through the above case study.</h5>
-</br>
+          <form id="myForm1" name="myForm1" action="answer-submit.php" method='post' >
+            <div id="questions">
+              <p class="allthebest">----ALL THE BEST----</p>
+              <h3>PART 1: MULTIPLE CHOICE QUESTIONS:</h3>
+              <h4>The Reforestation</h4></br>
+              <h5>### Case study for Q1 to Q4.</h5>
+              The Qiang people live in the Sichuan province of China. This area is important for its mountain forests, which are a major source of water for the Yangtze river which runs through China. Deforestation and popu¬lation growth over four decades have caused the forests to shrink by up to 40%. The loss of so much forest has also meant that many species of plants and animals (biodiversity) has been lost.</br>
+              By the 1980’s so much of the forest had disappeared that the Government realized that something had to be done, and funded a reforestation program. However, before the government set up a specific program of action, it sent teams of scientists to the villages to figure out how they could work together. The government knew that if the villagers didn’t believe in their program, and know how it could benefit them, then there was no chance of success.</br>
+              They decided that they would need to rely on the native knowledge of the Qiang people to help decide what to plant and how ta plant it, and incorporate their methods of forest management. It turned out that col¬lection of plants for herbal medicines was a major source of income for the Qiang people. The government decided to blend the cultivation of these plants with the project of reforestation. This guaranteed that the farmers would participate. The final solution was to plant trees in terraces, or strips. Horizontal bands of original vegetation, the native plants collected for medicines, were alternated with bands of tree seedlings.</br>
+              This system of alternating bands protected the soil from erosion and water runoff, brought the forest back to life, and increased the diversity of species in the forests. Because wooded areas were being opened up for cultivation by Iocals, they no longer had to go into the areas of protected forest to grow and collect medicinal plants. This means that protected areas will actually remain protected. It has allowed for the replanting and restoration of forest. The terraces have also created the ideal conditions for cultivating medicinal plants, so that the income and standard of living of villagers has gone up. The project has also given a higher status to medicinal knowledge, which will help ensure that the knowledge is passed down to future generations.</br>
+              In the past attempts at reforestation in China had involved banning locals from entering the forests. If the government had done this, the project would not have been sustainable, because Qiang people tradition¬ally cultivate medicinal plants in surrounding woodland and around their homes, and they were not about to change their way of life and means of supporting themselves. This project focused not only on replanting trees, but on opening up woodlands to locals, so that they could cultivate under the tree canopy as they had always done.</br>
+              <h5>***Answer the following question after going through the above case study.</h5>
+            </br>
 
       Q1. Why did china government fail in reforestation in past attempts?</br>
       </br>

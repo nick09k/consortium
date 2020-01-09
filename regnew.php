@@ -47,7 +47,7 @@
     mysqli_query($con,$evequery);
     }
 
-    $eve = array('Swadesh_team','AdVenture_team','Pitch_Perfect_team','renderico_team','BizMantra_team','BizQuiz_team','ConsoWorld_team');
+    $eve = array('Swadesh_team','AdVenture_team','trec_team','renderico_team','BizMantra_team','BizQuiz_team','war_of_worlds_team');
     for($var = 0; $var < 9; $var++){
       $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
                 ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
