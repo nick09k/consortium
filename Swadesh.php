@@ -16,14 +16,15 @@
         <div class="s-promo-block-v3 g-fullheight--xs event-landing1" style="background: url('img/1920x1080/swades-landing-page.jpg');" id="swades">
             <div class="container g-ver-center--sm g-padding-y-125--xs g-padding-y-0--lg event-landing-inner">
 
-                <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
-                    <!--<img src="img/logo/ceoblack.png" alt="" width="200" style="margin-top:-100px; margin-left:-20px">-->
+                <div class="g-margin-t-20--xs g-margin-t-0--sm g-margin-b-20--xs g-margin-b-50--md g-margin-l-20--xs g-margin-l-60--sm">
+                    <img src="img/pnaf_logo.png" alt="" width="200"><span class="g-font-size-20--xs g-font-size-30--sm g-font-size-30--lg g-color--white" style="font-weight:600; text-shadow: 2px 0 #333;letter-spacing:2px;">presents</span>
 
                     <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>Swades</b></h1>
+                    <h1 class="g-font-size-20--xs g-font-size-30--sm g-font-size-30--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>Inter NIT Social Entrepreneurship Challenge</b></h1>
 
-                    <h3 class="g-color--white" style="    text-shadow: 2px 0 #333;">Grass Root Innovation</h3>
-                    <p class="g-color--white g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>Beyond Imagination</b></p><br/>
-                    <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 1 Lac </span></h3>
+                    <!-- <h3 class="g-color--red" style="    text-shadow: 2px 0 #333;">Grass Root Innovation</h3>
+                    <p class="g-color--red g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>Beyond Imagination</b></p><br/> -->
+                    <h3 class="g-color--white"> PRIZES WORTH <br><span class="g-color--red" style="font-weight:600; background-color:#888">&#8377; 1 Lac </span></h3>
                     <br>
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                         <a href="/register.php" title="Register">
@@ -33,7 +34,7 @@
                     </div>
                 </div>
 
-            </div>+91 8860548206
+            </div>
         </div>
         <!--========== END PROMO BLOCK ==========-->
 
@@ -46,7 +47,7 @@
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
                         </div>
-                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Swades is a social entrepreneurship event which aims to understand the social problems in rural India and using an entrepreneurial mindset to solve them.<br>Swades makes the entrepreneur understand the lifestyle of a particular village and move on to form a business plan that focuses on a particular problem and returns with a sustainable solution.</p>
+                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Swades - INSEC aims to understand the social problems in rural India and to solve them using an entrepreneurial mindset. Participants who qualify for the third round are taken to a village to understand the actual ground level problems.</p>
 
                     </div>
                     <div class="col-md-7 col-md-offset-1">
