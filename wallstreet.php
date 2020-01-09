@@ -35,17 +35,17 @@
                     <h3 class="g-color--white" style="    text-shadow: 2px 0 #333;">Earn, spend, party!</h3>
                     <p class="g-color--white g-font-size-18--xs" style="    text-shadow: 2px 0 #333;"><b>Buy or sell shares in this competitive business world <br>and become the Wolf of Wall Street!</b></p><br/>
                     <h4 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 15K </span></h4>
-                    
-                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+
+                  <!--div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                         <a href="https://goo.gl/forms/pYVinCErTub0btVw2" title="Register">
-                            <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                            <i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>
                             <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Register Now <span class="ti-angle-right"></span></span>
                         </a>
                         <br>
                         <br>
                         <p class="g-color--white g-font-size-18--xs" style="text-shadow: 2px 0 #333;"><b>*Registration Fee: 50 INR</b></p><br/>
 
-                    </div>
+                    </div>-->
                 </div>
 
             </div>
@@ -107,7 +107,7 @@ winners as well as for the best loser (last place).</p></li>
                   <li><p>To participate in Wallstreet, visit our <a href="/wallstreet.php">website</a> and register with your name. As soon your registration process gets complete you will get confirmation</p></li>
                   <li><p>On spot registrations are allowed.</p></li>
               </ol>
-              
+
               <br/>
               <h5><b>Structure</b></h5>
               <br/>
@@ -143,7 +143,7 @@ winners as well as for the best loser (last place).</p></li>
               </ol>
               <br/>
     		    	</div>
-    		    	
+
 
     		    </div>
 		  </div>
@@ -168,7 +168,7 @@ winners as well as for the best loser (last place).</p></li>
                          <p class="g-color--white">shivam.whiz@gmail.com <br>+91 7447588019</p>
                     </div>
                 </div>
-                
+
             </div>
             </div>
         </div>
