@@ -31,7 +31,7 @@
 
                     </div>
                     <div class="col-md-6 col-md-offset-3">
-                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>21<sup>th</sup> - 23<sup>th</sup> February 2020</b></p>
+                        <p class="g-font-size-20--xs g-font-size-26--md g-color--white g-margin-b-0--xs"><b>21<sup>st</sup> - 23<sup>th</sup> February 2020</b></p>
 
 
 
