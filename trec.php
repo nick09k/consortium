@@ -22,8 +22,8 @@
                     <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>TREC</b></h1>
 
 
-                    <p class="g-color--white"> Let’s make some business out of your research.</p><br/>
-                    <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 25K </span></h3>
+                    <p class="g-color--white g-font-size-15--xs g-font-size-20--sm g-font-size-20--lg"> Let’s make some business out of your research.</p><br/>
+                    <!-- <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 25K </span></h3> -->
 
                     <br>
 
@@ -77,7 +77,7 @@
     		    <div class="card-content code">
 
     		    	<div id="why">
-    			     	<h5><b>Prizes Worth &#8377; 25K </b></h5><br/>
+    			     	<!-- <h5><b>Prizes Worth &#8377; 25K </b></h5><br/> -->
     			     	<ol>
     			     	    <li><p> TREC for the first time in India to provide research startup  competition for the research scholars to use their solution to make some business out of it.</p></li>
     			     	    <li><p>The competition provides the viability of their very own potential solution and early stage research based start-ups in the wholesome ambience of a competition.</p></li>
@@ -90,16 +90,12 @@
 
     				</div>
     				<div id="structure" style="display:none;">
-              <h5><b>How to participate</b></h5>
-              <br/>
-              <p>The key step in order to participate is to attempt the CEO Quiz which will be conducted soon in Colleges across Nagpur, Pune & Sangamner. If you would like the test to be conducted in your College, kindly contact us by phone with the necessary details.</p>
-              <br/>
               <h5><b>Structure</b></h5>
               <br/>
     		    	    <p>Competition is divided into three rounds as follows:</p><br/>
     		    	    <ol>
 
-    					    <li><h6>Round 1: EXECUTIVE SUMMARY ROUND </h6><p><b>6th Jan 2020 to 31st Jan 2020</b><br>This round includes feeling the questionnaire. Analysis of the round will be done by experts only and teams will be shortlisted for second round.</p></li><br/>
+    					    <li><h6>Round 1: EXECUTIVE SUMMARY ROUND </h6><p><b>10th January 2020 to 31st Jan 2020</b><br>This round includes feeling the questionnaire. Analysis of the round will be done by experts only and teams will be shortlisted for second round.</p></li><br/>
     					    <li><h6>Round 2: PITCHING ROUND</h6><p><b>22nd Feb 2020 </b><br>Top 10 teams will be represent their venture in the Consortium at VNIT from 21-23 Feb. On 22nd Feb teams will pitch their start-up in front of investors panel</p></li><br/>
 
     					</ol>
