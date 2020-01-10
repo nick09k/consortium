@@ -1,9 +1,11 @@
 
 var membersSwadesh = $("#members-Swadesh");
+var membersTREC = $("#members-TREC");
 var membersrenderico = $("#members-renderico");
 var membersAdVenture = $("#members-AdVenture");
 // var members = $("#members");
 var permanentSwadesh = $(".permanent-Swadesh");
+var permanentTREC = $(".permanent-TREC");
 var permanentrenderico = $(".permanent-renderico");
 var permanentAdVenture = $(".permanent-AdVenture");
 var lock = $("#lock:checked");
@@ -33,7 +35,8 @@ function stringvalue(i){
 
 // alert(members.val());
 $(document).ready(function(){
-	membersSwadesh.on("change", function(e){
+
+  membersSwadesh.on("change", function(e){
 
 		e.preventDefault();
 		$(".temp").remove();
@@ -43,6 +46,18 @@ $(document).ready(function(){
 		}
 
 	});
+
+  membersTREC.on("change", function(e){
+
+		e.preventDefault();
+		$(".temp").remove();
+		// permanent.append("<div class='temp'></div>");
+		for(var i=2; i<= membersTREC.val(); i++){
+			permanentTREC.append(stringvalue(i));
+		}
+
+	});
+
   membersrenderico.on("change", function(e){
 
     e.preventDefault();
@@ -78,7 +93,7 @@ function validateData(){
 
   // checking empty fields
 
-  
+
 
 if (team_name == ""){
     message = "Enter your Name";
@@ -99,7 +114,7 @@ if (team_name == ""){
   else if (password =""){
    message = "Enter password";
  }
-  
+
  else if (password.length < 8){
    message = "Minimum 8 digit password";
  }
@@ -115,4 +130,3 @@ if (team_name == ""){
   }
 
 }
-

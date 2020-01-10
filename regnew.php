@@ -1,6 +1,6 @@
 <?php
   @session_start();
-  $pagetitle = "Register Now | Consortium'19";
+  $pagetitle = "Register Now | Consortium'20";
   require_once('includes/mailing.php');
   // error_reporting(E_ALL);
   // ini_set('display_errors', '1');
@@ -23,6 +23,7 @@
                 Email VARCHAR(255) NOT NULL,
                 Contact VARCHAR(255) NOT NULL,
                 Password VARCHAR(255) NOT NULL,
+                College VARCHAR(255) NOT NULL,
                 Swadesh TINYINT(1) DEFAULT '0',
                 AdVenture TINYINT(1) DEFAULT '0',
                 trec TINYINT(1) DEFAULT '0',
@@ -36,7 +37,7 @@
     mysqli_query($con,$regquery);
 
     $eve = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz');
-    for($var = 0; $var < 9; $var++){
+    for($var = 0; $var < 8; $var++){
       $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
                 ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                 Name VARCHAR(255) NOT NULL,
@@ -71,11 +72,11 @@
     $name = $con->real_escape_string($_POST['name']);
     $email = $con->real_escape_string($_POST['email']);
     $contact = $con->real_escape_string($_POST['contact']);
-    // $event = $con->real_escape_string($_POST['event']);
+    $college = $con->real_escape_string($_POST['college']);
     $password = $con->real_escape_string($_POST['password']);
     $cpassword = $con->real_escape_string($_POST['cpassword']);
 
-    if( $name == "" || $email == "" || $contact == "" || $password == "" || $cpassword == ""){
+    if( $name == "" || $email == "" || $contact == "" || $password == "" || $cpassword == "" || $college == ""){
       $msg = "Please enter all the details";
       header('location:/regnew.php');
     }
@@ -92,7 +93,7 @@
       }
 
       if($num != 0 && $row['otp'] == 'Confirmed'){
-        $msg = "The email you entered is already registered as ConsoID. Login <a href='login.php'>here</a>.";
+        $msg = "The email you entered is already registered. Login <a href='login.php'>here</a>.";
       }
 
       elseif($num != 0 && $row['otp'] != 'Confirmed'){
@@ -106,15 +107,17 @@
         $otp = str_shuffle($otp);
         $otp = substr($otp, 0, 6);
 
-        $q = "INSERT INTO Registrations(Name,Email,Contact,Password,otp) VALUES('$name','$email','$contact','$hashed_password','$otp')";
+        $q = "INSERT INTO Registrations(Name,Email,Contact,College,Password,otp) VALUES('$name','$email','$contact','$college','$hashed_password','$otp')";
         if(mysqli_query($con,$q)){
 
           $msg = "Please verify your email id to login.";
-          $s = "Verify Your ConsoID";
+          $s = "Verify Your Emaid ID";
           $_SESSION['verify'] = "Welcome. An OTP is sent to your registered email id. Please enter the OTP below to confirm your email address.";
           htmlMail($email,$s,'',$otp, 'otp');
           header('location:verify.php?email='.$email.'');
 
+        }else {
+          echo(mysqli_error($con));
         }
 
       }
@@ -153,6 +156,9 @@
                         <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
                             <input type="tel" class="form-control s-form-v3__input" placeholder="* Contact" name="contact" style="text-transform: none">
                         </div>
+                    </div>
+                    <div class="g-margin-b-30--xs">
+                          <input type="text" class="form-control s-form-v3__input" placeholder="* College" name="college" style="text-transform: none" id="college">
                     </div>
                     <!-- <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="event" placeholder="* No. of members" id="members" >
                         <option value='' selected disabled hidden>Choose an Event</option>

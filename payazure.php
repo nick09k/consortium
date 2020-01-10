@@ -27,7 +27,7 @@
 
           $donemsg = "Congratulations! You are now a part of Central India’s Biggest Entrepreneurship Summit.<br>Your transaction ID: <b>".$txnid ."</b>";
           $to = $email;
-          $subject = "Welcome To The Azure Space | Consortium'19";
+          $subject = "Welcome To The Azure Space | Consortium'20";
           $html = '
               <!DOCTYPE html>
               <html>

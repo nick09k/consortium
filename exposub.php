@@ -73,7 +73,7 @@
 
           $to = $email;
 
-          $subject = "Thank you for registering in Startup Expo | Consortium'19";
+          $subject = "Thank you for registering in Startup Expo | Consortium'20";
           $html = '
           <!DOCTYPE html>
               <html>

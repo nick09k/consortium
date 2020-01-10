@@ -111,6 +111,7 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
             <th>Name</th>
             <th>Email</th>
             <th>Contact</th>
+            <th>College</th>
         </tr>
     </thead>
         <tbody>';
@@ -186,6 +187,7 @@ if (isset($_SESSION['auth']) && $_SESSION['auth'] == true) {
             <td><?php echo $row['Name'];?></td>
             <td><?php echo $row['Email'];?></td>
             <td><?php echo $row['Contact'];?></td>
+            <td><?php echo $row['College'];?></td>
         </tr>
 
         <?php

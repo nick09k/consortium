@@ -101,6 +101,51 @@
       header('location:dashboard.php');
 
     }
+
+    if(isset($_POST['swanewmem-trec'])){
+
+
+      // Adding Team First
+      $teamname = $con->real_escape_string($_POST['teamname']);
+      $teamemail = $_SESSION['email'];
+      $contact = $_SESSION['contact'];
+      $query = "INSERT INTO trec_team(Name,Email,Contact) VALUES('$teamname','$teamemail','$contact')";
+      if(mysqli_query($con,$query)){
+        $s = 'Welcome Aboard Team '.$teamname.' | TREC';
+
+        htmlMail($teamemail,$s,$_SESSION['name'],$teamname, 'TREC');
+        #Adding Menbers
+        $number = $con->real_escape_string($_POST['number']);
+
+
+        for($i=2; $i<=$number; $i++){
+
+          $membername = $con->real_escape_string($_POST['membername'.$i]);
+          $memberemail = $con->real_escape_string($_POST['memberemail'.$i]);
+          $memberphone = $con->real_escape_string($_POST['memberphone'.$i]);
+          $memberteam = $teamemail;
+
+          $query = "INSERT INTO trec(Name,Main_Email,Email,Contact) VALUES('$membername','$memberteam','$memberemail','$memberphone')";
+          if(mysqli_query($con,$query)){
+            $s = 'Welcome Aboard Team '.$teamname.' | TREC';
+            htmlMail($memberemail,$s,$membername,$teamname, 'TREC');
+
+          }
+          else{
+            $msg = "Error member: " . mysqli_error($con);
+          }
+
+        }
+
+      }else{
+        $msg = "Error Team: " . mysqli_error($con);
+      }
+      $_SESSION['msg'] = "You've registered successfully. The notification of the first round will be sent to you through email.";
+      header('location:dashboard.php');
+
+    }
+
+
     if(isset($_POST['swanewmem-adventure'])){
 
 
@@ -143,6 +188,8 @@
       header('location:dashboard.php');
 
     }
+
+
     if(isset($_POST['swanewmem-bizquiz'])){
 
 
@@ -231,7 +278,7 @@
                 <div class="row product-grid">
 
                   <?php
-                    $events = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz','Brainathon');
+                    $events = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz');
                     $query = "SELECT * FROM Registrations WHERE Email='$email'";
                     $result = mysqli_query($con,$query);
                     $num = mysqli_num_rows($result);
@@ -519,6 +566,59 @@
           ?>
         </div>
 
+      <!-- TREC -->
+      <div class="swades container g-padding-x-40--sm g-padding-x-20--xs g-padding-y-20--xs g-padding-y-50--sm" id="trec" style="display:none;background: #000">
+
+        <a class="g-color--white g-font-size-20--xs" onclick="closemodel('trec');" style="position:absolute; left:90%" >X</a>
+        <h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">TREC</h2>
+
+        <?php
+          $query = "SELECT * FROM trec_team WHERE Email='$email'";
+          $result = mysqli_query($con,$query);
+          $num = mysqli_num_rows($result);
+          $data = $result->fetch_array(MYSQLI_ASSOC);
+          if($num!=0){
+            echo '<h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Hello, '.$data['Name'].'</h2>';
+            $query = "SELECT * FROM Swadesh WHERE Main_Email='$email'";
+            $result = mysqli_query($con,$query);
+            $num = mysqli_num_rows($result);
+            echo "<p class='g-color--white g-font-size-20--xs'>Team Members</p><ol>";
+            while($row = mysqli_fetch_array($result)){
+              echo "<li class='g-color--white' style='text-decoration:none;'>".$row['Name'].", ".$row['Email'].", ".$row['Contact']."</li>";
+            }
+            echo "</ol>";
+          }
+          else{
+          ?>
+
+          <form class="center-block g-width-600--sm" method="post" action="">
+              <div class="permanent permanent-TREC row">
+                <p class="g-color--white g-text-center--xs g-font-size-14--xs">You're a Team Leader by default</p>
+                  <div class="col-sm-6 g-margin-b-30--xs">
+                        <input type="text" class="form-control s-form-v3__input" placeholder="* Team Name" name="teamname" style="text-transform: none" id="teamname">
+                  </div>
+
+                  <div class="col-sm-6 g-margin-b-30--xs">
+                      <select type="number" pattern="[0-9]{11}" class="form-control s-form-v3__input" name="number" placeholder="* Add more members" id="members-TREC">
+                          <option value="" selected="" disabled="" hidden="">Add more members</option>
+                          <option value="2" style="color:black">1</option>
+                          <option value="3" style="color:black">2</option>
+                          <option value="4" style="color:black">3</option>
+
+                      </select>
+                  </div>
+
+              </div>
+              <div class="g-text-center--xs">
+                  <button type="submit" name="swanewmem-trec" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">Create Team</button>
+              </div>
+          </form>
+        <?php
+          }
+        ?>
+
+      </div>
+
 
         <div class="" id="Pitch_Perfect">
 
@@ -567,6 +667,12 @@
           $("#Swadesh").css({"display":"block"});
           $("#Swadesh").animate({opacity: 1}, 1000);
           var y = $("#Swadesh").offset().top;
+            $("html ,body").animate({ scrollTop: y},200);
+        });
+        $("#trecclick").click(function(){
+          $("#trec").css({"display":"block"});
+          $("#trec").animate({opacity: 1}, 1000);
+          var y = $("#trec").offset().top;
             $("html ,body").animate({ scrollTop: y},200);
         });
 

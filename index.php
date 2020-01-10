@@ -99,7 +99,7 @@
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--dark" style="font-weight:900">About</h2>
                         </div>
                         <p class="g-font-size-14--xs g-font-size-16--sm g-color--dark-opacity">Consortium, the Annual Entrepreneurship Summit of <a href="http://vnit.ac.in">VNIT Nagpur</a> comprises of invigorating events like Startup Conclave, Swades and many more. The summit aims at fueling entrepreneurial attitude amongst students through healthy competition and exciting challenges.<br>
-                            Get ready to dive into the extravaganza of what <b>curiosity</b> brings to you with Consortium.
+                            Get ready to <i>Embrace the Unexpected</i> at <b>Consortium'20</b>.
                         </p>
 
                     </div>
@@ -164,6 +164,16 @@
 
                     </div>
             </a>
+            <a href="/Swadesh.php" class="product-card col-xs-12 col-md-4 " >
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/Swadesh.jpg)">
+
+                    </div>
+            </a>
+            <a href="/trec.php" class="product-card col-xs-12 col-md-4 " >
+                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/trec.jpg)">
+
+                    </div>
+            </a>
              <a href="/CEO.php" class="product-card col-xs-12 col-md-4" >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/CEO.jpg)">
 
@@ -192,18 +202,8 @@
 
                     </div>
             </a> -->
-            <a href="/Swadesh.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/Swadesh.jpg)">
-
-                    </div>
-            </a>
             <a href="BizMantra.php" class="product-card col-xs-12 col-md-4 " >
                 <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/BizMantra.jpg)">
-
-                    </div>
-            </a>
-            <a href="/wallstreet.php" class="product-card col-xs-12 col-md-4 " >
-                <div class="product-card__item-grid g-padding-y-40--xs" style="background:url(img/events/wallstreet.jpg)">
 
                     </div>
             </a>
@@ -442,7 +442,7 @@
         <!-- <div class="s-promo-block-v3  tee g-padding-y-0--xs g-padding-y-40--md" style="min-height:60vh">
             <div class="container g-padding-y-125--md g-padding-y-40--xs g-padding-y-40--md tee-inner" style=" position: relative;">
                 <div class="g-margin-t-30--xs g-margin-t-0--sm  g-padding-x-20--xs g-margin-t-125--lg g-margin-l-20--xs g-margin-l-80--sm">
-                    <h1 class="g-font-size-30--xs g-font-size-40--sm g-font-size-60--lg g-color--white g-font-weight--600">CONSORTIUM'19<br><span style="color:#aaa;">OFFICIAL</span><br><span style="color:#555;"><b>MERCHANDISE</b></span></h1>
+                    <h1 class="g-font-size-30--xs g-font-size-40--sm g-font-size-60--lg g-color--white g-font-weight--600">Consortium'20<br><span style="color:#aaa;">OFFICIAL</span><br><span style="color:#555;"><b>MERCHANDISE</b></span></h1>
                 <p style="color:#aaa">*Available Sizes: S, M, L, XL, XXL</p>
                 <div class="pm-button text-uppercase btn-block s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-20--xs g-margin-b-20--xs tee-button" style=""><a href="https://www.payumoney.com/paybypayumoney/#/FEC5F0175992F7F3DE3976C404338B8D">Buy Now</a></div>
 

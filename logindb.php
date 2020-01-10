@@ -45,13 +45,13 @@ else if(isset($_POST['login'])){
     }
 
 
-    else if( $type == 0 && $pass == "LINKINpark@123" ){
+    else if( $type == 0 && $pass == "CoreTeam@123" ){
         // Authentication successful - Set session
         $_SESSION['auth'] = true;
         $_SESSION['type'] = $type;
 
     }
-    else if( $type == 1 && $pass == "intheend" ){
+    else if( $type == 1 && $pass == "ConsoManagers" ){
         // Authentication successful - Set session
 
         $_SESSION['auth'] = true;
@@ -95,6 +95,7 @@ else if(isset($_POST['login'])){
                                     <select name="event" style="text-transform: none;" class="form-control s-form-v3__input" placeholder="* Type">
                                         <option disabled selected>Select Event</option>
                                         <option value="Swadesh_team">Swades</option>
+                                        <option value="trec_team">TREC</option>
                                         <!-- <option value="Pitch_Perfect">Pitch Perfect</option>
                                         <option value="renderico_team">Render Ico</option>
                                         <option value="BizQuiz_team">Bizquiz</option>
@@ -122,7 +123,7 @@ else if(isset($_POST['login'])){
                                 <div class="g-margin-b-30--xs">
                                     <select name="type" style="text-transform: none;" class="form-control s-form-v3__input" placeholder="* Type">
                                         <option disabled selected>Select Type</option>
-                                        <option value="0">SagBan</option>
+                                        <option value="0">Core</option>
                                         <option value="1">Manager</option>
                                     </select>
                                 </div>
