@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <?php $pagetitle = 'CEO | Consortium'; ?>
+  <?php $pagetitle = 'TREC | Consortium'; ?>
 
   <!-- Begin Head -->
   <?php include("includes/head.php")?>
@@ -71,7 +71,7 @@
     		      <ul class="tabs tabs-fixed-width">
     		        <li class="tab"><a class="active" href="#why" id="but_why">WHY PARTICIPATE?</a></li>
     		        <li class="tab"><a  href="#structure" id="but_structure">STRUCTURE</a></li>
-    		        <li class="tab"><a href="#timeline" id="but_timeline">TIMELINE</a></li>
+
     		      </ul>
     		    </div>
     		    <div class="card-content code">
@@ -83,7 +83,7 @@
     			     	    <li><p>The competition provides the viability of their very own potential solution and early stage research based start-ups in the wholesome ambience of a competition.</p></li>
     			     	    <li><p>Participants will get the opportunity to present their ideas in front of investors</p></li>
     			     	    <li><p>Our vision is to foster entrepreneurship by providing an apt opportunity to scholars and aspiring entrepreneurs to ‘experience’ their business acumen and sculpt their entrepreneurial solutions into reality and hence, carve a niche of innovation and upliftment in the society.</p></li>
-    			     	    
+
     			     	</ol>
 
     			     	<br/>
@@ -105,26 +105,7 @@
     					</ol>
 
     		    	</div>
-    		    	<div id="timeline" style="display:none;">
-                <h5><b>Timeline</b></h5><br/>
-                    <ul>
-                      <li><h5>Offline CEO Quiz</h5>
-                        <p>20th to 25th December 2019 (in Pune & Sangamner)</p><br>
-                        <p>10th to 17th January 2020 (in Nagpur)</p>
-                      </li><br/>
-                      <li><h5>Online Test</h5>
-                        <p>1st February 2020</p>
-                        </li><br/>
-                      <li><h5>PPDT</h5>
-                        <p>21st February 2020 (First Day First Half)</p>
-                      </li><br/>
-                      <li><h5>Case Interview Round</h5>
-                        <p>21st Feb 2020 (First Day Second Half)</p>
-                      </li>
-                      <li><h5>Boardroom Round</h5>
-                        <p>22nd Feb 2020 (Second Day)<p>
-                    </ul>
-    		    	</div>
+
 
     		    </div>
 		  </div>
@@ -137,32 +118,21 @@
         <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
             <!--<div class="g-container--md g-padding-y-40--xs">-->
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Rushikesh</h4>
-                         <p class="g-color--white">+91 7038060390</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Ankush Agrawal</h4>
+                         <p class="g-color--white">+91 9130018984</p>
+                         <p class="g-color--white">ankushagrawal08@gmail.com</p>
                     </div>
                 </div>
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Nisha</h4>
-                         <p class="g-color--white">+91 7420874579</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Jatin Pardhi</h4>
+                         <p class="g-color--white">+91 8411014621</p>
+                         <p class="g-color--white">jatinpardhi00@gmail.com</p>
                     </div>
                 </div>
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
 
-                    <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Abhishek</h4>
-                         <p class="g-color--white">+91 6392806041</p>
-                    </div>
-                </div>
-                <div class="col-xs-3 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
-                    <div class="g-text-center--xs">
-
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Tanmay</h4>
-                         <p class="g-color--white">+91 9373791216</p>
-                    </div>
-                </div>
             </div>
             </div>
         </div>
