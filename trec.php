@@ -79,9 +79,9 @@
     		    	<div id="why">
     			     	<!-- <h5><b>Prizes Worth &#8377; 25K </b></h5><br/> -->
     			     	<ol>
-    			     	    <li><p> TREC for the first time in India to provide research startup  competition for the research scholars to use their solution to make some business out of it.</p></li>
+    			     	    <li><p> TREC is being organized for the first time in India to provide research start-up competition for the research scholars to use their solution to make some business out of it.</p></li>
     			     	    <li><p>The competition provides the viability of their very own potential solution and early stage research based start-ups in the wholesome ambience of a competition.</p></li>
-    			     	    <li><p>Participants will get the opportunity to present their ideas in front of investors</p></li>
+    			     	    <li><p>Participants will get the opportunity to present their ideas in front of an investor panel.</p></li>
     			     	    <li><p>Our vision is to foster entrepreneurship by providing an apt opportunity to scholars and aspiring entrepreneurs to ‘experience’ their business acumen and sculpt their entrepreneurial solutions into reality and hence, carve a niche of innovation and upliftment in the society.</p></li>
 
     			     	</ol>
