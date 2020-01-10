@@ -22,7 +22,7 @@
                     <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>TREC</b></h1>
 
 
-                    <p class="g-color--white g-font-size-15--xs g-font-size-20--sm g-font-size-20--lg"> Let’s make some business out of your research.</p><br/>
+                    <p class="g-color--white g-font-size-15--xs g-font-size-20--sm g-font-size-20--lg">Academic and Entrepreneurial activities are always in close association.</p><br/>
                     <!-- <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 25K </span></h3> -->
 
                     <br>
@@ -79,7 +79,7 @@
     		    	<div id="why">
     			     	<!-- <h5><b>Prizes Worth &#8377; 25K </b></h5><br/> -->
     			     	<ol>
-    			     	    <li><p> TREC is being organized for the first time in India to provide research start-up competition for the research scholars to use their solution to make some business out of it.</p></li>
+    			     	    <li><p>TREC is being organized for the first time in India to provide research start-up competition for the research scholars to use their solution to make some business out of it.</p></li>
     			     	    <li><p>The competition provides the viability of their very own potential solution and early stage research based start-ups in the wholesome ambience of a competition.</p></li>
     			     	    <li><p>Participants will get the opportunity to present their ideas in front of an investor panel.</p></li>
     			     	    <li><p>Our vision is to foster entrepreneurship by providing an apt opportunity to scholars and aspiring entrepreneurs to ‘experience’ their business acumen and sculpt their entrepreneurial solutions into reality and hence, carve a niche of innovation and upliftment in the society.</p></li>
