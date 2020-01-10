@@ -17,7 +17,7 @@
         <!--========== PROMO BLOCK ==========-->
         <div class="g-bg-position--center js__parallax-window" style="background:#000;height:100vh; display:flex; align-items:center">
             <div class="g-container--md g-text-center--xs g-padding-y-100--xs">
-                <h1 class="g-font-size-26--xs g-font-size-36--md g-color--primary g-letter-spacing--3">Consortium'19</h1>
+                <h1 class="g-font-size-26--xs g-font-size-36--md g-color--primary g-letter-spacing--3">Consortium'20</h1>
                 <h2 class="g-font-size-36--xs g-font-size-50--sm g-font-size-60--md g-color--white g-letter-spacing--1">Attractions</h2>
                 <div class="indicate"><i class="ti-angle-double-down"></i></div>
 
@@ -49,7 +49,7 @@
 
                     <div class="product-card__item-text-v2">
                         <h5 class="g-color--primary" style="color:#bd2026"><b>Azure Zone | Workshop</b></h5>
-                        <p class="g-color--white">Consortium'19  and Microsoft Azure present a certified Cloud Computing workshop to hone your knowledge and technical skills. <br>Date: 9 FEB 19</p>
+                        <p class="g-color--white">Consortium'20  and Microsoft Azure present a certified Cloud Computing workshop to hone your knowledge and technical skills. <br>Date: 9 FEB 19</p>
                         <p class="g-color--white"><b>Register Now</b></p>
                         <p class="g-color--white"><i>#Workshop</i></p>
                     </div>
@@ -61,7 +61,7 @@
 
                     <div class="product-card__item-text-v2">
                         <h5 class="g-color--primary"><b>The Art Of Stock Investing | Workshop</b></h5>
-                        <p class="g-color--white">Consortium'19 brings to you the certified workshop on "The Art of stock investing"  in association with Chatur Ideas.<br>Date: 10<sup>th</sup> March 19</p>
+                        <p class="g-color--white">Consortium'20 brings to you the certified workshop on "The Art of stock investing"  in association with Chatur Ideas.<br>Date: 10<sup>th</sup> March 19</p>
                         <p class="g-color--white"><b>Register Now</b></p>
                         <p class="g-color--white"><i>#Workshop</i></p>
                     </div>
@@ -86,7 +86,7 @@
 
                     <div class="product-card__item-text-v2">
                         <h5 class="g-color--white"><b>Patrick Bet-David | Webinar</b></h5>
-                        <p class="g-color--white">Consortium'19 presents a live webinar on "How to break the curse of your limiting beliefs" by Patrick Bet-David. <br>Date: 27 Feb 19</p>
+                        <p class="g-color--white">Consortium'20 presents a live webinar on "How to break the curse of your limiting beliefs" by Patrick Bet-David. <br>Date: 27 Feb 19</p>
                         <p class="g-color--white"><b>Register Now</b></p>
                         <p class="g-color--white"><i>#Webinar</i></p>
                     </div>

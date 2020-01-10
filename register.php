@@ -1,6 +1,6 @@
 <?php
   @session_start();
-  $pagetitle = "Register | Consortium'19";
+  $pagetitle = "Register | Consortium'20";
   require_once('includes/mailing.php');
 
     $db_host = "localhost:3306";
@@ -21,23 +21,21 @@
                 Email VARCHAR(255) NOT NULL,
                 Contact VARCHAR(255) NOT NULL,
                 Password VARCHAR(255) NOT NULL,
+                College VARCHAR(255) NOT NULL,
                 Swadesh TINYINT(1) DEFAULT '0',
                 AdVenture TINYINT(1) DEFAULT '0',
-                Pitch_Perfect TINYINT(1) DEFAULT '0',
+                trec TINYINT(1) DEFAULT '0',
                 renderico TINYINT(1) DEFAULT '0',
                 CEO TINYINT(1) DEFAULT '0',
-                Teen_Titans TINYINT(1) DEFAULT '0',
-                BizMantra TINYINT(1) DEFAULT '0',
+                war_of_worlds TINYINT(1) DEFAULT '0',
                 BizQuiz TINYINT(1) DEFAULT '0',
-                Brainathon TINYINT(1) DEFAULT '0',
-                otp VARCHAR(255) NOT NULL,
-
+                otp VARCHAR(255) NOT NULL
                 )";
 
     mysqli_query($con,$regquery);
 
-    $eve = array('Swadesh','AdVenture','Pitch_Perfect','renderico','CEO','Teen_Titans','BizMantra','BizQuiz');
-    for($var = 0; $var < 9; $var++){
+    $eve = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz');
+    for($var = 0; $var < 8; $var++){
       $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
                 ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                 Name VARCHAR(255) NOT NULL,
@@ -48,7 +46,7 @@
     mysqli_query($con,$evequery);
     }
 
-    $eve = array('Swadesh_team','AdVenture_team','Pitch_Perfect_team','renderico_team','BizMantra_team','BizQuiz_team');
+    $eve = array('Swadesh_team','AdVenture_team','trec_team','renderico_team','BizMantra_team','BizQuiz_team','war_of_worlds_team');
     for($var = 0; $var < 9; $var++){
       $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
                 ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -56,7 +54,7 @@
                 Email VARCHAR(255) NOT NULL,
                 Contact VARCHAR(255) NOT NULL
                 )";
-      mysqli_query($con,$evequery);
+    mysqli_query($con,$evequery);
     }
 
     $brainquery = "CREATE TABLE IF NOT EXISTS Brainathon(
@@ -218,6 +216,7 @@
                   <select pattern="[0-9]{11}" class="form-control s-form-v3__input g-margin-b-30--xs" name="event" placeholder="* No. of members" id="members" >
                       <option value='' selected disabled hidden>Choose an Event</option>
                       <option value='Swadesh'>Swades</option>
+                      <option value='trec'>TREC (Technology Research Entrepreneurship Conclave)</option>
                       <!--<option value='AdVenture'>AdVenture</option>
                       <option value='Pitch_Perfect'>Pitch Perfect</option>
                       <option value='renderico'>render.ico</option>

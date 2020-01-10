@@ -164,6 +164,100 @@ function htmlMail($t, $sub, $name, $teamname, $event){
 
 
 
+        $htmlTREC = '
+        <!DOCTYPE html>
+            <html>
+                <head>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-125403862-1"></script>
+
+        <script>window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag("js", new Date());
+
+              gtag("config", "UA-125403862-1");
+          </script>
+          <title>Email-Template</title>
+                    <style>
+
+
+                        li{
+                            padding:10px;
+                        }
+                        p{
+                            font-size:16px;
+                        }
+
+                        *{
+                            font-family:Helvetica,Arial,sans-serif;
+                        }
+
+                        h2{
+                            text-align: center;
+                            margin-top: 150px;
+
+                        }
+                        html, body{
+                            background-color:#f7f9fb;
+                            margin: 0;
+                        }
+                        .context {
+                            font-size: 12px;
+                            padding: 40px 60px;
+                            margin-left:10%;
+                            margin-right: 10%;
+                        }
+
+                        .context p{
+                            font-size: 12px;
+                        }
+                        p{
+                            margin: 15px 0px;
+                        }
+
+                    </style>
+                </head>
+                <body>
+
+                    <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
+                    <h2 style="font-size:22px;">Welcome to Render.ico!</h2><br>
+
+                    <div class="context">
+                        <h3><b>Hello '.$name.',</b></h3>
+
+
+                        <p>Thank You for registering team <b>'.$teamname.'</b></p>
+                        <div>
+                            <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board for the <b>TREC (Technology Research Entrepreneurship Conclave)</b></p>
+                            <p>
+                                Here is your way to the first step towards the journey of expressing yourself and know where you stand for within the strokes and shades of a company logo?<br>
+                                <br>
+                            </p>
+                            <br>
+
+
+
+                            <p>
+
+                            <br>
+
+
+                              <br>
+                              <p>To keep you updated, all the relevant details will be e-mailed to you regularly.<br>For queries and in case of any difficulty, feel free to contact us.</p>
+                              <br>
+
+                              <br>
+                                With warm regards,<br>
+                                Team TREC<br>
+                                Consortium 20, Ecell VNIT
+                            </p>
+                        </div>
+                    </div>
+                </body>
+            </html>
+        ';
+
+
+
         $htmlRenderico = '
     <!DOCTYPE html>
         <html>
@@ -249,7 +343,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                           <br>
                             With warm regards,<br>
                             Team Render.ico<br>
-                            Consortium 19, Ecell VNIT
+                            Consortium 20, Ecell VNIT
                         </p>
                     </div>
                 </div>
@@ -310,7 +404,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board for this event.
                               </p>
                               <p>
-                                  To complete your registration for brainathon follow the button below and become a part of Central India’s Biggest Entrepreneurship Summit Consortium 19 <br>
+                                  To complete your registration for brainathon follow the button below and become a part of Central India’s Biggest Entrepreneurship Summit Consortium 20 <br>
                                   <br>
                               </p>
 
@@ -325,8 +419,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               <p>For queries and in case of any difficulty, feel free to contact us.</p>
                               <p>
                                   With warm regards,<br>
-                                  Anushree Rungta<br>
-                                  Core-Coordinator, E-Cell VNIT
+                                  Team E-Cell VNIT
                               </p>
                           </div>
                       </div>
@@ -388,7 +481,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               <p>We are well pleased to have you on board for this event.
                               </p>
                               <p>
-                                  To complete your registration for Azure Space follow the button below and become a part of Central India’s Biggest Entrepreneurship Summit Consortium 19 <br>
+                                  To complete your registration for Azure Space follow the button below and become a part of Central India’s Biggest Entrepreneurship Summit Consortium 20 <br>
                                   <br>
                               </p>
 
@@ -402,8 +495,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               <p>For queries and in case of any difficulty, feel free to contact us.</p>
                               <p>
                                   With warm regards,<br>
-                                  Anushree Rungta<br>
-                                  Core-Coordinator, E-Cell VNIT
+                                  Team E-Cell VNIT
                               </p>
                           </div>
                       </div>
@@ -473,8 +565,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               <p>For queries and in case of any difficulty, feel free to contact us.</p>
                               <p>
                                   With warm regards,<br>
-                                  Anushree Rungta<br>
-                                  Core-Coordinator, E-Cell VNIT
+                                  Team E-Cell VNIT
                               </p>
                           </div>
                       </div>
@@ -556,8 +647,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               <p>For queries and in case of any difficulty, feel free to contact us.</p>
                               <p>
                                   With warm regards,<br>
-                                  Anushree Rungta<br>
-                                  Core-Coordinator, E-Cell VNIT
+                                  Team E-Cell VNIT
                               </p>
                           </div>
                       </div>
@@ -633,8 +723,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               <p>For queries and in case of any difficulty, feel free to contact us. bizquizz19@gmail.com</p>
                               <p>
                                   With warm regards,<br>
-                                  Anushree Rungta<br>
-                                  Core-Coordinator, E-Cell VNIT
+                                  Team E-Cell VNIT
                               </p>
                           </div>
                       </div>
@@ -702,8 +791,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               <p>For queries and in case of any difficulty, feel free to contact us.</p>
                               <p>
                                   With warm regards,<br>
-                                  Anushree Rungta<br>
-                                  Core-Coordinator, E-Cell VNIT
+                                  Team E-Cell VNIT
                               </p>
                           </div>
                       </div>
@@ -765,8 +853,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               <p>For queries and in case of any difficulty, feel free to contact us.</p>
                               <p>
                                   With warm regards,<br>
-                                  Anushree Rungta<br>
-                                  Core-Coordinator, E-Cell VNIT
+                                  Team E-Cell VNIT
                               </p>
                           </div>
                       </div>
@@ -828,8 +915,7 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                               <p>For queries and in case of any difficulty, feel free to contact us.</p>
                               <p>
                                   With warm regards,<br>
-                                  Anushree Rungta<br>
-                                  Core-Coordinator, E-Cell VNIT
+                                  Team E-Cell VNIT
                               </p>
                           </div>
                       </div>
@@ -840,7 +926,9 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     if($event == 'Swadesh'){
       $html = $htmlSwadesh;
     }
-
+    else if($event == 'TREC'){
+      $html = $htmlTREC;
+    }
     else if($event == 'renderico'){
       $html = $htmlRenderico;
     }

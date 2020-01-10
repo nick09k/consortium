@@ -18,7 +18,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php echo $pagetitle; ?> | E-CELL, VNIT</title>
     <meta name="keywords" content="E-cell VNIT entreprenuship cell consortium 19 swades ecell vnit consortium swades" />
-    <meta name="description" content="Consortium'19 E-CELL VNIT Annual Entrepreneurship Summit">
+    <meta name="description" content="Consortium'20 E-CELL VNIT Annual Entrepreneurship Summit">
     <meta name="author" content="E-cell">
     <meta name="theme-color" content="rgb(189,32,38)" )="">
 
