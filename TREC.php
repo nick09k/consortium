@@ -19,10 +19,10 @@
                 <div class="g-margin-t-30--xs g-margin-t-0--sm g-margin-b-30--xs g-margin-b-70--md g-margin-l-20--xs g-margin-l-80--sm">
                     <!--<img src="img/logo/ceoblack.png" alt="" width="200" style="margin-top:-100px; margin-left:-20px">-->
 
-                    <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>CEO</b></h1>
+                    <h1 class="g-font-size-60--xs g-font-size-80--sm g-font-size-80--lg g-color--white" style="font-weight:900; text-shadow: 2px 0 #333;letter-spacing:2px;"><b>TREC</b></h1>
 
-                    <h3 class="g-color--white">Analytical Thinking Competition</h3>
-                    <p class="g-color--white">Leadership, Problem Solving Skills, Marketing Skills. <br/>Do you have what it takes to be a CEO?</p><br/>
+
+                    <p class="g-color--white"> Let’s make some business out of your research.</p><br/>
                     <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 25K </span></h3>
 
                     <br>
@@ -30,7 +30,7 @@
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                                 <a href="#about" title="Register">
                                     <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
-                                    <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Know More <span class="ti-angle-down"></span></span>
+                                    <span class="text-uppercase s-btn--primary-bg g-radius--50 g-padding-x-30--xs g-padding-y-15--xs g-font-size-13--xs g-color--white g-padding-x-15--xs">Register <span class="ti-angle-down"></span></span>
                                 </a>
                             </div>
 
@@ -49,7 +49,7 @@
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
                         </div>
-                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">Leaders get out in front and stay there by raising the standards by which they judge themselves and by which they are willing to be judged.<br>CEO envisions putting you on the spot of showing just how deeply you understand the ethics and finer lines of your environment with respect to business, power, ethic and revolution.</p>
+                        <p class="g-font-size-14--xs g-font-size-16--sm g-color--white-opacity">TREC is a research-based business plan competition for the PG and PhD students. TREC provides a platform for potential: products & technology and early stage research start-ups that can disrupt the technology world and to evaluate their research solution in the risk-free environment of a competition .It aims to bridge the gap between research solution and the realization of an enterprise.</p>
 
                     </div>
                     <div class="col-md-7 col-md-offset-1">
@@ -79,15 +79,11 @@
     		    	<div id="why">
     			     	<h5><b>Prizes Worth &#8377; 25K </b></h5><br/>
     			     	<ol>
-    			     	    <li><p>Attractive prizes for top 3 positions and goodies for best performers in each round and   e-certificates for all participants.</p></li>
-    			     	    <li><p>All students who qualify to the fourth round (on campus) will receive an official certificate of participation.</p></li>
-    			     	    <li><p>Opportunity to look at scenarios from macro perspectives and sharpen the crucial skill of <b>looking at the bigger picture</b>.</p></li>
-    			     	    <li><p>Learn how the board of the any company could take crucial decision for company.</p></li>
-    			     	    <li><p>Meet new people, socialize and make your presence felt by being a part of this wonderful journey.</p></li>
-    			     	    <li><p>Opportunity to enhance your knowledge by way of discussion and deliberation with students as well as experts.</p></li>
-    			     	    <li><p>A chance to network with like-minded people and gain positive exposure.</p></li>
-    			     	    <li><p>Participation increases confidence level and the hurdles faced can help recognize strengths and weaknesses.</p></li>
-
+    			     	    <li><p> TREC for the first time in India to provide research startup  competition for the research scholars to use their solution to make some business out of it.</p></li>
+    			     	    <li><p>The competition provides the viability of their very own potential solution and early stage research based start-ups in the wholesome ambience of a competition.</p></li>
+    			     	    <li><p>Participants will get the opportunity to present their ideas in front of investors</p></li>
+    			     	    <li><p>Our vision is to foster entrepreneurship by providing an apt opportunity to scholars and aspiring entrepreneurs to ‘experience’ their business acumen and sculpt their entrepreneurial solutions into reality and hence, carve a niche of innovation and upliftment in the society.</p></li>
+    			     	    
     			     	</ol>
 
     			     	<br/>
@@ -103,15 +99,9 @@
     		    	    <p>Competition is divided into three rounds as follows:</p><br/>
     		    	    <ol>
 
-    					    <li><h6>Round 1: CEO Quiz </h6><p><b>20th to 25th December 2019 (in Pune & Sangamner) |  10th to 17th January 2020 (in Nagpur)</b><br>It is preliminary-cum-elimination round to shortlist the participants based on the scores. Duration: 30 minutes  (MCQ Questions: It will have three sections – <b>A) Aptitude, B) General Sciences, C) English Proficiency </b>.The test will be conducted offline in the respective colleges.</p></li><br/>
-    					    <li><h6>Round 2: Online Test</h6><p><b>1st February 2020</b><br>The Details regarding the same will be conveyed to the qualified candidates.</p></li><br/>
-    					    <li><h6>Round 3: PPDT</h6><p><b>21st February 2020 (First Day First Half) | Journey from VNIT, Nagpur </b><br>
-                    PPDT – Picture perception and dissection test <br>
-                    Highlights - Pictures shown in PPDT are very unclear and various different perception takes place for same. Round scheme – In this test, the candidates are shown a blurred picture for a period of 40 second. Based on that, candidates are allotted a time period of 6 minutes to write a story on the picture with details consisting of that handled to the situation, what is happening now and what will be the possible outcome.<br>
-                    After writing the story, candidates will be divided into groups of 10. And they will be told to narrate their story one by one (Each one have to narrate his/her story with in one and half minute). After the completion of stories of all the students, a group discussion conducted in which students discuss the story & try to come up with a common story (Time limit-10minutes).</p></li><br/>
-                  <li><h6>Round 4: Case Interview</h6><p><b>21st Feb 2020 (First Day Second Half) </b><br>Case interview Highlights: Explaining what case interview is and what is expected from them. A problem will be given to each team. Time will be given for each team to think. 5 minutes will be given for each team to explain solution they come up with. This is a team event, where you have to overcome the problem given to you related to Case Interview.
-                    Each one of will be given a sheet containing one problem related to market, publicity and crises.</p></li><br/>
-                  <li><h6>Round 5: Boardroom</h6><p><b>22nd Feb 2020 (Second Day)</b><br>The one-of-its-kind game where you are a part of the board of a corporation which is going through a major decision. Make allies wisely, know your opposition, influence the neutral people and put forward your point of view in front the other stakeholders of the corporation.</p></li>
+    					    <li><h6>Round 1: EXECUTIVE SUMMARY ROUND </h6><p><b>6th Jan 2020 to 31st Jan 2020</b><br>This round includes feeling the questionnaire. Analysis of the round will be done by experts only and teams will be shortlisted for second round.</p></li><br/>
+    					    <li><h6>Round 2: PITCHING ROUND</h6><p><b>22nd Feb 2020 </b><br>Top 10 teams will be represent their venture in the Consortium at VNIT from 21-23 Feb. On 22nd Feb teams will pitch their start-up in front of investors panel</p></li><br/>
+
     					</ol>
 
     		    	</div>

@@ -56,7 +56,7 @@
 
         <div class="g-promo-section" style="background:#000" id="about">
             <div class="container g-padding-y-30--xs g-padding-y-30--sm g-padding-x-80--md g-padding-x-60--sm g-padding-x-40--xs">
-                <div class="row">
+                <div class="row">.
                     <div class="col-md-5 g-margin-t-45--xs g-margin-b-60--xs g-margin-b-0--lg">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white" style="font-weight:900">About</h2>
