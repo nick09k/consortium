@@ -229,16 +229,20 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                         <div>
                             <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board for the <b>TREC (Technology Research Entrepreneurship Conclave)</b></p>
                             <p>
-                                Here is your way to the first step towards the journey of expressing yourself and know where you stand for within the strokes and shades of a company logo?<br>
+                            Technology Research Entrepreneurship Conclave, a platform where the potential projects stand a chance to:<br>
+                              ✅ get a patent<br?<br>
+                              ✅ get legal consultation<br>
+                              ✅ connect with the investors<br>
+                              ✅ access abundant learning resources<br>
                                 <br>
                             </p>
-                            <br>
+
 
 
 
                             <p>
 
-                            <br>
+
 
 
                               <br>
