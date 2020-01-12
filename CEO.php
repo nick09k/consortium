@@ -96,14 +96,14 @@
     				<div id="structure" style="display:none;">
               <h5><b>How to participate</b></h5>
               <br/>
-              <p>The key step in order to participate is to attempt the CEO Quiz which will be conducted soon in Colleges across Nagpur, Pune & Sangamner. If you would like the test to be conducted in your College, kindly contact us by phone with the necessary details.</p>
+              <p>The key step in order to participate is to attempt the CEO Quiz which will be conducted soon in Colleges. If you would like the test to be conducted in your College, kindly contact us by phone with the necessary details.</p>
               <br/>
               <h5><b>Structure</b></h5>
               <br/>
     		    	    <p>Competition is divided into three rounds as follows:</p><br/>
     		    	    <ol>
 
-    					    <li><h6>Round 1: CEO Quiz </h6><p><b>20th to 25th December 2019 (in Pune & Sangamner) |  10th to 17th January 2020 (in Nagpur)</b><br>It is preliminary-cum-elimination round to shortlist the participants based on the scores. Duration: 30 minutes  (MCQ Questions: It will have three sections – <b>A) Aptitude, B) General Sciences, C) English Proficiency </b>.The test will be conducted offline in the respective colleges.</p></li><br/>
+    					    <li><h6>Round 1: CEO Quiz </h6><p><b> 10th to 17th January 2020 (in Nagpur)</b><br>It is preliminary-cum-elimination round to shortlist the participants based on the scores. Duration: 30 minutes  (MCQ Questions: It will have three sections – <b>A) Aptitude, <br>B) General Sciences,<br> C) English Proficiency <br></b>.The test will be conducted offline in the respective colleges.</p></li><br/>
 
     					    <li><h6>Round 2: PPDT</h6><p><b>21st February 2020 (First Day First Half) | Journey from VNIT, Nagpur </b><br>
                     PPDT – Picture perception and dissection test <br>
@@ -119,8 +119,7 @@
                 <h5><b>Timeline</b></h5><br/>
                     <ul>
                       <li><h5>Offline CEO Quiz</h5>
-                        <p>20th to 25th December 2019 (in Pune & Sangamner)</p><br>
-                        <p>10th to 17th January 2020 (in Nagpur)</p>
+                        <p>10th to 17th January 2020</p>
                       </li><br/>
 
                       <li><h5>PPDT</h5>
