@@ -925,6 +925,68 @@ function htmlMail($t, $sub, $name, $teamname, $event){
                       </div>
                   </body>
               </html>';
+    $htmlCEO = '<!DOCTYPE html>
+              <html>
+                  <head>
+                      <style>
+                          li{
+                              padding:10px;
+                          }
+                          p{
+                              font-size:16px;
+                          }
+
+                          *{
+                              font-family:Helvetica,Arial,sans-serif;
+                          }
+
+                          h2{
+                              text-align: center;
+                              margin-top: 150px;
+
+                          }
+                          html, body{
+                              background-color:#f7f9fb;
+                              margin: 0;
+                          }
+                          .context {
+                              font-size: 12px;
+                              padding: 40px 60px;
+                              margin-left:10%;
+                              margin-right: 10%;
+                          }
+
+                          .context p{
+                              font-size: 12px;
+                          }
+                          p{
+                              margin: 15px 0px;
+                          }
+
+                      </style>
+                  </head>
+                  <body>
+
+                      <div style="background: #0b0b0b; padding:10px 30px;"><img src="https://www.ecellvnit.org/img/logo-ecell.png"></div>
+                      <h2 style="font-size:22px;">Welcome to Pitch Perfect</h2><br>
+
+                      <div class="context">
+                          <h3><b>Hey!</b></h3>
+                          <p>Congratulations! You are successfully registered for CEO</p>
+                          <div>
+                              <p>
+                                  It\'s time to to bring out the creative mindset of young people where they battle down to pitch an innovative product or service in the best possible way.
+                              </p>
+
+                              <p>For queries and in case of any difficulty, feel free to contact us.</p>
+                              <p>
+                                  With warm regards,<br>
+                                  Team E-Cell VNIT
+                              </p>
+                          </div>
+                      </div>
+                  </body>
+              </html>';
 
     $html = "";
     if($event == 'Swadesh'){
@@ -963,6 +1025,9 @@ function htmlMail($t, $sub, $name, $teamname, $event){
     }
     else if($event == 'Pitch_Perfect'){
       $html = $htmlPitch;
+    }
+    else if($event == 'CEO'){
+      $html = $htmlCEO;
     }
 
     $url = 'https://startupconclave.ecellvnit.org/send';

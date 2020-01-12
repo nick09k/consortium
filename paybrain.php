@@ -120,7 +120,7 @@
       else{
         $msg = "You're not registered with us. Kindly first register <a href='expo.php'> here</a>. Or your have entered wrong email address while payment. Kindly Contact Us";
       }
-      
+
     }
   }
 ?>
@@ -143,7 +143,7 @@
 
                     <div class="col-md-8 col-md-offset-2" style="text-align: center;">
                         <p class="g-color--white-opacity g-font-size-16--sm">
-                          <?php 
+                          <?php
                             if($_SERVER['REQUEST_METHOD'] != 'POST'){
 
                                 $query = "SELECT * FROM Brainathon WHERE Email = '$_SESSION[email]' ";
@@ -161,13 +161,13 @@
                                 }
                             }
                           ?>
-                          
+
                           <br><br>Registration Fee: <b>100 INR</b>
                         </p>
 
-                        <?php 
+                        <?php
                             if($_SERVER['REQUEST_METHOD'] != 'POST' && $flag ==0){
-                        
+
                         echo '<p class="g-color--white-opacity g-font-size-12--sm">
 
                           *Note: Kindly only use your consoID i.e. your registered email address while payment.

@@ -46,7 +46,8 @@
     mysqli_query($con,$evequery);
     }
 
-    $eve = array('Swadesh_team','AdVenture_team','trec_team','renderico_team','BizMantra_team','BizQuiz_team','war_of_worlds_team');
+    $eve = array('
+    _team','AdVenture_team','trec_team','renderico_team','BizMantra_team','BizQuiz_team','war_of_worlds_team');
     for($var = 0; $var < 9; $var++){
       $evequery = "CREATE TABLE IF NOT EXISTS $eve[$var](
                 ID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -80,9 +81,6 @@
 
     if($event == ""){
       $msg = "Please Select an event!";
-    }
-    else if($event == "CEO"){
-        $msg = "This is an offline event. Please contact Event Managers of CEO";
     }
     else if($event == "sc"){
         $msg = "Registrations are closed. Please proceed <a href='https://startupconclave.ecellvnit.org'>here</a> for for information.";
@@ -217,10 +215,11 @@
                       <option value='' selected disabled hidden>Choose an Event</option>
                       <option value='Swadesh'>Swades</option>
                       <option value='trec'>TREC (Technology Research Entrepreneurship Conclave)</option>
+                      <option value='CEO'>CEO</option>
                       <!--<option value='AdVenture'>AdVenture</option>
                       <option value='Pitch_Perfect'>Pitch Perfect</option>
                       <option value='renderico'>render.ico</option>
-                      <option value='CEO'>CEO</option>-->
+                      -->
                       <!-- <option value='Teen_Titans'>Teen Titans</option>
                       <option value='BizMantra'>BizMantra</option>
                       <option value='BizQuiz'>BizQuiz</option>

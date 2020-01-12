@@ -136,25 +136,19 @@
         <!--<img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">-->
             <!--<div class="g-container--md g-padding-y-40--xs">-->
             <div id="managers" class="row g-row-col--5 g-padding-x-40--xs g-padding-y-40--xs g-padding-x-20--md g-padding-x-100--lg">
-                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Tejas Mulay</h4>
-                         <p class="g-color--white">+91 9146197728</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Gauri Dixit</h4>
+                         <p class="g-color--white">+91 9359407052</p>
                     </div>
                 </div>
-                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
+                <div class="col-xs-6 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
                     <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Ayushi Tiwari</h4>
-                         <p class="g-color--white">+91 8830314193</p>
+                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Mithil Rao</h4>
+                         <p class="g-color--white">+91 9607339838</p>
                     </div>
                 </div>
-                <div class="col-xs-4 g-full-width--xs g-margin-b-50--xs g-margin-b-0--sm">
 
-                    <div class="g-text-center--xs">
-                        <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Radhika Poddar</h4>
-                         <p class="g-color--white">+91 8975805110</p>
-                    </div>
-                </div>
 
             </div>
             </div>

@@ -322,7 +322,11 @@
                               <br>
 
                               <div class="wow fadeInLeft g-text-center--xs" data-wow-duration=".3" data-wow-delay=".5s" style="display: flex;justify-content: center;">
-                                  <a id="reg_button" href="/<?php if($events[$var] == 'Brainathon'){echo 'brainathon.php';}else {echo $events[$var].'.php';} ?>" target="_blank" title="Register">
+                                  <a id="reg_button" href="/<?php if($events[$var] == 'Brainathon')
+                                                              {echo 'brainathon.php';}
+                                                              elseif ($events[$var] == 'CEO')
+                                                              {echo 'CEO.php';}
+                                                              else {echo $events[$var].'.php';} ?>" target="_blank" title="Register">
                                       <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">View Event</span>
                                   </a>
                                   <a id="reg_button" href="<?php if($events[$var] == 'Brainathon'){echo'/paybrain.php';}else{echo '#'.$events[$var].'click';} ?>" title="Register">
@@ -579,7 +583,7 @@
           $data = $result->fetch_array(MYSQLI_ASSOC);
           if($num!=0){
             echo '<h2 class="g-font-size-30--xs g-text-center--xs g-margin-t-70--xs g-color--white g-letter-spacing--1">Hello, '.$data['Name'].'</h2>';
-            $query = "SELECT * FROM Swadesh WHERE Main_Email='$email'";
+            $query = "SELECT * FROM trec WHERE Main_Email='$email'";
             $result = mysqli_query($con,$query);
             $num = mysqli_num_rows($result);
             echo "<p class='g-color--white g-font-size-20--xs'>Team Members</p><ol>";

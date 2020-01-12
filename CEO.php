@@ -104,14 +104,14 @@
     		    	    <ol>
 
     					    <li><h6>Round 1: CEO Quiz </h6><p><b>20th to 25th December 2019 (in Pune & Sangamner) |  10th to 17th January 2020 (in Nagpur)</b><br>It is preliminary-cum-elimination round to shortlist the participants based on the scores. Duration: 30 minutes  (MCQ Questions: It will have three sections – <b>A) Aptitude, B) General Sciences, C) English Proficiency </b>.The test will be conducted offline in the respective colleges.</p></li><br/>
-    					    <li><h6>Round 2: Online Test</h6><p><b>1st February 2020</b><br>The Details regarding the same will be conveyed to the qualified candidates.</p></li><br/>
-    					    <li><h6>Round 3: PPDT</h6><p><b>21st February 2020 (First Day First Half) | Journey from VNIT, Nagpur </b><br>
+
+    					    <li><h6>Round 2: PPDT</h6><p><b>21st February 2020 (First Day First Half) | Journey from VNIT, Nagpur </b><br>
                     PPDT – Picture perception and dissection test <br>
                     Highlights - Pictures shown in PPDT are very unclear and various different perception takes place for same. Round scheme – In this test, the candidates are shown a blurred picture for a period of 40 second. Based on that, candidates are allotted a time period of 6 minutes to write a story on the picture with details consisting of that handled to the situation, what is happening now and what will be the possible outcome.<br>
                     After writing the story, candidates will be divided into groups of 10. And they will be told to narrate their story one by one (Each one have to narrate his/her story with in one and half minute). After the completion of stories of all the students, a group discussion conducted in which students discuss the story & try to come up with a common story (Time limit-10minutes).</p></li><br/>
-                  <li><h6>Round 4: Case Interview</h6><p><b>21st Feb 2020 (First Day Second Half) </b><br>Case interview Highlights: Explaining what case interview is and what is expected from them. A problem will be given to each team. Time will be given for each team to think. 5 minutes will be given for each team to explain solution they come up with. This is a team event, where you have to overcome the problem given to you related to Case Interview.
+                  <li><h6>Round 3: Case Interview</h6><p><b>21st Feb 2020 (First Day Second Half) </b><br>Case interview Highlights: Explaining what case interview is and what is expected from them. A problem will be given to each team. Time will be given for each team to think. 5 minutes will be given for each team to explain solution they come up with. This is a team event, where you have to overcome the problem given to you related to Case Interview.
                     Each one of will be given a sheet containing one problem related to market, publicity and crises.</p></li><br/>
-                  <li><h6>Round 5: Boardroom</h6><p><b>22nd Feb 2020 (Second Day)</b><br>The one-of-its-kind game where you are a part of the board of a corporation which is going through a major decision. Make allies wisely, know your opposition, influence the neutral people and put forward your point of view in front the other stakeholders of the corporation.</p></li>
+                  <li><h6>Round 4: Boardroom</h6><p><b>22nd Feb 2020 (Second Day)</b><br>The one-of-its-kind game where you are a part of the board of a corporation which is going through a major decision. Make allies wisely, know your opposition, influence the neutral people and put forward your point of view in front the other stakeholders of the corporation.</p></li>
     					</ol>
 
     		    	</div>
@@ -122,9 +122,7 @@
                         <p>20th to 25th December 2019 (in Pune & Sangamner)</p><br>
                         <p>10th to 17th January 2020 (in Nagpur)</p>
                       </li><br/>
-                      <li><h5>Online Test</h5>
-                        <p>1st February 2020</p>
-                        </li><br/>
+
                       <li><h5>PPDT</h5>
                         <p>21st February 2020 (First Day First Half)</p>
                       </li><br/>
