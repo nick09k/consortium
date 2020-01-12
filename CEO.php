@@ -23,7 +23,7 @@
 
                     <h3 class="g-color--white">Analytical Thinking Competition</h3>
                     <p class="g-color--white">Leadership, Problem Solving Skills, Marketing Skills. <br/>Do you have what it takes to be a CEO?</p><br/>
-                    <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 25K </span></h3>
+                    <h3 class="g-color--white"> PRIZES WORTH <span class="g-color--red">&#8377; 30K </span></h3>
 
                     <br>
 
@@ -77,7 +77,7 @@
     		    <div class="card-content code">
 
     		    	<div id="why">
-    			     	<h5><b>Prizes Worth &#8377; 25K </b></h5><br/>
+    			     	<h5><b>Prizes Worth &#8377; 30K </b></h5><br/>
     			     	<ol>
     			     	    <li><p>Attractive prizes for top 3 positions and goodies for best performers in each round and   e-certificates for all participants.</p></li>
     			     	    <li><p>All students who qualify to the fourth round (on campus) will receive an official certificate of participation.</p></li>
