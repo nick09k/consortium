@@ -297,7 +297,7 @@
                               <p class="g-color--white g-text-center--xs g-font-size-14--xs">
                                 <?php
 
-                                if($events[$var] != "Brainathon"){
+                                if($events[$var] = "Brainathon"){
                                   echo 'Click Here To Edit Your Team Members';
                                 }
                                 elseif($events[$var] = "CEO"){
