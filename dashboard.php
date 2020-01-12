@@ -300,6 +300,9 @@
                                 if($events[$var] != "Brainathon"){
                                   echo 'Click Here To Edit Your Team Members';
                                 }
+                                elseif($events[$var] != "CEO"){
+                                  echo 'Further details will be mailed to you';
+                                }
                                 else{
 
                                   $query = "SELECT * FROM Brainathon WHERE Email = '$email'";
@@ -329,8 +332,21 @@
                                                               else {echo $events[$var].'.php';} ?>" target="_blank" title="Register">
                                       <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50 g-margin-r-10--xs">View Event</span>
                                   </a>
-                                  <a id="reg_button" href="<?php if($events[$var] == 'Brainathon'){echo'/paybrain.php';}else{echo '#'.$events[$var].'click';} ?>" title="Register">
-                                      <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50"><?php if($events[$var] == 'Brainathon'){echo'Pay Here';}else{echo 'Your Team';} ?></span>
+
+                                  <a id="reg_button" href="<?php if($events[$var] == 'Brainathon')
+                                                                    {echo'/paybrain.php';}
+                                                                    elseif($events[$var] == "CEO"){
+                                                                      echo'/team.php';
+                                                                    }
+                                                                    else{echo '#'.$events[$var].'click';}
+                                                                     ?>" >
+                                      <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50"><?php if($events[$var] == 'Brainathon')
+                                                                                                                        {echo'Pay Here';}
+                                                                                                                        elseif($events[$var] == "CEO"){
+                                                                                                                          echo'Contact Team';
+                                                                                                                        }
+                                                                                                                        else
+                                                                                                                        {echo 'Your Team';} ?></span>
                                   </a>
                               </div>
 
