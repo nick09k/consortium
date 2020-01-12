@@ -300,7 +300,7 @@
                                 if($events[$var] != "Brainathon"){
                                   echo 'Click Here To Edit Your Team Members';
                                 }
-                                elseif($events[$var] != "CEO"){
+                                elseif($events[$var] = "CEO"){
                                   echo 'Further details will be mailed to you';
                                 }
                                 else{
