@@ -12,9 +12,9 @@
   if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     $email = $con->real_escape_string($_POST['email']);
-    $txnid = $con->real_escape_string($_POST['txnid']);
 
-    if($email=="" || $txnid==""){
+
+    if($email==""){
         $msg = "Something went wrong. <a href='dashboard.php' style='color:#eee;'>Try Again</a>";
     }
     else{
@@ -81,7 +81,7 @@
                           <p>Congratulations! You are now a part of Central India’s Biggest Entrepreneurship Summit.</p>
                           <div>
                               <p>We hope this mail finds you in the best of your health and cheerful spirits. We are well pleased to have you on board for this event.</p>
-                              <p> Your Transaction ID: <b>'.$txnid.'</b><br>
+
                                   Registration Fee: 100 INR
                               </p>
                               <p>
@@ -154,7 +154,18 @@
                                 if($data['ispaid'] == 1){
                                   $flag = 1;
 
-                                  echo 'Your are already registered.';
+                                  echo 'Your are already registered.<br>
+                                  <p class="g-color--white-opacity g-font-size-12--sm">
+
+                                    *Note: Kindly only use your consoID i.e. your registered email address while payment.
+                                  </p>
+                                  <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+                                      <a id="reg_button" href="trec-questionnaire.php" title="Register">
+                                          <!--<i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-arrow-down"></i>-->
+                                          <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50">Fill Questionaire</span>
+                                      </a>
+                                  </div>';
+
 
                                 }
                                 else{
