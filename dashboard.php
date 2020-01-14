@@ -278,7 +278,7 @@
                 <div class="row product-grid">
 
                   <?php
-                    $events = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz', 'nirmaan');
+                    $events = array('Swadesh','AdVenture','trec','renderico','CEO','war_of_worlds','BizMantra','BizQuiz');
                     $query = "SELECT * FROM Registrations WHERE Email='$email'";
                     $result = mysqli_query($con,$query);
                     $num = mysqli_num_rows($result);
@@ -338,13 +338,8 @@
                                                                     elseif($events[$var] == "CEO"){
                                                                       echo'/team.php';
                                                                     }
-                                                                    elseif($events[$var] == "nirmaan"){
-                                                                      echo '/nirmaan-test.php';
-                                                                    }
-                                                                    elseif($events[$var] == "Swadesh"){
-                                                                      echo '/swades-test.php';
-
-                                                                    }
+                                                                    elseif ($events[$var] == 'Swadesh')
+                                                                      {echo 'swadesh-questionnaire.php';}
                                                                     else{echo '#'.$events[$var].'click';}
                                                                      ?>" >
                                       <span class="text-uppercase s-btn s-btn--xs s-btn--white-brd g-radius--50"><?php if($events[$var] == 'Brainathon')
@@ -352,10 +347,7 @@
                                                                                                                         elseif($events[$var] == "CEO"){
                                                                                                                           echo'Contact Team';
                                                                                                                         }
-                                                                                                                        elseif($events[$var] == "nirmaan" ){
-                                                                                                                          echo'Start Test';
-                                                                                                                        }
-                                                                                                                        elseif($events[$var] == "Swadesh" ){
+                                                                                                                        elseif($events[$var] == "Swadesh"){
                                                                                                                           echo'Start Test';
                                                                                                                         }
                                                                                                                         else
@@ -712,13 +704,6 @@
         function closemodel(event){
             $("#"+event).css({"display": "none"},100);
         }
-
-        $("#nirmaanclick").click(function(){
-          $("#nirmaan").css({"display":"block"});
-          $("#nirmaan").animate({opacity: 1}, 1000);
-          var y = $("#nirmaan").offset().top;
-            $("html ,body").animate({ scrollTop: y},200);
-        });
 
 
 
